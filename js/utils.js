@@ -235,10 +235,11 @@ function getChallengeTaskGoalProgress(taskName) {
 }
 
 function getFormattedChallengeTaskGoal(taskName, level) {
+    const displayName = typeof getDisplayName === "function" ? getDisplayName(taskName) : taskName
     if (level < 100000)
-        return taskName + " lvl " + formatLevel(level)
+        return displayName + " lvl " + formatLevel(level)
     else
-        return "Great " + taskName + " lvl " + formatLevel(Math.ceil(level / 1000))
+        return (typeof getHeroTitlePrefix === "function" ? getHeroTitlePrefix() : "Great ") + displayName + " lvl " + formatLevel(Math.ceil(level / 1000))
 }
 
 function getFormattedTitle(parameter) {    
