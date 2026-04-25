@@ -193,15 +193,18 @@ const jobBaseData = {
 }
 
 const skillBaseData = {
+    // Fundamental / Fundamental
     "Concentration": { name: "Concentration", maxXp: 100, heroxp: 36, effect: 0.01, description: "Skill XP" },
     "Productivity": { name: "Productivity", maxXp: 100, heroxp: 37, effect: 0.01, description: "Hero XP" },
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
 
+    // Combat / Martial arts 
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
     "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
     "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
 
+    // / Spiritual techniques
     "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "T.A.A. XP" },
     "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
     "Time Warping": { name: "Time Warping", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
@@ -210,6 +213,7 @@ const skillBaseData = {
     "All Seeing Eye": { name: "All Seeing Eye", maxXp: 100, heroxp: 120, effect: 0.0027, description: "T.A.A Pay" },
     "Brainwashing": { name: "Brainwashing", maxXp: 100, heroxp: 145, effect: -0.01, description: "Reduced Expenses" },
 
+    // Dark magic / Demonic methods
     "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
     "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Evil Gain" },
     "Intimidation": { name: "Intimidation", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
@@ -217,11 +221,12 @@ const skillBaseData = {
     "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Evil Gain" },
     "Demon's Wealth": { name: "Demon's Wealth", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
     "Dark Knowledge": { name: "Dark Knowledge", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
-
     "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
     "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
     "Evil Incarnate": { name: "Evil Incarnate", maxXp: 100, heroxp: 208, effect: 0.01, description: "Skill XP" },
     "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Evil Gain" },
+
+    // Void manipulation / ?
     "Void Amplification": { name: "Void Amplification", maxXp: 100, heroxp: 251, effect: 0.01, description: "The Void XP" },
     "Mind Release": { name: "Mind Release", maxXp: 100, heroxp: 251, effect: 0.0006, description: "Increased Happiness" },
     "Ceaseless Abyss": { name: "Ceaseless Abyss", maxXp: 100, heroxp: 251, effect: 0.000585, description: "Longer Lifespan" },
@@ -229,16 +234,19 @@ const skillBaseData = {
     "Void Embodiment": { name: "Void Embodiment", maxXp: 100, heroxp: 258, effect: 0.0025, description: "Evil Gain" },
     "Abyss Manipulation": { name: "Abyss Manipulation", maxXp: 100, heroxp: 266, effect: -0.01, description: "Reduced Expenses" },
 
+    // ? / ?
     "Cosmic Longevity": { name: "Cosmic Longevity", maxXp: 100, heroxp: 266, effect: 0.0015, description: "Longer Lifespan" },
     "Cosmic Recollection": { name: "Cosmic Recollection", maxXp: 100, heroxp: 272, effect: 0.00065, description: "Max Lvl Multiplier" },
     "Essence Collector": { name: "Essence Collector", maxXp: 100, heroxp: 288, effect: 0.01, description: "Essence Gain" },
     "Galactic Command": { name: "Galactic Command", maxXp: 100, heroxp: 290, effect: -0.01, description: "Reduced Expenses" },
 
+    // ? / ?
     "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Evil Gain" },
     "Parallel Universe": { name: "Parallel Universe", maxXp: 100, heroxp: 300, effect: 0.02, description: "All XP" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
 
+    // ? / ?
     "Dark Prince": { name: "Dark Prince", maxXp: 100, heroxp: 350, effect: 0.01, description: "Skill XP" },
     "Dark Ruler": { name: "Dark Ruler", maxXp: 100, heroxp: 375, effect: 0.0000015, description: "Dark Matter Gain" },
     "Immortal Ruler": { name: "Immortal Ruler", maxXp: 100, heroxp: 425, effect: 0.01, description: "All XP" },
@@ -625,49 +633,49 @@ const xianxiaDisplayNames = {
     "Battle Tactics": "Battle Tactics",
     "Muscle Memory": "Muscle Memory",
     // Magic -> Spiritual techniques
-    "Mana Control": "Qi Manipulation", // Earthly cultivation XP up
-    "Life Essence": "Vital Essence Cultivation", // Lifespan
+    "Mana Control": "Qi Manipulation", // Increase Earthly cultivation XP
+    "Life Essence": "Vital Essence Cultivation", // increase lifespan
     "Time Warping": "A Cultivator's Perspective", // Game speed
-    "Astral Body": "Bodily Refinement", // Lifespan
+    "Astral Body": "Bodily Refinement", // increase Lifespan
     "Temporal Dimension": "Temporal Cultivation", // Game speed
-    "All Seeing Eye": "Qi Crystallisation", // Earthly cultivation money up
+    "All Seeing Eye": "Qi Crystallisation", // Increase Earthly cultivation wage
     "Brainwashing": "Spiritual Command", // Reduced expenses
     // Dark magic -> Demonic methods
-    "Dark Influence": "Demonic Resonance",
-    "Evil Control": "Demonic Qi Control",
-    "Intimidation": "Killing Intent",
-    "Demon Training": "Fiend Body Refinement",
-    "Blood Meditation": "Blood Refinement",
-    "Demon's Wealth": "Demon Gold Art",
-    "Dark Knowledge": "Forbidden Scriptures",
-    "Void Influence": "Void Resonance",
-    "Time Loop": "Cycle of Kalpas",
-    "Evil Incarnate": "Incarnate Demon",
+    "Dark Influence": "Demonic Resonance", // increase job and skill XP
+    "Evil Control": "Demonic Qi Control", // increases evil gain
+    "Intimidation": "Killing Intent", // reduce item expenses
+    "Demon Training": "Fiend Body Refinement", // increase job and skill XP
+    "Blood Meditation": "Blood Refinement", // evil gain
+    "Demon's Wealth": "Demon Gold Art", // increase job wage
+    "Dark Knowledge": "Forbidden Scriptures", // increase job xp
+    "Void Influence": "Void Resonance", // increase job and skill XP
+    "Time Loop": "Cycle of Kalpas", // increase game speed
+    "Evil Incarnate": "Incarnate Demon", // increase skill XP
     // Void manipulation -> Conceptual magics
-    "Absolute Wish": "Heaven-Defying Vow",
-    "Void Amplification": "Void Amplification Art",
-    "Mind Release": "Mind Liberation",
-    "Ceaseless Abyss": "Endless Abyss",
-    "Void Symbiosis": "Void Coalescence",
-    "Void Embodiment": "Void Incarnation",
-    "Abyss Manipulation": "Abyss Domain Shaping",
+    "Absolute Wish": "Heaven-Defying Vow", // increase evil gain
+    "Void Amplification": "Void Amplification Art", // increase void job xp
+    "Mind Release": "Mind Liberation", // increase happiness
+    "Ceaseless Abyss": "Endless Abyss", // increase lifespan
+    "Void Symbiosis": "Void Coalescence", // increase xp gain for skills
+    "Void Embodiment": "Void Incarnation", // increase evil gain
+    "Abyss Manipulation": "Abyss Domain Shaping", // reduce item expenses
     // Celestial powers -> Immortal techniques
-    "Cosmic Longevity": "Eternal Longevity",
-    "Cosmic Recollection": "Karmic Recollection",
-    "Essence Collector": "Spirit Essence Gathering",
-    "Galactic Command": "Star Domain Command",
+    "Cosmic Longevity": "Eternal Longevity", // increases lifespan
+    "Cosmic Recollection": "Karmic Recollection", // increases how much max level is preserved/scaled on rebirth and milestone auto-max logic
+    "Essence Collector": "Spirit Essence Gathering", // increase essence gain
+    "Galactic Command": "Star Domain Command", // reduce item expenses
     // Almightiness -> ?
-    "Yin Yang": "Yin-Yang Harmony",
-    "Parallel Universe": "Parallel Realms",
-    "Higher Dimensions": "Higher Heavens",
-    "Epiphany": "Dao Enlightenment",
+    "Yin Yang": "Yin-Yang Harmony", // increase evil gain and increase essence gain
+    "Parallel Universe": "Parallel Realms", // increase xp for jobs and skills
+    "Higher Dimensions": "Higher Heavens", // increase lifespan
+    "Epiphany": "Dao Enlightenment", // increase xp for galactic council jobs
     // Darkness -> ?
-    "Dark Prince": "Demonic Prince",
-    "Dark Ruler": "Demonic Sovereign",
-    "Immortal Ruler": "Immortal Sovereign",
-    "Dark Magician": "Demonic Arcanist",
-    "Universal Ruler": "All-Realm Sovereign",
-    "Blinded By Darkness": "Swallowed by Darkness",
+    "Dark Prince": "Demonic Prince", // increase skill xp
+    "Dark Ruler": "Demonic Sovereign", // increase dark matter gain
+    "Immortal Ruler": "Immortal Sovereign", // increase xp for jobs and skills
+    "Dark Magician": "Demonic Arcanist", // increase essence gain
+    "Universal Ruler": "All-Realm Sovereign", // increase xp for magic-category skills (AKA spiritual techniques)
+    "Blinded By Darkness": "Swallowed by Darkness", // increase xp for jobs and skills
     //
     "Homeless": "Ragged Courtyard",
     "Tent": "Wanderer's Tent",
