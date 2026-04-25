@@ -449,7 +449,7 @@ const requirementsBaseData = {
     "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Sigma Proioxis", requirement: 500, herequirement: 360 }, { task: "Absolute Wish", requirement: 4900, herequirement: 2900 }, { task: "Dark Knowledge", requirement: 6300, herequirement: 3400 }]),
     "Galactic Command": new TaskRequirement([getQuerySelector("Galactic Command")], [{ task: "Essence Collector", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
 
-    // Essence
+    // Almightiness
     "Yin Yang": new EssenceRequirement([getQuerySelector("Yin Yang")], [{ requirement: 1 }]),
     "Parallel Universe": new EssenceRequirement([getQuerySelector("Parallel Universe")], [{ requirement: 1 }]),
     "Higher Dimensions": new EssenceRequirement([getQuerySelector("Higher Dimensions")], [{ requirement: 10000 }]),
@@ -610,21 +610,21 @@ const xianxiaDisplayNames = {
     "Sigma Proioxis": "Heavenly Immortal",
     "Acallaris": "Saintly Empyrean",
     "One Above All": "Sovereign Epyrean",
-    // Embodiment of the Dao
+    // Dao embodiment
     "Snow Crash": "Steward of the Realms",
     "Player One": "Guide of Samsara",
     "Lost in the dark": "Anchor of Causality",
     "Omega": "The Heavens Itself",
-    // 
+    // Fundamentals
     "Concentration": "Heart Focus",
     "Productivity": "Diligent Cultivation",
     "Bargaining": "Spirit Commerce",
     "Meditation": "Inner Contemplation",
-    //
+    // Combat -> Martial arts
     "Strength": "Body Tempering",
     "Battle Tactics": "War Formation Arts",
     "Muscle Memory": "Meridian Memory",
-    // 
+    // Magic -> Spiritual techniques
     "Mana Control": "Qi Control",
     "Life Essence": "Vital Essence",
     "Time Warping": "Temporal Dilation",
@@ -632,7 +632,7 @@ const xianxiaDisplayNames = {
     "Temporal Dimension": "Pocket Time Realm",
     "All Seeing Eye": "Heavenly Insight",
     "Brainwashing": "Soul Enslavement",
-    // 
+    // Dark magic -> Demonic methods
     "Dark Influence": "Demonic Resonance",
     "Evil Control": "Demonic Qi Control",
     "Intimidation": "Killing Intent",
@@ -643,7 +643,7 @@ const xianxiaDisplayNames = {
     "Void Influence": "Void Resonance",
     "Time Loop": "Cycle of Kalpas",
     "Evil Incarnate": "Incarnate Demon",
-    // 
+    // Void manipulation -> Conceptual magics
     "Absolute Wish": "Heaven-Defying Vow",
     "Void Amplification": "Void Amplification Art",
     "Mind Release": "Mind Liberation",
@@ -651,17 +651,17 @@ const xianxiaDisplayNames = {
     "Void Symbiosis": "Void Coalescence",
     "Void Embodiment": "Void Incarnation",
     "Abyss Manipulation": "Abyss Domain Shaping",
-    // 
+    // Celestial powers -> Immortal techniques
     "Cosmic Longevity": "Eternal Longevity",
     "Cosmic Recollection": "Karmic Recollection",
     "Essence Collector": "Spirit Essence Gathering",
     "Galactic Command": "Star Domain Command",
-    // 
+    // Almightiness -> ?
     "Yin Yang": "Yin-Yang Harmony",
     "Parallel Universe": "Parallel Realms",
     "Higher Dimensions": "Higher Heavens",
     "Epiphany": "Dao Enlightenment",
-    // 
+    // Darkness -> ?
     "Dark Prince": "Demonic Prince",
     "Dark Ruler": "Demonic Sovereign",
     "Immortal Ruler": "Immortal Sovereign",
@@ -770,22 +770,26 @@ const xianxiaDisplayNames = {
 }
 
 const xianxiaCategoryNames = {
+    // Job categories
     "Common work": "Mortal commoner",
     "Military": "Mortal military",
-    "The Arcane Association": "Earthly realm sect",
-    "The Void": "Abyssal Dao",
-    "Galactic Council": "Upper Realm Council",
-    "Metaverse Guards": "Realm Gatekeepers",
-    "Fundamentals": "Foundation Arts",
-    "Combat": "Martial Body Arts",
-    "Magic": "Qi Arts",
-    "Dark Magic": "Demonic Arts",
-    "Void Manipulation": "Void Arts",
-    "Celestial Powers": "Celestial Dao",
-    "Almightiness": "Supreme Dao",
-    "Darkness": "Shadow Dao",
+    "The Arcane Association": "Earthly cultivation",
+    "The Void": "Demonic cultivation",
+    "Galactic Council": "Immortal cultivation",
+    "Metaverse Guards": "Dao embodiment",
+    // Skill categories
+    "Fundamentals": "Fundamentals",
+    "Combat": "Martial arts",
+    "Magic": "Spiritual techniques",
+    "Dark Magic": "Demonic methods",
+    "Void Manipulation": "Void arts", // conceptual magics?
+    "Celestial Powers": "Immortal techniques",
+    "Almightiness": "Manifestation",
+    "Darkness": "Dissolution", // theme is extraction of essence from subordinates
+    // Items
     "Properties": "Estates",
     "Misc": "Treasures",
+    // Milestones
     "Essence Milestones": "Spirit Milestones",
     "Heroic Milestones": "Ascendant Milestones",
     "Dark Milestones": "Demonic Milestones",
