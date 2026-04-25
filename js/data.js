@@ -224,9 +224,9 @@ const skillBaseData = {
     "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
     "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
     "Evil Incarnate": { name: "Evil Incarnate", maxXp: 100, heroxp: 208, effect: 0.01, description: "Skill XP" },
-    "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Evil Gain" },
-
+    
     // Void manipulation / ?
+    "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Evil Gain" },
     "Void Amplification": { name: "Void Amplification", maxXp: 100, heroxp: 251, effect: 0.01, description: "The Void XP" },
     "Mind Release": { name: "Mind Release", maxXp: 100, heroxp: 251, effect: 0.0006, description: "Increased Happiness" },
     "Ceaseless Abyss": { name: "Ceaseless Abyss", maxXp: 100, heroxp: 251, effect: 0.000585, description: "Longer Lifespan" },
@@ -640,36 +640,47 @@ const xianxiaDisplayNames = {
     "Temporal Dimension": "Temporal Cultivation", // Game speed
     "All Seeing Eye": "Qi Crystallisation", // Increase Earthly cultivation wage
     "Brainwashing": "Spiritual Command", // Reduced expenses
-    // Dark magic -> Demonic methods
-    "Dark Influence": "Demonic Resonance", // increase job and skill XP
-    "Evil Control": "Demonic Qi Control", // increases evil gain
-    "Intimidation": "Killing Intent", // reduce item expenses
-    "Demon Training": "Fiend Body Refinement", // increase job and skill XP
-    "Blood Meditation": "Blood Refinement", // evil gain
-    "Demon's Wealth": "Demon Gold Art", // increase job wage
-    "Dark Knowledge": "Forbidden Scriptures", // increase job xp
-    "Void Influence": "Void Resonance", // increase job and skill XP
-    "Time Loop": "Cycle of Kalpas", // increase game speed
-    "Evil Incarnate": "Incarnate Demon", // increase skill XP
-    // Void manipulation -> Conceptual magics
-    "Absolute Wish": "Heaven-Defying Vow", // increase evil gain
-    "Void Amplification": "Void Amplification Art", // increase void job xp
-    "Mind Release": "Mind Liberation", // increase happiness
+    // Dark magic -> Demonic methods // todo
+    "Dark Influence": "Bloody Inspiration", // increase job and skill XP - Find your inspiration in endless bloodshed. Increase job and skill XP gain.
+    "Evil Control": "Ghost Enslavement", // increases evil gain - Enslave the ghosts of innocents to increase your own power. Increases Evil gain.
+    "Intimidation": "Killing Intent", // reduce item expenses - utilise your killing intent to intimidate those with things you want.
+    "Demon Training": "Gu Host", // increase job and skill XP - Host innumerable Gu in your body, taking advantage of their spiritual and vital energies. Increase job and skill XP. 
+    "Blood Meditation": "Heart-Demon Nourishment", // evil gain - Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Evil gain. 
+    "Demon's Wealth": "Karmic Theft", // increase job wage - steal karma from deserving people for your own benefit
+    "Dark Knowledge": "Bloodline Plundering", // increase job xp - Harvest rare bloodlines from helpless mortals and bolster your own talent. Increase job xp. 
+    "Void Influence": "Memory Devouring", // increase job and skill XP - Devour the thoughts from talented cultivators and skillful mortals alike. Increase job and skill xp.
+    "Time Loop": "Era Sacrifice", // increase game speed - Sacrifice the youth of those around you to speed the passing of time. Increase game speed.
+    "Evil Incarnate": "Parasitic Link", // increase skill XP - Offload the psychic strain of learning to unwilling victims across an enormous geographic scale. Increase skill XP.
+    // Void manipulation -> Conceptual magics -  // todo
+    "Absolute Wish": "Heaven-Defying Vow", // increase evil gain - Channel Misama - Funnel the evil thoughts of others into yourself as a potent fuel. Increase Evil gain.  
+    "Void Amplification": "Void Amplification Art", // increase void job xp - Attune your mind to the nothingness of the void; apathy encroaches upon your thoughts. Increase void job XP. 
+    "Mind Release": "Mind Liberation", // increase happiness - 
     "Ceaseless Abyss": "Endless Abyss", // increase lifespan
     "Void Symbiosis": "Void Coalescence", // increase xp gain for skills
     "Void Embodiment": "Void Incarnation", // increase evil gain
     "Abyss Manipulation": "Abyss Domain Shaping", // reduce item expenses
-    // Celestial powers -> Immortal techniques
+
+    // "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
+    // "Void Amplification": "You surrender yourself to the Void, making it easier to take control of you.",
+    // "Mind Release": "In a trance like state, you feel the Void amplifying your thoughts, perception, memories, emotions and personality.",
+    // "Ceaseless Abyss": "Never ending torture, you swore to serve the Void for the rest of your existence.",
+    // "Void Symbiosis": "A symbiotic relationship that helps you become one with the Void.",
+    // "Void Embodiment": "If thou gaze long into an abyss, the abyss will also gaze into thee.",
+    // "Abyss Manipulation": "Allows you to shape your own reality within the Void itself.",
+
+
+
+    // Celestial powers -> Immortal techniques -  // todo
     "Cosmic Longevity": "Eternal Longevity", // increases lifespan
     "Cosmic Recollection": "Karmic Recollection", // increases how much max level is preserved/scaled on rebirth and milestone auto-max logic
     "Essence Collector": "Spirit Essence Gathering", // increase essence gain
     "Galactic Command": "Star Domain Command", // reduce item expenses
-    // Almightiness -> ?
+    // Almightiness -> ? -  // todo
     "Yin Yang": "Yin-Yang Harmony", // increase evil gain and increase essence gain
     "Parallel Universe": "Parallel Realms", // increase xp for jobs and skills
     "Higher Dimensions": "Higher Heavens", // increase lifespan
     "Epiphany": "Dao Enlightenment", // increase xp for galactic council jobs
-    // Darkness -> ?
+    // Darkness -> ? -  // todo
     "Dark Prince": "Demonic Prince", // increase skill xp
     "Dark Ruler": "Demonic Sovereign", // increase dark matter gain
     "Immortal Ruler": "Immortal Sovereign", // increase xp for jobs and skills

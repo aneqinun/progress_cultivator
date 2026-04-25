@@ -68,21 +68,21 @@ const tooltips = {
     "Astral Body": "Refine your body as a spiritual treasure. Increase your lifespan significantly.", // Bodily Refinement - Refine your body as a treasure. Lifespan grows as the red dust washes from your body and spirit.
     "Temporal Dimension": "Cultivate and nurture time as you would a herb or flower. Increase game speed significantly.", // Temporal cultivation - "Like a herb or flower, time, too, may be nurtured and grown to abundance in its season."
     "All Seeing Eye": "Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation.", // Qi crystallisation - Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation
-    "Brainwashing": "Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly.", // Spiritual Command - Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly. 
+    "Brainwashing": "Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your item expenses signficantly.", // Spiritual Command - Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly. 
 
     // Dark Magic - Evil Required / Demonic Cultivation
-    "Dark Influence": "Encompass yourself with formidable power bestowed upon you by evil, allowing you to pick up and absorb any job or skill with ease.",
-    "Evil Control": "Tame the raging and growing evil within you, improving evil gain in-between rebirths.",
-    "Intimidation": "Learn to emit a devilish aura which strikes extreme fear into other merchants, forcing them to give you heavy discounts.",
-    "Demon Training": "A mere human body is too feeble and weak to withstand evil. Train with forbidden methods to slowly manifest into a demon, capable of absorbing knowledge rapidly.",
-    "Blood Meditation": "Grow and culture the evil within you through the sacrifice of other living beings, drastically increasing evil gain.",
-    "Demon's Wealth": "Through the means of dark magic, multiply the raw matter of the coins you receive from your job.",
-    "Dark Knowledge": "Sealed for a very long time, you utilize these forbidden texts for your own personal gain.",
-    "Void Influence": "Tapping into the powers of the Void while combining them with evil grants you an unlimited potential.",
-    "Time Loop": "Mastery is achieved when 'telling time' becomes 'telling time what to do'.",
-    "Evil Incarnate": "You have became the very thing you swore to destroy.",
+    "Dark Influence": "Find your inspiration in endless bloodshed. Increase job and skill XP gain..",
+    "Evil Control": "Enslave the ghosts of innocents to increase your own power. Increase Evil gain.",
+    "Intimidation": "Utilise your killing intent to intimidate those with things you want. Reduce item expenses.",
+    "Demon Training": "Host innumerable devilish Gu in your body, taking advantage of their spiritual and vital energies. Increase job and skill XP.",
+    "Blood Meditation": "Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Evil gain.",
+    "Demon's Wealth": "Steal karma from deserving people for your own benefit. Increase job wages.",
+    "Dark Knowledge": "Harvest rare bloodlines from helpless mortals and bolster your own talent. Increase job xp.",
+    "Void Influence": "Devour the thoughts from talented cultivators and skillful mortals alike. Increase job and skill xp.",
+    "Time Loop": "Sacrifice the youth of those around you to speed the passing of time. Increase game speed.",
+    "Evil Incarnate": "Offload the psychic strain of learning to unwilling victims across an enormous geographic scale. Increase skill XP.",
 
-    // Void Manipulation / 
+    // Void Manipulation / Conceptual magics
     "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
     "Void Amplification": "You surrender yourself to the Void, making it easier to take control of you.",
     "Mind Release": "In a trance like state, you feel the Void amplifying your thoughts, perception, memories, emotions and personality.",
