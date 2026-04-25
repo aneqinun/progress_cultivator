@@ -594,7 +594,7 @@ const xianxiaDisplayNames = {
     "Archmage": "Soul severing",
     "Chronomancer": "Dao seeking",
     "Chairman": "Spirit integration",
-    "Imperator": "Tribulation transcendence",
+    "Imperator": "Tribulation crossing",
     // Demonic cultivation
     "Corrupted": "Vile Seed",
     "Void Slave": "Malice Rooting",
@@ -616,22 +616,22 @@ const xianxiaDisplayNames = {
     "Lost in the dark": "Anchor of Causality",
     "Omega": "The Heavens Itself",
     // Fundamentals
-    "Concentration": "Heart Focus",
-    "Productivity": "Diligent Cultivation",
-    "Bargaining": "Spirit Commerce",
-    "Meditation": "Inner Contemplation",
+    "Concentration": "Concentration",
+    "Productivity": "Productivity",
+    "Bargaining": "Bargaining",
+    "Meditation": "Meditation",
     // Combat -> Martial arts
-    "Strength": "Body Tempering",
-    "Battle Tactics": "War Formation Arts",
-    "Muscle Memory": "Meridian Memory",
+    "Strength": "Strength",
+    "Battle Tactics": "Battle Tactics",
+    "Muscle Memory": "Muscle Memory",
     // Magic -> Spiritual techniques
-    "Mana Control": "Qi Control",
-    "Life Essence": "Vital Essence",
-    "Time Warping": "Temporal Dilation",
-    "Astral Body": "Starforged Body",
-    "Temporal Dimension": "Pocket Time Realm",
-    "All Seeing Eye": "Heavenly Insight",
-    "Brainwashing": "Soul Enslavement",
+    "Mana Control": "Qi Manipulation", // Earthly cultivation XP up
+    "Life Essence": "Vital Essence Cultivation", // Lifespan
+    "Time Warping": "A Cultivator's Perspective", // Game speed
+    "Astral Body": "Bodily Refinement", // Lifespan
+    "Temporal Dimension": "Temporal Cultivation", // Game speed
+    "All Seeing Eye": "Qi Crystallisation", // Earthly cultivation money up
+    "Brainwashing": "Spiritual Command", // Reduced expenses
     // Dark magic -> Demonic methods
     "Dark Influence": "Demonic Resonance",
     "Evil Control": "Demonic Qi Control",

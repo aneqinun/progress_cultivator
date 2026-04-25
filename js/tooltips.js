@@ -51,26 +51,26 @@ const tooltips = {
     "Omega": "ω",
 
     // Fundamentals
-    "Concentration": "Improve your learning speed through practising intense concentration activities.",
-    "Productivity": "Learn to procrastinate less at work and receive more job experience per day.",
-    "Bargaining": "Study the tricks of the trade and persuasive skills to lower any type of expense.",
-    "Meditation": "Fill your mind with peace and tranquility to tap into greater happiness from within.",
+    "Concentration": "Focus the mind through disciplined practice. Increase skill learning speed.",
+    "Productivity": "Refine your work rhythm and efficiency. Increase job experience gained.",
+    "Bargaining": "Sharpen your persuasive skills. Reduce all expenses.",
+    "Meditation": "Steady your breaths and calm the heart. Increase happiness.",
 
-    // Combat
-    "Strength": "Condition your body and strength through harsh training. Stronger individuals are paid more in the military.",
-    "Battle Tactics": "Create and revise battle strategies, improving experience gained in the military.",
-    "Muscle Memory": "Strengthen your neurons through habit and repetition, improving strength gains throughout the body.",
+    // Combat / Martial Arts
+    "Strength": "Develop your bodily strength. Increase your wage in the military.",
+    "Battle Tactics": "Create and study battlefield strategies. Increase job experience gained in the military.",
+    "Muscle Memory": "Strengthen your body through habit and repetition. Improve strength gains.",
 
-    // Magic
-    "Mana Control": "Strengthen your mana channels throughout your body, aiding you in becoming a more powerful magical user.",
-    "Life Essence": "Lengthen your lifespan through the means of magic. However, is this truly the immortality you have tried seeking for...?",
-    "Time Warping": "Bend space and time through forbidden techniques, speeding up your learning processes.",
-    "Astral Body": "Lengthen your lifespan drastically beyond comprehension by harnessing ethereal energy.",
-    "Temporal Dimension": "Create your own pocket dimension where centuries go by in mere seconds.",
-    "All Seeing Eye": "As the highest rank of T.A.A, all funds go directly to you.",
-    "Brainwashing": "A technique designed to manipulate human thought and action against their desire.",
+    // Magic / Earthly Cultivation
+    "Mana Control": "Become more proficient in manipulating qi. Increase your job experience gained in earthly cultivation.", // Become more proficient in manipulating qi.  
+    "Life Essence": "Thicken your lifeline with refinement in qi. Increase your lifespan.", // Thicken your lifeline with refinement in qi. Is this the beginning of your immortal path?
+    "Time Warping": "Become uncaring of time's passing. Increase the game speed.", // The days pass faster before your eyes. Moments pass you by, like so many petals on the breeze...
+    "Astral Body": "Refine your body as a spiritual treasure. Increase your lifespan significantly.", // Bodily Refinement - Refine your body as a treasure. Lifespan grows as the red dust washes from your body and spirit.
+    "Temporal Dimension": "Cultivate and nurture time as you would a herb or flower. Increase game speed significantly.", // Temporal cultivation - "Like a herb or flower, time, too, may be nurtured and grown to abundance in its season."
+    "All Seeing Eye": "Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation.", // Qi crystallisation - Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation
+    "Brainwashing": "Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly.", // Spiritual Command - Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly. 
 
-    // Dark Magic - Evil Required
+    // Dark Magic - Evil Required / Demonic Cultivation
     "Dark Influence": "Encompass yourself with formidable power bestowed upon you by evil, allowing you to pick up and absorb any job or skill with ease.",
     "Evil Control": "Tame the raging and growing evil within you, improving evil gain in-between rebirths.",
     "Intimidation": "Learn to emit a devilish aura which strikes extreme fear into other merchants, forcing them to give you heavy discounts.",
@@ -82,7 +82,7 @@ const tooltips = {
     "Time Loop": "Mastery is achieved when 'telling time' becomes 'telling time what to do'.",
     "Evil Incarnate": "You have became the very thing you swore to destroy.",
 
-    // Void Manipulation
+    // Void Manipulation / 
     "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
     "Void Amplification": "You surrender yourself to the Void, making it easier to take control of you.",
     "Mind Release": "In a trance like state, you feel the Void amplifying your thoughts, perception, memories, emotions and personality.",
@@ -91,19 +91,19 @@ const tooltips = {
     "Void Embodiment": "If thou gaze long into an abyss, the abyss will also gaze into thee.",
     "Abyss Manipulation": "Allows you to shape your own reality within the Void itself.",
 
-    // Celestial Powers
+    // Celestial Powers / Immortal Cultivation
     "Cosmic Longevity": "You have seen it all, from the very beginning to the very end.",
     "Cosmic Recollection": "Being able to exist in multiple parallel timelines and manipulating you parallel selves, influencing their lives as you see fit.",
     "Essence Collector": "Exploit the unlimited potential of multiverse energies and collect its resources.",
     "Galactic Command": "Absolute power corrupts absolutely.",
 
-    // Almightiness
+    // Almightiness / ? Manifestation
     "Yin Yang": "Born from chaos when the universe was first created, believed to exist in harmony, balancing evil and good.",
     "Parallel Universe": "Self-contained plane of existence, co-existing with one's own, helping you restore fragments of your forgotten power.",
     "Higher Dimensions": "By possesing the power to partially alter the laws of physics and transceding lower dimensional spaces, your existence becomes never-ending.",
     "Epiphany": "You become one with everything.",
 
-    // Darkness
+    // Darkness / ? Dissolution
     "Dark Prince": "You can increase your intelligence at an alarming rate due to your access to all libraries in the universe.",
     "Dark Ruler": "Ruling the universe allows you to collect more Dark Matter from your subordinates.",
     "Immortal Ruler": "You have only one goal: ruling this universe till infinity.",
