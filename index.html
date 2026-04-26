@@ -252,7 +252,7 @@
 										<div style="color: gray" class="sidebar-element">Affects all XP gain</div>
 									</div>
 									<div id="darkOrbsInfo" class="hidden">
-										<div class="text-caption"><span class="color-dark-orbs">Nether Orbs: </span><span id="darkOrbsDisplay"></span></div>
+										<div class="text-caption"><span class="color-dark-orbs">Dao Fragments: </span><span id="darkOrbsDisplay"></span></div>
 										<div style="color: gray" class="sidebar-element">Used to buy items in the Chaos Essence shop</div>
 									</div>
 									<div id="timeWarping">
@@ -260,7 +260,7 @@
 										<div style="color: gray" class="sidebar-element">Affects game speed</div>
 									</div>
 									<div id="hypercubesInfo">
-										<div class="text-caption"><span class="color-hypercubes">Dao Cubes: </span><span id="hypercubesDisplay"></span></div>
+										<div class="text-caption"><span class="color-hypercubes">Primordial Sparks: </span><span id="hypercubesDisplay"></span></div>
 										<div style="color: gray" class="sidebar-element">for Upper Realm sacrifices</div>
 									</div>
 									<div id="rebirthButton1" class="hidden">
@@ -549,7 +549,7 @@
 												<i style="color: grey">
 													<br>
 													When you step into the Upper Realm, you lose everything earned so far. You begin anew, but eventually become far stronger.
-													<span id="hypercubeCapText">Your Dao Cube cap will increase to <span class="color-hypercubes" id="hypercubeCapDisplay"></span>.</span>
+													<span id="hypercubeCapText">Your Primordial Spark cap will increase to <span class="color-hypercubes" id="hypercubeCapDisplay"></span>.</span>
 													<span id="perkPointsGainText">You will gain <span class="color-perk-points"><span id="perkPointsGainDisplay"></span> Upper Realm perk points</span>.</span>
 												</i>
 												<br>
@@ -572,8 +572,8 @@
 											<div class="text-caption"><span class="color-dark-matter">Chaos Essence: </span><span id="darkMatterShopDisplay"></span></div>
 										</div>
 										<div style="padding-top:2em">
-											<div class="text-caption dark-matter-title">Nether Orb Forge</div>
-											<div style="color:gray; padding-bottom:0.3em">Generates <b id="darkOrbGenerator"></b> <span class="color-dark-orbs">Nether Orb</span> per day</div>
+											<div class="text-caption dark-matter-title">Dao Fragment Forge</div>
+											<div style="color:gray; padding-bottom:0.3em">Generates <b id="darkOrbGenerator"></b> <span class="color-dark-orbs">Dao Fragment</span> per day</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="darkOrbGeneratorCost"></b> <span class="color-dark-matter">Chaos Essence</span></div>
 											<button class="w3-button button" id="darkOrbGeneratorBuyButton" onclick="buyDarkOrbGenerator()">Advance</button>
 										</div>
@@ -584,30 +584,30 @@
 											<button class="w3-button button" id="aMiracleBuyButton" onclick="buyAMiracle()">Advance</button>
 										</div>
 										<div class="text-caption" style="padding-top:4em">
-											<div class="text-caption"><span class="color-dark-orbs">Nether Orbs: </span><span id="darkOrbsShopDisplay"></span></div>
+											<div class="text-caption"><span class="color-dark-orbs">Dao Fragments: </span><span id="darkOrbsShopDisplay"></span></div>
 										</div>
 										<div style="padding-top:2em">
 											<div class="text-caption dark-matter-title">Pact with the Grand Elder</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Reward: Multiply <span style="color: rgb(199, 21, 133);">Dao Academy & Qi Arts</span> XP Gain by x<span id="aDealWithTheChairmanEffect"></span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="aDealWithTheChairmanCost"></b> <span class="color-dark-orbs">Nether Orbs</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="aDealWithTheChairmanCost"></b> <span class="color-dark-orbs">Dao Fragments</span></div>
 											<button class="w3-button button" id="aDealWithTheChairmanBuyButton" onclick="buyADealWithTheChairman()">Advance</button>
 										</div>
 										<div style="padding-top:2em">
 											<div class="text-caption dark-matter-title">Gift from the Heavens</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Reward: Multiply <span class="color-essence">Spirit Essence</span> Gain by x<span id="aGiftFromGodEffect"></span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="aGiftFromGodCost"></b> <span class="color-dark-orbs">Nether Orbs</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="aGiftFromGodCost"></b> <span class="color-dark-orbs">Dao Fragments</span></div>
 											<button class="w3-button button" id="aGiftFromGodBuyButton" onclick="buyAGiftFromGod()">Advance</button>
 										</div>
 										<div style="padding-top:2em">
 											<div class="text-caption dark-matter-title">Heavenly Haste</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Reward: Multiply <span class="color-time-warping">Temporal Dilation</span> by x<span id="gottaBeFastEffect"></span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="gottaBeFastCost"></b> <span class="color-dark-orbs">Nether Orbs</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="gottaBeFastCost"></b> <span class="color-dark-orbs">Dao Fragments</span></div>
 											<button class="w3-button button" id="gottaBeFastBuyButton" onclick="buyGottaBeFast()">Advance</button>
 										</div>
 										<div style="padding-top:2em">
 											<div class="text-caption dark-matter-title">Life coach</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Reward: Multiply <span class="color-income">Income</span> by x<span id="lifeCoachEffect"></span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="lifeCoachCost"></b> <span class="color-dark-orbs">Nether Orbs</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="lifeCoachCost"></b> <span class="color-dark-orbs">Dao Fragments</span></div>
 											<button class="w3-button button" id="lifeCoachBuyButton" onclick="buyLifeCoach()">Advance</button>
 										</div>
 									</div>
@@ -735,61 +735,61 @@
 										</div>
 										<div style="padding-top:1em">
 											<div class="text-caption">Lifespan is now infinite.</div>
-											<div class="text-caption">The more Dao Cubes you have, the more offering opportunities will open up.</div>
+											<div class="text-caption">The more Primordial Sparks you have, the more offering opportunities will open up.</div>
 										</div>
 										<div style="border-bottom: 0.1em solid rgb(24, 210, 217); padding-top: 2em;"></div>
 										<div style="padding-top:1em">
-											<div class="text-caption"><span class="color-hypercubes">Dao Cubes:</span> <span id="hypercubesMetaDisplay"></span></div>
-											<div id="currentHypercubesCap" style="color:red">Current Dao Cube cap: <span id="currentHypercubesCapValue"></span></div>
+											<div class="text-caption"><span class="color-hypercubes">Primordial Sparks:</span> <span id="hypercubesMetaDisplay"></span></div>
+											<div id="currentHypercubesCap" style="color:red">Current Primordial Spark cap: <span id="currentHypercubesCapValue"></span></div>
 											<div id="timeTillNextHypercubePower1" style="color:gray;"></div>
 											<div id="timeTillNextHypercubePower2" style="color:gray;"></div>
 											<div id="timeTillNextHypercubePower3" style="color:gray;"></div>
-											<div style="color:gray;"><span>Total Dao Cube gain bonus:</span> <span id="hypercubesBonusMetaDisplay"></span></div>
+											<div style="color:gray;"><span>Total Primordial Spark gain bonus:</span> <span id="hypercubesBonusMetaDisplay"></span></div>
 										</div>
 										<div style="padding-top:1em">
 											<button id="boostMetaButton" class="perk metaperk perk-boost" onclick="applyBoost()"> Boost </button>
 											<span id="boostCooldownMetaDisplay">00:00</span>
 										</div>
 										<div id="IncreaseHypercubeGainAltar" style="padding-top:2em">
-											<div class="text-caption metaverse-title">Increase Dao Cube Gain</div>
+											<div class="text-caption metaverse-title">Increase Primordial Spark Gain</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current gain: <b id="hypercubeGain"></b> / s</div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="hypercubeGainCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="hypercubeGainCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="hypercubeGainBuyButton" onclick="buyHypercubeGain()">Advance</button>
 										</div>
 										<div id="ReduceBoostCooldownAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Reduce Boost Cooldown</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current cooldown: <b id="reduceBoostCooldown"></b></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="reduceBoostCooldownCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="reduceBoostCooldownCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="reduceBoostCooldownBuyButton" onclick="buyReduceBoostCooldown()">Advance</button>
 										</div>
 										<div id="IncreaseBoostDurationAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Increase Boost Duration</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current duration: <b id="boostDuration"></b></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="boostDurationCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="boostDurationCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="boostDurationBuyButton" onclick="buyBoostDuration()">Advance</button>
 										</div>
 										<div id="EvilAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Gain Potential on new ascension</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current gain: <b id="evilTranGain"></b> <span class="color-evil">Potential</span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="evilTranCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="evilTranCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="evilTranBuyButton" onclick="buyEvilTran()">Advance</button>
 										</div>
 										<div id="EssenceAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Spirit Essence gain multiplier</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current multiplier: x<b id="essenceMultGain"></b> <span class="color-essence">Spirit Essence</span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="essenceMultCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="essenceMultCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="essenceMultButton" onclick="buyEssenceMult()">Advance</button>
 										</div>
 										<div id="ChallengeAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Trials are not reset on heaven-break</div>
 											<div style="color:gray; padding-bottom: 0.3em;"><span style="color: rgb(10, 238, 43)"><b id="challengeAltarState"></b></span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="challengeAltarCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="challengeAltarCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="challengeAltarButton" onclick="buyChallengeAltar()">Advance</button>
 										</div>
 										<div id="DarkMaterAltar" style="padding-top:2em">
 											<div class="text-caption metaverse-title">Chaos Essence gain multiplier</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current multiplier: x<b id="darkMatterMultGain"></b> <span class="color-dark-matter">Chaos Essence</span></div>
-											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="darkMatterMultCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
+											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="darkMatterMultCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="darkMaterMultButton" onclick="buyDarkMaterMult()">Advance</button>
 										</div>
 									</div>

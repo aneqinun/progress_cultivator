@@ -142,7 +142,7 @@ const baseGameSpeed = 4
 const heroIncomeMult = 2.5e18
 
 const permanentUnlocks = ["Quick task display", "Potential points", "Rebirth tab", "Dark Matter", "Dark Matter Skills", "Dark Matter Skills2", "Metaverse", "Metaverse Perks", "Metaverse Perks Button", "Congratulations"]
-const metaverseUnlocks = ["Reduce Boost Cooldown", "Increase Boost Duration", "Increase Hypercube Gain", "Gain evil at new transcension",
+const metaverseUnlocks = ["Reduce Boost Cooldown", "Increase Boost Duration", "Increase Primordial Spark Gain", "Gain evil at new transcension",
     "Essence gain multiplier", "Challenges are not reset", "Dark Matter gain multiplier"]
 
 const jobBaseData = {
@@ -309,10 +309,10 @@ const itemBaseData = {
     "Multiverse Fragment": { name: "Multiverse Fragment", expense: 2e17, effect: 5, description: "Happiness", heromult: 15, heroeffect: 1000000 },
     "Stairway to heaven": { name: "Stairway to heaven", expense: 1e38, effect: 10, description: "Happiness", heromult: 30, heroeffect: 1000000 },
     "Highway to hell": { name: "Highway to hell", expense: 1e42, effect: 10, description: "Potential Gain", heromult: 30, heroeffect: 1000000 },
-    "Tesseract": { name: "Tesseract", expense: 1e48, effect: 1, description: "Hypercube Gain", heromult: 30, heroeffect: 10 },
+    "Tesseract": { name: "Tesseract", expense: 1e48, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 10 },
     "Desintegration": { name: "Desintegration", expense: 1e55, effect: 1, description: "Dark Matter Gain", heromult: 30, heroeffect: 100 },
     "Custom Galaxy": { name: "Custom Galaxy", expense: 1e64, effect: 1, description: "Skill XP", heromult: 30, heroeffect: 1e100 },
-    "Hypersphere": { name: "Hypersphere", expense: 1e91, effect: 1, description: "Hypercube Gain", heromult: 30, heroeffect: 1e50 },
+    "Hypersphere": { name: "Hypersphere", expense: 1e91, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 1e50 },
 }
 
 const requirementsBaseData = {
@@ -551,7 +551,7 @@ const requirementsBaseData = {
 
     // Metaverse Altars
     "Metaverse": new MetaverseRequirement(["#metaverseTabButton"], [{ requirement: 1 }]),
-    "Increase Hypercube Gain": new HypercubeRequirement(["#IncreaseHypercubeGainAltar"], [{ requirement: 1 }]),
+    "Increase Primordial Spark Gain": new HypercubeRequirement(["#IncreaseHypercubeGainAltar"], [{ requirement: 1 }]),
     "Reduce Boost Cooldown": new HypercubeRequirement(["#ReduceBoostCooldownAltar"], [{ requirement: 500 }]),
     "Increase Boost Duration": new HypercubeRequirement(["#IncreaseBoostDurationAltar"], [{ requirement: 2500 }]),
     "Gain evil at new transcension": new HypercubeRequirement(["#EvilAltar"], [{ requirement: 50000000 }]),
@@ -725,7 +725,7 @@ const xianxiaDisplayNames = {
     "Multiverse Fragment": "Realm Fragment",
     "Stairway to heaven": "Stairway to Immortality",
     "Highway to hell": "Road to Demon Domain",
-    "Tesseract": "Fourfold Dao Cube",
+    "Tesseract": "Fourfold Primordial Spark",
     "Desintegration": "Annihilation Art",
     "Custom Galaxy": "Personal Star Domain",
     "Hypersphere": "Grand Dao Sphere",
@@ -759,7 +759,7 @@ const xianxiaDisplayNames = {
     "Galactic Emperor": "Star Emperor",
     "Dark Matter Harvester": "Chaos Essence Harvester",
     "A Dark Era": "Age of Chaos Essence",
-    "Dark Orbiter": "Nether Orb Weaver",
+    "Dark Orbiter": "Dao Fragment Weaver",
     "Dark Matter Mining": "Chaos Essence Mining",
     "The new gold": "Spirit Essence Standard",
     "The Devil inside you": "Inner Heart Demon",
@@ -854,7 +854,7 @@ function getDisplayResourceName(resourceName) {
         evil: "Potential",
         essence: "Spirit Essence",
         "Dark Matter": "Chaos Essence",
-        hypercubes: "Dao Cubes",
+        hypercubes: "Primordial Sparks",
     }
     return map[resourceName] || resourceName
 }

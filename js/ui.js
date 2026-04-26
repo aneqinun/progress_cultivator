@@ -148,7 +148,7 @@ function renderSideBar() {
         rebirth5button.classList.add("color-hypercubes")
     }
     else {
-        rebirth5button.textContent = "Unlock Dao Cubes"
+        rebirth5button.textContent = "Unlock Primordial Sparks"
     }
 
     document.getElementById("rebirthButton5").hidden = getHypercubeCap() == Infinity && gameData.essence < 1e90
@@ -565,7 +565,7 @@ function renderMetaverse() {
         const elem = document.getElementById("timeTillNextHypercubePower" + (i + 1))
         const nextH = getNextPowerOfNumber(gameData.hypercubes * Math.pow(10, i))
         elem.textContent =
-            format(nextH) + " Dao Cubes in " + formatTime(getTimeTillNextHypercubePower(i))
+            format(nextH) + " Primordial Sparks in " + formatTime(getTimeTillNextHypercubePower(i))
         if (i>0)
             elem.hidden = nextH > getHypercubeCap() || gameData.perks_points == 0 || gameData.hypercubes < 1e20 * Math.pow(10, i)
         else

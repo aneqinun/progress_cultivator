@@ -30,7 +30,7 @@ const milestoneBaseData = {
     "Galactic Emperor": { name: "Galactic Emperor", expense: 1e15, tier: 25, description: "Passively gain a small amount of Spirit Essence" },
     "Dark Matter Harvester": { name: "Dark Matter Harvester", expense: 1e17, tier: 26, description: "Multiply Chaos Essence gain by 10x" },
     "A Dark Era": { name: "A Dark Era", expense: 1e20, tier: 27, description: "Unlocks Chaos Essence Arts" },
-    "Dark Orbiter": { name: "Dark Orbiter", expense: 1e22, tier: 28, description: "Multiply Nether Orb gain by 1e10x, keep four Potential perks always" },
+    "Dark Orbiter": { name: "Dark Orbiter", expense: 1e22, tier: 28, description: "Multiply Dao Fragment gain by 1e10x, keep four Potential perks always" },
     "Dark Matter Mining": { name: "Dark Matter Mining", expense: 1e25, tier: 29, description: "Multiply Chaos Essence gain by 3x" },
     "The new gold": { name: "The new gold", expense: 1e30, tier: 30, description: "Multiply Spirit Essence gain by 1000x" },
     "The Devil inside you": { name: "The Devil inside you", expense: 1e35, tier: 31, description: "Multiply Potential gain by 1e15x" },

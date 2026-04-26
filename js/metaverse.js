@@ -192,11 +192,11 @@ const perks_cost = {
 }
 
 const perk_names = {
-    auto_dark_orb: "Auto buy nether orb generators",
+    auto_dark_orb: "Auto buy dao fragment generators",
     auto_dark_shop: "Auto buy chaos shop items",
     auto_boost: "Auto burst",
     instant_evil: "Instant Potential",
-    hypercube_boost: "Dao Cube Boost",
+    hypercube_boost: "Primordial Spark Boost",
     instant_essence: "Instant Spirit Essence",
     save_challenges: "Preserve trials",
     instant_dark_matter: "Instant chaos essence",
