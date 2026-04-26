@@ -640,43 +640,32 @@ const xianxiaDisplayNames = {
     "Temporal Dimension": "Temporal Cultivation", // Game speed
     "All Seeing Eye": "Qi Crystallisation", // Increase Earthly cultivation wage
     "Brainwashing": "Spiritual Command", // Reduced expenses
-    // Dark magic -> Conceptual Arts // todo
-    "Dark Influence": "Bloody Inspiration", // increase job and skill XP - Find your inspiration in endless bloodshed. Increase job and skill XP gain.
-    "Evil Control": "Ghost Enslavement", // increases evil gain - Enslave the ghosts of innocents to increase your own power. Increases Evil gain.
-    "Intimidation": "Killing Intent", // reduce item expenses - utilise your killing intent to intimidate those with things you want.
-    "Demon Training": "Gu Host", // increase job and skill XP - Host innumerable Gu in your body, taking advantage of their spiritual and vital energies. Increase job and skill XP. 
-    "Blood Meditation": "Heart-Demon Nourishment", // evil gain - Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Evil gain. 
-    "Demon's Wealth": "Karmic Theft", // increase job wage - steal karma from deserving people for your own benefit
-    "Dark Knowledge": "Bloodline Plundering", // increase job xp - Harvest rare bloodlines from helpless mortals and bolster your own talent. Increase job xp. 
-    "Void Influence": "Memory Devouring", // increase job and skill XP - Devour the thoughts from talented cultivators and skillful mortals alike. Increase job and skill xp.
-    "Time Loop": "Era Sacrifice", // increase game speed - Sacrifice the youth of those around you to speed the passing of time. Increase game speed.
-    "Evil Incarnate": "Parasitic Link", // increase skill XP - Offload the psychic strain of learning to unwilling victims across an enormous geographic scale. Increase skill XP.
-    // Void manipulation -> Conceptual magics -  // todo
-    "Absolute Wish": "Heaven-Defying Vow", // increase evil gain - Channel Misama - Funnel the evil thoughts of others into yourself as a potent fuel. Increase Evil gain.  
-    "Void Amplification": "Void Amplification Art", // increase void job xp - Attune your mind to the nothingness of the void; apathy encroaches upon your thoughts. Increase void job XP. 
-    "Mind Release": "Mind Liberation", // increase happiness - 
-    "Ceaseless Abyss": "Endless Abyss", // increase lifespan
-    "Void Symbiosis": "Void Coalescence", // increase xp gain for skills
-    "Void Embodiment": "Void Incarnation", // increase evil gain
-    "Abyss Manipulation": "Abyss Domain Shaping", // reduce item expenses
-
-    // "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
-    // "Void Amplification": "You surrender yourself to the Void, making it easier to take control of you.",
-    // "Mind Release": "In a trance like state, you feel the Void amplifying your thoughts, perception, memories, emotions and personality.",
-    // "Ceaseless Abyss": "Never ending torture, you swore to serve the Void for the rest of your existence.",
-    // "Void Symbiosis": "A symbiotic relationship that helps you become one with the Void.",
-    // "Void Embodiment": "If thou gaze long into an abyss, the abyss will also gaze into thee.",
-    // "Abyss Manipulation": "Allows you to shape your own reality within the Void itself.",
-
-
-
+    // Dark magic -> Dao Comprehension // todo
+    "Dark Influence": "Inspiration from the Dao", // increase job and skill XP - You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.
+    "Evil Control": "Domain of Authority", // increases potential gain - You develop your daoist domain; the natural energies of heaven and earth begin to respect your new claims. Increase Potential gain.
+    "Intimidation": "Profound Recognition", // reduce item expenses - At a glance you begin to understand the natural energies and qualities of goods. Reduce item expenses.  
+    "Demon Training": "Path of Least Resistance", // increase job and skill XP - Where you walk, the path was already starting to clear. The Simple Way starts to precede your steps. Increase job and skill XP. 
+    "Blood Meditation": "Great Destiny", // potential gain - When you close your eyes you feel as though you have a golden path before you, growing ever brighter. Greatness is no longer a question for you. Increase Potential gain.   
+    "Demon's Wealth": "Karmic Significance", // increase job wage - Your karmic weight grows by the day; significant events start naturally to seek you out. Increase job wage. 
+    "Dark Knowledge": "Heavenly Talent", // increase job xp - They begin to call you 'blessed with talent', though you have never been before. Things start to come easier to you, as though your instincts already know the answers.
+    "Void Influence": "Enlightened Tempo", // increase job and skill XP - Unconsciously, your every breath and movement becomes more in tune with the rhythm of the natural dao. Increase job and skill XP.
+    "Time Loop": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
+    "Evil Incarnate": "Natural Formations", // increase skill XP - The world seems to sway in your presence; the wind produces celestial tones and the waters ripple in mysterious patterns. Whatever your focus, natural formations form to enhance your efforts. Increase skill XP.
+    // Void manipulation -> Dao manipulation -  // todo
+    "Absolute Wish": "Reality Dictation Technique", // increase potential gain - Write your desires using the pen of qi and the ink of enlightnment; reality itself begins to conform. Increase potential gain.
+    "Void Amplification": "Conceptual Attunement Art", // increase dao comprehension job xp - Attune your mind to the fragments of an infinite concept. Impossible ideas become intelligable. Increase dao comprehension job XP.
+    "Mind Release": "Light-Heart Sutra", // increase happiness - You learn to accept your pain, and then let it go. Surrendering your suffering makes your soul lighter. Increases happiness.
+    "Ceaseless Abyss": "Mortal Detachment Art", // increase lifespan - You let go of mortal attachments and in so doing scour the footholds of time from your being. Increases lifespan.
+    "Void Symbiosis": "Recollection of Past Lives", // increase xp gain for skills - Memories of your past lives become clear. What you once knew, you being to know again. Increase XP gain for skills.
+    "Void Embodiment": "Akusala Karmic-Severing", // increase potential gain - You sever away your bad karma from previous lives. Your future selves will be ever more prosperous. Increases Potential gain. 
+    "Abyss Manipulation": "The Middle Way", // reduce item expenses - Your world consists of no more or less than what is necessary. All else is dust. Reduce item expenses. 
     // Celestial powers -> Immortal techniques -  // todo
-    "Cosmic Longevity": "Eternal Longevity", // increases lifespan
-    "Cosmic Recollection": "Karmic Recollection", // increases how much max level is preserved/scaled on rebirth and milestone auto-max logic
-    "Essence Collector": "Spirit Essence Gathering", // increase essence gain
-    "Galactic Command": "Star Domain Command", // reduce item expenses
+    "Cosmic Longevity": "Epoch-Spanning Lifeline", // Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan
+    "Cosmic Recollection": "Wheel-Crossing Permanence", // Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved/scaled on rebirth and milestone auto-max logic.
+    "Essence Collector": "Spiritual Nexus", // You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain
+    "Galactic Command": "Cessation of Excess", // What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.
     // Almightiness -> ? -  // todo
-    "Yin Yang": "Yin-Yang Harmony", // increase evil gain and increase essence gain
+    "Yin Yang": "Yin-Yang Harmony", // increase potential gain and increase essence gain
     "Parallel Universe": "Parallel Realms", // increase xp for jobs and skills
     "Higher Dimensions": "Higher Heavens", // increase lifespan
     "Epiphany": "Dao Enlightenment", // increase xp for galactic council jobs
@@ -790,19 +779,19 @@ const xianxiaDisplayNames = {
 
 const xianxiaCategoryNames = {
     // Job categories
-    "Common work": "Mortal commoner",
-    "Military": "Mortal military",
-    "The Arcane Association": "Earthly cultivation",
-    "The Void": "Demonic cultivation",
-    "Galactic Council": "Immortal cultivation",
-    "Metaverse Guards": "Dao embodiment",
+    "Common work": "Mortal Commoner",
+    "Military": "Mortal Military",
+    "The Arcane Association": "Earthly Cultivation",
+    "The Void": "Dao Comprehension",
+    "Galactic Council": "Immortal Cultivation",
+    "Metaverse Guards": "Dao Embodiment",
     // Skill categories
     "Fundamentals": "Fundamentals",
-    "Combat": "Martial arts",
-    "Magic": "Spiritual techniques",
+    "Combat": "Martial Arts",
+    "Magic": "Spiritual Techniques",
     "Dark Magic": "Conceptual Arts",
     "Void Manipulation": "Dao Channeling", // conceptual magics?
-    "Celestial Powers": "Immortal techniques",
+    "Celestial Powers": "Immortal Techniques",
     "Almightiness": "Manifestation",
     "Darkness": "Dissolution", // theme is extraction of essence from subordinates
     // Items
@@ -811,7 +800,7 @@ const xianxiaCategoryNames = {
     // Milestones
     "Essence Milestones": "Spirit Milestones",
     "Heroic Milestones": "Ascendant Milestones",
-    "Dark Milestones": "Demonic Milestones",
+    "Dark Milestones": "Dao Milestones",
     "Metaverse Milestones": "Upper Realm Milestones",
 }
 
