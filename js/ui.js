@@ -396,7 +396,7 @@ function renderRebirth() {
 }
 
 function renderEvilPerks() {
-    document.getElementById("eppInfo").textContent = (gameData.essence > 0) ? "Demonic Qi and Spirit Essence" : "Demonic Qi"
+    document.getElementById("eppInfo").textContent = (gameData.essence > 0) ? "Potential and Spirit Essence" : "Potential"
     document.getElementById("evilperksDisplay").textContent = format(gameData.evil_perks_points)
     document.getElementById("evilperksGainDisplay").textContent = format(getEvilPerksGeneration() * 365)
 
