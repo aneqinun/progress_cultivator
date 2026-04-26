@@ -670,12 +670,12 @@ const xianxiaDisplayNames = {
     "Higher Dimensions": "World-Dreams", // When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan
     "Epiphany": "Meditations on the Heavenly", // What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.
     // Darkness -> ? -  // todo
-    "Dark Prince": "Demonic Prince", // increase skill xp
-    "Dark Ruler": "Demonic Sovereign", // increase dark matter / chaos essence gain
-    "Immortal Ruler": "Immortal Sovereign", // increase xp for jobs and skills
-    "Dark Magician": "Demonic Arcanist", // increase essence gain
-    "Universal Ruler": "All-Realm Sovereign", // increase xp for magic-category skills (AKA spiritual techniques)
-    "Blinded By Darkness": "Swallowed by Darkness", // increase xp for jobs and skills
+    "Dark Prince": "Heaven-Listening Dao Insight", // Hear the subtle laws in all things and learn faster. Increase skill XP.
+    "Dark Ruler": "World-Resonant Dao Mandate", // Align with cosmic currents and draw in more Chaos Essence. Increase Chaos Essence gain.
+    "Immortal Ruler": "Undying Dao Heart", // Temper an unshakable Dao heart that uplifts every path. Increase job and skill XP.
+    "Dark Magician": "Grand Law Weaving", // Weave higher laws into form and refine more Spirit Essence. Increase Spirit Essence gain.
+    "Universal Ruler": "Sovereign of Ten Thousand Daos", // Command manifold Dao principles to advance spiritual techniques. Increase Spiritual Technique XP.
+    "Blinded By Darkness": "Dao Incarnation", // Become an avatar of Dao itself and transcend mortal limits. Increase job and skill XP.
     //
     "Homeless": "Ragged Courtyard",
     "Tent": "Wanderer's Tent",

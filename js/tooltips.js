@@ -104,12 +104,12 @@ const tooltips = {
     "Epiphany": "You become one with everything.",
 
     // Darkness / ? Dissolution
-    "Dark Prince": "You can increase your intelligence at an alarming rate due to your access to all libraries in the universe.",
-    "Dark Ruler": "Ruling the universe allows you to collect more Dark Matter from your subordinates.",
-    "Immortal Ruler": "You have only one goal: ruling this universe till infinity.",
-    "Dark Magician": "By performing forbidden magic on your subordinates, you can extract every last drop of Essence from them.",
-    "Universal Ruler": "No one dares to challenge your rule when ruling with an iron fist.",
-    "Blinded By Darkness": "Blinded by darkness, you can no longer control yourself. You start to destroy everything in existence to calm yourself.",
+    "Dark Prince": "Perceive faint traces of the Dao in all things. Increase skill XP.",
+    "Dark Ruler": "Harmonize with chaotic currents of existence. Increase Chaos Essence gain.",
+    "Immortal Ruler": "Unify body, mind, and spirit with a single Dao-heart. Increase all XP.",
+    "Dark Magician": "Weave natural laws to condense spiritual substance. Increase Spirit Essence gain.",
+    "Universal Ruler": "Command your Dao domain with flawless control. Increase Spiritual Technique XP.",
+    "Blinded By Darkness": "Discard all distractions and become one with the Dao. Greatly increase all XP.",
 
     // Properties
     "Homeless": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",
