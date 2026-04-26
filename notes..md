@@ -68,3 +68,15 @@ Dissolution
 
 // To-do:
 Rename the 'Evil' resource to 'Potential' to make it less moralistic
+
+
+Resources:
+
+coins -> Coins (main early currency)
+evil -> Potential
+evil_perks_points -> Potential perk points
+essence -> Spirit Essence
+dark_matter -> Chaos Essence
+dark_orbs -> Dao Fragment
+hypercubes -> Primordial Spark
+perks_points -> Upper Realm perk points

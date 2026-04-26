@@ -671,7 +671,7 @@ const xianxiaDisplayNames = {
     "Epiphany": "Meditations on the Heavenly", // What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.
     // Darkness -> ? -  // todo
     "Dark Prince": "Demonic Prince", // increase skill xp
-    "Dark Ruler": "Demonic Sovereign", // increase dark matter gain
+    "Dark Ruler": "Demonic Sovereign", // increase dark matter / chaos essence gain
     "Immortal Ruler": "Immortal Sovereign", // increase xp for jobs and skills
     "Dark Magician": "Demonic Arcanist", // increase essence gain
     "Universal Ruler": "All-Realm Sovereign", // increase xp for magic-category skills (AKA spiritual techniques)
