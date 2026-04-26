@@ -72,10 +72,10 @@ const tooltips = {
 
     // Dark Magic - Evil Required / Demonic Cultivation
     "Dark Influence": "Find your inspiration in endless bloodshed. Increase job and skill XP gain..",
-    "Evil Control": "Enslave the ghosts of innocents to increase your own power. Increase Evil gain.",
+    "Evil Control": "Enslave the ghosts of innocents to increase your own power. Increase Potential gain.",
     "Intimidation": "Utilise your killing intent to intimidate those with things you want. Reduce item expenses.",
     "Demon Training": "Host innumerable devilish Gu in your body, taking advantage of their spiritual and vital energies. Increase job and skill XP.",
-    "Blood Meditation": "Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Evil gain.",
+    "Blood Meditation": "Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Potential gain.",
     "Demon's Wealth": "Steal karma from deserving people for your own benefit. Increase job wages.",
     "Dark Knowledge": "Harvest rare bloodlines from helpless mortals and bolster your own talent. Increase job xp.",
     "Void Influence": "Devour the thoughts from talented cultivators and skillful mortals alike. Increase job and skill xp.",
@@ -194,14 +194,14 @@ const tooltips = {
     "A new beginning": "Unlocks the ability to reset for Dark Matter",
 
     // Dark Milestones
-    "Mind Control": "Control the Devil by making him give you even more Evil per second",
+    "Mind Control": "Control the Devil by making him give you even more Potential per second",
     "Galactic Emperor": "Commander of the Galactic Council grants you the privilege to automatically collect Essence from the nearby planets",
     "Dark Matter Harvester": "Harvest the universe to extract even more Dark Matter from it.",
     "A Dark Era": "Start a new era of Dark Matter.",
     "Dark Orbiter": "Using some wizardry you can improve your Dark Orb generators massively.",
     "Dark Matter Mining": "Mine a huge amount of Dark Matter from each planet you visit.",
     "The new gold": "Essence might become the new gold due to mass adoption.",
-    "The Devil inside you": "Shady deals with the Devil grant you a huge Evil bonus.",
+    "The Devil inside you": "Shady deals with the Devil grant you a huge Potential bonus.",
     "Strange Magic": "A strange wizard offers you a few secret spells which might be useful.",
     "Life is valueable": "Time is limited... Even as the ruler of the universe.",
     "Speed speed speed": "You can affect the speed of the universe with your gigantic amount of Dark Matter.",

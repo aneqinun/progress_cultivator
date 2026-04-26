@@ -215,10 +215,10 @@ const skillBaseData = {
 
     // Dark magic / Conceptual arts
     "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
-    "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Evil Gain" },
+    "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Potential Gain" },
     "Intimidation": { name: "Intimidation", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
     "Demon Training": { name: "Demon Training", maxXp: 100, heroxp: 174, effect: 0.01, description: "All XP" },
-    "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Evil Gain" },
+    "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Potential Gain" },
     "Demon's Wealth": { name: "Demon's Wealth", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
     "Dark Knowledge": { name: "Dark Knowledge", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
     "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
@@ -226,12 +226,12 @@ const skillBaseData = {
     "Evil Incarnate": { name: "Evil Incarnate", maxXp: 100, heroxp: 208, effect: 0.01, description: "Skill XP" },
     
     // Void manipulation / ?
-    "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Evil Gain" },
+    "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Potential Gain" },
     "Void Amplification": { name: "Void Amplification", maxXp: 100, heroxp: 251, effect: 0.01, description: "The Void XP" },
     "Mind Release": { name: "Mind Release", maxXp: 100, heroxp: 251, effect: 0.0006, description: "Increased Happiness" },
     "Ceaseless Abyss": { name: "Ceaseless Abyss", maxXp: 100, heroxp: 251, effect: 0.000585, description: "Longer Lifespan" },
     "Void Symbiosis": { name: "Void Symbiosis", maxXp: 100, heroxp: 253, effect: 0.0015, description: "Skill XP" },
-    "Void Embodiment": { name: "Void Embodiment", maxXp: 100, heroxp: 258, effect: 0.0025, description: "Evil Gain" },
+    "Void Embodiment": { name: "Void Embodiment", maxXp: 100, heroxp: 258, effect: 0.0025, description: "Potential Gain" },
     "Abyss Manipulation": { name: "Abyss Manipulation", maxXp: 100, heroxp: 266, effect: -0.01, description: "Reduced Expenses" },
 
     // ? / ?
@@ -241,7 +241,7 @@ const skillBaseData = {
     "Galactic Command": { name: "Galactic Command", maxXp: 100, heroxp: 290, effect: -0.01, description: "Reduced Expenses" },
 
     // ? / ?
-    "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Evil Gain" },
+    "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Potential Gain" },
     "Parallel Universe": { name: "Parallel Universe", maxXp: 100, heroxp: 300, effect: 0.02, description: "All XP" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
@@ -308,7 +308,7 @@ const itemBaseData = {
     "Universe Fragment": { name: "Universe Fragment", expense: 1.85e16, effect: 3, description: "Skill XP", heromult: 13, heroeffect: 1000000 },
     "Multiverse Fragment": { name: "Multiverse Fragment", expense: 2e17, effect: 5, description: "Happiness", heromult: 15, heroeffect: 1000000 },
     "Stairway to heaven": { name: "Stairway to heaven", expense: 1e38, effect: 10, description: "Happiness", heromult: 30, heroeffect: 1000000 },
-    "Highway to hell": { name: "Highway to hell", expense: 1e42, effect: 10, description: "Evil Gain", heromult: 30, heroeffect: 1000000 },
+    "Highway to hell": { name: "Highway to hell", expense: 1e42, effect: 10, description: "Potential Gain", heromult: 30, heroeffect: 1000000 },
     "Tesseract": { name: "Tesseract", expense: 1e48, effect: 1, description: "Hypercube Gain", heromult: 30, heroeffect: 10 },
     "Desintegration": { name: "Desintegration", expense: 1e55, effect: 1, description: "Dark Matter Gain", heromult: 30, heroeffect: 100 },
     "Custom Galaxy": { name: "Custom Galaxy", expense: 1e64, effect: 1, description: "Skill XP", heromult: 30, heroeffect: 1e100 },
