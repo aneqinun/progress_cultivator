@@ -603,7 +603,7 @@ const xianxiaDisplayNames = {
     "Chronomancer": "Dao seeking",
     "Chairman": "Spirit integration",
     "Imperator": "Tribulation crossing",
-    // Dao cultivation
+    // Dao comprehension
     "Corrupted": "Intent Scholar",
     "Void Slave": "Intent Practicioner",
     "Void Fiend": "Seeker of Law",
