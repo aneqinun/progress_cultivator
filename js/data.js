@@ -862,7 +862,7 @@ const xianxiaChallengeTitles = {
 
 function getDisplayResourceName(resourceName) {
     const map = {
-        evil: "Demonic Qi",
+        evil: "Potential",
         essence: "Spirit Essence",
         "Dark Matter": "Chaos Essence",
         hypercubes: "Dao Cubes",

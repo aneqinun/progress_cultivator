@@ -168,7 +168,7 @@
 											<div class="sidebarChallengeReward rich_and_the_poor hidden"><span class="color-income">Income</span> x<span id="sidebarCurrentChallengeBuff2"></span> / x<span id="sidebarChallengeBuff2"></span></div>
 											<div class="sidebarChallengeReward time_does_not_fly hidden"><span class="color-time-warping">Temporal Dilation</span> x<span id="sidebarCurrentChallengeBuff3"></span> / x<span id="sidebarChallengeBuff3"></span></div>
 											<div class="sidebarChallengeReward dance_with_the_devil hidden"><span class="color-essence">Spirit Essence</span> x<span id="sidebarCurrentChallengeBuff4"></span> / x<span id="sidebarChallengeBuff4"></span></div>
-											<div class="sidebarChallengeReward legends_never_die hidden"><span class="color-evil">Demonic Qi</span> x<span id="sidebarCurrentChallengeBuff5"></span> / x<span id="sidebarChallengeBuff5"></span></div>
+											<div class="sidebarChallengeReward legends_never_die hidden"><span class="color-evil">Potential</span> x<span id="sidebarCurrentChallengeBuff5"></span> / x<span id="sidebarChallengeBuff5"></span></div>
 											<div class="sidebarChallengeReward the_darkest_time hidden"><span class="color-dark-matter">Chaos Essence</span> x<span id="sidebarCurrentChallengeBuff6"></span> / x<span id="sidebarChallengeBuff6"></span></div>
 										</div>
 									</div>
@@ -240,7 +240,7 @@
 									<div class="text-caption" style="padding-top: 0.2em"><span class="color-happiness">Happiness: </span><span id="happinessDisplay"></span></div>
 									<div style="color: gray" class="sidebar-element">Affects all XP gain</div>
 									<div id="evilInfo" class="hidden">
-										<div class="text-caption"><span class="color-evil">Demonic Qi: </span><span id="evilDisplay"></span></div>
+										<div class="text-caption"><span class="color-evil">Potential: </span><span id="evilDisplay"></span></div>
 										<div style="color: gray" class="sidebar-element">Affects Demonic Arts XP gain</div>
 									</div>
 									<div id="essenceInfo" class="hidden">
@@ -267,7 +267,7 @@
 										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100%" onClick="rebirthOne()">Open the heavenly eye</button>
 									</div>
 									<div id="rebirthButton2" class="hidden">
-										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthTwo()">Awaken Demonic Qi: <span class="color-evil" id="evilGainButtonDisplay"></span></button>
+										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthTwo()">Awaken Potential: <span class="color-evil" id="evilGainButtonDisplay"></span></button>
 									</div>
 									<div id="rebirthButton3" class="hidden">
 										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthThree()">Ascend realm: <span class="color-essence" id="essenceGainButtonDisplay"></span></button>
@@ -320,7 +320,7 @@
 												</div>
 												<div class="evilperkItem">
 													<button id="evilperk2" class="perk evilperk" onclick="buyEvilPerk(2)">
-														<div>Reduce Demonic Qi age requirement by 12.5 years (<span id="evilReduceCount"></span> times)</div>
+														<div>Reduce Potential age requirement by 12.5 years (<span id="evilReduceCount"></span> times)</div>
 														<div>Current age requirement: <span id="evilReq"></span> years</div>
 														<div>Cost: <span id="evilperkCost2">1</span> Demonic Perk Points</div>
 													</button>
@@ -370,7 +370,7 @@
 											<div class="currentChallengeReward rich_and_the_poor hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-income">Income</span> by x<span id="currentChallengeBuff2"></span></div>
 											<div class="currentChallengeReward time_does_not_fly hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-time-warping">Temporal Dilation</span> by x<span id="currentChallengeBuff3"></span></div>
 											<div class="currentChallengeReward dance_with_the_devil hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="currentChallengeBuff4"></span></div>
-											<div class="currentChallengeReward legends_never_die hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-evil">Demonic Qi</span> Gain by x<span id="currentChallengeBuff5"></span></div>
+											<div class="currentChallengeReward legends_never_die hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="currentChallengeBuff5"></span></div>
 											<div class="currentChallengeReward the_darkest_time hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-dark-matter">Chaos Essence</span> Gain by x<span id="currentChallengeBuff6"></span></div>
 										</div>
 										<div id="anUnhappyLifeChallenge" style="padding-top:2em">
@@ -404,7 +404,7 @@
 										<div id="danceWithTheDevilChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">4. Dance with the Inner Demon</div>
 											<div style="color: gray; padding-bottom: 0.3em">Reduces Demonic Arts and Supreme Dao XP effect enormously, max level reduces XP gain, and happiness is reduced by ^0.075</div>
-											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal4">5.8k</span> <span class="color-evil">Demonic Qi</span> Gain</div>
+											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal4">5.8k</span> <span class="color-evil">Potential</span> Gain</div>
 											<div id="challengeReward4" class="reward">Blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="challengeEssenceGainBuff">1</span></div>
 											<button id="challengeButton4" class="w3-button button" onclick="enterChallenge('dance_with_the_devil')">Enter Trial</button>
 										</div>
@@ -412,7 +412,7 @@
 											<div class="text-caption challenge-title">5. Legends Never Perish</div>
 											<div style="color: gray; padding-bottom: 0.3em">Reduces your lifespan by ^0.72, temporal dilation by ^0.75, happiness does nothing, and Demonic Arts XP effect is always 1x. <span id="challenge5MetaverseLifespanDebuff">The infinite lifespan buff from the Upper Realm is disabled.</span></div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal5">Sect Grand Elder lvl 1227</span></div>
-											<div id="challengeReward5" class="reward">Blessing: Multiplies <span class="color-evil">Demonic Qi</span> Gain by x<span id="challengeEvilGainBuff">1</span></div>
+											<div id="challengeReward5" class="reward">Blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="challengeEvilGainBuff">1</span></div>
 											<button id="challengeButton5" class="w3-button button" onclick="enterChallenge('legends_never_die')">Enter Trial</button>
 										</div>
 										<div id="theDarkestTimeChallenge" style="padding-top:2em">
@@ -478,12 +478,12 @@
 													</span>
 												</div>
 												<i class="color-evil">
-													If you awaken Demonic Qi, all levels, coins, and max levels are reset.
+													If you awaken Potential, all levels, coins, and max levels are reset.
 													You are reborn as a blank slate. In return, you unlock a new skill path and gain
-													<b><span id="evilGainDisplay"></span> Demonic Qi</b>, which will shape all future lives.
+													<b><span id="evilGainDisplay"></span> Potential</b>, which will shape all future lives.
 												</i>
 												<br>
-												<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em " onClick="rebirthTwo()">Awaken Demonic Qi</button>
+												<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em " onClick="rebirthTwo()">Awaken Potential</button>
 												<br>
 											</li>
 											<li id="rebirthNote4" class="hidden">
@@ -510,7 +510,7 @@
 													You have unlocked <b>"Upper Realm Council"</b> jobs along with <b>"Celestial Dao"</b> skills.
 													<i style="color: grey">
 														<br>
-														If you choose to <b>ascend realm</b>, you are reborn again, losing all coins, <b>Demonic Qi</b>, and current levels.
+														If you choose to <b>ascend realm</b>, you are reborn again, losing all coins, <b>Potential</b>, and current levels.
 														Your max levels are preserved and multiplied by the effect from <b>Karmic Recollection</b>, and you gain
 														<i class="color-essence">
 															<b><span id="essenceGainDisplay"></span> Spirit Essence</b>,
@@ -533,7 +533,7 @@
 												</i>
 												<i style="color: grey">
 													<br>
-													If you choose to <b>break the heavens</b>, all levels, coins, max levels, Demonic Qi, and <b>Spirit Essence</b> reset. You are reborn in a new world, with no memory of milestones or trials from former selves. In exchange, you unlock a third skill path and gain
+													If you choose to <b>break the heavens</b>, all levels, coins, max levels, Potential, and <b>Spirit Essence</b> reset. You are reborn in a new world, with no memory of milestones or trials from former selves. In exchange, you unlock a third skill path and gain
 													<i class="color-dark-matter">
 														<b><span id="darkMatterGainDisplay"></span> Chaos Essence</b>,
 													</i>
@@ -629,7 +629,7 @@
 												<button id="speedIsLife1" class="w3-button button" onclick="buySpeedOfLife(1)">Choose</button> -
 												Multiply <span class="color-time-warping">Temporal Dilation</span> by <b>3x</b><span class="negative-effect">
 													,
-													but divide <span class="color-evil">Demonic Qi</span> gain by <b>2x</b>
+													but divide <span class="color-evil">Potential</span> gain by <b>2x</b>
 												</span>
 											</div>
 											<div class="darkMatterSkillOR" style="padding: 0.6em">OR</div>
@@ -654,7 +654,7 @@
 											<div class="darkMatterSkillOR" style="padding: 0.6em">OR</div>
 											<div style="color:gray; padding-bottom:0.3em">
 												<button id="yourGreatestDebt2" class="w3-button button" onclick="buyYourGreatestDebt(2)">Choose</button> -
-												Multiply <span class="color-evil">Demonic Qi gain</span> by <b>100x</b><span class="negative-effect">
+												Multiply <span class="color-evil">Potential gain</span> by <b>100x</b><span class="negative-effect">
 													,
 													but divide <span class="color-income">Income</span> by <b>2x</b>
 												</span>
@@ -667,7 +667,7 @@
 												<button id="essenceCollector1" class="w3-button button" onclick="buyEssenceCollector(1)">Choose</button> -
 												Multiply <span class="color-essence">Spirit Essence</span> gain by <b>500x</b><span class="negative-effect">
 													,
-													but divide <span class="color-evil">Demonic Qi</span> gain by <b>2x</b>
+													but divide <span class="color-evil">Potential</span> gain by <b>2x</b>
 												</span>
 											</div>
 											<div class="darkMatterSkillOR" style="padding: 0.6em">OR</div>
@@ -769,8 +769,8 @@
 											<button class="w3-button button" id="boostDurationBuyButton" onclick="buyBoostDuration()">Advance</button>
 										</div>
 										<div id="EvilAltar" style="padding-top:2em">
-											<div class="text-caption metaverse-title">Gain Demonic Qi on new ascension</div>
-											<div style="color:gray; padding-bottom: 0.3em;">Current gain: <b id="evilTranGain"></b> <span class="color-evil">Demonic Qi</span></div>
+											<div class="text-caption metaverse-title">Gain Potential on new ascension</div>
+											<div style="color:gray; padding-bottom: 0.3em;">Current gain: <b id="evilTranGain"></b> <span class="color-evil">Potential</span></div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="evilTranCost"></b> <span class="color-hypercubes">Dao Cubes</span></div>
 											<button class="w3-button button" id="evilTranBuyButton" onclick="buyEvilTran()">Advance</button>
 										</div>
@@ -904,7 +904,7 @@
 													<div>Arrow Keys - Menu navigation</div>
 													<div>Spacebar - Pause</div>
 													<div id="key1" class="hidden">q - Open the Heavenly Eye</div>
-													<div id="key2" class="hidden">e - Awaken Demonic Qi</div>
+													<div id="key2" class="hidden">e - Awaken Potential</div>
 													<div id="key3" class="hidden">t - Ascend realm</div>
 													<div id="key4" class="hidden">u - Break the heavens</div>
 													<div id="key5" class="hidden">g - Enter Upper Realm</div>
@@ -947,10 +947,10 @@
 										</div>
 										<div id="statsRebirth2" class="hidden">
 											<ul>
-												<li>You have awakened Demonic Qi <span id="rebirthTwoCountDisplay"></span> times.</li>
+												<li>You have awakened Potential <span id="rebirthTwoCountDisplay"></span> times.</li>
 												<li>You have spent <span id="rebirthTwoTimeDisplay"></span> in this awakening.</li>
 												<li>Your fastest awakening is in <span id="rebirthTwoFastestDisplay"></span>.</li>
-												<li id="statsEvilGain" class="hidden">You gain <span id="evilPerSecondDisplay"></span> Demonic Qi/s. Maximum <span id="maxEvilPerSecondDisplay"></span> Demonic Qi/s was at <span id="maxEvilPerSecondRtDisplay"></span>.</li>
+												<li id="statsEvilGain" class="hidden">You gain <span id="evilPerSecondDisplay"></span> Potential/s. Maximum <span id="maxEvilPerSecondDisplay"></span> Potential/s was at <span id="maxEvilPerSecondRtDisplay"></span>.</li>
 											</ul>
 										</div>
 										<div id="statsRebirth3" class="hidden">
@@ -981,7 +981,7 @@
 												<li id="challengeStat2">Trial 2 Blessing: Multiplies income by x<span id="challengeIncomeBuffDisplay"></span>.</li>
 												<li id="challengeStat3">Trial 3 Blessing: Multiplies temporal dilation by x<span id="challengeTimewarpingBuffDisplay"></span>.</li>
 												<li id="challengeStat4">Trial 4 Blessing: Multiplies Spirit Essence Gain by x<span id="challengeEssenceGainBuffDisplay"></span>.</li>
-												<li id="challengeStat5">Trial 5 Blessing: Multiplies Demonic Qi Gain by x<span id="challengeEvilGainBuffDisplay"></span>.</li>
+												<li id="challengeStat5">Trial 5 Blessing: Multiplies Potential Gain by x<span id="challengeEvilGainBuffDisplay"></span>.</li>
 												<li id="challengeStat6">Trial 6 Blessing: Multiplies Chaos Essence Gain by x<span id="challengeDarkMaterGainBuffDisplay"></span>.</li>
 											</ul>
 										</div>

@@ -195,7 +195,7 @@ const perk_names = {
     auto_dark_orb: "Auto buy nether orb generators",
     auto_dark_shop: "Auto buy chaos shop items",
     auto_boost: "Auto burst",
-    instant_evil: "Instant Demonic Qi",
+    instant_evil: "Instant Potential",
     hypercube_boost: "Dao Cube Boost",
     instant_essence: "Instant Spirit Essence",
     save_challenges: "Preserve trials",
@@ -206,7 +206,7 @@ const perk_names = {
     hyper_speed: "Heavenly haste",
     both_dark_mater_skills: "Pick both chaos art branches",
     keep_dark_mater_skills: "Keep chaos arts",
-    evil_booster: "Demonic Qi Booster",
+    evil_booster: "Potential Booster",
     more_perk_points: "10x Perk Point Gain",
 }
 
