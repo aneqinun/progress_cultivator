@@ -141,7 +141,7 @@ const baseLifespan = 365 * 70
 const baseGameSpeed = 4
 const heroIncomeMult = 2.5e18
 
-const permanentUnlocks = ["Quick task display", "Evil perks", "Rebirth tab", "Dark Matter", "Dark Matter Skills", "Dark Matter Skills2", "Metaverse", "Metaverse Perks", "Metaverse Perks Button", "Congratulations"]
+const permanentUnlocks = ["Quick task display", "Potential points", "Rebirth tab", "Dark Matter", "Dark Matter Skills", "Dark Matter Skills2", "Metaverse", "Metaverse Perks", "Metaverse Perks Button", "Congratulations"]
 const metaverseUnlocks = ["Reduce Boost Cooldown", "Increase Boost Duration", "Increase Hypercube Gain", "Gain evil at new transcension",
     "Essence gain multiplier", "Challenges are not reset", "Dark Matter gain multiplier"]
 
@@ -537,8 +537,8 @@ const requirementsBaseData = {
     "Dark Matter Skills": new EssenceRequirement(["#skillTreeTabTabButton"], [{ requirement: 1e20 }]),
     "Dark Matter Skills2": new EssenceRequirement(["#skillTreePage"], [{ requirement: 1e20 }]),
 
-    // Evil perks
-    "Evil perks": new EvilRequirement(["#evilperksTabButton"], [{requirement : 1}]),
+    // Potential points
+    "Potential points": new EvilRequirement(["#evilperksTabButton"], [{requirement : 1}]),
 
     // Challenges
     "Challenges": new EvilRequirement(["#challengesTabButton"], [{ requirement: 10000 }]),
@@ -571,7 +571,7 @@ const requirementsBaseData = {
     "key4": new EssenceRequirement(["#key4"], [{ requirement: 5e10 }]),
     "key5": new EssenceRequirement(["#key5"], [{ requirement: 1e90 }]),
 
-    // Evil perks
+    // Potential points
     "Evil perk essence": new EssenceRequirement(["#evilperk5"], [{ requirement: 150000000 }]),
 
     "Congratulations": new EssenceRequirement(["#Congratulations"], [{ requirement: 1e300 }]),
