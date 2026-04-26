@@ -213,7 +213,7 @@ const skillBaseData = {
     "All Seeing Eye": { name: "All Seeing Eye", maxXp: 100, heroxp: 120, effect: 0.0027, description: "T.A.A Pay" },
     "Brainwashing": { name: "Brainwashing", maxXp: 100, heroxp: 145, effect: -0.01, description: "Reduced Expenses" },
 
-    // Dark magic / Demonic methods
+    // Dark magic / Conceptual arts
     "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
     "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Evil Gain" },
     "Intimidation": { name: "Intimidation", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
@@ -640,7 +640,7 @@ const xianxiaDisplayNames = {
     "Temporal Dimension": "Temporal Cultivation", // Game speed
     "All Seeing Eye": "Qi Crystallisation", // Increase Earthly cultivation wage
     "Brainwashing": "Spiritual Command", // Reduced expenses
-    // Dark magic -> Demonic methods // todo
+    // Dark magic -> Conceptual Arts // todo
     "Dark Influence": "Bloody Inspiration", // increase job and skill XP - Find your inspiration in endless bloodshed. Increase job and skill XP gain.
     "Evil Control": "Ghost Enslavement", // increases evil gain - Enslave the ghosts of innocents to increase your own power. Increases Evil gain.
     "Intimidation": "Killing Intent", // reduce item expenses - utilise your killing intent to intimidate those with things you want.
@@ -800,8 +800,8 @@ const xianxiaCategoryNames = {
     "Fundamentals": "Fundamentals",
     "Combat": "Martial arts",
     "Magic": "Spiritual techniques",
-    "Dark Magic": "Demonic methods",
-    "Void Manipulation": "Void arts", // conceptual magics?
+    "Dark Magic": "Conceptual Arts",
+    "Void Manipulation": "Dao Channeling", // conceptual magics?
     "Celestial Powers": "Immortal techniques",
     "Almightiness": "Manifestation",
     "Darkness": "Dissolution", // theme is extraction of essence from subordinates
