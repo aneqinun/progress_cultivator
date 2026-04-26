@@ -665,10 +665,10 @@ const xianxiaDisplayNames = {
     "Essence Collector": "Spiritual Nexus", // You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain
     "Galactic Command": "Cessation of Excess", // What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.
     // Almightiness -> ? -  // todo
-    "Yin Yang": "Yin-Yang Harmony", // increase potential gain and increase essence gain
-    "Parallel Universe": "Parallel Realms", // increase xp for jobs and skills
-    "Higher Dimensions": "Higher Heavens", // increase lifespan
-    "Epiphany": "Dao Enlightenment", // increase xp for galactic council jobs
+    "Yin Yang": "Taiji Equilibrium", // You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.
+    "Paralll Universe": "Splitting the Illusion", // In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.
+    "Higher Dimensions": "World-Dreams", // When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan
+    "Epiphany": "Meditations on the Heavenly", // What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.
     // Darkness -> ? -  // todo
     "Dark Prince": "Demonic Prince", // increase skill xp
     "Dark Ruler": "Demonic Sovereign", // increase dark matter gain
