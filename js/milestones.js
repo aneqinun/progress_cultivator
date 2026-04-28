@@ -34,7 +34,7 @@ const milestoneBaseData = {
     "Dark Matter Mining": { name: "Dark Matter Mining", expense: 1e25, tier: 29, description: "Multiply Chaos Essence gain by 3x" },
     "The new gold": { name: "The new gold", expense: 1e30, tier: 30, description: "Multiply Spirit Essence gain by 1000x" },
     "The Devil inside you": { name: "The Devil inside you", expense: 1e35, tier: 31, description: "Multiply Potential gain by 1e15x" },
-    "Strange Magic": { name: "Strange Magic", expense: 1e38, tier: 32, description: "Multiply Darkness xp gain by 1e50x" },
+    "Strange Magic": { name: "Strange Magic", expense: 1e38, tier: 32, description: "Multiply all XP gain by 1e25x" },
     "Speed speed speed": { name: "Speed speed speed", expense: 1e40, tier: 33, description: "Multiply Time Warping and Lifespan by 1000x. Heavily boosts Faint Hope" },
     "Life is valueable": { name: "Life is valueable", expense: 1e47, tier: 34, description: "Multiply your lifespan by 1e5x. New trial unlocked. Chaos Essence boosts spirit essence gain." },
     "Dark Matter Millionaire": { name: "Dark Matter Millionaire", expense: 1e55, tier: 35, description: "Multiply Chaos Essence gain by 500x" },

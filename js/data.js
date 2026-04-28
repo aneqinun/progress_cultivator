@@ -164,7 +164,6 @@ const jobBaseData = {
 
     "Student": { name: "Student", maxXp: 1e5, income: 100, heroxp: 79 },
     "Apprentice Mage": { name: "Apprentice Mage", maxXp: 1e6, income: 1000, heroxp: 82 },
-    "Adept Mage": { name: "Adept Mage", maxXp: 1e7, income: 9500, heroxp: 82 },
     "Master Wizard": { name: "Master Wizard", maxXp: 1e8, income: 70000, heroxp: 95 },
     "Archmage": { name: "Archmage", maxXp: 1e10, income: 350000, heroxp: 95 },
     "Chronomancer": { name: "Chronomancer", maxXp: 2e12, income: 1000000, heroxp: 95 },
@@ -172,22 +171,17 @@ const jobBaseData = {
     "Imperator": { name: "Imperator", maxXp: 9e15, income: 60000000, heroxp: 129 },
 
     "Corrupted": { name: "Corrupted", maxXp: 1e14, income: 2.5e7, heroxp: 131 },
-    "Void Slave": { name: "Void Slave", maxXp: 6.5e14, income: 2e8, heroxp: 134 },
     "Void Fiend": { name: "Void Fiend", maxXp: 1.8e16, income: 6e8, heroxp: 237 },
-    "Abyss Anomaly": { name: "Abyss Anomaly", maxXp: 1.8e16, income: 1.2e9, heroxp: 237 },
     "Void Wraith": { name: "Void Wraith", maxXp: 1.8e17, income: 5e9, heroxp: 238 },
-    "Void Reaver": { name: "Void Reaver", maxXp: 2.6e18, income: 2.5e10, heroxp: 238 },
     "Void Lord": { name: "Void Lord", maxXp: 2.8e19, income: 1e11, heroxp: 238 },
     "Abyss God": { name: "Abyss God", maxXp: 4e20, income: 1e12, heroxp: 250 },
 
     "Eternal Wanderer": { name: "Eternal Wanderer", maxXp: 5.5e19, income: 1e12, heroxp: 250 },
     "Nova": { name: "Nova", maxXp: 5.1e19, income: 3e12, heroxp: 250 },
     "Sigma Proioxis": { name: "Sigma Proioxis", maxXp: 5e20, income: 2.15e13, heroxp: 260 },
-    "Acallaris": { name: "Acallaris", maxXp: 5e22, income: 2.15e14, heroxp: 263 },
     "One Above All": { name: "One Above All", maxXp: 5e27, income: 2.5e16, heroxp: 265 },
 
     "Snow Crash": { name: "Snow Crash", maxXp: Infinity, income: 2.5e52, heroxp: 1015 },
-    "Player One": { name: "Player One", maxXp: Infinity, income: 2.5e54, heroxp: 1200 },
     "Lost in the dark": { name: "Lost in the dark", maxXp: Infinity, income: 2.5e58, heroxp: 1358 },
     "Omega": { name: "Omega", maxXp: Infinity, income: 2.5e62, heroxp: 3120 },
 }
@@ -210,29 +204,16 @@ const skillBaseData = {
     "Time Warping": { name: "Time Warping", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
     "Astral Body": { name: "Astral Body", maxXp: 100, heroxp: 100, effect: 0.0035, description: "Longer lifespan" },
     "Temporal Dimension": { name: "Temporal Dimension", maxXp: 100, heroxp: 115, effect: 0.006, description: "Gamespeed" },
-    "All Seeing Eye": { name: "All Seeing Eye", maxXp: 100, heroxp: 120, effect: 0.0027, description: "T.A.A Pay" },
-    "Brainwashing": { name: "Brainwashing", maxXp: 100, heroxp: 145, effect: -0.01, description: "Reduced Expenses" },
 
     // Dark magic / Conceptual arts
     "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
     "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Potential Gain" },
     "Intimidation": { name: "Intimidation", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
-    "Demon Training": { name: "Demon Training", maxXp: 100, heroxp: 174, effect: 0.01, description: "All XP" },
     "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Potential Gain" },
     "Demon's Wealth": { name: "Demon's Wealth", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
     "Dark Knowledge": { name: "Dark Knowledge", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
     "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
     "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
-    "Evil Incarnate": { name: "Evil Incarnate", maxXp: 100, heroxp: 208, effect: 0.01, description: "Skill XP" },
-    
-    // Void manipulation / ?
-    "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Potential Gain" },
-    "Void Amplification": { name: "Void Amplification", maxXp: 100, heroxp: 251, effect: 0.01, description: "The Void XP" },
-    "Mind Release": { name: "Mind Release", maxXp: 100, heroxp: 251, effect: 0.0006, description: "Increased Happiness" },
-    "Ceaseless Abyss": { name: "Ceaseless Abyss", maxXp: 100, heroxp: 251, effect: 0.000585, description: "Longer Lifespan" },
-    "Void Symbiosis": { name: "Void Symbiosis", maxXp: 100, heroxp: 253, effect: 0.0015, description: "Skill XP" },
-    "Void Embodiment": { name: "Void Embodiment", maxXp: 100, heroxp: 258, effect: 0.0025, description: "Potential Gain" },
-    "Abyss Manipulation": { name: "Abyss Manipulation", maxXp: 100, heroxp: 266, effect: -0.01, description: "Reduced Expenses" },
 
     // ? / ?
     "Cosmic Longevity": { name: "Cosmic Longevity", maxXp: 100, heroxp: 266, effect: 0.0015, description: "Longer Lifespan" },
@@ -246,13 +227,6 @@ const skillBaseData = {
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
 
-    // ? / ?
-    "Dark Prince": { name: "Dark Prince", maxXp: 100, heroxp: 350, effect: 0.01, description: "Skill XP" },
-    "Dark Ruler": { name: "Dark Ruler", maxXp: 100, heroxp: 375, effect: 0.0000015, description: "Dark Matter Gain" },
-    "Immortal Ruler": { name: "Immortal Ruler", maxXp: 100, heroxp: 425, effect: 0.01, description: "All XP" },
-    "Dark Magician": { name: "Dark Magician", maxXp: 100, heroxp: 475, effect: 0.0000025, description: "Essence Gain" },
-    "Universal Ruler": { name: "Universal Ruler", maxXp: 100, heroxp: 500, effect: 1, description: "Magic XP" },
-    "Blinded By Darkness": { name: "Blinded By Darkness", maxXp: 100, heroxp: 550, effect: 1, description: "All XP" },
 }
 
 const itemBaseData = {
@@ -320,11 +294,9 @@ const requirementsBaseData = {
     "The Arcane Association": new TaskRequirement([removeSpaces(".The Arcane Association")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Galactic Council": new AgeRequirement([removeSpaces(".Galactic Council")], [{ requirement: 10000 }]),
     "The Void": new AgeRequirement([removeSpaces(".The Void")], [{ requirement: 1000 }]),
-    "Void Manipulation": new AgeRequirement([removeSpaces(".Void Manipulation")], [{ requirement: 1000 }]),
     "Celestial Powers": new AgeRequirement([removeSpaces(".Celestial Powers")], [{ requirement: 10000 }]),
     "Dark Magic": new EvilRequirement([removeSpaces(".Dark Magic")], [{ requirement: 1 }]),
     "Almightiness": new EssenceRequirement([".Almightiness"], [{ requirement: 1 }]),
-    "Darkness": new DarkMatterRequirement([".Darkness"], [{ requirement: 1 }]),
     "Heroic Milestones": new EssenceRequirement([removeSpaces(".Heroic Milestones")], [{ requirement: 400000 }]),
     "Dark Milestones": new EssenceRequirement([removeSpaces(".Dark Milestones")], [{ requirement: 5e10 }]),
     "Metaverse Milestones": new EssenceRequirement([removeSpaces(".Metaverse Milestones")], [{ requirement: 1e60 }]),
@@ -380,34 +352,28 @@ const requirementsBaseData = {
     // The Arcane Association
     "Student": new TaskRequirement([getQuerySelector("Student")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Apprentice Mage": new TaskRequirement([getQuerySelector("Apprentice Mage")], [{ task: "Mana Control", requirement: 400 }, { task: "Student", requirement: 10 }]),
-    "Adept Mage": new TaskRequirement([getQuerySelector("Adept Mage")], [{ task: "Mana Control", requirement: 700 }, { task: "Apprentice Mage", requirement: 10 }]),
-    "Master Wizard": new TaskRequirement([getQuerySelector("Master Wizard")], [{ task: "Mana Control", requirement: 1000 }, { task: "Adept Mage", requirement: 10 }]),
+    "Master Wizard": new TaskRequirement([getQuerySelector("Master Wizard")], [{ task: "Mana Control", requirement: 1000 }, { task: "Apprentice Mage", requirement: 20 }]),
     "Archmage": new TaskRequirement([getQuerySelector("Archmage")], [{ task: "Mana Control", requirement: 1200 }, { task: "Master Wizard", requirement: 10 }]),
     "Chronomancer": new TaskRequirement([getQuerySelector("Chronomancer")], [{ task: "Mana Control", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Archmage", requirement: 25 }]),
     "Chairman": new TaskRequirement([getQuerySelector("Chairman")], [{ task: "Mana Control", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Chronomancer", requirement: 50 }]),
-    "Imperator": new TaskRequirement([getQuerySelector("Imperator")], [{ task: "All Seeing Eye", requirement: 3000, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Chairman", requirement: 666 }]),
+    "Imperator": new TaskRequirement([getQuerySelector("Imperator")], [{ task: "Mana Control", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Chairman", requirement: 666 }]),
 
     // The Void
     "Corrupted": new AgeRequirement([getQuerySelector("Corrupted")], [{ requirement: 1000 }]),
-    "Void Slave": new TaskRequirement([getQuerySelector("Void Slave")], [{ task: "Corrupted", requirement: 30 }]),
-    "Void Fiend": new TaskRequirement([getQuerySelector("Void Fiend")], [{ task: "Brainwashing", requirement: 3000 }, { task: "Void Slave", requirement: 200 }]),
-    "Abyss Anomaly": new TaskRequirement([getQuerySelector("Abyss Anomaly")], [{ task: "Mind Release", requirement: 3000, herequirement: 100 }, { task: "Void Fiend", requirement: 200, herequirement: 100 }]),
-    "Void Wraith": new TaskRequirement([getQuerySelector("Void Wraith")], [{ task: "Temporal Dimension", requirement: 3400 }, { task: "Abyss Anomaly", requirement: 300, herequirement: 180 }]),
-    "Void Reaver": new TaskRequirement([getQuerySelector("Void Reaver")], [{ task: "Void Amplification", requirement: 3400, herequirement: 180 }, { task: "Void Wraith", requirement: 250, herequirement: 125 }]),
-    "Void Lord": new TaskRequirement([getQuerySelector("Void Lord")], [{ task: "Void Symbiosis", requirement: 3800, herequirement: 200 }, { task: "Void Reaver", requirement: 150 }]),
-    "Abyss God": new TaskRequirement([getQuerySelector("Abyss God")], [{ task: "Void Embodiment", requirement: 4700, herequirement: 300 }, { task: "Void Lord", requirement: 750, herequirement: 125 }]),
+    "Void Fiend": new TaskRequirement([getQuerySelector("Void Fiend")], [{ task: "Dark Knowledge", requirement: 3000 }, { task: "Corrupted", requirement: 250 }]),
+    "Void Wraith": new TaskRequirement([getQuerySelector("Void Wraith")], [{ task: "Temporal Dimension", requirement: 3400 }, { task: "Void Fiend", requirement: 350, herequirement: 180 }]),
+    "Void Lord": new TaskRequirement([getQuerySelector("Void Lord")], [{ task: "Time Loop", requirement: 3800, herequirement: 200 }, { task: "Void Wraith", requirement: 300 }]),
+    "Abyss God": new TaskRequirement([getQuerySelector("Abyss God")], [{ task: "Blood Meditation", requirement: 4700, herequirement: 300 }, { task: "Void Lord", requirement: 900, herequirement: 125 }]),
 
     // Galactic Council
     "Eternal Wanderer": new AgeRequirement([getQuerySelector("Eternal Wanderer")], [{ requirement: 10000 }]),
     "Nova": new TaskRequirement([getQuerySelector("Nova")], [{ task: "Eternal Wanderer", requirement: 15 }, { task: "Cosmic Longevity", requirement: 4000, herequirement: 180 }]),
     "Sigma Proioxis": new TaskRequirement([getQuerySelector("Sigma Proioxis")], [{ task: "Nova", requirement: 200 }, { task: "Cosmic Recollection", requirement: 4500, herequirement: 350 }]),
-    "Acallaris": new TaskRequirement([getQuerySelector("Acallaris")], [{ task: "Galactic Command", requirement: 5000, herequirement: 250 }, { task: "Sigma Proioxis", requirement: 1000, herequirement: 480 }]),
-    "One Above All": new TaskRequirement([getQuerySelector("One Above All")], [{ task: "Meditation", requirement: 6300 }, { task: "Acallaris", requirement: 1400, herequirement: 500 }]),
+    "One Above All": new TaskRequirement([getQuerySelector("One Above All")], [{ task: "Meditation", requirement: 6300 }, { task: "Sigma Proioxis", requirement: 1800, herequirement: 500 }]),
 
     // Metaverse Guards
     "Snow Crash": new EssenceRequirement([getQuerySelector("Snow Crash")], [{ requirement: 1e90, herequirement: 1e120 }]),
-    "Player One": new TaskRequirement([getQuerySelector("Player One")], [{ task: "Snow Crash", requirement: 1000, herequirement: 160000 }]),
-    "Lost in the dark": new TaskRequirement([getQuerySelector("Lost in the dark")], [{ task: "Player One", requirement: 2500, herequirement: 158000 }]),
+    "Lost in the dark": new TaskRequirement([getQuerySelector("Lost in the dark")], [{ task: "Snow Crash", requirement: 3500, herequirement: 158000 }]),
     "Omega": new TaskRequirement([getQuerySelector("Omega")], [{ task: "Lost in the dark", requirement: 25000, herequirement: 185000 }]),
 
     // Fundamentals
@@ -424,37 +390,24 @@ const requirementsBaseData = {
     // Magic
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Life Essence": new TaskRequirement([getQuerySelector("Life Essence")], [{ task: "Apprentice Mage", requirement: 10 }]),
-    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Adept Mage", requirement: 10 }]),
+    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Master Wizard", requirement: 10 }]),
     "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Archmage", requirement: 10 }]),
     "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Chronomancer", requirement: 25 }]),
-    "All Seeing Eye": new TaskRequirement([getQuerySelector("All Seeing Eye")], [{ task: "Mana Control", requirement: 2350 }, { task: "Chairman", requirement: 100 }]),
-    "Brainwashing": new TaskRequirement([getQuerySelector("Brainwashing")], [{ task: "Imperator", requirement: 100 }]),
 
     // Dark Magic
     "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
     "Evil Control": new EvilRequirement([getQuerySelector("Evil Control")], [{ requirement: 1 }]),
     "Intimidation": new EvilRequirement([getQuerySelector("Intimidation")], [{ requirement: 1 }]),
-    "Demon Training": new EvilRequirement([getQuerySelector("Demon Training")], [{ requirement: 20 }]),
     "Blood Meditation": new EvilRequirement([getQuerySelector("Blood Meditation")], [{ requirement: 50 }]),
     "Demon's Wealth": new EvilRequirement([getQuerySelector("Demon's Wealth")], [{ requirement: 500 }]),
     "Dark Knowledge": new EvilRequirement([getQuerySelector("Dark Knowledge")], [{ requirement: 5000 }]),
     "Void Influence": new EvilRequirement([getQuerySelector("Void Influence")], [{ requirement: 50000 }]),
     "Time Loop": new EvilRequirement([getQuerySelector("Time Loop")], [{ requirement: 2500000 }]),
-    "Evil Incarnate": new EvilRequirement([getQuerySelector("Evil Incarnate")], [{ requirement: 1000000000 }]),
-
-    // Void Manipulation
-    "Absolute Wish": new TaskRequirement([getQuerySelector("Absolute Wish")], [{ task: "Void Slave", requirement: 25 }, { task: "Chairman", requirement: 300 }]),
-    "Void Amplification": new TaskRequirement([getQuerySelector("Void Amplification")], [{ task: "Void Slave", requirement: 100 }, { task: "Absolute Wish", requirement: 3000, herequirement: 1700 }]),
-    "Mind Release": new TaskRequirement([getQuerySelector("Mind Release")], [{ task: "Void Amplification", requirement: 3000, herequirement: 100 }]),
-    "Ceaseless Abyss": new TaskRequirement([getQuerySelector("Ceaseless Abyss")], [{ task: "Void Influence", requirement: 4000, herequirement: 1950 }, { task: "Abyss Anomaly", requirement: 50 }]),
-    "Void Symbiosis": new TaskRequirement([getQuerySelector("Void Symbiosis")], [{ task: "Ceaseless Abyss", requirement: 3500, herequirement: 220 }, { task: "Void Reaver", requirement: 50 }]),
-    "Void Embodiment": new TaskRequirement([getQuerySelector("Void Embodiment")], [{ task: "Dark Influence", requirement: 4600, herequirement: 3700 }, { task: "Void Lord", requirement: 50 }]),
-    "Abyss Manipulation": new TaskRequirement([getQuerySelector("Abyss Manipulation")], [{ task: "Abyss God", requirement: 350, herequirement: 200 }, { task: "Dark Influence", requirement: 6000, herequirement: 4100 }, { task: "Void Influence", requirement: 6000, herequirement: 2600 }]),
 
     // Celestial Powers
     "Cosmic Longevity": new TaskRequirement([getQuerySelector("Cosmic Longevity")], [{ task: "Eternal Wanderer", requirement: 1 }]),
-    "Cosmic Recollection": new TaskRequirement([getQuerySelector("Cosmic Recollection")], [{ task: "Nova", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Mind Release", requirement: 900 }]),
-    "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Sigma Proioxis", requirement: 500, herequirement: 360 }, { task: "Absolute Wish", requirement: 4900, herequirement: 2900 }, { task: "Dark Knowledge", requirement: 6300, herequirement: 3400 }]),
+    "Cosmic Recollection": new TaskRequirement([getQuerySelector("Cosmic Recollection")], [{ task: "Nova", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Time Loop", requirement: 900 }]),
+    "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Sigma Proioxis", requirement: 500, herequirement: 360 }, { task: "Evil Control", requirement: 4900, herequirement: 2900 }, { task: "Dark Knowledge", requirement: 6300, herequirement: 3400 }]),
     "Galactic Command": new TaskRequirement([getQuerySelector("Galactic Command")], [{ task: "Essence Collector", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
 
     // Almightiness
@@ -462,14 +415,6 @@ const requirementsBaseData = {
     "Parallel Universe": new EssenceRequirement([getQuerySelector("Parallel Universe")], [{ requirement: 1 }]),
     "Higher Dimensions": new EssenceRequirement([getQuerySelector("Higher Dimensions")], [{ requirement: 10000 }]),
     "Epiphany": new EssenceRequirement([getQuerySelector("Epiphany")], [{ requirement: 30000 }]),
-
-    // Darkness
-    "Dark Prince": new DarkMatterRequirement([getQuerySelector("Dark Prince")], [{ requirement: 3 }]),
-    "Dark Ruler": new DarkMatterRequirement([getQuerySelector("Dark Ruler")], [{ requirement: 10 }]),
-    "Immortal Ruler": new DarkMatterRequirement([getQuerySelector("Immortal Ruler")], [{ requirement: 25 }]),
-    "Dark Magician": new DarkMatterRequirement([getQuerySelector("Dark Magician")], [{ requirement: 100 }]),
-    "Universal Ruler": new DarkMatterRequirement([getQuerySelector("Universal Ruler")], [{ requirement: 1e3 }]),
-    "Blinded By Darkness": new DarkMatterRequirement([getQuerySelector("Blinded By Darkness")], [{ requirement: 1e4 }]),
 
     // Properties
     "Homeless": new CoinRequirement([getQuerySelector("Homeless")], [{ requirement: 0 }]),
@@ -578,14 +523,14 @@ const requirementsBaseData = {
 }
 
 const xianxiaDisplayNames = {
-    // Mortal commoner
+    // Mortal commoner - must have 6 jobs
     "Beggar": "Beggar",
     "Farmer": "Farmer",
     "Fisherman": "Fisherman",
     "Miner": "Spirit Stone Miner",
     "Blacksmith": "Blacksmith",
     "Merchant": "Merchant",
-    // Mortal military 
+    // Mortal military - must have 8 jobs
     "Squire": "Recruit",
     "Footman": "Militiaman",
     "Veteran footman": "Soldier",
@@ -594,33 +539,27 @@ const xianxiaDisplayNames = {
     "Veteran Knight": "General of the West",
     "Holy Knight": "Grand General",
     "Lieutenant General": "Imperial Legate",
-    // Earthly cultivation
+    // Earthly cultivation - must have 7 jobs
     "Student": "Qi condensation",
     "Apprentice Mage": "Foundation establishment",
-    "Adept Mage": "Core formation",
     "Master Wizard": "Nascent soul",
     "Archmage": "Soul severing",
-    "Chronomancer": "Dao seeking",
+    "Chronomancer": "Dao seeking", // optional
     "Chairman": "Spirit integration",
     "Imperator": "Tribulation crossing",
-    // Dao comprehension
+    // Dao comprehension - could be changed to any number
     "Corrupted": "Intent Scholar",
-    "Void Slave": "Intent Practicioner",
     "Void Fiend": "Seeker of Law",
-    "Abyss Anomaly": "Ascetic of Law",
     "Void Wraith": "Dao Sage",
-    "Void Reaver": "Great Dao Sovereign",
     "Void Lord": "A Mortal Daoist",
     "Abyss God": "Dustless One", 
-    // Immortal cultivation
+    // Immortal cultivation - could be changed to 4 jobs
     "Eternal Wanderer": "Human Immortal",
     "Nova": "Earthly Immortal",
     "Sigma Proioxis": "Heavenly Immortal",
-    "Acallaris": "Saintly Empyrean",
     "One Above All": "Sovereign Epyrean",
-    // Dao embodiment
+    // Dao embodiment - could be reduced to 3
     "Snow Crash": "Steward of the Realms",
-    "Player One": "Guide of Samsara",
     "Lost in the dark": "Anchor of Causality",
     "Omega": "The Heavens Itself",
     // Fundamentals
@@ -638,27 +577,15 @@ const xianxiaDisplayNames = {
     "Time Warping": "A Cultivator's Perspective", // Game speed
     "Astral Body": "Bodily Refinement", // increase Lifespan
     "Temporal Dimension": "Temporal Cultivation", // Game speed
-    "All Seeing Eye": "Qi Crystallisation", // Increase Earthly cultivation wage
-    "Brainwashing": "Spiritual Command", // Reduced expenses
     // Dark magic -> Dao Comprehension // todo
     "Dark Influence": "Inspiration from the Dao", // increase job and skill XP - You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.
     "Evil Control": "Domain of Authority", // increases potential gain - You develop your daoist domain; the natural energies of heaven and earth begin to respect your new claims. Increase Potential gain.
     "Intimidation": "Profound Recognition", // reduce item expenses - At a glance you begin to understand the natural energies and qualities of goods. Reduce item expenses.  
-    "Demon Training": "Path of Least Resistance", // increase job and skill XP - Where you walk, the path was already starting to clear. The Simple Way starts to precede your steps. Increase job and skill XP. 
     "Blood Meditation": "Great Destiny", // potential gain - When you close your eyes you feel as though you have a golden path before you, growing ever brighter. Greatness is no longer a question for you. Increase Potential gain.   
     "Demon's Wealth": "Karmic Significance", // increase job wage - Your karmic weight grows by the day; significant events start naturally to seek you out. Increase job wage. 
     "Dark Knowledge": "Heavenly Talent", // increase job xp - They begin to call you 'blessed with talent', though you have never been before. Things start to come easier to you, as though your instincts already know the answers.
     "Void Influence": "Enlightened Tempo", // increase job and skill XP - Unconsciously, your every breath and movement becomes more in tune with the rhythm of the natural dao. Increase job and skill XP.
     "Time Loop": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
-    "Evil Incarnate": "Natural Formations", // increase skill XP - The world seems to sway in your presence; the wind produces celestial tones and the waters ripple in mysterious patterns. Whatever your focus, natural formations form to enhance your efforts. Increase skill XP.
-    // Void manipulation -> Dao manipulation -  // todo
-    "Absolute Wish": "Reality Dictation Technique", // increase potential gain - Write your desires using the pen of qi and the ink of enlightnment; reality itself begins to conform. Increase potential gain.
-    "Void Amplification": "Conceptual Attunement Art", // increase dao comprehension job xp - Attune your mind to the fragments of an infinite concept. Impossible ideas become intelligable. Increase dao comprehension job XP.
-    "Mind Release": "Light-Heart Sutra", // increase happiness - You learn to accept your pain, and then let it go. Surrendering your suffering makes your soul lighter. Increases happiness.
-    "Ceaseless Abyss": "Mortal Detachment Art", // increase lifespan - You let go of mortal attachments and in so doing scour the footholds of time from your being. Increases lifespan.
-    "Void Symbiosis": "Recollection of Past Lives", // increase xp gain for skills - Memories of your past lives become clear. What you once knew, you being to know again. Increase XP gain for skills.
-    "Void Embodiment": "Akusala Karmic-Severing", // increase potential gain - You sever away your bad karma from previous lives. Your future selves will be ever more prosperous. Increases Potential gain. 
-    "Abyss Manipulation": "The Middle Way", // reduce item expenses - Your world consists of no more or less than what is necessary. All else is dust. Reduce item expenses. 
     // Celestial powers -> Immortal techniques -  // todo
     "Cosmic Longevity": "Epoch-Spanning Lifeline", // Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan
     "Cosmic Recollection": "Wheel-Crossing Permanence", // Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved/scaled on rebirth and milestone auto-max logic.
@@ -666,16 +593,9 @@ const xianxiaDisplayNames = {
     "Galactic Command": "Cessation of Excess", // What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.
     // Almightiness -> ? -  // todo
     "Yin Yang": "Taiji Equilibrium", // You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.
-    "Paralll Universe": "Splitting the Illusion", // In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.
+    "Parallel Universe": "Splitting the Illusion", // In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.
     "Higher Dimensions": "World-Dreams", // When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan
     "Epiphany": "Meditations on the Heavenly", // What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.
-    // Darkness -> ? -  // todo
-    "Dark Prince": "Heaven-Listening Dao Insight", // Hear the subtle laws in all things and learn faster. Increase skill XP.
-    "Dark Ruler": "World-Resonant Dao Mandate", // Align with cosmic currents and draw in more Chaos Essence. Increase Chaos Essence gain.
-    "Immortal Ruler": "Undying Dao Heart", // Temper an unshakable Dao heart that uplifts every path. Increase job and skill XP.
-    "Dark Magician": "Grand Law Weaving", // Weave higher laws into form and refine more Spirit Essence. Increase Spirit Essence gain.
-    "Universal Ruler": "Sovereign of Ten Thousand Daos", // Command manifold Dao principles to advance spiritual techniques. Increase Spiritual Technique XP.
-    "Blinded By Darkness": "Dao Incarnation", // Become an avatar of Dao itself and transcend mortal limits. Increase job and skill XP.
     //
     "Homeless": "Ragged Courtyard",
     "Tent": "Wanderer's Tent",
@@ -790,10 +710,8 @@ const xianxiaCategoryNames = {
     "Combat": "Martial Arts",
     "Magic": "Spiritual Techniques",
     "Dark Magic": "Conceptual Arts",
-    "Void Manipulation": "Dao Channeling", // conceptual magics?
     "Celestial Powers": "Immortal Techniques",
     "Almightiness": "Manifestation",
-    "Darkness": "Dissolution", // theme is extraction of essence from subordinates
     // Items
     "Properties": "Estates",
     "Misc": "Treasures",
@@ -866,21 +784,19 @@ function getDisplayChallengeTitle(challengeName) {
 const jobCategories = {
     "Common work": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
     "Military": ["Squire", "Footman", "Veteran footman", "Centenary", "Knight", "Veteran Knight", "Holy Knight", "Lieutenant General"],
-    "The Arcane Association": ["Student", "Apprentice Mage", "Adept Mage", "Master Wizard", "Archmage", "Chronomancer", "Chairman", "Imperator"],
-    "The Void": ["Corrupted", "Void Slave", "Void Fiend", "Abyss Anomaly", "Void Wraith", "Void Reaver", "Void Lord", "Abyss God"],
-    "Galactic Council": ["Eternal Wanderer", "Nova", "Sigma Proioxis", "Acallaris", "One Above All"],
-    "Metaverse Guards": ["Snow Crash", "Player One", "Lost in the dark", "Omega"]
+    "The Arcane Association": ["Student", "Apprentice Mage", "Master Wizard", "Archmage", "Chronomancer", "Chairman", "Imperator"],
+    "The Void": ["Corrupted", "Void Fiend", "Void Wraith", "Void Lord", "Abyss God"],
+    "Galactic Council": ["Eternal Wanderer", "Nova", "Sigma Proioxis", "One Above All"],
+    "Metaverse Guards": ["Snow Crash", "Lost in the dark", "Omega"]
 }
 
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
-    "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
-    "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
-    "Void Manipulation": ["Absolute Wish", "Void Amplification", "Mind Release", "Ceaseless Abyss", "Void Symbiosis", "Void Embodiment", "Abyss Manipulation"],
+    "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension"],
+    "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop"],
     "Celestial Powers": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
-    "Almightiness": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"],
-    "Darkness": ["Dark Prince", "Dark Ruler", "Immortal Ruler", "Dark Magician", "Universal Ruler", "Blinded By Darkness"]
+    "Almightiness": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
 }
 
 const itemCategories = {
@@ -899,8 +815,6 @@ const headerRowColors = {
     "Magic": "#C71585",
     "Dark Magic": "#73000f",
     "Almightiness": "#18d2d9",
-    "Darkness": "#8c6a0b",
-    "Void Manipulation": "#762B91",
     "Celestial Powers": "#D5C010",
     "Properties_Auto": "#21cc5e",
     "Misc_Auto": "#f54546",
@@ -924,8 +838,6 @@ const headerRowTextColors = {
     "Magic": "purple",
     "Dark Magic": "pink",
     "Almightiness": "purple",
-    "Darkness": "gold",
-    "Void Manipulation": "white",
     "Celestial Powers": "purple",
     "Properties_Auto": "purple",
     "Misc_Auto": "purple",

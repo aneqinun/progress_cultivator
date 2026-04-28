@@ -10,6 +10,20 @@ window.addEventListener('resize', function(event) {
     onResize(event.target.outerWidth)
 }, true);
 
+const checkpointTuning = {
+    // Calibrated for compressed roster so late-game checkpoints stay reachable.
+    // Intended pacing bands:
+    // - 1e20 essence: early Dark Matter phase
+    // - 1e47 essence: challenge 6 unlock phase
+    // - 1e60 essence: metaverse milestone entry
+    // - 1e90 essence: metaverse guards entry
+    strangeMagicXpMultiplier: 1e25,
+    potentialRecoveryExponent: 0.62,
+    essenceOverflowExponent: 0.38,
+    chaosFromVoidExponent: 0.2,
+    lifespanOverflowExponent: 0.33,
+}
+
 
 function addMultipliers() {
     for (const taskName in gameData.taskData) {
@@ -22,11 +36,9 @@ function addMultipliers() {
         task.xpMultipliers.push(getHappiness)
         task.xpMultipliers.push(getDarkMatterXpGain)
         task.xpMultipliers.push(getBindedTaskEffect("Dark Influence"))
-        task.xpMultipliers.push(getBindedTaskEffect("Demon Training"))
         task.xpMultipliers.push(getBindedTaskEffect("Void Influence"))
         task.xpMultipliers.push(getBindedTaskEffect("Parallel Universe"))
-        task.xpMultipliers.push(getBindedTaskEffect("Immortal Ruler"))
-        task.xpMultipliers.push(getBindedTaskEffect("Blinded By Darkness"))
+        task.xpMultipliers.push(getStrangeMagicBoost)
         task.xpMultipliers.push(getDarkMatterSkillXP)
         task.xpMultipliers.push(getTimeIsAFlatCircleXP)
 
@@ -43,11 +55,8 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Study Desk"))
             task.xpMultipliers.push(getBindedItemEffect("Library"))
             task.xpMultipliers.push(getBindedItemEffect("Void Blade"))
-            task.xpMultipliers.push(getBindedTaskEffect("Void Symbiosis"))
             task.xpMultipliers.push(getBindedItemEffect("Universe Fragment"))
             task.xpMultipliers.push(getBindedItemEffect("Custom Galaxy"))
-            task.xpMultipliers.push(getBindedTaskEffect("Evil Incarnate"))
-            task.xpMultipliers.push(getBindedTaskEffect("Dark Prince"))
         }
 
         if (jobCategories["Military"].includes(task.name)) {
@@ -60,17 +69,11 @@ function addMultipliers() {
         } else if (skillCategories["Magic"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Sapphire Charm"))
             task.xpMultipliers.push(getBindedItemEffect("Observatory"))
-            task.xpMultipliers.push(getBindedTaskEffect("Universal Ruler"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
-        } else if (skillCategories["Void Manipulation"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Void Necklace"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Orb"))
         } else if (jobCategories["The Arcane Association"].includes(task.name)) {
             task.xpMultipliers.push(getBindedTaskEffect("Mana Control"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
-            task.incomeMultipliers.push(getBindedTaskEffect("All Seeing Eye"))
         } else if (jobCategories["The Void"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedTaskEffect("Void Amplification"))
             task.xpMultipliers.push(getBindedItemEffect("Void Armor"))
             task.xpMultipliers.push(getBindedItemEffect("Void Dust"))
         } else if (jobCategories["Galactic Council"].includes(task.name)) {
@@ -82,8 +85,6 @@ function addMultipliers() {
             task.xpMultipliers.push(getEssenceXpGain)
         } else if (skillCategories["Fundamentals"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Mind's Eye"))
-        } else if (skillCategories["Darkness"].includes(task.name)) {
-            task.xpMultipliers.push(getDarknessXpGain)
         }
     }
 
@@ -92,8 +93,6 @@ function addMultipliers() {
         item.expenseMultipliers = []
         item.expenseMultipliers.push(getBindedTaskEffect("Bargaining"))
         item.expenseMultipliers.push(getBindedTaskEffect("Intimidation"))
-        item.expenseMultipliers.push(getBindedTaskEffect("Brainwashing"))
-        item.expenseMultipliers.push(getBindedTaskEffect("Abyss Manipulation"))
         item.expenseMultipliers.push(getBindedTaskEffect("Galactic Command"))
     }
 }
@@ -159,28 +158,14 @@ function setCustomEffects() {
     const intimidation = gameData.taskData["Intimidation"]
     intimidation.getEffect = function () {
         const multiplier = 1 - getBaseLog(intimidation.isHero ? 3 : 7, intimidation.level + 1) / 10
-        if (multiplier < 0.1) return 0.1
-        return multiplier
-    }
-
-    const brainwashing = gameData.taskData["Brainwashing"]
-    brainwashing.getEffect = function () {
-        const multiplier = 1 - getBaseLog(brainwashing.isHero ? 3 : 7, brainwashing.level + 1) / 10
-        if (multiplier < 0.1) return 0.1
-        return multiplier
-    }
-
-    const abyssManipulation = gameData.taskData["Abyss Manipulation"]
-    abyssManipulation.getEffect = function () {
-        const multiplier = 1 - getBaseLog(abyssManipulation.isHero ? 3 : 7, abyssManipulation.level + 1) / 10
-        if (multiplier < 0.1) return 0.1
+        if (multiplier < 0.05) return 0.05
         return multiplier
     }
 
     const galacticCommand = gameData.taskData["Galactic Command"]
     galacticCommand.getEffect = function () {
         const multiplier = 1 - getBaseLog(galacticCommand.isHero ? 3 : 7, galacticCommand.level + 1) / 10
-        if (multiplier < 0.1) return 0.1
+        if (multiplier < 0.05) return 0.05
         return multiplier
     }
 
@@ -237,20 +222,16 @@ function setCustomEffects() {
         var mult = 1
         if (gameData.requirements["Rise of Great Heroes"].isCompleted()) {
             var countHeroes = 0
+            const totalTasks = Object.keys(gameData.taskData).length
             for (const taskName in gameData.taskData) {
                 if (gameData.taskData[taskName].isHero)
                     countHeroes++
             }
-            mult = 1 + 6 * countHeroes / 74
+            mult = 1 + 6 * countHeroes / Math.max(totalTasks, 1)
         }
 
         return mult
     }
-}
-
-function getDarknessXpGain() {
-    const strangeMagic = gameData.requirements["Strange Magic"].isCompleted() ? 1e50 : 1
-    return strangeMagic
 }
 
 function getHappiness() {
@@ -258,17 +239,20 @@ function getHappiness() {
 
     const meditationEffect = getBindedTaskEffect("Meditation")
     const butlerEffect = getBindedItemEffect("Butler")
-    const mindreleaseEffect = getBindedTaskEffect("Mind Release")
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
     const stairWayToHeaven = getBindedItemEffect("Stairway to heaven")
-    const happiness = godsBlessings * meditationEffect() * butlerEffect() * mindreleaseEffect()
+    const happiness = godsBlessings * meditationEffect() * butlerEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
 
     if (gameData.active_challenge == "dance_with_the_devil") return Math.pow(happiness, 0.075)
     if (gameData.active_challenge == "an_unhappy_life") return Math.pow(happiness, 0.5)
 
     return happiness
+}
+
+function getStrangeMagicBoost() {
+    return gameData.requirements["Strange Magic"].isCompleted() ? checkpointTuning.strangeMagicXpMultiplier : 1
 }
 
 function getEvil() {
@@ -334,16 +318,15 @@ function applySpeedOnBigInt(value) {
 function getEvilGain() {
     const evilControl = gameData.taskData["Evil Control"]
     const bloodMeditation = gameData.taskData["Blood Meditation"]
-    const absoluteWish = gameData.taskData ["Absolute Wish"]
-    const oblivionEmbodiment = gameData.taskData ["Void Embodiment"]
     const yingYang = gameData.taskData["Yin Yang"]
+    const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
     const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
     const theDevilInsideYou = gameData.requirements["The Devil inside you"].isCompleted() ? 1e15 : 1
     const stairWayToHell = getBindedItemEffect("Highway to hell")
     const evilBooster = (gameData.perks.evil_booster == 1) ? 1e50 : 1
 
-    const evilGain = evilControl.getEffect() * bloodMeditation.getEffect() * absoluteWish.getEffect()
-        * oblivionEmbodiment.getEffect() * yingYang.getEffect() * inferno * getChallengeBonus("legends_never_die")
+    const evilGain = evilControl.getEffect() * bloodMeditation.getEffect() * potentialRecovery * yingYang.getEffect()
+        * inferno * getChallengeBonus("legends_never_die")
         * getDarkMatterSkillEvil() * theDevilInsideYou * stairWayToHell() * evilBooster
 
     return Math.min(evilGain, 1e308)
@@ -355,21 +338,22 @@ function getEssenceGain() {
     const transcendentMaster = milestoneData["Transcendent Master"]
     const faintHope = milestoneData["Faint Hope"]
     const rise = milestoneData["Rise of Great Heroes"]
-    const darkMagician = gameData.taskData["Dark Magician"]
+    const essenceCollectorOverflow = Math.pow(essenceCollector.getEffect(), checkpointTuning.essenceOverflowExponent)
 
     const theNewGold = gameData.requirements["The new gold"].isCompleted() ? 1000 : 1
     const lifeIsValueable = gameData.requirements["Life is valueable"].isCompleted() ? gameData.dark_matter : 1
 
     const essenceGain = essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
         * faintHope.getEffect() * rise.getEffect() * getChallengeBonus("dance_with_the_devil")
-        * getAGiftFromGodEssenceGain() * darkMagician.getEffect() * getDarkMatterSkillEssence() 
+        * getAGiftFromGodEssenceGain() * essenceCollectorOverflow * getDarkMatterSkillEssence() 
         * theNewGold * lifeIsValueable *  essenceMultGain()
 
     return Math.min(essenceGain, 1e308)
 }
 
 function getDarkMatterGain() {
-    const darkRuler = gameData.taskData["Dark Ruler"]
+    const voidInfluence = gameData.taskData["Void Influence"]
+    const voidInfluenceToChaos = Math.pow(voidInfluence.getEffect(), checkpointTuning.chaosFromVoidExponent)
     const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 10 : 1
     const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 3 : 1
     const darkMatterMillionaire = gameData.requirements["Dark Matter Millionaire"].isCompleted() ? 500 : 1
@@ -377,7 +361,7 @@ function getDarkMatterGain() {
     const TheEndIsNear = getUnspentPerksDarkmatterGainBuff() 
 
 
-    return 1 * darkRuler.getEffect() * darkMatterHarvester * darkMatterMining * darkMatterMillionaire * getChallengeBonus("the_darkest_time") * getDarkMatterSkillDarkMater() * darkMatterMultGain() *
+    return 1 * voidInfluenceToChaos * darkMatterHarvester * darkMatterMining * darkMatterMillionaire * getChallengeBonus("the_darkest_time") * getDarkMatterSkillDarkMater() * darkMatterMultGain() *
         (Desintegration == 0 ? 1 : Desintegration) * TheEndIsNear
 }
 
@@ -993,12 +977,12 @@ function getLifespan() {
     const immortality = gameData.taskData["Life Essence"]
     const superImmortality = gameData.taskData["Astral Body"]
     const higherDimensions = gameData.taskData["Higher Dimensions"]
-    const abyss = gameData.taskData["Ceaseless Abyss"]
     const cosmicLongevity = gameData.taskData["Cosmic Longevity"]
+    const cosmicLongevityOverflow = Math.pow(cosmicLongevity.getEffect(), checkpointTuning.lifespanOverflowExponent)
     const speedSpeedSpeed = gameData.requirements["Speed speed speed"].isCompleted() ? 1000 : 1
     const lifeIsValueable = gameData.requirements["Life is valueable"].isCompleted() ? 1e5 : 1
-    const lifespan = baseLifespan * immortality.getEffect() * superImmortality.getEffect() * abyss.getEffect()
-        * cosmicLongevity.getEffect() * higherDimensions.getEffect() * lifeIsValueable * speedSpeedSpeed
+    const lifespan = baseLifespan * immortality.getEffect() * superImmortality.getEffect()
+        * cosmicLongevity.getEffect() * cosmicLongevityOverflow * higherDimensions.getEffect() * lifeIsValueable * speedSpeedSpeed
 
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return Math.pow(lifespan, 0.72) + 365 * 25
 
@@ -1198,6 +1182,76 @@ function peekSettingFromSave(setting) {
     }
 }
 
+function migrateTaskProgress(taskData, fromName, toName) {
+    if (!(fromName in taskData) || !(toName in taskData)) return
+
+    const fromTask = taskData[fromName]
+    const toTask = taskData[toName]
+
+    if (typeof fromTask.level === "number" && (toTask.level == null || fromTask.level > toTask.level))
+        toTask.level = fromTask.level
+    if (typeof fromTask.maxLevel === "number" && (toTask.maxLevel == null || fromTask.maxLevel > toTask.maxLevel))
+        toTask.maxLevel = fromTask.maxLevel
+    if (typeof fromTask.xp === "number" && (toTask.xp == null || fromTask.xp > toTask.xp))
+        toTask.xp = fromTask.xp
+
+    if (fromTask.xpBigInt != null) {
+        try {
+            const fromBigInt = BigInt(fromTask.xpBigInt)
+            const toBigInt = BigInt(toTask.xpBigInt == null ? 0 : toTask.xpBigInt)
+            if (fromBigInt > toBigInt)
+                toTask.xpBigInt = fromTask.xpBigInt
+        } catch (error) {
+            // Ignore invalid BigInt values in legacy saves.
+        }
+    }
+
+    toTask.isHero = Boolean(toTask.isHero || fromTask.isHero)
+    toTask.unlocked = Boolean(toTask.unlocked || fromTask.unlocked)
+    toTask.isFinished = Boolean(toTask.isFinished || fromTask.isFinished)
+
+    delete taskData[fromName]
+}
+
+function migrateCompressedRoster(gameDataSave) {
+    if (gameDataSave == null || gameDataSave.taskData == null)
+        return
+
+    const replacements = {
+        "Adept Mage": "Master Wizard",
+        "Void Slave": "Void Fiend",
+        "Abyss Anomaly": "Void Wraith",
+        "Void Reaver": "Void Lord",
+        "Acallaris": "One Above All",
+        "Player One": "Lost in the dark",
+        "All Seeing Eye": "Mana Control",
+        "Brainwashing": "Intimidation",
+        "Demon Training": "Dark Influence",
+        "Evil Incarnate": "Concentration",
+        "Absolute Wish": "Evil Control",
+        "Void Amplification": "Void Influence",
+        "Mind Release": "Meditation",
+        "Ceaseless Abyss": "Astral Body",
+        "Void Symbiosis": "Concentration",
+        "Void Embodiment": "Blood Meditation",
+        "Abyss Manipulation": "Galactic Command",
+        "Dark Prince": "Concentration",
+        "Dark Ruler": "Void Influence",
+        "Dark Magician": "Essence Collector",
+        "Immortal Ruler": "Parallel Universe",
+        "Universal Ruler": "Mana Control",
+        "Blinded By Darkness": "Parallel Universe",
+    }
+
+    for (const fromName in replacements) {
+        migrateTaskProgress(gameDataSave.taskData, fromName, replacements[fromName])
+    }
+
+    if (gameDataSave.currentJob != null && replacements[gameDataSave.currentJob.name] != null) {
+        gameDataSave.currentJob.name = replacements[gameDataSave.currentJob.name]
+    }
+}
+
 function loadGameData() {
     try {
         const gameDataSave = JSON.parse(localStorage.getItem("gameDataSave"))
@@ -1214,6 +1268,8 @@ function loadGameData() {
             if ("milestoneData" in gameDataSave) {
                 delete gameDataSave["milestoneData"]                
             }
+
+            migrateCompressedRoster(gameDataSave)
 
             replaceSaveDict(gameData, gameDataSave)
             replaceSaveDict(gameData.requirements, gameDataSave.requirements)
@@ -1407,7 +1463,6 @@ function applyEvilPerks() {
     gameData.requirements["key2"].requirements[0].requirement = getEvilRequirement()
 
     gameData.requirements["Rebirth note 4"].requirements[0].requirement = getVoidRequirement()
-    gameData.requirements["Void Manipulation"].requirements[0].requirement = getVoidRequirement()
     gameData.requirements["The Void"].requirements[0].requirement = getVoidRequirement()
     gameData.requirements["Corrupted"].requirements[0].requirement = getVoidRequirement()
 

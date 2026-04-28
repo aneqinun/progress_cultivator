@@ -20,7 +20,6 @@ const tooltips = {
     // The Arcane Association
     "Student": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
     "Apprentice Mage": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
-    "Adept Mage": "Turn the tides of battle through casting intermediate spells and mentor other apprentices. The pay for this particular job is extremely high.",
     "Master Wizard": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
     "Archmage": "Blessed with unparalleled talent, perform unbelievable feats with magic at will. It is said that an archmage has enough destructive power to wipe an empire off the map.",
     "Chronomancer": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
@@ -29,11 +28,8 @@ const tooltips = {
 
     // The Void
     "Corrupted": "Corrupted by Void, you are slowly turning into a slave with no free will, just to serve the Void for the rest of eternity... Can you resist it, or will it consume you forever?",
-    "Void Slave": "Each day, you are succumbing to the Void more and more. Can you hold onto your humanity for a bit longer, or will you let the Void devour you?",
     "Void Fiend": "You become an inquisitive yet putrid creature that siphons life from everything around you.",
-    "Abyss Anomaly": "Screaming into existence, you become a manifestation of the unknowable nothingness that lies beyond.",
     "Void Wraith": "Damned soul... a shadow of your former self, lingering between realms and consumed by void... Can you ever find peace?",
-    "Void Reaver": "There are few who may tread the paths between worlds, these powers grant you an ability to generate fields of void energy that devour all living things.",
     "Void Lord": "You gazed into the dark heart of the Void long enough to become one of the most powerful and feared beings. All lesser void creatures are at your command.",
     "Abyss God": "Creator of the Void, a vast canvas of blackness and nothingness, in which the concept of its existence defies all logic. Nothing will escape you.",
 
@@ -41,12 +37,10 @@ const tooltips = {
     "Eternal Wanderer": "With the powers bestowed upon you by an unknown entity, you wander around, visiting places revered and feared in search of answers.",
     "Nova": "Extremely powerful being with tremedous telekinetic powers and the ability to rearrange the molecular structure of matter and energy, even up to cosmic scale.",
     "Sigma Proioxis": "A nigh-omnipotent cosmological entity, with vast matter and energy manipulation abilities that help you push the boundaries of the Universe itself.",
-    "Acallaris": "Primordial being that predate the universe, involved with the creation of life and powerful beyond mortal comprehension, existing as myths to the oldest species in the universe.",
     "One Above All": "Creator of everything.",
 
     // Metaverse Guards
     "Snow Crash": "Snow Crash, 1992",
-    "Player One": "Ready Player One, 2011",
     "Lost in the dark": "They both knew they would only go forward when next to each other. They vowed that they would always be together, earn a lot of money and move to a better place where they would be very happy.",
     "Omega": "ω",
 
@@ -67,29 +61,16 @@ const tooltips = {
     "Time Warping": "Become uncaring of time's passing. Increase the game speed.", // The days pass faster before your eyes. Moments pass you by, like so many petals on the breeze...
     "Astral Body": "Refine your body as a spiritual treasure. Increase your lifespan significantly.", // Bodily Refinement - Refine your body as a treasure. Lifespan grows as the red dust washes from your body and spirit.
     "Temporal Dimension": "Cultivate and nurture time as you would a herb or flower. Increase game speed significantly.", // Temporal cultivation - "Like a herb or flower, time, too, may be nurtured and grown to abundance in its season."
-    "All Seeing Eye": "Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation.", // Qi crystallisation - Condense spirit stones from the very air with your will alone. Increase your wage significantly in earthly cultivation
-    "Brainwashing": "Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your item expenses signficantly.", // Spiritual Command - Speak your commands directly to the souls of mortals; disobedience is impossible. Decrease your expenses signficantly. 
 
     // Dark Magic - Evil Required / Demonic Cultivation
     "Dark Influence": "Find your inspiration in endless bloodshed. Increase job and skill XP gain..",
     "Evil Control": "Enslave the ghosts of innocents to increase your own power. Increase Potential gain.",
     "Intimidation": "Utilise your killing intent to intimidate those with things you want. Reduce item expenses.",
-    "Demon Training": "Host innumerable devilish Gu in your body, taking advantage of their spiritual and vital energies. Increase job and skill XP.",
     "Blood Meditation": "Nourish demons of the spirit and consume them; demon is a more fitting title for yourself. Increase Potential gain.",
     "Demon's Wealth": "Steal karma from deserving people for your own benefit. Increase job wages.",
     "Dark Knowledge": "Harvest rare bloodlines from helpless mortals and bolster your own talent. Increase job xp.",
     "Void Influence": "Devour the thoughts from talented cultivators and skillful mortals alike. Increase job and skill xp.",
     "Time Loop": "Sacrifice the youth of those around you to speed the passing of time. Increase game speed.",
-    "Evil Incarnate": "Offload the psychic strain of learning to unwilling victims across an enormous geographic scale. Increase skill XP.",
-
-    // Void Manipulation / Conceptual magics
-    "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
-    "Void Amplification": "You surrender yourself to the Void, making it easier to take control of you.",
-    "Mind Release": "In a trance like state, you feel the Void amplifying your thoughts, perception, memories, emotions and personality.",
-    "Ceaseless Abyss": "Never ending torture, you swore to serve the Void for the rest of your existence.",
-    "Void Symbiosis": "A symbiotic relationship that helps you become one with the Void.",
-    "Void Embodiment": "If thou gaze long into an abyss, the abyss will also gaze into thee.",
-    "Abyss Manipulation": "Allows you to shape your own reality within the Void itself.",
 
     // Celestial Powers / Immortal Cultivation
     "Cosmic Longevity": "You have seen it all, from the very beginning to the very end.",
@@ -102,14 +83,6 @@ const tooltips = {
     "Parallel Universe": "Self-contained plane of existence, co-existing with one's own, helping you restore fragments of your forgotten power.",
     "Higher Dimensions": "By possesing the power to partially alter the laws of physics and transceding lower dimensional spaces, your existence becomes never-ending.",
     "Epiphany": "You become one with everything.",
-
-    // Darkness / ? Dissolution
-    "Dark Prince": "Perceive faint traces of the Dao in all things. Increase skill XP.",
-    "Dark Ruler": "Harmonize with chaotic currents of existence. Increase Chaos Essence gain.",
-    "Immortal Ruler": "Unify body, mind, and spirit with a single Dao-heart. Increase all XP.",
-    "Dark Magician": "Weave natural laws to condense spiritual substance. Increase Spirit Essence gain.",
-    "Universal Ruler": "Command your Dao domain with flawless control. Increase Spiritual Technique XP.",
-    "Blinded By Darkness": "Discard all distractions and become one with the Dao. Greatly increase all XP.",
 
     // Properties
     "Homeless": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",
@@ -202,7 +175,7 @@ const tooltips = {
     "Dark Matter Mining": "Mine a huge amount of Dark Matter from each planet you visit.",
     "The new gold": "Essence might become the new gold due to mass adoption.",
     "The Devil inside you": "Shady deals with the Devil grant you a huge Potential bonus.",
-    "Strange Magic": "A strange wizard offers you a few secret spells which might be useful.",
+    "Strange Magic": "A strange wizard teaches a forbidden method that vastly amplifies all experience gain.",
     "Life is valueable": "Time is limited... Even as the ruler of the universe.",
     "Speed speed speed": "You can affect the speed of the universe with your gigantic amount of Dark Matter.",
     "Dark Matter Millionaire": "This secret spell will help you reach your quest to become the first Dark Matter millionaire.",
