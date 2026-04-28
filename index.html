@@ -245,7 +245,7 @@
 									</div>
 									<div id="essenceInfo" class="hidden">
 										<div class="text-caption"><span class="color-essence">Spirit Essence: </span><span id="essenceDisplay"></span></div>
-										<div style="color: gray" class="sidebar-element">Affects Supreme Dao XP gain</div>
+										<div style="color: gray" class="sidebar-element">Affects Manifestation XP gain</div>
 									</div>
 									<div id="darkMatterInfo" class="hidden">
 										<div class="text-caption"><span class="color-dark-matter">Chaos Essence: </span><span id="darkMatterDisplay"></span></div>
@@ -261,19 +261,19 @@
 									</div>
 									<div id="hypercubesInfo">
 										<div class="text-caption"><span class="color-hypercubes">Primordial Sparks: </span><span id="hypercubesDisplay"></span></div>
-										<div style="color: gray" class="sidebar-element">for Upper Realm sacrifices</div>
+										<div style="color: gray" class="sidebar-element">Used for Upper Realm ascensions</div>
 									</div>
 									<div id="rebirthButton1" class="hidden">
-										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100%" onClick="rebirthOne()">Open the heavenly eye</button>
+										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100%" onClick="rebirthOne()">Open the Heavenly Eye</button>
 									</div>
 									<div id="rebirthButton2" class="hidden">
 										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthTwo()">Awaken Potential: <span class="color-evil" id="evilGainButtonDisplay"></span></button>
 									</div>
 									<div id="rebirthButton3" class="hidden">
-										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthThree()">Ascend realm: <span class="color-essence" id="essenceGainButtonDisplay"></span></button>
+										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthThree()">Ascend Realm: <span class="color-essence" id="essenceGainButtonDisplay"></span></button>
 									</div>
 									<div id="rebirthButton4" class="hidden">
-										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthFour()">Break the heavens: <span class="color-dark-matter" id="darkMatterGainButtonDisplay"></span></button>
+										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthFour()">Break the Heavens: <span class="color-dark-matter" id="darkMatterGainButtonDisplay"></span></button>
 									</div>
 									<div id="rebirthButton5" class="hidden">
 										<button class="w3-button button" style="margin-bottom: 0.1em; margin-top: 0.8em; width: 100% " onClick="rebirthFive()">Upper realm: <span id="metaversePerkPointsGainButtonDisplay"></span></button>
@@ -366,12 +366,12 @@
 										<div id="exitChallengeDiv">
 											<p>Current Trial: <b><span id="activeChallengeName"></span></b></p>
 											<button class="w3-button button" onclick="exitChallenge()">Leave Trial</button>
-											<div class="currentChallengeReward an_unhappy_life hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-happiness">Happiness</span> by x<span id="currentChallengeBuff1"></span></div>
-											<div class="currentChallengeReward rich_and_the_poor hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-income">Income</span> by x<span id="currentChallengeBuff2"></span></div>
-											<div class="currentChallengeReward time_does_not_fly hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-time-warping">Temporal Dilation</span> by x<span id="currentChallengeBuff3"></span></div>
-											<div class="currentChallengeReward dance_with_the_devil hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="currentChallengeBuff4"></span></div>
-											<div class="currentChallengeReward legends_never_die hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="currentChallengeBuff5"></span></div>
-											<div class="currentChallengeReward the_darkest_time hidden" style="display: inline; padding-left:1em">Current blessing: Multiplies <span class="color-dark-matter">Chaos Essence</span> Gain by x<span id="currentChallengeBuff6"></span></div>
+											<div class="currentChallengeReward an_unhappy_life hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-happiness">Happiness</span> by x<span id="currentChallengeBuff1"></span></div>
+											<div class="currentChallengeReward rich_and_the_poor hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-income">Income</span> by x<span id="currentChallengeBuff2"></span></div>
+											<div class="currentChallengeReward time_does_not_fly hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-time-warping">Temporal Dilation</span> by x<span id="currentChallengeBuff3"></span></div>
+											<div class="currentChallengeReward dance_with_the_devil hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="currentChallengeBuff4"></span></div>
+											<div class="currentChallengeReward legends_never_die hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="currentChallengeBuff5"></span></div>
+											<div class="currentChallengeReward the_darkest_time hidden" style="display: inline; padding-left:1em">Current Blessing: Multiplies <span class="color-dark-matter">Chaos Essence</span> Gain by x<span id="currentChallengeBuff6"></span></div>
 										</div>
 										<div id="anUnhappyLifeChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">1. A Harsh Mortal Life</div>
@@ -403,21 +403,21 @@
 										</div>
 										<div id="danceWithTheDevilChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">4. Dance with the Inner Demon</div>
-											<div style="color: gray; padding-bottom: 0.3em">Reduces Demonic Arts and Supreme Dao XP effect enormously, max level reduces XP gain, and happiness is reduced by ^0.075</div>
+											<div style="color: gray; padding-bottom: 0.3em">Conceptual Arts and Manifestation effects are heavily suppressed, max level reduces XP gain, and happiness is reduced by ^0.075.</div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal4">5.8k</span> <span class="color-evil">Potential</span> Gain</div>
 											<div id="challengeReward4" class="reward">Blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="challengeEssenceGainBuff">1</span></div>
 											<button id="challengeButton4" class="w3-button button" onclick="enterChallenge('dance_with_the_devil')">Enter Trial</button>
 										</div>
 										<div id="legendsNeverDieChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">5. Legends Never Perish</div>
-											<div style="color: gray; padding-bottom: 0.3em">Reduces your lifespan by ^0.72, temporal dilation by ^0.75, happiness does nothing, and Demonic Arts XP effect is always 1x. <span id="challenge5MetaverseLifespanDebuff">The infinite lifespan buff from the Upper Realm is disabled.</span></div>
+											<div style="color: gray; padding-bottom: 0.3em">Your lifespan is reduced by ^0.72, temporal dilation by ^0.75, happiness provides no bonus, and Conceptual Arts XP effect is always 1x. <span id="challenge5MetaverseLifespanDebuff">The infinite lifespan blessing from the Upper Realm is disabled.</span></div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal5">Sect Grand Elder lvl 1227</span></div>
 											<div id="challengeReward5" class="reward">Blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="challengeEvilGainBuff">1</span></div>
 											<button id="challengeButton5" class="w3-button button" onclick="enterChallenge('legends_never_die')">Enter Trial</button>
 										</div>
 										<div id="theDarkestTimeChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">6. Era of Greatest Darkness</div>
-											<div style="color: gray; padding-bottom: 0.3em">All previous trials combined. Chaos Essence treasures are disabled. First 4 Chaos Essence Arts grant all debuffs and no positive effects. Income is 0.</div>
+											<div style="color: gray; padding-bottom: 0.3em">All previous trials combined. Chaos Essence treasures are disabled. The first 4 Chaos Essence Arts apply all penalties and no benefits. Income is 0.</div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal6">Sect Grand Elder lvl 1227</span></div>
 											<div id="challengeReward6" class="reward">Blessing: Multiplies <span class="color-dark-matter">Chaos Essence</span> Gain by x<span id="challengeDarkMatterGainBuff">1</span></div>
 											<button id="challengeButton6" class="w3-button button" onclick="enterChallenge('the_darkest_time')">Enter Trial</button>
@@ -455,12 +455,12 @@
 											<li id="rebirthNote2" class="hidden">
 												<div style="margin-bottom: 0.4em">
 													On your <span id="age1a"></span>th birthday, the talisman trembles again. This time, a living eye
-													opens in the center. Fear grips you, but your mortal lifespan runs short, so you consider
-													touching it and accepting whatever fate follows.
+													opens at its center. Fear grips your heart, yet your mortal years are running out, so you
+													reach out and accept whatever fate follows.
 												</div>
 												<i style="color: grey">
 													By opening the Heavenly Eye, you are reborn and must restart life, losing all levels and coins.
-													However, you gain <b>XP multipliers</b> for ascendant jobs and skills equal to: <b>1 + max level / 10.</b>
+													However, you gain <b>XP multipliers</b> for all cultivator jobs and skills equal to: <b>1 + max level / 10.</b>
 													You will relearn the path far faster than before. <span class="color-evil">
 														The talisman may evolve again after living for <b><span id="age2"></span></b>...
 													</span>
@@ -472,14 +472,14 @@
 											<li id="rebirthNote3" class="hidden">
 												<div style="margin-bottom: 0.4em;">
 													Your instincts were correct. At the age of <span id="age2a"></span>, a ponderous hum rises from the talisman.
-													A harmony of voices, sounding like your own repeated in many tones, manifests and whispers: "You have come this far... Will you awaken your inner potential?"
+													A harmony of voices, all sounding like your own, manifests and whispers: "You have come this far... will you awaken your inner potential?"
 													<br><span class="color-evil">
 														The talisman may transform even further after living for <b><span id="age3"></span></b>.
 													</span>
 												</div>
 												<i class="color-evil">
 													If you awaken Potential, all levels, coins, and max levels are reset.
-													You are reborn as a blank slate. In return, you unlock a new skill path and gain
+													You are reborn as a blank slate. In return, you unlock Conceptual Arts and gain
 													<b><span id="evilGainDisplay"></span> Potential</b>, which will shape all future lives.
 												</i>
 												<br>
@@ -488,8 +488,8 @@
 											</li>
 											<li id="rebirthNote4" class="hidden">
 												<div style="margin-bottom: 0.4em;">
-													A <span id="age3a"></span> years have passed and you still endure. The talisman trembles again, glowing and emanating golden symbols with meanings unclear.
-													As your awe reaches a peak, a whisper echoes in your mind... <b>"Seek the Truth"</b>
+													<span id="age3a"></span> years have passed and you still endure. The talisman trembles again, radiating golden sigils whose meanings remain veiled.
+													As your awe peaks, a whisper echoes in your mind... <b>"Seek the Truth"</b>
 													<br>
 													<span class="color-evil">
 														The talisman will reach its final form after <b><span id="age4"></span></b>!
@@ -501,7 +501,7 @@
 											</li>
 											<li id="rebirthNote5" class="hidden">
 												<div style="margin-bottom: 0.4em;">
-													<span id="age4a"></span> have passed... most spent studying to comprehend the dao. And yet, a small part of you remains: a fragment of the innocent mortal you once were. Suddenly the talisman blazes,
+													<span id="age4a"></span> years have passed... most spent studying the Dao. And yet, a small part of you remains: a fragment of the innocent mortal you once were. Suddenly the talisman blazes,
 													casting radiance like ten thousand suns. With a flex of your will, you seize it... <b>
 														"You now stand within a greater Dao..."
 													</b>
@@ -510,7 +510,7 @@
 													You have unlocked <b>"Immortal Cultivation"</b> jobs along with <b>"Immortal Techniques"</b> skills.
 													<i style="color: grey">
 														<br>
-														If you choose to <b>ascend realm</b>, you are reborn again, losing all coins, <b>Potential</b>, and current levels.
+														If you choose to <b>Ascend Realm</b>, you are reborn again, losing all coins, <b>Potential</b>, and current levels.
 														Your max levels are preserved and multiplied by the effect from <b>Wheel-Crossing Permanence</b>, and you gain
 														<i class="color-essence">
 															<b><span id="essenceGainDisplay"></span> Spirit Essence</b>,
@@ -518,13 +518,13 @@
 														along with new arts that push your cultivation even higher.
 														<br>
 														<i style="color: rgb(200, 0, 0)">
-															Ascend realm appears only after unlocking <b>Wheel-Crossing Permanence</b>!
+															Ascend Realm appears only after unlocking <b>Wheel-Crossing Permanence</b>!
 														</i>
 													</i>
 													<br>
 												</i>
 												<div style="margin-bottom: 0.4em;" id="rebirthNote6" class="hidden">
-													<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em" onClick="rebirthThree()">Ascend realm</button>
+													<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em" onClick="rebirthThree()">Ascend Realm</button>
 												</div>
 											</li>
 											<li id="rebirthNote7" class="hidden">
@@ -533,14 +533,14 @@
 												</i>
 												<i style="color: grey">
 													<br>
-													If you choose to <b>break the heavens</b>, all levels, coins, max levels, Potential, and <b>Spirit Essence</b> reset. You are reborn in a new world, with no memory of milestones or trials from former selves. In exchange, you unlock a third skill path and gain
+													If you choose to <b>Break the Heavens</b>, all levels, coins, max levels, Potential, and <b>Spirit Essence</b> reset. You are reborn in a new world, with no memory of milestones or trials from former selves. In exchange, you unlock Chaos Essence systems and gain
 													<i class="color-dark-matter">
 														<b><span id="darkMatterGainDisplay"></span> Chaos Essence</b>,
 													</i>
 													which will propel you further across the Ten Thousand Realms.
 												</i>
 												<br>
-												<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em " onClick="rebirthFour()">Break the heavens</button>
+												<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em " onClick="rebirthFour()">Break the Heavens</button>
 											</li>
 											<li id="rebirthNote8" class="hidden">
 												<i class="color-hypercubes">
@@ -548,9 +548,9 @@
 												</i>
 												<i style="color: grey">
 													<br>
-													When you step into the Upper Realm, you lose everything earned so far. You begin anew, but eventually become far stronger.
+													When you step into the Upper Realm, you lose everything earned so far. You begin anew, but will eventually return far stronger.
 													<span id="hypercubeCapText">Your Primordial Spark cap will increase to <span class="color-hypercubes" id="hypercubeCapDisplay"></span>.</span>
-													<span id="perkPointsGainText">You will gain <span class="color-perk-points"><span id="perkPointsGainDisplay"></span> Upper Realm perk points</span>.</span>
+													<span id="perkPointsGainText">You will gain <span class="color-perk-points"><span id="perkPointsGainDisplay"></span> Upper Realm Perk Points</span>.</span>
 												</i>
 												<br>
 												<button class="w3-button button" style="margin-bottom: 0.4em; margin-top: 0.4em " onClick="rebirthFive()">Enter Upper Realm</button>
@@ -605,7 +605,7 @@
 											<button class="w3-button button" id="gottaBeFastBuyButton" onclick="buyGottaBeFast()">Advance</button>
 										</div>
 										<div style="padding-top:2em">
-											<div class="text-caption dark-matter-title">Life coach</div>
+											<div class="text-caption dark-matter-title">Life Coach</div>
 											<div style="color:gray; padding-bottom: 0.5em;">Reward: Multiply <span class="color-income">Income</span> by x<span id="lifeCoachEffect"></span></div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="lifeCoachCost"></b> <span class="color-dark-orbs">Dao Fragments</span></div>
 											<button class="w3-button button" id="lifeCoachBuyButton" onclick="buyLifeCoach()">Advance</button>
@@ -654,7 +654,7 @@
 											<div class="darkMatterSkillOR" style="padding: 0.6em">OR</div>
 											<div style="color:gray; padding-bottom:0.3em">
 												<button id="yourGreatestDebt2" class="w3-button button" onclick="buyYourGreatestDebt(2)">Choose</button> -
-												Multiply <span class="color-evil">Potential gain</span> by <b>100x</b><span class="negative-effect">
+												Multiply <span class="color-evil">Potential Gain</span> by <b>100x</b><span class="negative-effect">
 													,
 													but divide <span class="color-income">Income</span> by <b>2x</b>
 												</span>
@@ -735,7 +735,7 @@
 										</div>
 										<div style="padding-top:1em">
 											<div class="text-caption">Lifespan is now infinite.</div>
-											<div class="text-caption">The more Primordial Sparks you have, the more offering opportunities will open up.</div>
+											<div class="text-caption">The more Primordial Sparks you hold, the more altar offerings become available.</div>
 										</div>
 										<div style="border-bottom: 0.1em solid rgb(24, 210, 217); padding-top: 2em;"></div>
 										<div style="padding-top:1em">
@@ -775,19 +775,19 @@
 											<button class="w3-button button" id="evilTranBuyButton" onclick="buyEvilTran()">Advance</button>
 										</div>
 										<div id="EssenceAltar" style="padding-top:2em">
-											<div class="text-caption metaverse-title">Spirit Essence gain multiplier</div>
+											<div class="text-caption metaverse-title">Spirit Essence Gain Multiplier</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current multiplier: x<b id="essenceMultGain"></b> <span class="color-essence">Spirit Essence</span></div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="essenceMultCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="essenceMultButton" onclick="buyEssenceMult()">Advance</button>
 										</div>
 										<div id="ChallengeAltar" style="padding-top:2em">
-											<div class="text-caption metaverse-title">Trials are not reset on heaven-break</div>
+											<div class="text-caption metaverse-title">Trials are not reset on Heaven Break</div>
 											<div style="color:gray; padding-bottom: 0.3em;"><span style="color: rgb(10, 238, 43)"><b id="challengeAltarState"></b></span></div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="challengeAltarCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="challengeAltarButton" onclick="buyChallengeAltar()">Advance</button>
 										</div>
 										<div id="DarkMaterAltar" style="padding-top:2em">
-											<div class="text-caption metaverse-title">Chaos Essence gain multiplier</div>
+											<div class="text-caption metaverse-title">Chaos Essence Gain Multiplier</div>
 											<div style="color:gray; padding-bottom: 0.3em;">Current multiplier: x<b id="darkMatterMultGain"></b> <span class="color-dark-matter">Chaos Essence</span></div>
 											<div style="color:gray; padding-bottom: 0.5em;">Cost: <b id="darkMatterMultCost"></b> <span class="color-hypercubes">Primordial Sparks</span></div>
 											<button class="w3-button button" id="darkMaterMultButton" onclick="buyDarkMaterMult()">Advance</button>
@@ -800,7 +800,7 @@
 											<div class="text-caption"><span class="color-perk-points"><b>Upper Realm Perks</b></span></div>
 										</div>
 										<div style="padding-top:1em">
-											<div class="text-caption" style="padding-left: 1em;">You have <b><span id="perkPointDisplay" class="color-perk-points"></span></b> unspent Upper Realm perk points. Total points: <b><span id="totalPerkPointDisplay" class="color-perk-points"></span></b>.</div>
+											<div class="text-caption" style="padding-left: 1em;">You have <b><span id="perkPointDisplay" class="color-perk-points"></span></b> unspent Upper Realm Perk Points. Total points: <b><span id="totalPerkPointDisplay" class="color-perk-points"></span></b>.</div>
 											<div id="mppInfo" class="text-caption" style="padding-left: 1em;">You can freely activate and deactivate perks for the points you have.</div>
 											<div id="mppInfo2" class="text-caption" style="padding-left: 1em;">Bonus to Chaos Essence gain is x<span id="mppDMBuff"></span>.</div>
 										</div>
@@ -812,8 +812,8 @@
 										</div>
 										<div style="border-bottom: 0.1em solid rgb(217, 24, 119); padding-top: 0em; "></div>
 										<div id="perkTools" class="perk-grid" style="padding-top:0em">
-											<button class="perk metaperk perk-tool" onclick="collectPerkPoints(0)"><div>Assign unspent perk points</div></button>
-											<button class="perk metaperk perk-tool" onclick="collectPerkPoints(1)"><div>Retrieve all perk points</div></button>
+											<button class="perk metaperk perk-tool" onclick="collectPerkPoints(0)"><div>Assign Unspent Perk Points</div></button>
+											<button class="perk metaperk perk-tool" onclick="collectPerkPoints(1)"><div>Retrieve All Perk Points</div></button>
 										</div>
 										<div id="Congratulations" class="congrats hidden">
 											<div>Congratulations!</div>
@@ -905,8 +905,8 @@
 													<div>Spacebar - Pause</div>
 													<div id="key1" class="hidden">q - Open the Heavenly Eye</div>
 													<div id="key2" class="hidden">e - Awaken Potential</div>
-													<div id="key3" class="hidden">t - Ascend realm</div>
-													<div id="key4" class="hidden">u - Break the heavens</div>
+													<div id="key3" class="hidden">t - Ascend Realm</div>
+													<div id="key4" class="hidden">u - Break the Heavens</div>
 													<div id="key5" class="hidden">g - Enter Upper Realm</div>
 													<div id="keyChallenge" class="hidden">1 - Enter / Leave Trial 1, etc.</div>
 												</div>
@@ -964,8 +964,8 @@
 										<div id="statsRebirth4" class="hidden">
 											<ul>
 												<li>You have broken the heavens <span id="rebirthFourCountDisplay"></span> times.</li>
-												<li>You have spent <span id="rebirthFourTimeDisplay"></span> in this heaven-break.</li>
-												<li>Your fastest heaven-break is in <span id="rebirthFourFastestDisplay"></span>.</li>
+												<li>You have spent <span id="rebirthFourTimeDisplay"></span> in this Heaven Break.</li>
+												<li>Your fastest Heaven Break is in <span id="rebirthFourFastestDisplay"></span>.</li>
 											</ul>
 										</div>
 										<div id="statsRebirth5" class="hidden">
