@@ -168,7 +168,9 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedTaskEffect("Mana Control"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["The Void"].includes(task.name)) {
+            task.xpMultipliers.push(getBindedItemEffect("Void Necklace"))
             task.xpMultipliers.push(getBindedItemEffect("Void Armor"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Orb"))
             task.xpMultipliers.push(getBindedItemEffect("Void Dust"))
         } else if (jobCategories["Galactic Council"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Celestial Robe"))
