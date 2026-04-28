@@ -73,16 +73,16 @@ const tooltips = {
     "Time Loop": "Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.", // Rarified Mind
 
     // Celestial Powers / Immortal Cultivation
-    "Cosmic Longevity": "You have seen it all, from the very beginning to the very end.",
-    "Cosmic Recollection": "Exist across multiple timelines and guide your parallel selves, influencing their lives as you see fit.",
-    "Essence Collector": "Exploit the unlimited potential of multiverse energies and collect its resources.",
-    "Galactic Command": "Absolute power corrupts absolutely.",
+    "Cosmic Longevity": "Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan.", // Epoch-Spanning Lifeline
+    "Cosmic Recollection": "Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved for rebirth and milestone auto-max logic.", // Wheel-Crossing Permanence
+    "Essence Collector": "You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain.", // Spiritual Nexus
+    "Galactic Command": "What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.", // Cessation of Excess
 
     // Almightiness / Manifestation
-    "Yin Yang": "Born from chaos when the universe was first created, believed to exist in harmony, balancing evil and good.",
-    "Parallel Universe": "Self-contained plane of existence, co-existing with one's own, helping you restore fragments of your forgotten power.",
-    "Higher Dimensions": "By possesing the power to partially alter the laws of physics and transceding lower dimensional spaces, your existence becomes never-ending.",
-    "Epiphany": "You become one with everything.",
+    "Yin Yang": "You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.", // Taiji Equilibrium
+    "Parallel Universe": "In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.", // Splitting the Illusion
+    "Higher Dimensions": "When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan.", // World-Dreams
+    "Epiphany": "What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.", // Meditations on the Heavenly
 
     // Properties
     "Homeless": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",
