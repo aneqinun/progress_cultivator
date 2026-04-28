@@ -37,10 +37,10 @@ function setChallengeProgress() {
         gameData.challenges.dance_with_the_devil = Math.max(gameData.challenges.dance_with_the_devil, Math.max(0, getEvilGain() - 10))
     }
     if (gameData.active_challenge == "legends_never_die") {
-        gameData.challenges.legends_never_die = Math.max(gameData.challenges.legends_never_die, getChallengeTaskGoalProgress("Chairman"))
+        gameData.challenges.legends_never_die = Math.max(gameData.challenges.legends_never_die, getChallengeTaskGoalProgress("Spirit integration"))
     }
     if (gameData.active_challenge == "the_darkest_time") {
-        gameData.challenges.the_darkest_time = Math.max(gameData.challenges.the_darkest_time, getChallengeTaskGoalProgress("Sigma Proioxis") / 100)
+        gameData.challenges.the_darkest_time = Math.max(gameData.challenges.the_darkest_time, getChallengeTaskGoalProgress("Heavenly Immortal") / 100)
     }
 }
 
@@ -58,10 +58,10 @@ function getChallengeBonus(challenge_name, current = false) {
         return softcap(Math.pow((current ? Math.max(0, getEvilGain() - 10) : gameData.challenges.dance_with_the_devil) + 1, 0.09), 2, 0.75)
     }
     if (challenge_name == "legends_never_die" || challenge_name == 5) {
-        return softcap(Math.pow((current ? getChallengeTaskGoalProgress("Chairman") : gameData.challenges.legends_never_die) + 1, 0.85), 25, 0.6)
+        return softcap(Math.pow((current ? getChallengeTaskGoalProgress("Spirit integration") : gameData.challenges.legends_never_die) + 1, 0.85), 25, 0.6)
     }
     if (challenge_name == "the_darkest_time" || challenge_name == 6) {
-        return softcap(Math.pow((current ? getChallengeTaskGoalProgress("Sigma Proioxis") / 100.0 : gameData.challenges.the_darkest_time) + 1, 0.85), 25, 0.6)
+        return softcap(Math.pow((current ? getChallengeTaskGoalProgress("Heavenly Immortal") / 100.0 : gameData.challenges.the_darkest_time) + 1, 0.85), 25, 0.6)
     }
 }
 

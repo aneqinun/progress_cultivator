@@ -142,45 +142,45 @@ function addMultipliers() {
             task.incomeMultipliers.push(getLifeCoachIncomeGain)
             task.xpMultipliers.push(getBindedTaskEffect("Productivity"))
             task.xpMultipliers.push(getBindedTaskEffect("Dark Knowledge"))
-            task.xpMultipliers.push(getBindedItemEffect("Personal Squire"))
+            task.xpMultipliers.push(getBindedItemEffect("Personal Servant Disciple"))
         } else if (task instanceof Skill) {
             task.xpMultipliers.push(getBindedTaskEffect("Concentration"))
-            task.xpMultipliers.push(getBindedItemEffect("Book"))
-            task.xpMultipliers.push(getBindedItemEffect("Study Desk"))
-            task.xpMultipliers.push(getBindedItemEffect("Library"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Blade"))
-            task.xpMultipliers.push(getBindedItemEffect("Universe Fragment"))
-            task.xpMultipliers.push(getBindedItemEffect("Custom Galaxy"))
+            task.xpMultipliers.push(getBindedItemEffect("Cultivation Manual"))
+            task.xpMultipliers.push(getBindedItemEffect("Scripture Desk"))
+            task.xpMultipliers.push(getBindedItemEffect("Scripture Pavilion"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Slaying Blade"))
+            task.xpMultipliers.push(getBindedItemEffect("Cosmos Fragment"))
+            task.xpMultipliers.push(getBindedItemEffect("Personal Star Domain"))
         }
 
         if (jobCategories["Military"].includes(task.name)) {
             task.incomeMultipliers.push(getBindedTaskEffect("Strength"))
             task.xpMultipliers.push(getBindedTaskEffect("Battle Tactics"))
-            task.xpMultipliers.push(getBindedItemEffect("Steel Longsword"))
+            task.xpMultipliers.push(getBindedItemEffect("Spirit Steel Sword"))
         } else if (task.name == "Strength") {
             task.xpMultipliers.push(getBindedTaskEffect("Muscle Memory"))
-            task.xpMultipliers.push(getBindedItemEffect("Dumbbells"))
+            task.xpMultipliers.push(getBindedItemEffect("Body Refinement Weights"))
         } else if (skillCategories["Magic"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Sapphire Charm"))
-            task.xpMultipliers.push(getBindedItemEffect("Observatory"))
+            task.xpMultipliers.push(getBindedItemEffect("Azure Jade Charm"))
+            task.xpMultipliers.push(getBindedItemEffect("Star Gazing Platform"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["The Arcane Association"].includes(task.name)) {
             task.xpMultipliers.push(getBindedTaskEffect("Mana Control"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["The Void"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Void Necklace"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Armor"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Orb"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Dust"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Jade Pendant"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Battle Armor"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Pearl"))
+            task.xpMultipliers.push(getBindedItemEffect("Void Sand"))
         } else if (jobCategories["Galactic Council"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Celestial Robe"))
+            task.xpMultipliers.push(getBindedItemEffect("Immortal Robe"))
             task.xpMultipliers.push(getBindedTaskEffect("Epiphany"))
         } else if (skillCategories["Dark Magic"].includes(task.name)) {
             task.xpMultipliers.push(getEvilXpGain)
         } else if (skillCategories["Almightiness"].includes(task.name)) {
             task.xpMultipliers.push(getEssenceXpGain)
         } else if (skillCategories["Fundamentals"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Mind's Eye"))
+            task.xpMultipliers.push(getBindedItemEffect("Heavenly Mind's Eye"))
         }
     }
 
@@ -334,10 +334,10 @@ function getHappiness() {
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return 1
 
     const meditationEffect = getBindedTaskEffect("Meditation")
-    const butlerEffect = getBindedItemEffect("Butler")
-    const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
+    const butlerEffect = getBindedItemEffect("Steward Elder")
+    const multiverseFragment = getBindedItemEffect("Realm Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
-    const stairWayToHeaven = getBindedItemEffect("Stairway to heaven")
+    const stairWayToHeaven = getBindedItemEffect("Stairway to Immortality")
     const happiness = godsBlessings * meditationEffect() * butlerEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
 
@@ -418,7 +418,7 @@ function getEvilGain() {
     const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
     const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
     const theDevilInsideYou = gameData.requirements["The Devil inside you"].isCompleted() ? 1e15 : 1
-    const stairWayToHell = getBindedItemEffect("Highway to hell")
+    const stairWayToHell = getBindedItemEffect("Road to Demon Domain")
     const evilBooster = (gameData.perks.evil_booster == 1) ? 1e50 : 1
 
     const evilGain = evilControl.getEffect() * bloodMeditation.getEffect() * potentialRecovery * yingYang.getEffect()
@@ -453,7 +453,7 @@ function getDarkMatterGain() {
     const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 10 : 1
     const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 3 : 1
     const darkMatterMillionaire = gameData.requirements["Dark Matter Millionaire"].isCompleted() ? 500 : 1
-    const Desintegration = gameData.itemData['Desintegration'].getEffect()
+    const Desintegration = gameData.itemData['Annihilation Art'].getEffect()
     const TheEndIsNear = getUnspentPerksDarkmatterGainBuff() 
 
 
@@ -520,7 +520,7 @@ function applyExpenses() {
 
 function goBankrupt() {
     gameData.coins = 0
-    gameData.currentProperty = gameData.itemData["Homeless"]
+    gameData.currentProperty = gameData.itemData["Ragged Courtyard"]
     gameData.currentMisc = []
     autoBuyEnabled = true
 }
@@ -1030,7 +1030,7 @@ function rebirthReset(set_tab_to_jobs = true) {
     gameData.days = 365 * 14
     gameData.realtime = 0
     gameData.currentJob = gameData.taskData["Beggar"]
-    gameData.currentProperty = gameData.itemData["Homeless"]
+    gameData.currentProperty = gameData.itemData["Ragged Courtyard"]
     gameData.currentMisc = []
     gameData.stats.EssencePerSecond = 0
     gameData.stats.maxEssencePerSecond = 0
@@ -1109,7 +1109,7 @@ function canSimulate() {
 }
 
 function isHeroesUnlocked() {
-    return gameData.requirements["New Beginning"].isCompleted() && (gameData.taskData["One Above All"].level >= 2000 || gameData.taskData["One Above All"].isHero)
+    return gameData.requirements["New Beginning"].isCompleted() && (gameData.taskData["Sovereign Epyrean"].level >= 2000 || gameData.taskData["Sovereign Epyrean"].isHero)
 }
 
 function makeHero(task) {
@@ -1161,7 +1161,7 @@ function makeHeroes() {
         if (item.isHero)
             continue
         item.isHero = true
-        gameData.currentProperty = gameData.itemData["Homeless"]
+        gameData.currentProperty = gameData.itemData["Ragged Courtyard"]
         gameData.currentMisc = []
     }
 }
@@ -1278,76 +1278,6 @@ function peekSettingFromSave(setting) {
     }
 }
 
-function migrateTaskProgress(taskData, fromName, toName) {
-    if (!(fromName in taskData) || !(toName in taskData)) return
-
-    const fromTask = taskData[fromName]
-    const toTask = taskData[toName]
-
-    if (typeof fromTask.level === "number" && (toTask.level == null || fromTask.level > toTask.level))
-        toTask.level = fromTask.level
-    if (typeof fromTask.maxLevel === "number" && (toTask.maxLevel == null || fromTask.maxLevel > toTask.maxLevel))
-        toTask.maxLevel = fromTask.maxLevel
-    if (typeof fromTask.xp === "number" && (toTask.xp == null || fromTask.xp > toTask.xp))
-        toTask.xp = fromTask.xp
-
-    if (fromTask.xpBigInt != null) {
-        try {
-            const fromBigInt = BigInt(fromTask.xpBigInt)
-            const toBigInt = BigInt(toTask.xpBigInt == null ? 0 : toTask.xpBigInt)
-            if (fromBigInt > toBigInt)
-                toTask.xpBigInt = fromTask.xpBigInt
-        } catch (error) {
-            // Ignore invalid BigInt values in legacy saves.
-        }
-    }
-
-    toTask.isHero = Boolean(toTask.isHero || fromTask.isHero)
-    toTask.unlocked = Boolean(toTask.unlocked || fromTask.unlocked)
-    toTask.isFinished = Boolean(toTask.isFinished || fromTask.isFinished)
-
-    delete taskData[fromName]
-}
-
-function migrateCompressedRoster(gameDataSave) {
-    if (gameDataSave == null || gameDataSave.taskData == null)
-        return
-
-    const replacements = {
-        "Adept Mage": "Master Wizard",
-        "Void Slave": "Void Fiend",
-        "Abyss Anomaly": "Void Wraith",
-        "Void Reaver": "Void Lord",
-        "Acallaris": "One Above All",
-        "Player One": "Lost in the dark",
-        "All Seeing Eye": "Mana Control",
-        "Brainwashing": "Intimidation",
-        "Demon Training": "Dark Influence",
-        "Evil Incarnate": "Concentration",
-        "Absolute Wish": "Evil Control",
-        "Void Amplification": "Void Influence",
-        "Mind Release": "Meditation",
-        "Ceaseless Abyss": "Astral Body",
-        "Void Symbiosis": "Concentration",
-        "Void Embodiment": "Blood Meditation",
-        "Abyss Manipulation": "Galactic Command",
-        "Dark Prince": "Concentration",
-        "Dark Ruler": "Void Influence",
-        "Dark Magician": "Essence Collector",
-        "Immortal Ruler": "Parallel Universe",
-        "Universal Ruler": "Mana Control",
-        "Blinded By Darkness": "Parallel Universe",
-    }
-
-    for (const fromName in replacements) {
-        migrateTaskProgress(gameDataSave.taskData, fromName, replacements[fromName])
-    }
-
-    if (gameDataSave.currentJob != null && replacements[gameDataSave.currentJob.name] != null) {
-        gameDataSave.currentJob.name = replacements[gameDataSave.currentJob.name]
-    }
-}
-
 function loadGameData() {
     try {
         const gameDataSave = JSON.parse(localStorage.getItem("gameDataSave"))
@@ -1364,8 +1294,6 @@ function loadGameData() {
             if ("milestoneData" in gameDataSave) {
                 delete gameDataSave["milestoneData"]                
             }
-
-            migrateCompressedRoster(gameDataSave)
 
             replaceSaveDict(gameData, gameDataSave)
             replaceSaveDict(gameData.requirements, gameDataSave.requirements)
@@ -1560,12 +1488,12 @@ function applyEvilPerks() {
 
     gameData.requirements["Rebirth note 4"].requirements[0].requirement = getVoidRequirement()
     gameData.requirements["The Void"].requirements[0].requirement = getVoidRequirement()
-    gameData.requirements["Corrupted"].requirements[0].requirement = getVoidRequirement()
+    gameData.requirements["Intent Scholar"].requirements[0].requirement = getVoidRequirement()
 
     gameData.requirements["Galactic Council"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Celestial Powers"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Rebirth note 5"].requirements[0].requirement = getCelestialRequirement()
-    gameData.requirements["Eternal Wanderer"].requirements[0].requirement = getCelestialRequirement()
+    gameData.requirements["Human Immortal"].requirements[0].requirement = getCelestialRequirement()
 }
 
 function updateRequirements() {
@@ -1684,7 +1612,7 @@ createGameObjects(gameData.itemData, itemBaseData)
 createGameObjects(milestoneData, milestoneBaseData)
 
 gameData.currentJob = gameData.taskData["Beggar"]
-gameData.currentProperty = gameData.itemData["Homeless"]
+gameData.currentProperty = gameData.itemData["Ragged Courtyard"]
 gameData.currentMisc = []
 
 gameData.requirements = requirementsBaseData
