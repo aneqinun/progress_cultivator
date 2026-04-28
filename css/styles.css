@@ -478,7 +478,7 @@ button:focus {
     color: rgb(15, 105, 207);
 }
 .color-evil {
-    color: rgb(240, 0, 0);
+    color: lightgreen;
 }
 .color-essence {
     color: rgb(24, 210, 217);
