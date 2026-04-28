@@ -24,6 +24,100 @@ const checkpointTuning = {
     lifespanOverflowExponent: 0.33,
 }
 
+const adminTurboConfig = {
+    targetUtilization: 0.68,
+    minMultiplier: 1,
+    maxMultiplier: 1e10,
+    smoothing: 0.1,
+}
+
+const adminTurboState = {
+    enabled: false,
+    multiplier: 1,
+    avgUpdateMs: 1000 / updateSpeed,
+    lastAdjustTime: 0,
+    revealClicks: 0,
+    revealStartMs: 0,
+}
+
+function onVersionClick() {
+    const now = Date.now()
+    if (now - adminTurboState.revealStartMs > 3500) {
+        adminTurboState.revealStartMs = now
+        adminTurboState.revealClicks = 0
+    }
+    adminTurboState.revealClicks += 1
+
+    if (adminTurboState.revealClicks >= 7) {
+        const button = document.getElementById("adminTurboButton")
+        const status = document.getElementById("adminTurboStatus")
+        button.classList.remove("hidden")
+        status.classList.remove("hidden")
+        adminTurboState.revealClicks = 0
+        renderAdminTurboState()
+    }
+}
+
+function renderAdminTurboState() {
+    const button = document.getElementById("adminTurboButton")
+    const status = document.getElementById("adminTurboStatus")
+    if (button == null || status == null) return
+
+    button.textContent = adminTurboState.enabled ? "Admin Turbo: ON" : "Admin Turbo: OFF"
+    status.textContent = adminTurboState.enabled
+        ? "x" + format(adminTurboState.multiplier, 2) + " adaptive"
+        : ""
+}
+
+function toggleAdminTurbo() {
+    adminTurboState.enabled = !adminTurboState.enabled
+    adminTurboState.lastAdjustTime = Date.now()
+
+    if (adminTurboState.enabled) {
+        // Start conservative, then ramp up to the stable max for this device.
+        adminTurboState.multiplier = Math.max(adminTurboState.multiplier, 10)
+    } else {
+        adminTurboState.multiplier = 1
+    }
+
+    renderAdminTurboState()
+}
+
+function getAdminTurboMultiplier() {
+    return adminTurboState.enabled ? adminTurboState.multiplier : 1
+}
+
+function updateAdminTurboTuning(updateDurationMs) {
+    adminTurboState.avgUpdateMs = adminTurboState.avgUpdateMs * (1 - adminTurboConfig.smoothing)
+        + updateDurationMs * adminTurboConfig.smoothing
+
+    if (!adminTurboState.enabled) return
+
+    const now = Date.now()
+    if (now - adminTurboState.lastAdjustTime < 500) return
+    adminTurboState.lastAdjustTime = now
+
+    const intervalBudgetMs = (1000 / updateSpeed) * adminTurboConfig.targetUtilization
+    const loadRatio = adminTurboState.avgUpdateMs / Math.max(intervalBudgetMs, 1e-6)
+
+    if (loadRatio < 0.45) {
+        adminTurboState.multiplier *= 1.18
+    } else if (loadRatio < 0.75) {
+        adminTurboState.multiplier *= 1.08
+    } else if (loadRatio > 1.15) {
+        adminTurboState.multiplier *= 0.7
+    } else if (loadRatio > 0.95) {
+        adminTurboState.multiplier *= 0.9
+    }
+
+    adminTurboState.multiplier = Math.min(
+        adminTurboConfig.maxMultiplier,
+        Math.max(adminTurboConfig.minMultiplier, adminTurboState.multiplier)
+    )
+
+    renderAdminTurboState()
+}
+
 
 function addMultipliers() {
     for (const taskName in gameData.taskData) {
@@ -398,7 +492,7 @@ function getUnpausedGameSpeed() {
 
     const timeWarpingSpeed = boostWarping * timeWarping.getEffect() * temporalDimension.getEffect() * timeLoop.getEffect() * warpDrive * speedSpeedSpeed * timeIsAFlatCircle
 
-    const gameSpeed = baseGameSpeed * timeWarpingSpeed * getChallengeBonus("time_does_not_fly") * getGottaBeFastGain() * getDarkMatterSkillTimeWarping() 
+    const gameSpeed = baseGameSpeed * timeWarpingSpeed * getChallengeBonus("time_does_not_fly") * getGottaBeFastGain() * getDarkMatterSkillTimeWarping() * getAdminTurboMultiplier()
 
     if (gameData.active_challenge == "time_does_not_fly" || gameData.active_challenge == "the_darkest_time")
         return Math.pow(gameSpeed, 0.7)
@@ -1623,13 +1717,16 @@ setTab(gameData.settings.selectedTab)
 setTabSettings("settingsTab")
 setTabDarkMatter("shopTab")
 setTabMetaverse("metaverseTab1")
+renderAdminTurboState()
 
 let ticking = false;
 
 var gameloop = setInterval(function() {
     if (ticking) return;
     ticking = true;
+    const tickStart = performance.now()
     update();
+    updateAdminTurboTuning(performance.now() - tickStart)
     var ms = Date.now() - lastUpdate
     if (lastUpdate != 0 && ms >= 10000 && !in_offline_progress)
         calc_offline_progress(ms)
