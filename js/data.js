@@ -194,12 +194,12 @@ const skillBaseData = {
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
 
     // Combat / Martial arts 
-    "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
-    "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
+    "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Mortal Military Pay" },
+    "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Mortal Military XP" },
     "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
 
     // / Spiritual techniques
-    "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "T.A.A. XP" },
+    "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "Earthly Cultivation XP" },
     "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
     "Time Warping": { name: "Time Warping", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
     "Astral Body": { name: "Astral Body", maxXp: 100, heroxp: 100, effect: 0.0035, description: "Longer lifespan" },
@@ -225,7 +225,7 @@ const skillBaseData = {
     "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Potential Gain" },
     "Parallel Universe": { name: "Parallel Universe", maxXp: 100, heroxp: 300, effect: 0.02, description: "All XP" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
-    "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
+    "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Immortal Cultivation XP" },
 
 }
 
@@ -266,19 +266,19 @@ const itemBaseData = {
     "Cultivation Manual": { name: "Cultivation Manual", expense: 10, effect: 1.5, description: "Skill XP", heromult: 2, heroeffect: 10 },
     "Body Refinement Weights": { name: "Body Refinement Weights", expense: 50, effect: 1.5, description: "Strength XP", heromult: 2, heroeffect: 10 },
     "Personal Servant Disciple": { name: "Personal Servant Disciple", expense: 200, effect: 2, description: "Hero XP", heromult: 3, heroeffect: 10 },
-    "Spirit Steel Sword": { name: "Spirit Steel Sword", expense: 1000, effect: 2, description: "Military XP", heromult: 3, heroeffect: 10 },
+    "Spirit Steel Sword": { name: "Spirit Steel Sword", expense: 1000, effect: 2, description: "Mortal Military XP", heromult: 3, heroeffect: 10 },
     "Steward Elder": { name: "Steward Elder", expense: 7500, effect: 1.5, description: "Happiness", heromult: 4, heroeffect: 10 },
     "Azure Jade Charm": { name: "Azure Jade Charm", expense: 50000, effect: 3, description: "Magic XP", heromult: 4, heroeffect: 10 },
     "Scripture Desk": { name: "Scripture Desk", expense: 1000000, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Scripture Pavilion": { name: "Scripture Pavilion", expense: 1e7, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Star Gazing Platform": { name: "Star Gazing Platform", expense: 1.4e8, effect: 5, description: "Magic XP", heromult: 6, heroeffect: 10 },
     "Heavenly Mind's Eye": { name: "Heavenly Mind's Eye", expense: 3.25e9, effect: 10, description: "Fundamentals XP", heromult: 8, heroeffect: 10 },
-    "Void Jade Pendant": { name: "Void Jade Pendant", expense: 2.8e10, effect: 3, description: "The Void XP", heromult: 10, heroeffect: 10 },
-    "Void Battle Armor": { name: "Void Battle Armor", expense: 1.97e11, effect: 3, description: "The Void XP", heromult: 10, heroeffect: 10 },
+    "Void Jade Pendant": { name: "Void Jade Pendant", expense: 2.8e10, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
+    "Void Battle Armor": { name: "Void Battle Armor", expense: 1.97e11, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
     "Void Slaying Blade": { name: "Void Slaying Blade", expense: 5e11, effect: 3, description: "Skill XP", heromult: 11, heroeffect: 10 },
-    "Void Pearl": { name: "Void Pearl", expense: 1.2e12, effect: 3, description: "The Void XP", heromult: 11, heroeffect: 10 },
-    "Void Sand": { name: "Void Sand", expense: 2.5e13, effect: 3, description: "The Void XP", heromult: 12, heroeffect: 10 },
-    "Immortal Robe": { name: "Immortal Robe", expense: 3e14, effect: 5, description: "Galactic Council XP", heromult: 12, heroeffect: 10 },
+    "Void Pearl": { name: "Void Pearl", expense: 1.2e12, effect: 3, description: "Dao Comprehension XP", heromult: 11, heroeffect: 10 },
+    "Void Sand": { name: "Void Sand", expense: 2.5e13, effect: 3, description: "Dao Comprehension XP", heromult: 12, heroeffect: 10 },
+    "Immortal Robe": { name: "Immortal Robe", expense: 3e14, effect: 5, description: "Immortal Cultivation XP", heromult: 12, heroeffect: 10 },
     "Cosmos Fragment": { name: "Cosmos Fragment", expense: 1.85e16, effect: 3, description: "Skill XP", heromult: 13, heroeffect: 1000000 },
     "Realm Fragment": { name: "Realm Fragment", expense: 2e17, effect: 5, description: "Happiness", heromult: 15, heroeffect: 1000000 },
     "Stairway to Immortality": { name: "Stairway to Immortality", expense: 1e38, effect: 10, description: "Happiness", heromult: 30, heroeffect: 1000000 },
@@ -291,16 +291,16 @@ const itemBaseData = {
 
 const requirementsBaseData = {
     // Categories
-    "The Arcane Association": new TaskRequirement([removeSpaces(".The Arcane Association")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
-    "Galactic Council": new AgeRequirement([removeSpaces(".Galactic Council")], [{ requirement: 10000 }]),
-    "The Void": new AgeRequirement([removeSpaces(".The Void")], [{ requirement: 1000 }]),
+    "Earthly Cultivation": new TaskRequirement([removeSpaces(".Earthly Cultivation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
+    "Immortal Cultivation": new AgeRequirement([removeSpaces(".Immortal Cultivation")], [{ requirement: 10000 }]),
+    "Dao Comprehension": new AgeRequirement([removeSpaces(".Dao Comprehension")], [{ requirement: 1000 }]),
     "Celestial Powers": new AgeRequirement([removeSpaces(".Celestial Powers")], [{ requirement: 10000 }]),
     "Dark Magic": new EvilRequirement([removeSpaces(".Dark Magic")], [{ requirement: 1 }]),
     "Almightiness": new EssenceRequirement([".Almightiness"], [{ requirement: 1 }]),
     "Heroic Milestones": new EssenceRequirement([removeSpaces(".Heroic Milestones")], [{ requirement: 400000 }]),
     "Dark Milestones": new EssenceRequirement([removeSpaces(".Dark Milestones")], [{ requirement: 5e10 }]),
     "Metaverse Milestones": new EssenceRequirement([removeSpaces(".Metaverse Milestones")], [{ requirement: 1e60 }]),
-    "Metaverse Guards": new EssenceRequirement([removeSpaces(".Metaverse Guards")], [{ requirement: 1e90 }]),
+    "Dao Embodiment": new EssenceRequirement([removeSpaces(".Dao Embodiment")], [{ requirement: 1e90 }]),
     
     // Rebirth items
     "Rebirth tab": new AgeRequirement(["#rebirthTabButton"], [{ requirement: 25 }]),
@@ -331,7 +331,7 @@ const requirementsBaseData = {
     "Dark Orbs info": new DarkOrbsRequirement(["#darkOrbsInfo"], [{ requirement: 1 }]),
     "Hypercubes info": new HypercubeRequirement(["#hypercubesInfo"], [{ requirement: 1 }]),
 
-    // Common work
+    // Mortal Commoner
     "Beggar": new TaskRequirement([getQuerySelector("Beggar")], []),
     "Farmer": new TaskRequirement([getQuerySelector("Farmer")], [{ task: "Beggar", requirement: 10 }]),
     "Fisherman": new TaskRequirement([getQuerySelector("Fisherman")], [{ task: "Farmer", requirement: 10 }]),
@@ -339,7 +339,7 @@ const requirementsBaseData = {
     "Blacksmith": new TaskRequirement([getQuerySelector("Blacksmith")], [{ task: "Strength", requirement: 30 }, { task: "Miner", requirement: 10 }]),
     "Merchant": new TaskRequirement([getQuerySelector("Merchant")], [{ task: "Bargaining", requirement: 50 }, { task: "Blacksmith", requirement: 10 }]),
 
-    // Military
+    // Mortal Military
     "Recruit": new TaskRequirement([getQuerySelector("Recruit")], [{ task: "Strength", requirement: 5 }]),
     "Militiaman": new TaskRequirement([getQuerySelector("Militiaman")], [{ task: "Strength", requirement: 20 }, { task: "Recruit", requirement: 10 }]),
     "Soldier": new TaskRequirement([getQuerySelector("Soldier")], [{ task: "Battle Tactics", requirement: 40 }, { task: "Militiaman", requirement: 10 }]),
@@ -349,7 +349,7 @@ const requirementsBaseData = {
     "Grand General": new TaskRequirement([getQuerySelector("Grand General")], [{ task: "Mana Control", requirement: 500 }, { task: "General of the West", requirement: 10 }]),
     "Imperial Legate": new TaskRequirement([getQuerySelector("Imperial Legate")], [{ task: "Mana Control", requirement: 1000 }, { task: "Battle Tactics", requirement: 1000 }, { task: "Grand General", requirement: 10 }]),
 
-    // The Arcane Association
+    // Earthly Cultivation
     "Qi condensation": new TaskRequirement([getQuerySelector("Qi condensation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Foundation establishment": new TaskRequirement([getQuerySelector("Foundation establishment")], [{ task: "Mana Control", requirement: 400 }, { task: "Qi condensation", requirement: 10 }]),
     "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Mana Control", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
@@ -358,20 +358,20 @@ const requirementsBaseData = {
     "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Mana Control", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
     "Tribulation crossing": new TaskRequirement([getQuerySelector("Tribulation crossing")], [{ task: "Mana Control", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit integration", requirement: 666 }]),
 
-    // The Void
+    // Dao Comprehension
     "Intent Scholar": new AgeRequirement([getQuerySelector("Intent Scholar")], [{ requirement: 1000 }]),
     "Seeker of Law": new TaskRequirement([getQuerySelector("Seeker of Law")], [{ task: "Dark Knowledge", requirement: 3000 }, { task: "Intent Scholar", requirement: 250 }]),
     "Dao Sage": new TaskRequirement([getQuerySelector("Dao Sage")], [{ task: "Temporal Dimension", requirement: 3400 }, { task: "Seeker of Law", requirement: 350, herequirement: 180 }]),
     "A Mortal Daoist": new TaskRequirement([getQuerySelector("A Mortal Daoist")], [{ task: "Time Loop", requirement: 3800, herequirement: 200 }, { task: "Dao Sage", requirement: 300 }]),
     "Dustless One": new TaskRequirement([getQuerySelector("Dustless One")], [{ task: "Blood Meditation", requirement: 4700, herequirement: 300 }, { task: "A Mortal Daoist", requirement: 900, herequirement: 125 }]),
 
-    // Galactic Council
+    // Immortal Cultivation
     "Human Immortal": new AgeRequirement([getQuerySelector("Human Immortal")], [{ requirement: 10000 }]),
     "Earthly Immortal": new TaskRequirement([getQuerySelector("Earthly Immortal")], [{ task: "Human Immortal", requirement: 15 }, { task: "Cosmic Longevity", requirement: 4000, herequirement: 180 }]),
     "Heavenly Immortal": new TaskRequirement([getQuerySelector("Heavenly Immortal")], [{ task: "Earthly Immortal", requirement: 200 }, { task: "Cosmic Recollection", requirement: 4500, herequirement: 350 }]),
     "Sovereign Epyrean": new TaskRequirement([getQuerySelector("Sovereign Epyrean")], [{ task: "Meditation", requirement: 6300 }, { task: "Heavenly Immortal", requirement: 1800, herequirement: 500 }]),
 
-    // Metaverse Guards
+    // Dao Embodiment
     "Steward of the Realms": new EssenceRequirement([getQuerySelector("Steward of the Realms")], [{ requirement: 1e90, herequirement: 1e120 }]),
     "Anchor of Causality": new TaskRequirement([getQuerySelector("Anchor of Causality")], [{ task: "Steward of the Realms", requirement: 3500, herequirement: 158000 }]),
     "The Heavens Itself": new TaskRequirement([getQuerySelector("The Heavens Itself")], [{ task: "Anchor of Causality", requirement: 25000, herequirement: 185000 }]),
@@ -606,44 +606,37 @@ const xianxiaDisplayNames = {
     "The End": "Great Completion",}
 
 const xianxiaCategoryNames = {
-    // Job categories
-    "Common work": "Mortal Commoner",
-    "Military": "Mortal Military",
-    "The Arcane Association": "Earthly Cultivation",
-    "The Void": "Dao Comprehension",
-    "Galactic Council": "Immortal Cultivation",
-    "Metaverse Guards": "Dao Embodiment",
-    // Skill categories
-    "Fundamentals": "Fundamentals",
-    "Combat": "Martial Arts",
-    "Magic": "Spiritual Techniques",
-    "Dark Magic": "Conceptual Arts",
-    "Celestial Powers": "Immortal Techniques",
-    "Almightiness": "Manifestation",
-    // Items
-    "Properties": "Estates",
-    "Misc": "Treasures",
-    // Milestones
-    "Essence Milestones": "Spirit Milestones",
-    "Heroic Milestones": "Ascendant Milestones",
-    "Dark Milestones": "Dao Milestones",
-    "Metaverse Milestones": "Upper Realm Milestones",
+//    // Skill categories
+//    "Fundamentals": "Fundamentals",
+//    "Combat": "Martial Arts",
+//    "Magic": "Spiritual Techniques",
+//    "Dark Magic": "Conceptual Arts",
+//    "Celestial Powers": "Immortal Techniques",
+//    "Almightiness": "Manifestation",
+//    // Items
+//    "Properties": "Estates",
+//    "Misc": "Treasures",
+//    // Milestones
+//    "Essence Milestones": "Spirit Milestones",
+//    "Heroic Milestones": "Ascendant Milestones",
+//    "Dark Milestones": "Dao Milestones",
+//    "Metaverse Milestones": "Upper Realm Milestones",
 }
 
 const xianxiaTooltips = {
-    "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",
-    "Nascent Soul": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
-    "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
-    "Sovereign Epyrean": "You stand near the apex of all realms, shaping fate with a thought.",
-    "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
-    "Almighty Eye": "The Heavenly Eye awakens fully and perfect recollection follows.",
-    "Deal with the Devil": "You forge a dangerous pact with your inner demon for forbidden gains.",
-    "Transcendent Master": "Your understanding of ascension refines spirit essence itself.",
-    "Hell Portal": "A nether gate opens and demonic qi leaks endlessly into your path.",
-    "God's Blessings": "Heavenly fortune shields your progress through rebirth.",
-    "Faint Hope": "A tiny spark of Dao persists and grows with every cycle.",
-    "Ruler of the Metaverse": "You stand as lord of the Upper Realm and command its offerings.",
-    "The End": "At last, your cultivation reaches Great Completion."
+//    "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",
+//    "Nascent Soul": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
+//    "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
+//    "Sovereign Epyrean": "You stand near the apex of all realms, shaping fate with a thought.",
+//    "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
+//    "Almighty Eye": "The Heavenly Eye awakens fully and perfect recollection follows.",
+//    "Deal with the Devil": "You forge a dangerous pact with your inner demon for forbidden gains.",
+//    "Transcendent Master": "Your understanding of ascension refines spirit essence itself.",
+//    "Hell Portal": "A nether gate opens and demonic qi leaks endlessly into your path.",
+//    "God's Blessings": "Heavenly fortune shields your progress through rebirth.",
+//    "Faint Hope": "A tiny spark of Dao persists and grows with every cycle.",
+//    "Ruler of the Metaverse": "You stand as lord of the Upper Realm and command its offerings.",
+//    "The End": "At last, your cultivation reaches Great Completion."
 }
 
 function getDisplayName(name) {
@@ -686,12 +679,12 @@ function getDisplayChallengeTitle(challengeName) {
 }
 
 const jobCategories = {
-    "Common work": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
-    "Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
-    "The Arcane Association": ["Qi condensation", "Foundation establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit integration", "Tribulation crossing"],
-    "The Void": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
-    "Galactic Council": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Epyrean"],
-    "Metaverse Guards": ["Steward of the Realms", "Anchor of Causality", "The Heavens Itself"]
+    "Mortal Commoner": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
+    "Mortal Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
+    "Earthly Cultivation": ["Qi condensation", "Foundation establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit integration", "Tribulation crossing"],
+    "Dao Comprehension": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
+    "Immortal Cultivation": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Epyrean"],
+    "Dao Embodiment": ["Steward of the Realms", "Anchor of Causality", "The Heavens Itself"]
 }
 
 const skillCategories = {
@@ -709,11 +702,11 @@ const itemCategories = {
 }
 
 const headerRowColors = {
-    "Common work": "#55a630",
-    "Military": "#e63946",
-    "The Arcane Association": "#C71585",
-    "The Void": "#762B91",
-    "Galactic Council": "#D5C010",
+    "Mortal Commoner": "#55a630",
+    "Mortal Military": "#e63946",
+    "Earthly Cultivation": "#C71585",
+    "Dao Comprehension": "#762B91",
+    "Immortal Cultivation": "#D5C010",
     "Fundamentals": "#55a630",
     "Combat": "#e63946",
     "Magic": "#C71585",
@@ -728,15 +721,15 @@ const headerRowColors = {
     "Heroic Milestones": "#ff6600",
     "Dark Milestones": "#873160",
     "Metaverse Milestones": "#09a0e6",
-    "Metaverse Guards": "rgb(9, 160, 230)"
+    "Dao Embodiment": "rgb(9, 160, 230)"
 }
 
 const headerRowTextColors = {
-    "Common work": "darkblue",
-    "Military": "purple",
-    "The Arcane Association": "magenta",
-    "The Void": "white",
-    "Galactic Council": "purple",
+    "Mortal Commoner": "darkblue",
+    "Mortal Military": "purple",
+    "Earthly Cultivation": "magenta",
+    "Dao Comprehension": "white",
+    "Immortal Cultivation": "purple",
     "Fundamentals": "purple",
     "Combat": "pink",
     "Magic": "purple",
@@ -751,7 +744,7 @@ const headerRowTextColors = {
     "Heroic Milestones": "purple",
     "Dark Milestones": "purple",
     "Metaverse Milestones": "purple",
-    "Metaverse Guards": "purple",
+    "Dao Embodiment": "purple",
 }
 
 function getPreviousTaskInCategory(task) {

@@ -1,5 +1,5 @@
 const tooltips = {
-    // Common work
+    // Mortal Commoner
     "Beggar": "A pitiful mortal surviving on scraps and the charity of strangers. Every day is a struggle.",
     "Farmer": "Tend to your landlord's fields and grow mundane herbs. It is a humble and gruelling profession.",
     "Fisherman": "Fish in the nearby rivers and sell your catch. The wage is minimal, but you get some time to think.",
@@ -7,7 +7,7 @@ const tooltips = {
     "Blacksmith": "Carefully forge weapons of war for the military. You are respected and make a decent living.",
     "Merchant": "Travel from town to town, bartering fine goods. The job pays well and you might save enough to elevate your family's class someday.",
 
-    // Military
+    // Mortal Military
     "Recruit": "You are the smallest cog in the machine of imperial war. The pay is awful but you learn much while on the job.",
     "Militiaman": "Patrol and oversee order within your small village. You spend most of your time reprimanding the local drunks.",
     "Soldier": "Experienced enough to fight on the battlefield, but not valuable enough to keep safe. Your labour is cheaply spent, but you might make a small difference.",
@@ -17,7 +17,7 @@ const tooltips = {
     "Grand General": "The Imperial generals answer to you, and the war turns at your will. The rewards are plentiful and your bloodline's integrity is guaranteed.",
     "Imperial Legate": "All hail the Right Hand of the Imperial throne. You speak with the Emperor's voice, and all your enemies are long dead by your will.",
 
-    // The Arcane Association / Earthly Cultivation
+    // Earthly Cultivation
     "Qi condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
     "Foundation establishment": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
     "Core Formation": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
@@ -25,21 +25,21 @@ const tooltips = {
     "Soul Severing": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
     "Spirit integration": "Spend your days guiding the Earthly Cultivation sect and investigating the path to true immortality. The Chairman receives ludicrous amounts of pay daily.",
     "Tribulation crossing": "You wield near-limitless power. By ruling with an iron fist, every cultivator in the Earthly Cultivation sect bows to your command.",
-// Todo: Replace 'Nascent Soul' with 'Core Formation', 'Soul Severing' with 'Nascent Soul', and 'Chronomancer' with 'Soul Severing'
-    // The Void
+
+    // Dao Comprehension
     "Intent Scholar": "Corrupted by Void, you are slowly turning into a slave with no free will, just to serve the Void for the rest of eternity... Can you resist it, or will it consume you forever?",
     "Seeker of Law": "You become an inquisitive yet putrid creature that siphons life from everything around you.",
     "Dao Sage": "Damned soul... a shadow of your former self, lingering between realms and consumed by void... Can you ever find peace?",
     "A Mortal Daoist": "You gazed into the dark heart of the Void long enough to become one of the most powerful and feared beings. All lesser void creatures are at your command.",
     "Dustless One": "Creator of the Void, a vast canvas of blackness and nothingness, in which the concept of its existence defies all logic. Nothing will escape you.",
 
-    // Galactic Council
+    // Immortal Cultivation
     "Human Immortal": "With the powers bestowed upon you by an unknown entity, you wander around, visiting places revered and feared in search of answers.",
     "Earthly Immortal": "Extremely powerful being with tremedous telekinetic powers and the ability to rearrange the molecular structure of matter and energy, even up to cosmic scale.",
     "Heavenly Immortal": "A nigh-omnipotent cosmological entity, with vast matter and energy manipulation abilities that help you push the boundaries of the Universe itself.",
     "Sovereign Epyrean": "Creator of everything.",
 
-    // Metaverse Guards
+    // Dao Embodiment
     "Steward of the Realms": "Snow Crash, 1992",
     "Anchor of Causality": "They both knew they would only go forward when next to each other. They vowed that they would always be together, earn a lot of money and move to a better place where they would be very happy.",
     "The Heavens Itself": "ω",
@@ -168,7 +168,7 @@ const tooltips = {
 
     // Dark Milestones
     "Mind Control": "Control the Devil by making him give you even more Potential per second",
-    "Galactic Emperor": "Commander of the Galactic Council grants you the privilege to automatically collect Spirit Essence from nearby worlds.",
+    "Galactic Emperor": "Commander of the Immortal Cultivation grants you the privilege to automatically collect Spirit Essence from nearby worlds.",
     "Dark Matter Harvester": "Harvest the universe to extract even more Chaos Essence from it.",
     "A Dark Era": "Begin a new era of Chaos Essence.",
     "Dark Orbiter": "Using ancient arts, you can vastly improve your Dao Fragment generators.",

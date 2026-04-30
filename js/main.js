@@ -16,7 +16,7 @@ const checkpointTuning = {
     // - 1e20 essence: early Dark Matter phase
     // - 1e47 essence: challenge 6 unlock phase
     // - 1e60 essence: metaverse milestone entry
-    // - 1e90 essence: metaverse guards entry
+    // - 1e90 essence: Dao Embodiment entry
     strangeMagicXpMultiplier: 1e25,
     potentialRecoveryExponent: 0.62,
     essenceOverflowExponent: 0.38,
@@ -153,7 +153,7 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Personal Star Domain"))
         }
 
-        if (jobCategories["Military"].includes(task.name)) {
+        if (jobCategories["Mortal Military"].includes(task.name)) {
             task.incomeMultipliers.push(getBindedTaskEffect("Strength"))
             task.xpMultipliers.push(getBindedTaskEffect("Battle Tactics"))
             task.xpMultipliers.push(getBindedItemEffect("Spirit Steel Sword"))
@@ -164,15 +164,15 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Azure Jade Charm"))
             task.xpMultipliers.push(getBindedItemEffect("Star Gazing Platform"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
-        } else if (jobCategories["The Arcane Association"].includes(task.name)) {
+        } else if (jobCategories["Earthly Cultivation"].includes(task.name)) {
             task.xpMultipliers.push(getBindedTaskEffect("Mana Control"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
-        } else if (jobCategories["The Void"].includes(task.name)) {
+        } else if (jobCategories["Dao Comprehension"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Void Jade Pendant"))
             task.xpMultipliers.push(getBindedItemEffect("Void Battle Armor"))
             task.xpMultipliers.push(getBindedItemEffect("Void Pearl"))
             task.xpMultipliers.push(getBindedItemEffect("Void Sand"))
-        } else if (jobCategories["Galactic Council"].includes(task.name)) {
+        } else if (jobCategories["Immortal Cultivation"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Immortal Robe"))
             task.xpMultipliers.push(getBindedTaskEffect("Epiphany"))
         } else if (skillCategories["Dark Magic"].includes(task.name)) {
@@ -1487,10 +1487,10 @@ function applyEvilPerks() {
     gameData.requirements["key2"].requirements[0].requirement = getEvilRequirement()
 
     gameData.requirements["Rebirth note 4"].requirements[0].requirement = getVoidRequirement()
-    gameData.requirements["The Void"].requirements[0].requirement = getVoidRequirement()
+    gameData.requirements["Dao Comprehension"].requirements[0].requirement = getVoidRequirement()
     gameData.requirements["Intent Scholar"].requirements[0].requirement = getVoidRequirement()
 
-    gameData.requirements["Galactic Council"].requirements[0].requirement = getCelestialRequirement()
+    gameData.requirements["Immortal Cultivation"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Celestial Powers"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Rebirth note 5"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Human Immortal"].requirements[0].requirement = getCelestialRequirement()
