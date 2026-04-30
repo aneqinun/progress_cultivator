@@ -149,7 +149,7 @@ const jobBaseData = {
     "Beggar": { name: "Beggar", maxXp: 50, income: 5, heroxp: 36 },
     "Farmer": { name: "Farmer", maxXp: 100, income: 9, heroxp: 37 },
     "Fisherman": { name: "Fisherman", maxXp: 200, income: 15, heroxp: 38 },
-    "Spirit Stone Miner": { name: "Spirit Stone Miner", maxXp: 400, income: 40, heroxp: 39 },
+    "Miner": { name: "Miner", maxXp: 400, income: 40, heroxp: 39 },
     "Blacksmith": { name: "Blacksmith", maxXp: 800, income: 80, heroxp: 40 },
     "Merchant": { name: "Merchant", maxXp: 1600, income: 150, heroxp: 41 },
 
@@ -335,8 +335,8 @@ const requirementsBaseData = {
     "Beggar": new TaskRequirement([getQuerySelector("Beggar")], []),
     "Farmer": new TaskRequirement([getQuerySelector("Farmer")], [{ task: "Beggar", requirement: 10 }]),
     "Fisherman": new TaskRequirement([getQuerySelector("Fisherman")], [{ task: "Farmer", requirement: 10 }]),
-    "Spirit Stone Miner": new TaskRequirement([getQuerySelector("Spirit Stone Miner")], [{ task: "Strength", requirement: 10 }, { task: "Fisherman", requirement: 10 }]),
-    "Blacksmith": new TaskRequirement([getQuerySelector("Blacksmith")], [{ task: "Strength", requirement: 30 }, { task: "Spirit Stone Miner", requirement: 10 }]),
+    "Miner": new TaskRequirement([getQuerySelector("Miner")], [{ task: "Strength", requirement: 10 }, { task: "Fisherman", requirement: 10 }]),
+    "Blacksmith": new TaskRequirement([getQuerySelector("Blacksmith")], [{ task: "Strength", requirement: 30 }, { task: "Miner", requirement: 10 }]),
     "Merchant": new TaskRequirement([getQuerySelector("Merchant")], [{ task: "Bargaining", requirement: 50 }, { task: "Blacksmith", requirement: 10 }]),
 
     // Military
@@ -686,7 +686,7 @@ function getDisplayChallengeTitle(challengeName) {
 }
 
 const jobCategories = {
-    "Common work": ["Beggar", "Farmer", "Fisherman", "Spirit Stone Miner", "Blacksmith", "Merchant"],
+    "Common work": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
     "Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
     "The Arcane Association": ["Qi condensation", "Foundation establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit integration", "Tribulation crossing"],
     "The Void": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
