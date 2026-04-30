@@ -164,9 +164,9 @@ const jobBaseData = {
 
     "Qi condensation": { name: "Qi condensation", maxXp: 1e5, income: 100, heroxp: 79 },
     "Foundation establishment": { name: "Foundation establishment", maxXp: 1e6, income: 1000, heroxp: 82 },
-    "Nascent soul": { name: "Nascent soul", maxXp: 1e8, income: 70000, heroxp: 95 },
-    "Soul severing": { name: "Soul severing", maxXp: 1e10, income: 350000, heroxp: 95 },
-    "Chronomancer": { name: "Chronomancer", maxXp: 2e12, income: 1000000, heroxp: 95 },
+    "Core Formation": { name: "Core Formation", maxXp: 1e8, income: 70000, heroxp: 95 },
+    "Nascent Soul": { name: "Nascent Soul", maxXp: 1e10, income: 350000, heroxp: 95 },
+    "Soul Severing": { name: "Soul Severing", maxXp: 2e12, income: 1000000, heroxp: 95 },
     "Spirit integration": { name: "Spirit integration", maxXp: 2e13, income: 10000000, heroxp: 106 },
     "Tribulation crossing": { name: "Tribulation crossing", maxXp: 9e15, income: 60000000, heroxp: 129 },
 
@@ -352,10 +352,10 @@ const requirementsBaseData = {
     // The Arcane Association
     "Qi condensation": new TaskRequirement([getQuerySelector("Qi condensation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Foundation establishment": new TaskRequirement([getQuerySelector("Foundation establishment")], [{ task: "Mana Control", requirement: 400 }, { task: "Qi condensation", requirement: 10 }]),
-    "Nascent soul": new TaskRequirement([getQuerySelector("Nascent soul")], [{ task: "Mana Control", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
-    "Soul severing": new TaskRequirement([getQuerySelector("Soul severing")], [{ task: "Mana Control", requirement: 1200 }, { task: "Nascent soul", requirement: 10 }]),
-    "Chronomancer": new TaskRequirement([getQuerySelector("Chronomancer")], [{ task: "Mana Control", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Soul severing", requirement: 25 }]),
-    "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Mana Control", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Chronomancer", requirement: 50 }]),
+    "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Mana Control", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
+    "Nascent Soul": new TaskRequirement([getQuerySelector("Nascent Soul")], [{ task: "Mana Control", requirement: 1200 }, { task: "Core Formation", requirement: 10 }]),
+    "Soul Severing": new TaskRequirement([getQuerySelector("Soul Severing")], [{ task: "Mana Control", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Nascent Soul", requirement: 25 }]),
+    "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Mana Control", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
     "Tribulation crossing": new TaskRequirement([getQuerySelector("Tribulation crossing")], [{ task: "Mana Control", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit integration", requirement: 666 }]),
 
     // The Void
@@ -390,9 +390,9 @@ const requirementsBaseData = {
     // Magic
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Life Essence": new TaskRequirement([getQuerySelector("Life Essence")], [{ task: "Foundation establishment", requirement: 10 }]),
-    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Nascent soul", requirement: 10 }]),
-    "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Soul severing", requirement: 10 }]),
-    "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Chronomancer", requirement: 25 }]),
+    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Core Formation", requirement: 10 }]),
+    "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Nascent Soul", requirement: 10 }]),
+    "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Soul Severing", requirement: 25 }]),
 
     // Dark Magic
     "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
@@ -526,7 +526,7 @@ const xianxiaDisplayNames = {
     // Mortal commoner - must have 6 jobs
     // Mortal military - must have 8 jobs
     // Earthly cultivation - must have 7 jobs
-    "Chronomancer": "Dao seeking", // optional
+    "Soul Severing": "Dao seeking", // optional
     // Dao comprehension - could be changed to any number
     // Immortal cultivation - could be changed to 4 jobs
     // Dao embodiment - could be reduced to 3
@@ -637,7 +637,7 @@ const xianxiaTooltips = {
     "Recruit": "Serve senior disciples and carry their gear through sect missions. Meager income, valuable experience.",
     "Vanguard Commander": "A core disciple trusted in major sect conflicts. Prestige and spirit-stone income rise together.",
     "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",
-    "Soul severing": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
+    "Nascent Soul": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
     "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
     "Sovereign Epyrean": "You stand near the apex of all realms, shaping fate with a thought.",
     "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
@@ -693,7 +693,7 @@ function getDisplayChallengeTitle(challengeName) {
 const jobCategories = {
     "Common work": ["Beggar", "Farmer", "Fisherman", "Spirit Stone Miner", "Blacksmith", "Merchant"],
     "Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
-    "The Arcane Association": ["Qi condensation", "Foundation establishment", "Nascent soul", "Soul severing", "Chronomancer", "Spirit integration", "Tribulation crossing"],
+    "The Arcane Association": ["Qi condensation", "Foundation establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit integration", "Tribulation crossing"],
     "The Void": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
     "Galactic Council": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Epyrean"],
     "Metaverse Guards": ["Steward of the Realms", "Anchor of Causality", "The Heavens Itself"]

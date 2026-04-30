@@ -20,9 +20,9 @@ const tooltips = {
     // The Arcane Association / Earthly Cultivation
     "Qi condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
     "Foundation establishment": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
-    "Nascent soul": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
-    "Soul severing": "Blessed with unparalleled talent, perform unbelievable feats with magic at will. It is said that an archmage has enough destructive power to wipe an empire off the map.",
-    "Chronomancer": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
+    "Core Formation": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
+    "Nascent Soul": "Blessed with unparalleled talent, perform unbelievable feats with magic at will. It is said that an archmage has enough destructive power to wipe an empire off the map.",
+    "Soul Severing": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
     "Spirit integration": "Spend your days guiding the Earthly Cultivation sect and investigating the path to true immortality. The Chairman receives ludicrous amounts of pay daily.",
     "Tribulation crossing": "You wield near-limitless power. By ruling with an iron fist, every cultivator in the Earthly Cultivation sect bows to your command.",
 // Todo: Replace 'Nascent Soul' with 'Core Formation', 'Soul Severing' with 'Nascent Soul', and 'Chronomancer' with 'Soul Severing'
