@@ -8,14 +8,14 @@ const tooltips = {
     "Merchant": "Travel from town to town, bartering fine goods. The job pays well and you might save enough to elevate your family's class someday.",
 
     // Military
-    "Recruit": "Carry around your knight's shield and sword along the battlefield. Very meager pay but the work experience is quite valuable.",
-    "Militiaman": "Put down your life to battle with enemy soldiers. A courageous, respectable job but you are still worthless in the grand scheme of things.",
-    "Soldier": "More experienced and useful than the average footman, take out the enemy forces in battle with your might. The pay is not that bad.",
-    "Squad Leader": "By proving your skills with a bow, you were appointed to lead a small group of archers to ambush your enemies from a distance.",
-    "Vanguard Commander": "Slash and pierce through enemy soldiers with ease, while covered in steel from head to toe. A decently paying and very respectable job.",
-    "General of the West": "Utilising your unmatched combat ability, slaugher enemies effortlessly. Most footmen in the military would never be able to acquire such a well paying job like this.",
-    "Grand General": "Obliterate squadrons of enemy soldiers in one go with extraordinary proficiency, while wielding a magically imbued blade. Such a feared unit on the battlefield is paid extremely well.",
-    "Imperial Legate": "Feared by nations, obliterate entire armies in a blink of an eye. Roughly every century, only one holy knight is worthy of receiving such an esteemed title.",
+    "Recruit": "You are the smallest cog in the machine of imperial war. The pay is awful but you learn much while on the job.",
+    "Militiaman": "Patrol and oversee order within your small village. You spend most of your time reprimanding the local drunks.",
+    "Soldier": "Experienced enough to fight on the battlefield, but not valuable enough to keep safe. Your labour is cheaply spent, but you might make a small difference.",
+    "Squad Leader": "As the strongest combatant within your unit, you are qualified to lead. You are paid well, and you have some control over your fate on the field of battle.",
+    "Vanguard Commander": "You are skilled in combat and a scholar of tactics. Your name is known as one to lead the charge fearlessly against the enemy.",
+    "General of the West": "The Emperor has appointed you as the Lord of the Cardinal West. Your army flourishes under your command, and your foes shudder to face the direction of the setting sun.",
+    "Grand General": "The Imperial generals answer to you, and the war turns at your will. The rewards are plentiful and your bloodline's integrity is guaranteed.",
+    "Imperial Legate": "All hail the Right Hand of the Imperial throne. You speak with the Emperor's voice, and all your enemies are long dead by your will.",
 
     // The Arcane Association / Earthly Cultivation
     "Qi condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
