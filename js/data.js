@@ -193,7 +193,7 @@ const skillBaseData = {
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
 
-    // Combat / Martial arts 
+    // Martial Techniques
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Mortal Military Pay" },
     "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Mortal Military XP" },
     "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
@@ -268,10 +268,10 @@ const itemBaseData = {
     "Personal Servant Disciple": { name: "Personal Servant Disciple", expense: 200, effect: 2, description: "Hero XP", heromult: 3, heroeffect: 10 },
     "Spirit Steel Sword": { name: "Spirit Steel Sword", expense: 1000, effect: 2, description: "Mortal Military XP", heromult: 3, heroeffect: 10 },
     "Steward Elder": { name: "Steward Elder", expense: 7500, effect: 1.5, description: "Happiness", heromult: 4, heroeffect: 10 },
-    "Azure Jade Charm": { name: "Azure Jade Charm", expense: 50000, effect: 3, description: "Magic XP", heromult: 4, heroeffect: 10 },
+    "Azure Jade Charm": { name: "Azure Jade Charm", expense: 50000, effect: 3, description: "Spiritual Arts XP", heromult: 4, heroeffect: 10 },
     "Scripture Desk": { name: "Scripture Desk", expense: 1000000, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Scripture Pavilion": { name: "Scripture Pavilion", expense: 1e7, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
-    "Star Gazing Platform": { name: "Star Gazing Platform", expense: 1.4e8, effect: 5, description: "Magic XP", heromult: 6, heroeffect: 10 },
+    "Star Gazing Platform": { name: "Star Gazing Platform", expense: 1.4e8, effect: 5, description: "Spiritual Arts XP", heromult: 6, heroeffect: 10 },
     "Heavenly Mind's Eye": { name: "Heavenly Mind's Eye", expense: 3.25e9, effect: 10, description: "Fundamentals XP", heromult: 8, heroeffect: 10 },
     "Void Jade Pendant": { name: "Void Jade Pendant", expense: 2.8e10, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
     "Void Battle Armor": { name: "Void Battle Armor", expense: 1.97e11, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
@@ -382,12 +382,12 @@ const requirementsBaseData = {
     "Bargaining": new TaskRequirement([getQuerySelector("Bargaining")], [{ task: "Concentration", requirement: 20 }]),
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
 
-    // Combat
+    // Martial Techniques
     "Strength": new TaskRequirement([getQuerySelector("Strength")], []),
     "Battle Tactics": new TaskRequirement([getQuerySelector("Battle Tactics")], [{ task: "Concentration", requirement: 20 }]),
     "Muscle Memory": new TaskRequirement([getQuerySelector("Muscle Memory")], [{ task: "Concentration", requirement: 30 }, { task: "Strength", requirement: 30 }]),
 
-    // Magic
+    // Spiritual Arts
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Life Essence": new TaskRequirement([getQuerySelector("Life Essence")], [{ task: "Foundation establishment", requirement: 10 }]),
     "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Core Formation", requirement: 10 }]),
@@ -530,8 +530,7 @@ const xianxiaDisplayNames = {
     // Immortal cultivation - could be changed to 4 jobs
     // Dao embodiment - could be reduced to 3
     // Fundamentals
-    // Combat -> Martial arts
-    // Magic -> Spiritual techniques
+    // Spiritual Arts -> Spiritual techniques
     "Mana Control": "Qi Manipulation", // Increase Earthly cultivation XP
     "Life Essence": "Vital Essence Cultivation", // increase lifespan
     "Time Warping": "A Cultivator's Perspective", // Game speed
@@ -607,9 +606,7 @@ const xianxiaDisplayNames = {
 
 const xianxiaCategoryNames = {
 //    // Skill categories
-//    "Fundamentals": "Fundamentals",
-//    "Combat": "Martial Arts",
-//    "Magic": "Spiritual Techniques",
+//    "Spiritual Arts": "Spiritual Techniques",
 //    "Dark Magic": "Conceptual Arts",
 //    "Celestial Powers": "Immortal Techniques",
 //    "Almightiness": "Manifestation",
@@ -689,8 +686,8 @@ const jobCategories = {
 
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
-    "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
-    "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension"],
+    "Martial Techniques": ["Strength", "Battle Tactics", "Muscle Memory"],
+    "Spiritual Arts": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension"],
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop"],
     "Celestial Powers": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
     "Almightiness": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
@@ -708,8 +705,8 @@ const headerRowColors = {
     "Dao Comprehension": "#762B91",
     "Immortal Cultivation": "#D5C010",
     "Fundamentals": "#55a630",
-    "Combat": "#e63946",
-    "Magic": "#C71585",
+    "Martial Techniques": "#e63946",
+    "Spiritual Arts": "#C71585",
     "Dark Magic": "#73000f",
     "Almightiness": "#18d2d9",
     "Celestial Powers": "#D5C010",
@@ -731,8 +728,8 @@ const headerRowTextColors = {
     "Dao Comprehension": "white",
     "Immortal Cultivation": "purple",
     "Fundamentals": "purple",
-    "Combat": "pink",
-    "Magic": "purple",
+    "Martial Techniques": "pink",
+    "Spiritual Arts": "purple",
     "Dark Magic": "pink",
     "Almightiness": "purple",
     "Celestial Powers": "purple",

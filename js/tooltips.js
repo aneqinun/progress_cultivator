@@ -50,12 +50,12 @@ const tooltips = {
     "Bargaining": "Sharpen your persuasive skills. Reduce all expenses.",
     "Meditation": "Steady your breaths and calm the heart. Increase happiness.",
 
-    // Combat / Martial Arts
+    // Martial Techniques
     "Strength": "Develop your bodily strength. Increase your wage in the military.",
     "Battle Tactics": "Create and study battlefield strategies. Increase job experience gained in the military.",
     "Muscle Memory": "Strengthen your body through habit and repetition. Improve strength gains.",
 
-    // Magic / Earthly Cultivation
+    // Spiritual Arts
     "Mana Control": "Become more proficient in manipulating qi. Increase your job experience gained in earthly cultivation.", // Become more proficient in manipulating qi.  
     "Life Essence": "Thicken your lifeline with refinement in qi. Increase your lifespan.", // Thicken your lifeline with refinement in qi. Is this the beginning of your immortal path?
     "Time Warping": "Become uncaring of time's passing. Increase the game speed.", // The days pass faster before your eyes. Moments pass you by, like so many petals on the breeze...

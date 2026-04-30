@@ -160,7 +160,7 @@ function addMultipliers() {
         } else if (task.name == "Strength") {
             task.xpMultipliers.push(getBindedTaskEffect("Muscle Memory"))
             task.xpMultipliers.push(getBindedItemEffect("Body Refinement Weights"))
-        } else if (skillCategories["Magic"].includes(task.name)) {
+        } else if (skillCategories["Spiritual Arts"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Azure Jade Charm"))
             task.xpMultipliers.push(getBindedItemEffect("Star Gazing Platform"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
