@@ -526,7 +526,6 @@ const xianxiaDisplayNames = {
     // Mortal commoner - must have 6 jobs
     // Mortal military - must have 8 jobs
     // Earthly cultivation - must have 7 jobs
-    "Soul Severing": "Dao seeking", // optional
     // Dao comprehension - could be changed to any number
     // Immortal cultivation - could be changed to 4 jobs
     // Dao embodiment - could be reduced to 3
