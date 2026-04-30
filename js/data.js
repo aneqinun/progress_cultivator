@@ -631,8 +631,6 @@ const xianxiaCategoryNames = {
 }
 
 const xianxiaTooltips = {
-    "Beggar": "A wandering mortal surviving on scraps and fate. Every day is a struggle, but adversity tempers the Dao heart.",
-    "Farmer": "Tend spirit fields and harvest herbs. Humble labor, but it builds steady foundations for cultivation.",
     "Recruit": "Serve senior disciples and carry their gear through sect missions. Meager income, valuable experience.",
     "Vanguard Commander": "A core disciple trusted in major sect conflicts. Prestige and spirit-stone income rise together.",
     "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",

@@ -1,11 +1,11 @@
 const tooltips = {
     // Common work
-    "Beggar": "Struggle day and night for a couple of copper coins. It feels like you are at the brink of death each day.",
-    "Farmer": "Plow the fields and grow the crops. It's not much but it's honest work.",
-    "Fisherman": "Reel in various fish and sell them for a handful of coins. A relaxing but still poor paying job.",
-    "Spirit Stone Miner": "Delve into dangerous caverns and mine valuable ores. The pay is quite meager compared to the risk involved.",
-    "Blacksmith": "Smelt ores and carefully forge weapons for the military. A respectable and OK paying commoner job.",
-    "Merchant": "Travel from town to town, bartering fine goods. The job pays decently well and is a lot less manually-intensive.",
+    "Beggar": "A pitiful mortal surviving on scraps and the charity of strangers. Every day is a struggle.",
+    "Farmer": "Tend to your landlord's fields and grow mundane herbs. It is a humble and gruelling profession.",
+    "Fisherman": "Fish in the nearby rivers and sell your catch. The wage is minimal, but you get some time to think.",
+    "Miner": "Delve into dangerous caverns and search for spirit veins to mine. It is dangerous work, but you might hit the jackpot someday.",
+    "Blacksmith": "Carefully forge weapons of war for the military. You are respected and make a decent living.",
+    "Merchant": "Travel from town to town, bartering fine goods. The job pays well and you might save enough to elevate your family's class someday.",
 
     // Military
     "Recruit": "Carry around your knight's shield and sword along the battlefield. Very meager pay but the work experience is quite valuable.",
