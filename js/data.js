@@ -294,9 +294,9 @@ const requirementsBaseData = {
     "Earthly Cultivation": new TaskRequirement([removeSpaces(".Earthly Cultivation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Immortal Cultivation": new AgeRequirement([removeSpaces(".Immortal Cultivation")], [{ requirement: 10000 }]),
     "Dao Comprehension": new AgeRequirement([removeSpaces(".Dao Comprehension")], [{ requirement: 1000 }]),
-    "Celestial Powers": new AgeRequirement([removeSpaces(".Celestial Powers")], [{ requirement: 10000 }]),
-    "Dark Magic": new EvilRequirement([removeSpaces(".Dark Magic")], [{ requirement: 1 }]),
-    "Almightiness": new EssenceRequirement([".Almightiness"], [{ requirement: 1 }]),
+    "Immortal Cultivation": new AgeRequirement([removeSpaces(".Immortal Cultivation")], [{ requirement: 10000 }]),
+    "Conceptual Techniques": new EvilRequirement([removeSpaces(".Conceptual Techniques")], [{ requirement: 1 }]),
+    "Manifestation": new EssenceRequirement([".Manifestation"], [{ requirement: 1 }]),
     "Heroic Milestones": new EssenceRequirement([removeSpaces(".Heroic Milestones")], [{ requirement: 400000 }]),
     "Dark Milestones": new EssenceRequirement([removeSpaces(".Dark Milestones")], [{ requirement: 5e10 }]),
     "Metaverse Milestones": new EssenceRequirement([removeSpaces(".Metaverse Milestones")], [{ requirement: 1e60 }]),
@@ -394,7 +394,7 @@ const requirementsBaseData = {
     "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Nascent Soul", requirement: 10 }]),
     "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Soul Severing", requirement: 25 }]),
 
-    // Dark Magic
+    // Conceptual Techniques
     "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
     "Evil Control": new EvilRequirement([getQuerySelector("Evil Control")], [{ requirement: 1 }]),
     "Intimidation": new EvilRequirement([getQuerySelector("Intimidation")], [{ requirement: 1 }]),
@@ -404,13 +404,13 @@ const requirementsBaseData = {
     "Void Influence": new EvilRequirement([getQuerySelector("Void Influence")], [{ requirement: 50000 }]),
     "Time Loop": new EvilRequirement([getQuerySelector("Time Loop")], [{ requirement: 2500000 }]),
 
-    // Celestial Powers
+    // Immortal Cultivation
     "Cosmic Longevity": new TaskRequirement([getQuerySelector("Cosmic Longevity")], [{ task: "Human Immortal", requirement: 1 }]),
     "Cosmic Recollection": new TaskRequirement([getQuerySelector("Cosmic Recollection")], [{ task: "Earthly Immortal", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Time Loop", requirement: 900 }]),
     "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Heavenly Immortal", requirement: 500, herequirement: 360 }, { task: "Evil Control", requirement: 4900, herequirement: 2900 }, { task: "Dark Knowledge", requirement: 6300, herequirement: 3400 }]),
     "Galactic Command": new TaskRequirement([getQuerySelector("Galactic Command")], [{ task: "Essence Collector", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
 
-    // Almightiness
+    // Manifestation
     "Yin Yang": new EssenceRequirement([getQuerySelector("Yin Yang")], [{ requirement: 1 }]),
     "Parallel Universe": new EssenceRequirement([getQuerySelector("Parallel Universe")], [{ requirement: 1 }]),
     "Higher Dimensions": new EssenceRequirement([getQuerySelector("Higher Dimensions")], [{ requirement: 10000 }]),
@@ -550,7 +550,7 @@ const xianxiaDisplayNames = {
     "Cosmic Recollection": "Wheel-Crossing Permanence", // Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved/scaled on rebirth and milestone auto-max logic.
     "Essence Collector": "Spiritual Nexus", // You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain
     "Galactic Command": "Cessation of Excess", // What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.
-    // Almightiness -> ? -  // todo
+    // Manifestation -> ? -  // todo
     "Yin Yang": "Taiji Equilibrium", // You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.
     "Parallel Universe": "Splitting the Illusion", // In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.
     "Higher Dimensions": "World-Dreams", // When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan
@@ -607,9 +607,9 @@ const xianxiaDisplayNames = {
 const xianxiaCategoryNames = {
 //    // Skill categories
 //    "Spiritual Arts": "Spiritual Techniques",
-//    "Dark Magic": "Conceptual Arts",
-//    "Celestial Powers": "Immortal Techniques",
-//    "Almightiness": "Manifestation",
+//    "Conceptual Techniques": "Conceptual Arts",
+//    "Immortal Cultivation": "Immortal Techniques",
+//    "Manifestation": "Manifestation",
 //    // Items
 //    "Properties": "Estates",
 //    "Misc": "Treasures",
@@ -688,9 +688,9 @@ const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Martial Techniques": ["Strength", "Battle Tactics", "Muscle Memory"],
     "Spiritual Arts": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension"],
-    "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop"],
-    "Celestial Powers": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
-    "Almightiness": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
+    "Conceptual Techniques": ["Dark Influence", "Evil Control", "Intimidation", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop"],
+    "Immortal Cultivation": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
+    "Manifestation": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
 }
 
 const itemCategories = {
@@ -707,9 +707,9 @@ const headerRowColors = {
     "Fundamentals": "#55a630",
     "Martial Techniques": "#e63946",
     "Spiritual Arts": "#C71585",
-    "Dark Magic": "#73000f",
-    "Almightiness": "#18d2d9",
-    "Celestial Powers": "#D5C010",
+    "Conceptual Techniques": "#73000f",
+    "Manifestation": "#18d2d9",
+    "Immortal Cultivation": "#D5C010",
     "Properties_Auto": "#21cc5e",
     "Misc_Auto": "#f54546",
     "Properties": "#219ebc",
@@ -730,9 +730,9 @@ const headerRowTextColors = {
     "Fundamentals": "purple",
     "Martial Techniques": "pink",
     "Spiritual Arts": "purple",
-    "Dark Magic": "pink",
-    "Almightiness": "purple",
-    "Celestial Powers": "purple",
+    "Conceptual Techniques": "pink",
+    "Manifestation": "purple",
+    "Immortal Cultivation": "purple",
     "Properties_Auto": "purple",
     "Misc_Auto": "purple",
     "Properties": "purple",

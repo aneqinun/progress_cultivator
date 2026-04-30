@@ -62,7 +62,7 @@ const tooltips = {
     "Astral Body": "Refine your body as a spiritual treasure. Increase your lifespan significantly.", // Bodily Refinement - Refine your body as a treasure. Lifespan grows as the red dust washes from your body and spirit.
     "Temporal Dimension": "Cultivate and nurture time as you would a herb or flower. Increase game speed significantly.", // Temporal cultivation - "Like a herb or flower, time, too, may be nurtured and grown to abundance in its season."
 
-    // Dark Magic / Conceptual Arts
+    // Conceptual Techniques
     "Dark Influence": "You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.", // Inspiration from the Dao
     "Evil Control": "You develop your daoist domain; the natural energies of heaven and earth begin to respect your new claims. Increase Potential gain.", // Domain of Authority
     "Intimidation": " At a glance you begin to understand the natural energies and qualities of goods. Reduce item expenses.", // Profound Recognition
@@ -72,13 +72,13 @@ const tooltips = {
     "Void Influence": "Unconsciously, your every breath and movement becomes more in tune with the rhythm of the natural dao. Increase job and skill XP.", // Enlightned Tempo
     "Time Loop": "Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.", // Rarified Mind
 
-    // Celestial Powers / Immortal Cultivation
+    // Immortal Cultivation
     "Cosmic Longevity": "Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan.", // Epoch-Spanning Lifeline
     "Cosmic Recollection": "Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved for rebirth and milestone auto-max logic.", // Wheel-Crossing Permanence
     "Essence Collector": "You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain.", // Spiritual Nexus
     "Galactic Command": "What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.", // Cessation of Excess
 
-    // Almightiness / Manifestation
+    // Manifestation
     "Yin Yang": "You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.", // Taiji Equilibrium
     "Parallel Universe": "In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.", // Splitting the Illusion
     "Higher Dimensions": "When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan.", // World-Dreams

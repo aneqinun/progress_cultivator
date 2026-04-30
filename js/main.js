@@ -175,9 +175,9 @@ function addMultipliers() {
         } else if (jobCategories["Immortal Cultivation"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Immortal Robe"))
             task.xpMultipliers.push(getBindedTaskEffect("Epiphany"))
-        } else if (skillCategories["Dark Magic"].includes(task.name)) {
+        } else if (skillCategories["Conceptual Techniques"].includes(task.name)) {
             task.xpMultipliers.push(getEvilXpGain)
-        } else if (skillCategories["Almightiness"].includes(task.name)) {
+        } else if (skillCategories["Manifestation"].includes(task.name)) {
             task.xpMultipliers.push(getEssenceXpGain)
         } else if (skillCategories["Fundamentals"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Heavenly Mind's Eye"))
@@ -1491,7 +1491,7 @@ function applyEvilPerks() {
     gameData.requirements["Intent Scholar"].requirements[0].requirement = getVoidRequirement()
 
     gameData.requirements["Immortal Cultivation"].requirements[0].requirement = getCelestialRequirement()
-    gameData.requirements["Celestial Powers"].requirements[0].requirement = getCelestialRequirement()
+    gameData.requirements["Immortal Cultivation"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Rebirth note 5"].requirements[0].requirement = getCelestialRequirement()
     gameData.requirements["Human Immortal"].requirements[0].requirement = getCelestialRequirement()
 }
@@ -1592,7 +1592,7 @@ function isNextDarkMagicSkillInReach() {
 
     for (const key in gameData.taskData) {
         const skill = gameData.taskData[key]
-        if (skillCategories["Dark Magic"].includes(key)) {
+        if (skillCategories["Conceptual Techniques"].includes(key)) {
             const requirement = gameData.requirements[key]
             if (!requirement.isCompleted()) {
                 if (totalEvil >= requirement.requirements[0].requirement) {
