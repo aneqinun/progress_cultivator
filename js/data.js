@@ -631,8 +631,6 @@ const xianxiaCategoryNames = {
 }
 
 const xianxiaTooltips = {
-    "Recruit": "Serve senior disciples and carry their gear through sect missions. Meager income, valuable experience.",
-    "Vanguard Commander": "A core disciple trusted in major sect conflicts. Prestige and spirit-stone income rise together.",
     "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",
     "Nascent Soul": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
     "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
