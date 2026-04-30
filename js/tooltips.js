@@ -84,7 +84,7 @@ const tooltips = {
     "World-Dreams": "When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan.", // World-Dreams
     "Meditations on the Heavenly": "What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs .", // Meditations on the Heavenly
 
-    // Properties
+    // Residences
     "Ragged Courtyard": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",
     "Wanderer's Tent": "A thin sheet of tattered cloth held up by a couple of feeble, wooden sticks. Horrible living conditions but at least you have a roof over your head.",
     "Bamboo Hut": "Shabby logs and dirty hay glued together with horse manure. Much more sturdy than a tent, however, the stench isn't very pleasant.",
@@ -113,7 +113,7 @@ const tooltips = {
     "Microcosm World": "You try to find at least some place that is still beyond your control, but all in vain.",
     "Void of Desolation": "The Great Nothing",
 
-    // Misc
+    // Treasures
     "Cultivation Manual": "A place to write down all your thoughts and discoveries, allowing you to learn a lot more quickly.",
     "Body Refinement Weights": "Heavy tools used in strenuous exercise to toughen up and accumulate strength even faster than before.",
     "Personal Servant Disciple": "Assists you in completing day to day activities, giving you more time to be productive at work.",

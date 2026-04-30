@@ -262,7 +262,7 @@ const itemBaseData = {
     "Microcosm World": { name: "Microcosm World", expense: 1e49, effect: 1000000000000, heromult: 40, heroeffect: 1e64 },
     "Void of Desolation": { name: "Void of Desolation", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
 
-    // Misc
+    // Treasures
     "Cultivation Manual": { name: "Cultivation Manual", expense: 10, effect: 1.5, description: "Skill XP", heromult: 2, heroeffect: 10 },
     "Body Refinement Weights": { name: "Body Refinement Weights", expense: 50, effect: 1.5, description: "Strength XP", heromult: 2, heroeffect: 10 },
     "Personal Servant Disciple": { name: "Personal Servant Disciple", expense: 200, effect: 2, description: "Hero XP", heromult: 3, heroeffect: 10 },
@@ -416,7 +416,7 @@ const requirementsBaseData = {
     "World-Dreams": new EssenceRequirement([getQuerySelector("World-Dreams")], [{ requirement: 10000 }]),
     "Meditations on the Heavenly": new EssenceRequirement([getQuerySelector("Meditations on the Heavenly")], [{ requirement: 30000 }]),
 
-    // Properties
+    // Residences
     "Ragged Courtyard": new CoinRequirement([getQuerySelector("Ragged Courtyard")], [{ requirement: 0 }]),
     "Wanderer's Tent": new CoinRequirement([getQuerySelector("Wanderer's Tent")], [{ requirement: 0 }]),
     "Bamboo Hut": new CoinRequirement([getQuerySelector("Bamboo Hut")], [{ requirement: itemBaseData["Bamboo Hut"].expense * 100 }]),
@@ -437,7 +437,7 @@ const requirementsBaseData = {
     "Spirit Planet": new CoinRequirement([getQuerySelector("Spirit Planet")], [{ requirement: itemBaseData["Spirit Planet"].expense * 100 }]),
     "Heavenly Ring Domain": new CoinRequirement([getQuerySelector("Heavenly Ring Domain")], [{ requirement: itemBaseData["Heavenly Ring Domain"].expense * 100 }]),
 
-    // heroic only Properties
+    // heroic only Residences
     "Stellar Prefecture": new CoinRequirement([getQuerySelector("Stellar Prefecture")], [{ requirement: 1e65 }]),
     "Star River Dominion": new CoinRequirement([getQuerySelector("Star River Dominion")], [{ requirement: 1e72 }]),
     "Grand Star Region": new CoinRequirement([getQuerySelector("Grand Star Region")], [{ requirement: 1e80 }]),
@@ -447,7 +447,7 @@ const requirementsBaseData = {
     "Microcosm World": new CoinRequirement([getQuerySelector("Microcosm World")], [{ requirement: 1e124 }]),
     "Void of Desolation": new CoinRequirement([getQuerySelector("Void of Desolation")], [{ requirement: 1e152 }]),
 
-    // Misc
+    // Treasures
     "Cultivation Manual": new CoinRequirement([getQuerySelector("Cultivation Manual")], [{ requirement: 0 }]),
     "Body Refinement Weights": new CoinRequirement([getQuerySelector("Body Refinement Weights")], [{ requirement: itemBaseData["Body Refinement Weights"].expense * 100 }]),
     "Personal Servant Disciple": new CoinRequirement([getQuerySelector("Personal Servant Disciple")], [{ requirement: itemBaseData["Personal Servant Disciple"].expense * 100 }]),
@@ -572,14 +572,6 @@ const xianxiaDisplayNames = {
     "The End": "Great Completion",}
 
 const xianxiaCategoryNames = {
-//    // Skill categories
-//    "Spiritual Arts": "Spiritual Techniques",
-//    "Conceptual Techniques": "Conceptual Arts",
-//    "Immortal Cultivation": "Immortal Techniques",
-//    "Manifestation": "Manifestation",
-//    // Items
-//    "Properties": "Estates",
-//    "Misc": "Treasures",
 //    // Milestones
 //    "Essence Milestones": "Spirit Milestones",
 //    "Heroic Milestones": "Ascendant Milestones",
@@ -588,8 +580,6 @@ const xianxiaCategoryNames = {
 }
 
 const xianxiaTooltips = {
-//    "Qi condensation": "Begin with breathing methods and qi theory. Small stipends sustain you while your meridians open.",
-//    "Nascent Soul": "A sage who bends natural laws through refined qi control. Kingdoms fear your techniques.",
 //    "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
 //    "Sovereign Epyrean": "You stand near the apex of all realms, shaping fate with a thought.",
 //    "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
@@ -661,8 +651,8 @@ const skillCategories = {
 }
 
 const itemCategories = {
-    "Properties": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Ten Thousand Realms", "Microcosm World", "Void of Desolation"],
-    "Misc": ["Cultivation Manual", "Body Refinement Weights", "Personal Servant Disciple", "Spirit Steel Sword", "Steward Elder", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
+    "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Ten Thousand Realms", "Microcosm World", "Void of Desolation"],
+    "Treasures": ["Cultivation Manual", "Body Refinement Weights", "Personal Servant Disciple", "Spirit Steel Sword", "Steward Elder", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
 }
 
 const headerRowColors = {
@@ -679,8 +669,8 @@ const headerRowColors = {
     "Immortal Cultivation": "#D5C010",
     "Properties_Auto": "#21cc5e",
     "Misc_Auto": "#f54546",
-    "Properties": "#219ebc",
-    "Misc": "#b56576",
+    "Residences": "#219ebc",
+    "Treasures": "#b56576",
     "Essence Milestones": "#0066ff",
     "Heroic Milestones": "#ff6600",
     "Dark Milestones": "#873160",
@@ -702,8 +692,8 @@ const headerRowTextColors = {
     "Immortal Cultivation": "purple",
     "Properties_Auto": "purple",
     "Misc_Auto": "purple",
-    "Properties": "purple",
-    "Misc": "purple",
+    "Residences": "purple",
+    "Treasures": "purple",
     "Essence Milestones": "purple",
     "Heroic Milestones": "purple",
     "Dark Milestones": "purple",

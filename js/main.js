@@ -684,7 +684,7 @@ function autoBuy() {
             const item = gameData.itemData[key]
             const expense = item.getExpense()
 
-            if (itemCategories['Properties'].indexOf(key) != -1) {
+            if (itemCategories['Residences'].indexOf(key) != -1) {
                 if (expense < income && expense >= usedExpense) {
                     gameData.currentProperty = item
                     usedExpense = expense
@@ -701,7 +701,7 @@ function autoBuy() {
         if (gameData.requirements[key].isCompleted()) {
             const item = gameData.itemData[key]
             const expense = item.getExpense()
-            if (itemCategories['Misc'].indexOf(key) != -1) {
+            if (itemCategories['Treasures'].indexOf(key) != -1) {
                 if (expense < income - usedExpense) {
                     if (gameData.currentMisc.indexOf(item) == -1) {
                         gameData.currentMisc.push(item)

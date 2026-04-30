@@ -213,7 +213,7 @@ class Item {
         let effect = this.baseData.effect
 
         if (this.isHero) {
-            if (itemCategories["Misc"].includes(this.name))
+            if (itemCategories["Treasures"].includes(this.name))
             {
                 if (gameData.currentMisc.includes(this)) {
                     effect *= this.baseData.heroeffect                    
@@ -221,7 +221,7 @@ class Item {
                 }
             }
 
-            if (itemCategories["Properties"].includes(this.name)) {
+            if (itemCategories["Residences"].includes(this.name)) {
                 if (gameData.currentProperty == this) {
                     effect = this.baseData.heroeffect
                     this.unlocked = true
@@ -244,17 +244,17 @@ class Item {
         let effect = this.baseData.effect
 
         if (this.isHero) {
-            if (itemCategories["Misc"].includes(this.name)) {
+            if (itemCategories["Treasures"].includes(this.name)) {
                 effect *= this.baseData.heroeffect
             }
 
-            if (itemCategories["Properties"].includes(this.name)) {
+            if (itemCategories["Residences"].includes(this.name)) {
                 description = "Happiness"
                 effect = this.baseData.heroeffect
             }
         }
         else {
-            if (itemCategories["Properties"].includes(this.name)) description = "Happiness"
+            if (itemCategories["Residences"].includes(this.name)) description = "Happiness"
         }
 
         return "x" + format(effect) + " " + description

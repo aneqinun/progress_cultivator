@@ -336,8 +336,8 @@ function renderShop() {
 
         const active = row.querySelector(".active")
         const color = autoBuyEnabled
-            ? itemCategories["Properties"].includes(item.name) ? headerRowColors["Properties_Auto"] : headerRowColors["Misc_Auto"]
-            : itemCategories["Properties"].includes(item.name) ? headerRowColors["Properties"] : headerRowColors["Misc"]
+            ? itemCategories["Residences"].includes(item.name) ? headerRowColors["Properties_Auto"] : headerRowColors["Misc_Auto"]
+            : itemCategories["Residences"].includes(item.name) ? headerRowColors["Residences"] : headerRowColors["Treasures"]
 
         active.style.backgroundColor = gameData.currentMisc.includes(item) || item == gameData.currentProperty ? color : "white"
         row.querySelector(".effect").textContent = item.getEffectDescription()
@@ -874,7 +874,7 @@ function createRow(templates, name, categoryName, categoryType) {
     row.id = "row" + removeSpaces(removeStrangeCharacters(name))
 
     if (categoryType == itemCategories) {
-        row.getElementsByClassName("button")[0].onclick = categoryName == "Properties" ? () => { setCurrentProperty(name) } : () => { setMisc(name) }
+        row.getElementsByClassName("button")[0].onclick = categoryName == "Residences" ? () => { setCurrentProperty(name) } : () => { setMisc(name) }
     }
 
     return row
