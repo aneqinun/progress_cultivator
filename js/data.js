@@ -199,20 +199,20 @@ const skillBaseData = {
     "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
 
     // / Spiritual techniques
-    "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "Earthly Cultivation XP" },
-    "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
+    "Qi Manipulation": { name: "Qi Manipulation", maxXp: 100, heroxp: 46, effect: 0.01, description: "Earthly Cultivation XP" },
+    "Vital Essence Reinforcement": { name: "Vital Essence Reinforcement", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
     "Time Warping": { name: "Time Warping", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
-    "Astral Body": { name: "Astral Body", maxXp: 100, heroxp: 100, effect: 0.0035, description: "Longer lifespan" },
-    "Temporal Dimension": { name: "Temporal Dimension", maxXp: 100, heroxp: 115, effect: 0.006, description: "Gamespeed" },
+    "Bodily Refinement": { name: "Bodily Refinement", maxXp: 100, heroxp: 100, effect: 0.0035, description: "Longer lifespan" },
+    "Temporal Cultivation": { name: "Temporal Cultivation", maxXp: 100, heroxp: 115, effect: 0.006, description: "Gamespeed" },
 
     // Dark magic / Conceptual arts
     "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
-    "Evil Control": { name: "Evil Control", maxXp: 100, heroxp: 156, effect: 0.01, description: "Potential Gain" },
-    "Intimidation": { name: "Intimidation", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
-    "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Potential Gain" },
-    "Demon's Wealth": { name: "Demon's Wealth", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
-    "Dark Knowledge": { name: "Dark Knowledge", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
-    "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
+    "Domain of Authority": { name: "Domain of Authority", maxXp: 100, heroxp: 156, effect: 0.01, description: "Potential Gain" },
+    "Profound Recognition": { name: "Profound Recognition", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
+    "Great Destiny": { name: "Great Destiny", maxXp: 100, heroxp: 176, effect: 0.01, description: "Potential Gain" },
+    "Karmic Significance": { name: "Karmic Significance", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
+    "Heavenly Talent": { name: "Heavenly Talent", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
+    "Enlightened Tempo": { name: "Enlightened Tempo", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
     "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
 
     // ? / ?
@@ -346,24 +346,24 @@ const requirementsBaseData = {
     "Squad Leader": new TaskRequirement([getQuerySelector("Squad Leader")], [{ task: "Strength", requirement: 100 }, { task: "Soldier", requirement: 10 }]),
     "Vanguard Commander": new TaskRequirement([getQuerySelector("Vanguard Commander")], [{ task: "Battle Tactics", requirement: 150 }, { task: "Squad Leader", requirement: 10 }]),
     "General of the West": new TaskRequirement([getQuerySelector("General of the West")], [{ task: "Strength", requirement: 300 }, { task: "Vanguard Commander", requirement: 10 }]),
-    "Grand General": new TaskRequirement([getQuerySelector("Grand General")], [{ task: "Mana Control", requirement: 500 }, { task: "General of the West", requirement: 10 }]),
-    "Imperial Legate": new TaskRequirement([getQuerySelector("Imperial Legate")], [{ task: "Mana Control", requirement: 1000 }, { task: "Battle Tactics", requirement: 1000 }, { task: "Grand General", requirement: 10 }]),
+    "Grand General": new TaskRequirement([getQuerySelector("Grand General")], [{ task: "Qi Manipulation", requirement: 500 }, { task: "General of the West", requirement: 10 }]),
+    "Imperial Legate": new TaskRequirement([getQuerySelector("Imperial Legate")], [{ task: "Qi Manipulation", requirement: 1000 }, { task: "Battle Tactics", requirement: 1000 }, { task: "Grand General", requirement: 10 }]),
 
     // Earthly Cultivation
     "Qi condensation": new TaskRequirement([getQuerySelector("Qi condensation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
-    "Foundation establishment": new TaskRequirement([getQuerySelector("Foundation establishment")], [{ task: "Mana Control", requirement: 400 }, { task: "Qi condensation", requirement: 10 }]),
-    "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Mana Control", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
-    "Nascent Soul": new TaskRequirement([getQuerySelector("Nascent Soul")], [{ task: "Mana Control", requirement: 1200 }, { task: "Core Formation", requirement: 10 }]),
-    "Soul Severing": new TaskRequirement([getQuerySelector("Soul Severing")], [{ task: "Mana Control", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Nascent Soul", requirement: 25 }]),
-    "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Mana Control", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
-    "Tribulation crossing": new TaskRequirement([getQuerySelector("Tribulation crossing")], [{ task: "Mana Control", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit integration", requirement: 666 }]),
+    "Foundation establishment": new TaskRequirement([getQuerySelector("Foundation establishment")], [{ task: "Qi Manipulation", requirement: 400 }, { task: "Qi condensation", requirement: 10 }]),
+    "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Qi Manipulation", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
+    "Nascent Soul": new TaskRequirement([getQuerySelector("Nascent Soul")], [{ task: "Qi Manipulation", requirement: 1200 }, { task: "Core Formation", requirement: 10 }]),
+    "Soul Severing": new TaskRequirement([getQuerySelector("Soul Severing")], [{ task: "Qi Manipulation", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Nascent Soul", requirement: 25 }]),
+    "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Qi Manipulation", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
+    "Tribulation crossing": new TaskRequirement([getQuerySelector("Tribulation crossing")], [{ task: "Qi Manipulation", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit integration", requirement: 666 }]),
 
     // Dao Comprehension
     "Intent Scholar": new AgeRequirement([getQuerySelector("Intent Scholar")], [{ requirement: 1000 }]),
-    "Seeker of Law": new TaskRequirement([getQuerySelector("Seeker of Law")], [{ task: "Dark Knowledge", requirement: 3000 }, { task: "Intent Scholar", requirement: 250 }]),
-    "Dao Sage": new TaskRequirement([getQuerySelector("Dao Sage")], [{ task: "Temporal Dimension", requirement: 3400 }, { task: "Seeker of Law", requirement: 350, herequirement: 180 }]),
+    "Seeker of Law": new TaskRequirement([getQuerySelector("Seeker of Law")], [{ task: "Heavenly Talent", requirement: 3000 }, { task: "Intent Scholar", requirement: 250 }]),
+    "Dao Sage": new TaskRequirement([getQuerySelector("Dao Sage")], [{ task: "Temporal Cultivation", requirement: 3400 }, { task: "Seeker of Law", requirement: 350, herequirement: 180 }]),
     "A Mortal Daoist": new TaskRequirement([getQuerySelector("A Mortal Daoist")], [{ task: "Time Loop", requirement: 3800, herequirement: 200 }, { task: "Dao Sage", requirement: 300 }]),
-    "Dustless One": new TaskRequirement([getQuerySelector("Dustless One")], [{ task: "Blood Meditation", requirement: 4700, herequirement: 300 }, { task: "A Mortal Daoist", requirement: 900, herequirement: 125 }]),
+    "Dustless One": new TaskRequirement([getQuerySelector("Dustless One")], [{ task: "Great Destiny", requirement: 4700, herequirement: 300 }, { task: "A Mortal Daoist", requirement: 900, herequirement: 125 }]),
 
     // Immortal Cultivation
     "Human Immortal": new AgeRequirement([getQuerySelector("Human Immortal")], [{ requirement: 10000 }]),
@@ -388,26 +388,26 @@ const requirementsBaseData = {
     "Muscle Memory": new TaskRequirement([getQuerySelector("Muscle Memory")], [{ task: "Concentration", requirement: 30 }, { task: "Strength", requirement: 30 }]),
 
     // Spiritual Arts
-    "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
-    "Life Essence": new TaskRequirement([getQuerySelector("Life Essence")], [{ task: "Foundation establishment", requirement: 10 }]),
+    "Qi Manipulation": new TaskRequirement([getQuerySelector("Qi Manipulation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
+    "Vital Essence Reinforcement": new TaskRequirement([getQuerySelector("Vital Essence Reinforcement")], [{ task: "Foundation establishment", requirement: 10 }]),
     "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Core Formation", requirement: 10 }]),
-    "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Nascent Soul", requirement: 10 }]),
-    "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Soul Severing", requirement: 25 }]),
+    "Bodily Refinement": new TaskRequirement([getQuerySelector("Bodily Refinement")], [{ task: "Nascent Soul", requirement: 10 }]),
+    "Temporal Cultivation": new TaskRequirement([getQuerySelector("Temporal Cultivation")], [{ task: "Soul Severing", requirement: 25 }]),
 
     // Conceptual Techniques
     "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
-    "Evil Control": new EvilRequirement([getQuerySelector("Evil Control")], [{ requirement: 1 }]),
-    "Intimidation": new EvilRequirement([getQuerySelector("Intimidation")], [{ requirement: 1 }]),
-    "Blood Meditation": new EvilRequirement([getQuerySelector("Blood Meditation")], [{ requirement: 50 }]),
-    "Demon's Wealth": new EvilRequirement([getQuerySelector("Demon's Wealth")], [{ requirement: 500 }]),
-    "Dark Knowledge": new EvilRequirement([getQuerySelector("Dark Knowledge")], [{ requirement: 5000 }]),
-    "Void Influence": new EvilRequirement([getQuerySelector("Void Influence")], [{ requirement: 50000 }]),
+    "Domain of Authority": new EvilRequirement([getQuerySelector("Domain of Authority")], [{ requirement: 1 }]),
+    "Profound Recognition": new EvilRequirement([getQuerySelector("Profound Recognition")], [{ requirement: 1 }]),
+    "Great Destiny": new EvilRequirement([getQuerySelector("Great Destiny")], [{ requirement: 50 }]),
+    "Karmic Significance": new EvilRequirement([getQuerySelector("Karmic Significance")], [{ requirement: 500 }]),
+    "Heavenly Talent": new EvilRequirement([getQuerySelector("Heavenly Talent")], [{ requirement: 5000 }]),
+    "Enlightened Tempo": new EvilRequirement([getQuerySelector("Enlightened Tempo")], [{ requirement: 50000 }]),
     "Time Loop": new EvilRequirement([getQuerySelector("Time Loop")], [{ requirement: 2500000 }]),
 
     // Immortal Cultivation
     "Cosmic Longevity": new TaskRequirement([getQuerySelector("Cosmic Longevity")], [{ task: "Human Immortal", requirement: 1 }]),
     "Cosmic Recollection": new TaskRequirement([getQuerySelector("Cosmic Recollection")], [{ task: "Earthly Immortal", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Time Loop", requirement: 900 }]),
-    "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Heavenly Immortal", requirement: 500, herequirement: 360 }, { task: "Evil Control", requirement: 4900, herequirement: 2900 }, { task: "Dark Knowledge", requirement: 6300, herequirement: 3400 }]),
+    "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Heavenly Immortal", requirement: 500, herequirement: 360 }, { task: "Domain of Authority", requirement: 4900, herequirement: 2900 }, { task: "Heavenly Talent", requirement: 6300, herequirement: 3400 }]),
     "Galactic Command": new TaskRequirement([getQuerySelector("Galactic Command")], [{ task: "Essence Collector", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
 
     // Manifestation
@@ -523,27 +523,9 @@ const requirementsBaseData = {
 }
 
 const xianxiaDisplayNames = {
-    // Mortal commoner - must have 6 jobs
-    // Mortal military - must have 8 jobs
-    // Earthly cultivation - must have 7 jobs
-    // Dao comprehension - could be changed to any number
-    // Immortal cultivation - could be changed to 4 jobs
-    // Dao embodiment - could be reduced to 3
-    // Fundamentals
-    // Spiritual Arts -> Spiritual techniques
-    "Mana Control": "Qi Manipulation", // Increase Earthly cultivation XP
-    "Life Essence": "Vital Essence Cultivation", // increase lifespan
     "Time Warping": "A Cultivator's Perspective", // Game speed
-    "Astral Body": "Bodily Refinement", // increase Lifespan
-    "Temporal Dimension": "Temporal Cultivation", // Game speed
     // Dark magic -> Dao Comprehension // todo
     "Dark Influence": "Inspiration from the Dao", // increase job and skill XP - You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.
-    "Evil Control": "Domain of Authority", // increases potential gain - You develop your daoist domain; the natural energies of heaven and earth begin to respect your new claims. Increase Potential gain.
-    "Intimidation": "Profound Recognition", // reduce item expenses - At a glance you begin to understand the natural energies and qualities of goods. Reduce item expenses.  
-    "Blood Meditation": "Great Destiny", // potential gain - When you close your eyes you feel as though you have a golden path before you, growing ever brighter. Greatness is no longer a question for you. Increase Potential gain.   
-    "Demon's Wealth": "Karmic Significance", // increase job wage - Your karmic weight grows by the day; significant events start naturally to seek you out. Increase job wage. 
-    "Dark Knowledge": "Heavenly Talent", // increase job xp - They begin to call you 'blessed with talent', though you have never been before. Things start to come easier to you, as though your instincts already know the answers.
-    "Void Influence": "Enlightened Tempo", // increase job and skill XP - Unconsciously, your every breath and movement becomes more in tune with the rhythm of the natural dao. Increase job and skill XP.
     "Time Loop": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
     // Celestial powers -> Immortal techniques -  // todo
     "Cosmic Longevity": "Epoch-Spanning Lifeline", // Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan
@@ -687,8 +669,8 @@ const jobCategories = {
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Martial Techniques": ["Strength", "Battle Tactics", "Muscle Memory"],
-    "Spiritual Arts": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension"],
-    "Conceptual Techniques": ["Dark Influence", "Evil Control", "Intimidation", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop"],
+    "Spiritual Arts": ["Qi Manipulation", "Vital Essence Reinforcement", "Time Warping", "Bodily Refinement", "Temporal Cultivation"],
+    "Conceptual Techniques": ["Dark Influence", "Domain of Authority", "Profound Recognition", "Great Destiny", "Karmic Significance", "Heavenly Talent", "Enlightened Tempo", "Time Loop"],
     "Immortal Cultivation": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
     "Manifestation": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
 }

@@ -130,7 +130,7 @@ function addMultipliers() {
         task.xpMultipliers.push(getHappiness)
         task.xpMultipliers.push(getDarkMatterXpGain)
         task.xpMultipliers.push(getBindedTaskEffect("Dark Influence"))
-        task.xpMultipliers.push(getBindedTaskEffect("Void Influence"))
+        task.xpMultipliers.push(getBindedTaskEffect("Enlightened Tempo"))
         task.xpMultipliers.push(getBindedTaskEffect("Parallel Universe"))
         task.xpMultipliers.push(getStrangeMagicBoost)
         task.xpMultipliers.push(getDarkMatterSkillXP)
@@ -138,10 +138,10 @@ function addMultipliers() {
 
         if (task instanceof Job) {
             task.incomeMultipliers.push(task.getLevelMultiplier.bind(task))
-            task.incomeMultipliers.push(getBindedTaskEffect("Demon's Wealth"))
+            task.incomeMultipliers.push(getBindedTaskEffect("Karmic Significance"))
             task.incomeMultipliers.push(getLifeCoachIncomeGain)
             task.xpMultipliers.push(getBindedTaskEffect("Productivity"))
-            task.xpMultipliers.push(getBindedTaskEffect("Dark Knowledge"))
+            task.xpMultipliers.push(getBindedTaskEffect("Heavenly Talent"))
             task.xpMultipliers.push(getBindedItemEffect("Personal Servant Disciple"))
         } else if (task instanceof Skill) {
             task.xpMultipliers.push(getBindedTaskEffect("Concentration"))
@@ -165,7 +165,7 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Star Gazing Platform"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["Earthly Cultivation"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedTaskEffect("Mana Control"))
+            task.xpMultipliers.push(getBindedTaskEffect("Qi Manipulation"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["Dao Comprehension"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Void Jade Pendant"))
@@ -188,7 +188,7 @@ function addMultipliers() {
         const item = gameData.itemData[itemName]
         item.expenseMultipliers = []
         item.expenseMultipliers.push(getBindedTaskEffect("Bargaining"))
-        item.expenseMultipliers.push(getBindedTaskEffect("Intimidation"))
+        item.expenseMultipliers.push(getBindedTaskEffect("Profound Recognition"))
         item.expenseMultipliers.push(getBindedTaskEffect("Galactic Command"))
     }
 }
@@ -251,7 +251,7 @@ function setCustomEffects() {
         return multiplier
     }
 
-    const intimidation = gameData.taskData["Intimidation"]
+    const intimidation = gameData.taskData["Profound Recognition"]
     intimidation.getEffect = function () {
         const multiplier = 1 - getBaseLog(intimidation.isHero ? 3 : 7, intimidation.level + 1) / 10
         if (multiplier < 0.05) return 0.05
@@ -270,7 +270,7 @@ function setCustomEffects() {
         return 1 + getBaseLog(timeWarping.isHero ? 1.005 : 10, timeWarping.level + 1)
     }
 
-    const immortality = gameData.taskData["Life Essence"]
+    const immortality = gameData.taskData["Vital Essence Reinforcement"]
     immortality.getEffect = function () {
         return 1 + getBaseLog(immortality.isHero ? 1.01 : 33, immortality.level + 1)
     }
@@ -412,8 +412,8 @@ function applySpeedOnBigInt(value) {
 }
 
 function getEvilGain() {
-    const evilControl = gameData.taskData["Evil Control"]
-    const bloodMeditation = gameData.taskData["Blood Meditation"]
+    const evilControl = gameData.taskData["Domain of Authority"]
+    const bloodMeditation = gameData.taskData["Great Destiny"]
     const yingYang = gameData.taskData["Yin Yang"]
     const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
     const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
@@ -448,7 +448,7 @@ function getEssenceGain() {
 }
 
 function getDarkMatterGain() {
-    const voidInfluence = gameData.taskData["Void Influence"]
+    const voidInfluence = gameData.taskData["Enlightened Tempo"]
     const voidInfluenceToChaos = Math.pow(voidInfluence.getEffect(), checkpointTuning.chaosFromVoidExponent)
     const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 10 : 1
     const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 3 : 1
@@ -486,7 +486,7 @@ function getGameSpeed() {
 function getUnpausedGameSpeed() {
     const boostWarping = gameData.boost_active ? gameData.metaverse.boost_warp_modifier : 1
     const timeWarping = gameData.taskData["Time Warping"]
-    const temporalDimension = gameData.taskData["Temporal Dimension"]
+    const temporalDimension = gameData.taskData["Temporal Cultivation"]
     const timeLoop = gameData.taskData["Time Loop"]
     const warpDrive = (gameData.requirements["Eternal Time"].isCompleted()) ? 2 : 1
     const speedSpeedSpeed = gameData.requirements["Speed speed speed"].isCompleted() ? 1000 : 1
@@ -1070,8 +1070,8 @@ function rebirthReset(set_tab_to_jobs = true) {
 }
 
 function getLifespan() {
-    const immortality = gameData.taskData["Life Essence"]
-    const superImmortality = gameData.taskData["Astral Body"]
+    const immortality = gameData.taskData["Vital Essence Reinforcement"]
+    const superImmortality = gameData.taskData["Bodily Refinement"]
     const higherDimensions = gameData.taskData["Higher Dimensions"]
     const cosmicLongevity = gameData.taskData["Cosmic Longevity"]
     const cosmicLongevityOverflow = Math.pow(cosmicLongevity.getEffect(), checkpointTuning.lifespanOverflowExponent)
