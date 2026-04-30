@@ -241,7 +241,7 @@
 									<div style="color: gray" class="sidebar-element">Affects all XP gain</div>
 									<div id="evilInfo" class="hidden">
 										<div class="text-caption"><span class="color-evil">Potential: </span><span id="evilDisplay"></span></div>
-										<div style="color: gray" class="sidebar-element">Affects Conceptual Arts XP gain</div>
+										<div style="color: gray" class="sidebar-element">Affects Conceptual Techniques XP gain</div>
 									</div>
 									<div id="essenceInfo" class="hidden">
 										<div class="text-caption"><span class="color-essence">Spirit Essence: </span><span id="essenceDisplay"></span></div>
@@ -403,14 +403,14 @@
 										</div>
 										<div id="danceWithTheDevilChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">4. Dance with the Inner Demon</div>
-											<div style="color: gray; padding-bottom: 0.3em">Conceptual Arts and Manifestation effects are heavily suppressed, max level reduces XP gain, and happiness is reduced by ^0.075.</div>
+											<div style="color: gray; padding-bottom: 0.3em">Conceptual Techniques and Manifestation effects are heavily suppressed, max level reduces XP gain, and happiness is reduced by ^0.075.</div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal4">5.8k</span> <span class="color-evil">Potential</span> Gain</div>
 											<div id="challengeReward4" class="reward">Blessing: Multiplies <span class="color-essence">Spirit Essence</span> Gain by x<span id="challengeEssenceGainBuff">1</span></div>
 											<button id="challengeButton4" class="w3-button button" onclick="enterChallenge('dance_with_the_devil')">Enter Trial</button>
 										</div>
 										<div id="legendsNeverDieChallenge" style="padding-top:2em">
 											<div class="text-caption challenge-title">5. Legends Never Perish</div>
-											<div style="color: gray; padding-bottom: 0.3em">Your lifespan is reduced by ^0.72, temporal dilation by ^0.75, happiness provides no bonus, and Conceptual Arts XP effect is always 1x. <span id="challenge5MetaverseLifespanDebuff">The infinite lifespan blessing from the Upper Realm is disabled.</span></div>
+											<div style="color: gray; padding-bottom: 0.3em">Your lifespan is reduced by ^0.72, temporal dilation by ^0.75, happiness provides no bonus, and Conceptual Techniques XP effect is always 1x. <span id="challenge5MetaverseLifespanDebuff">The infinite lifespan blessing from the Upper Realm is disabled.</span></div>
 											<div style="color: gold; padding-bottom: 0.3em">Goal: Reach <span id="challengeGoal5">Sect Grand Elder lvl 1227</span></div>
 											<div id="challengeReward5" class="reward">Blessing: Multiplies <span class="color-evil">Potential</span> Gain by x<span id="challengeEvilGainBuff">1</span></div>
 											<button id="challengeButton5" class="w3-button button" onclick="enterChallenge('legends_never_die')">Enter Trial</button>
@@ -445,22 +445,22 @@
 										<ul>
 											<li id="rebirthNote0" class="hidden">
 												On your <span id="age0"></span>th birthday, you discover a weathered jade talisman. It seems ordinary
-												to mortals, yet a quiet resonance stirs in your meridians when you hold it.
+												at first glance, yet a quiet resonance stirs in your dantian when you hold it.
 												You keep it close, unable to part with it.
 											</li>
 											<li id="rebirthNote1" class="hidden">
 												On your <span id="age1"></span>th birthday, the talisman trembles violently in your robes. As you
-												draw it out, it stills. A new heavenly seal appears at its center.
+												draw it out, it stills. A mysterious seal appears at its center.
 											</li>
 											<li id="rebirthNote2" class="hidden">
 												<div style="margin-bottom: 0.4em">
-													On your <span id="age1a"></span>th birthday, the talisman trembles again. This time, a living eye
-													opens at its center. Fear grips your heart, yet your mortal years are running out, so you
-													reach out and accept whatever fate follows.
+													On your <span id="age1a"></span>th birthday, the talisman trembles again. This time, a glimmering 
+													symbol of the bagua, containing the taiji within, opens at its center. Awe grips your heart; you reach 
+													out and accept whatever fate follows.
 												</div>
 												<i style="color: grey">
-													By opening the Heavenly Eye, you are reborn and must restart life, losing all levels and coins.
-													However, you gain <b>XP multipliers</b> for all cultivator jobs and skills equal to: <b>1 + max level / 10.</b>
+													By opening the Heavenly Eye, you are reborn and restart life anew, losing all levels and coins.
+													However, you gain <b>XP multipliers</b> for all cultivator jobs and skills, equal to: <b>1 + max level / 10.</b>
 													You will relearn the path far faster than before. <span class="color-evil">
 														The talisman may evolve again after living for <b><span id="age2"></span></b>...
 													</span>
@@ -472,14 +472,15 @@
 											<li id="rebirthNote3" class="hidden">
 												<div style="margin-bottom: 0.4em;">
 													Your instincts were correct. At the age of <span id="age2a"></span>, a ponderous hum rises from the talisman.
-													A harmony of voices, all sounding like your own, manifests and whispers: "You have come this far... will you awaken your inner potential?"
+													A harmony of voices, all sounding like your own in varying tones, manifests and whispers: 
+													"You have done well to come this far. Will you continue your journey and awaken your inner potential?"
 													<br><span class="color-evil">
-														The talisman may transform even further after living for <b><span id="age3"></span></b>.
+														The talisman may transform even further after you haved lived for <b><span id="age3"></span></b>.
 													</span>
 												</div>
 												<i class="color-evil">
 													If you awaken Potential, all levels, coins, and max levels are reset.
-													You are reborn as a blank slate. In return, you unlock Conceptual Arts and gain
+													You are reborn as a blank slate. In return, you unlock "Conceptual Techniques" skills and gain
 													<b><span id="evilGainDisplay"></span> Potential</b>, which will shape all future lives.
 												</i>
 												<br>
@@ -488,7 +489,7 @@
 											</li>
 											<li id="rebirthNote4" class="hidden">
 												<div style="margin-bottom: 0.4em;">
-													<span id="age3a"></span> years have passed and you still endure. The talisman trembles again, radiating golden sigils whose meanings remain veiled.
+													<span id="age3a"></span> years have passed and you still endure. The talisman trembles again, radiating golden sigils whose meanings are impossible to know.
 													As your awe peaks, a whisper echoes in your mind... <b>"Seek the Truth"</b>
 													<br>
 													<span class="color-evil">
@@ -496,12 +497,13 @@
 													</span>
 												</div>
 												<i style="color: rgb(204, 0, 255)">
-													You have unlocked <b>"Dao Comprehension"</b> jobs along with <b>"Conceptual Arts"</b> skills.
+													You have unlocked <b>"Dao Comprehension"</b> jobs along with <b>"Conceptual Techniques"</b> skills.
 												</i>
 											</li>
 											<li id="rebirthNote5" class="hidden">
 												<div style="margin-bottom: 0.4em;">
-													<span id="age4a"></span> years have passed... most spent studying the Dao. And yet, a small part of you remains: a fragment of the innocent mortal you once were. Suddenly the talisman blazes,
+													<span id="age4a"></span> years have passed... most spent studying the Dao. Your mind and soul are not what they 
+													once were; your mortal desires and ambitions have been lost to the flow of time. And yet, a small part of you remains: a fragment of the innocent mortal you once were. Suddenly the talisman blazes,
 													casting radiance like ten thousand suns. With a flex of your will, you seize it... <b>
 														"You now stand within a greater Dao..."
 													</b>
