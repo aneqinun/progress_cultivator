@@ -58,31 +58,31 @@ const tooltips = {
     // Spiritual Arts
     "Qi Manipulation": "Become more proficient in manipulating qi. Increase your job experience gained in earthly cultivation.", // Become more proficient in manipulating qi.  
     "Vital Essence Reinforcement": "Thicken your lifeline with refinement in qi. Increase your lifespan.", // Thicken your lifeline with refinement in qi. Is this the beginning of your immortal path?
-    "Time Warping": "Become uncaring of time's passing. Increase the game speed.", // The days pass faster before your eyes. Moments pass you by, like so many petals on the breeze...
+    "A Cultivator's Perspective": "Become uncaring of time's passing. Increase the game speed.", // The days pass faster before your eyes. Moments pass you by, like so many petals on the breeze...
     "Bodily Refinement": "Refine your body as a spiritual treasure. Increase your lifespan significantly.", // Bodily Refinement - Refine your body as a treasure. Lifespan grows as the red dust washes from your body and spirit.
     "Temporal Cultivation": "Cultivate and nurture time as you would a herb or flower. Increase game speed significantly.", // Temporal cultivation - "Like a herb or flower, time, too, may be nurtured and grown to abundance in its season."
 
     // Conceptual Techniques
-    "Dark Influence": "You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.", // Inspiration from the Dao
+    "Inspiration from the Dao": "You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.", // Inspiration from the Dao
     "Domain of Authority": "You develop your daoist domain; the natural energies of heaven and earth begin to respect your new claims. Increase Potential gain.", // Domain of Authority
     "Profound Recognition": " At a glance you begin to understand the natural energies and qualities of goods. Reduce item expenses.", // Profound Recognition
     "Great Destiny": "When you close your eyes you feel as though you have a golden path before you, growing ever brighter. Greatness is no longer a question for you. Increase Potential gain.", // Great Destiny
     "Karmic Significance": "Your karmic weight grows by the day; significant events start naturally to seek you out. Increase job wage.", // Karmic Significance
     "Heavenly Talent": "They begin to call you 'blessed with talent', though you have never been before. Things start to come easier to you, as though your instincts already know the answers.", // Heavenly Talent
     "Enlightened Tempo": "Unconsciously, your every breath and movement becomes more in tune with the rhythm of the natural dao. Increase job and skill XP.", // Enlightned Tempo
-    "Time Loop": "Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.", // Rarified Mind
+    "Rarified Mind": "Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.", // Rarified Mind
 
     // Immortal Cultivation
-    "Cosmic Longevity": "Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan.", // Epoch-Spanning Lifeline
-    "Cosmic Recollection": "Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved for rebirth and milestone auto-max logic.", // Wheel-Crossing Permanence
-    "Essence Collector": "You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain.", // Spiritual Nexus
-    "Galactic Command": "What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.", // Cessation of Excess
+    "Epoch-Spanning Lifeline": "Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan.", // Epoch-Spanning Lifeline
+    "Wheel-Crossing Permanence": "Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved for rebirth and milestone auto-max logic.", // Wheel-Crossing Permanence
+    "Spiritual Nexus": "You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain.", // Spiritual Nexus
+    "Cessation of Excess": "What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.", // Cessation of Excess
 
     // Manifestation
-    "Yin Yang": "You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.", // Taiji Equilibrium
-    "Parallel Universe": "In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.", // Splitting the Illusion
-    "Higher Dimensions": "When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan.", // World-Dreams
-    "Epiphany": "What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs .", // Meditations on the Heavenly
+    "Taiji Equilibrium": "You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.", // Taiji Equilibrium
+    "Splitting the Illusion": "In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.", // Splitting the Illusion
+    "World-Dreams": "When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan.", // World-Dreams
+    "Meditations on the Heavenly": "What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs .", // Meditations on the Heavenly
 
     // Properties
     "Ragged Courtyard": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",

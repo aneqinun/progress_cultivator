@@ -201,31 +201,31 @@ const skillBaseData = {
     // / Spiritual techniques
     "Qi Manipulation": { name: "Qi Manipulation", maxXp: 100, heroxp: 46, effect: 0.01, description: "Earthly Cultivation XP" },
     "Vital Essence Reinforcement": { name: "Vital Essence Reinforcement", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
-    "Time Warping": { name: "Time Warping", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
+    "A Cultivator's Perspective": { name: "A Cultivator's Perspective", maxXp: 100, heroxp: 82, effect: 0.01, description: "Gamespeed" },
     "Bodily Refinement": { name: "Bodily Refinement", maxXp: 100, heroxp: 100, effect: 0.0035, description: "Longer lifespan" },
     "Temporal Cultivation": { name: "Temporal Cultivation", maxXp: 100, heroxp: 115, effect: 0.006, description: "Gamespeed" },
 
     // Dark magic / Conceptual arts
-    "Dark Influence": { name: "Dark Influence", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
+    "Inspiration from the Dao": { name: "Inspiration from the Dao", maxXp: 100, heroxp: 155, effect: 0.01, description: "All XP" },
     "Domain of Authority": { name: "Domain of Authority", maxXp: 100, heroxp: 156, effect: 0.01, description: "Potential Gain" },
     "Profound Recognition": { name: "Profound Recognition", maxXp: 100, heroxp: 157, effect: -0.01, description: "Reduced Expenses" },
     "Great Destiny": { name: "Great Destiny", maxXp: 100, heroxp: 176, effect: 0.01, description: "Potential Gain" },
     "Karmic Significance": { name: "Karmic Significance", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
     "Heavenly Talent": { name: "Heavenly Talent", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
     "Enlightened Tempo": { name: "Enlightened Tempo", maxXp: 100, heroxp: 206, effect: 0.0028, description: "All XP" },
-    "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
+    "Rarified Mind": { name: "Rarified Mind", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
 
     // ? / ?
-    "Cosmic Longevity": { name: "Cosmic Longevity", maxXp: 100, heroxp: 266, effect: 0.0015, description: "Longer Lifespan" },
-    "Cosmic Recollection": { name: "Cosmic Recollection", maxXp: 100, heroxp: 272, effect: 0.00065, description: "Max Lvl Multiplier" },
-    "Essence Collector": { name: "Essence Collector", maxXp: 100, heroxp: 288, effect: 0.01, description: "Essence Gain" },
-    "Galactic Command": { name: "Galactic Command", maxXp: 100, heroxp: 290, effect: -0.01, description: "Reduced Expenses" },
+    "Epoch-Spanning Lifeline": { name: "Epoch-Spanning Lifeline", maxXp: 100, heroxp: 266, effect: 0.0015, description: "Longer Lifespan" },
+    "Wheel-Crossing Permanence": { name: "Wheel-Crossing Permanence", maxXp: 100, heroxp: 272, effect: 0.00065, description: "Max Lvl Multiplier" },
+    "Spiritual Nexus": { name: "Spiritual Nexus", maxXp: 100, heroxp: 288, effect: 0.01, description: "Essence Gain" },
+    "Cessation of Excess": { name: "Cessation of Excess", maxXp: 100, heroxp: 290, effect: -0.01, description: "Reduced Expenses" },
 
     // ? / ?
-    "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Potential Gain" },
-    "Parallel Universe": { name: "Parallel Universe", maxXp: 100, heroxp: 300, effect: 0.02, description: "All XP" },
-    "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
-    "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Immortal Cultivation XP" },
+    "Taiji Equilibrium": { name: "Taiji Equilibrium", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence + Potential Gain" },
+    "Splitting the Illusion": { name: "Splitting the Illusion", maxXp: 100, heroxp: 300, effect: 0.02, description: "All XP" },
+    "World-Dreams": { name: "World-Dreams", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
+    "Meditations on the Heavenly": { name: "Meditations on the Heavenly", maxXp: 100, heroxp: 280, effect: 0.012, description: "Immortal Cultivation XP" },
 
 }
 
@@ -310,18 +310,18 @@ const requirementsBaseData = {
     "Rebirth note 3": new AgeRequirement(["#rebirthNote3"], [{ requirement: 200 }]),
     "Rebirth note 4": new AgeRequirement(["#rebirthNote4"], [{ requirement: 1000 }]),
     "Rebirth note 5": new AgeRequirement(["#rebirthNote5"], [{ requirement: 10000 }]),
-    "Rebirth note 6": new TaskRequirement(["#rebirthNote6"], [{ task: "Cosmic Recollection", requirement: 1 }]),
+    "Rebirth note 6": new TaskRequirement(["#rebirthNote6"], [{ task: "Wheel-Crossing Permanence", requirement: 1 }]),
     "Rebirth note 7": new EssenceRequirement(["#rebirthNote7"], [{ requirement: 5e10 }]),
     "Rebirth note 8": new EssenceRequirement(["#rebirthNote8"], [{ requirement: 1e60 }]),
 
     "Rebirth button 1": new AgeRequirement(["#rebirthButton1"], [{ requirement: 65 }]),
     "Rebirth button 2": new AgeRequirement(["#rebirthButton2"], [{ requirement: 200 }]),
-    "Rebirth button 3": new TaskRequirement(["#rebirthButton3"], [{ task: "Cosmic Recollection", requirement: 1 }]),
+    "Rebirth button 3": new TaskRequirement(["#rebirthButton3"], [{ task: "Wheel-Crossing Permanence", requirement: 1 }]),
     "Rebirth button 4": new EssenceRequirement(["#rebirthButton4"], [{ requirement: 5e10 }]),
     "Rebirth button 5": new EssenceRequirement(["#rebirthButton5"], [{ requirement: 1e60 }]),
 
     "Rebirth stats evil": new AgeRequirement(["#statsEvilGain"], [{ requirement: 200 }]),
-    "Rebirth stats essence": new TaskRequirement(["#statsEssenceGain"], [{ task: "Cosmic Recollection", requirement: 1 }]),
+    "Rebirth stats essence": new TaskRequirement(["#statsEssenceGain"], [{ task: "Wheel-Crossing Permanence", requirement: 1 }]),
 
     // Sidebar items
     "Quick task display": new AgeRequirement(["#quickTaskDisplay"], [{ requirement: 20 }]),
@@ -362,13 +362,13 @@ const requirementsBaseData = {
     "Intent Scholar": new AgeRequirement([getQuerySelector("Intent Scholar")], [{ requirement: 1000 }]),
     "Seeker of Law": new TaskRequirement([getQuerySelector("Seeker of Law")], [{ task: "Heavenly Talent", requirement: 3000 }, { task: "Intent Scholar", requirement: 250 }]),
     "Dao Sage": new TaskRequirement([getQuerySelector("Dao Sage")], [{ task: "Temporal Cultivation", requirement: 3400 }, { task: "Seeker of Law", requirement: 350, herequirement: 180 }]),
-    "A Mortal Daoist": new TaskRequirement([getQuerySelector("A Mortal Daoist")], [{ task: "Time Loop", requirement: 3800, herequirement: 200 }, { task: "Dao Sage", requirement: 300 }]),
+    "A Mortal Daoist": new TaskRequirement([getQuerySelector("A Mortal Daoist")], [{ task: "Rarified Mind", requirement: 3800, herequirement: 200 }, { task: "Dao Sage", requirement: 300 }]),
     "Dustless One": new TaskRequirement([getQuerySelector("Dustless One")], [{ task: "Great Destiny", requirement: 4700, herequirement: 300 }, { task: "A Mortal Daoist", requirement: 900, herequirement: 125 }]),
 
     // Immortal Cultivation
     "Human Immortal": new AgeRequirement([getQuerySelector("Human Immortal")], [{ requirement: 10000 }]),
-    "Earthly Immortal": new TaskRequirement([getQuerySelector("Earthly Immortal")], [{ task: "Human Immortal", requirement: 15 }, { task: "Cosmic Longevity", requirement: 4000, herequirement: 180 }]),
-    "Heavenly Immortal": new TaskRequirement([getQuerySelector("Heavenly Immortal")], [{ task: "Earthly Immortal", requirement: 200 }, { task: "Cosmic Recollection", requirement: 4500, herequirement: 350 }]),
+    "Earthly Immortal": new TaskRequirement([getQuerySelector("Earthly Immortal")], [{ task: "Human Immortal", requirement: 15 }, { task: "Epoch-Spanning Lifeline", requirement: 4000, herequirement: 180 }]),
+    "Heavenly Immortal": new TaskRequirement([getQuerySelector("Heavenly Immortal")], [{ task: "Earthly Immortal", requirement: 200 }, { task: "Wheel-Crossing Permanence", requirement: 4500, herequirement: 350 }]),
     "Sovereign Epyrean": new TaskRequirement([getQuerySelector("Sovereign Epyrean")], [{ task: "Meditation", requirement: 6300 }, { task: "Heavenly Immortal", requirement: 1800, herequirement: 500 }]),
 
     // Dao Embodiment
@@ -390,31 +390,31 @@ const requirementsBaseData = {
     // Spiritual Arts
     "Qi Manipulation": new TaskRequirement([getQuerySelector("Qi Manipulation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
     "Vital Essence Reinforcement": new TaskRequirement([getQuerySelector("Vital Essence Reinforcement")], [{ task: "Foundation establishment", requirement: 10 }]),
-    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Core Formation", requirement: 10 }]),
+    "A Cultivator's Perspective": new TaskRequirement([getQuerySelector("A Cultivator's Perspective")], [{ task: "Core Formation", requirement: 10 }]),
     "Bodily Refinement": new TaskRequirement([getQuerySelector("Bodily Refinement")], [{ task: "Nascent Soul", requirement: 10 }]),
     "Temporal Cultivation": new TaskRequirement([getQuerySelector("Temporal Cultivation")], [{ task: "Soul Severing", requirement: 25 }]),
 
     // Conceptual Techniques
-    "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
+    "Inspiration from the Dao": new EvilRequirement([getQuerySelector("Inspiration from the Dao")], [{ requirement: 1 }]),
     "Domain of Authority": new EvilRequirement([getQuerySelector("Domain of Authority")], [{ requirement: 1 }]),
     "Profound Recognition": new EvilRequirement([getQuerySelector("Profound Recognition")], [{ requirement: 1 }]),
     "Great Destiny": new EvilRequirement([getQuerySelector("Great Destiny")], [{ requirement: 50 }]),
     "Karmic Significance": new EvilRequirement([getQuerySelector("Karmic Significance")], [{ requirement: 500 }]),
     "Heavenly Talent": new EvilRequirement([getQuerySelector("Heavenly Talent")], [{ requirement: 5000 }]),
     "Enlightened Tempo": new EvilRequirement([getQuerySelector("Enlightened Tempo")], [{ requirement: 50000 }]),
-    "Time Loop": new EvilRequirement([getQuerySelector("Time Loop")], [{ requirement: 2500000 }]),
+    "Rarified Mind": new EvilRequirement([getQuerySelector("Rarified Mind")], [{ requirement: 2500000 }]),
 
     // Immortal Cultivation
-    "Cosmic Longevity": new TaskRequirement([getQuerySelector("Cosmic Longevity")], [{ task: "Human Immortal", requirement: 1 }]),
-    "Cosmic Recollection": new TaskRequirement([getQuerySelector("Cosmic Recollection")], [{ task: "Earthly Immortal", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Time Loop", requirement: 900 }]),
-    "Essence Collector": new TaskRequirement([getQuerySelector("Essence Collector")], [{ task: "Heavenly Immortal", requirement: 500, herequirement: 360 }, { task: "Domain of Authority", requirement: 4900, herequirement: 2900 }, { task: "Heavenly Talent", requirement: 6300, herequirement: 3400 }]),
-    "Galactic Command": new TaskRequirement([getQuerySelector("Galactic Command")], [{ task: "Essence Collector", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
+    "Epoch-Spanning Lifeline": new TaskRequirement([getQuerySelector("Epoch-Spanning Lifeline")], [{ task: "Human Immortal", requirement: 1 }]),
+    "Wheel-Crossing Permanence": new TaskRequirement([getQuerySelector("Wheel-Crossing Permanence")], [{ task: "Earthly Immortal", requirement: 50 }, { task: "Meditation", requirement: 4200 }, { task: "Rarified Mind", requirement: 900 }]),
+    "Spiritual Nexus": new TaskRequirement([getQuerySelector("Spiritual Nexus")], [{ task: "Heavenly Immortal", requirement: 500, herequirement: 360 }, { task: "Domain of Authority", requirement: 4900, herequirement: 2900 }, { task: "Heavenly Talent", requirement: 6300, herequirement: 3400 }]),
+    "Cessation of Excess": new TaskRequirement([getQuerySelector("Cessation of Excess")], [{ task: "Spiritual Nexus", requirement: 5000, herequirement: 210 }, { task: "Bargaining", requirement: 5000 }]),
 
     // Manifestation
-    "Yin Yang": new EssenceRequirement([getQuerySelector("Yin Yang")], [{ requirement: 1 }]),
-    "Parallel Universe": new EssenceRequirement([getQuerySelector("Parallel Universe")], [{ requirement: 1 }]),
-    "Higher Dimensions": new EssenceRequirement([getQuerySelector("Higher Dimensions")], [{ requirement: 10000 }]),
-    "Epiphany": new EssenceRequirement([getQuerySelector("Epiphany")], [{ requirement: 30000 }]),
+    "Taiji Equilibrium": new EssenceRequirement([getQuerySelector("Taiji Equilibrium")], [{ requirement: 1 }]),
+    "Splitting the Illusion": new EssenceRequirement([getQuerySelector("Splitting the Illusion")], [{ requirement: 1 }]),
+    "World-Dreams": new EssenceRequirement([getQuerySelector("World-Dreams")], [{ requirement: 10000 }]),
+    "Meditations on the Heavenly": new EssenceRequirement([getQuerySelector("Meditations on the Heavenly")], [{ requirement: 30000 }]),
 
     // Properties
     "Ragged Courtyard": new CoinRequirement([getQuerySelector("Ragged Courtyard")], [{ requirement: 0 }]),
@@ -512,7 +512,7 @@ const requirementsBaseData = {
     "keyChallenge": new EvilRequirement(["#keyChallenge"], [{ requirement: 10000 }]),
     "key1": new AgeRequirement(["#key1"], [{ requirement: 65 }]),
     "key2": new AgeRequirement(["#key2"], [{ requirement: 200 }]),
-    "key3": new TaskRequirement(["#key3"], [{ task: "Cosmic Recollection", requirement: 1 }]),
+    "key3": new TaskRequirement(["#key3"], [{ task: "Wheel-Crossing Permanence", requirement: 1 }]),
     "key4": new EssenceRequirement(["#key4"], [{ requirement: 5e10 }]),
     "key5": new EssenceRequirement(["#key5"], [{ requirement: 1e90 }]),
 
@@ -523,23 +523,8 @@ const requirementsBaseData = {
 }
 
 const xianxiaDisplayNames = {
-    "Time Warping": "A Cultivator's Perspective", // Game speed
     // Dark magic -> Dao Comprehension // todo
-    "Dark Influence": "Inspiration from the Dao", // increase job and skill XP - You hear the whispers of the dao on the wind, hints on matters great and small. Increase job and skill XP gain.
-    "Time Loop": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
-    // Celestial powers -> Immortal techniques -  // todo
-    "Cosmic Longevity": "Epoch-Spanning Lifeline", // Your lifeline runs as deep as Mt. Tai and as wide as the Yellow River. Increases lifespan
-    "Cosmic Recollection": "Wheel-Crossing Permanence", // Your powerful soul resists erosion by the Winds of Rebirth. Increases how much max level is preserved/scaled on rebirth and milestone auto-max logic.
-    "Essence Collector": "Spiritual Nexus", // You are a nexus in reality; Essence flows upstream to you, evermore. Increase essence gain
-    "Galactic Command": "Cessation of Excess", // What you need, naturally comes in its time. What you don't need, fades away by itself. Reduce item expenses.
-    // Manifestation -> ? -  // todo
-    "Yin Yang": "Taiji Equilibrium", // You join Yin and Yang, and begin your return to primordial origin. Increase potential gain and increase essence gain.
-    "Parallel Universe": "Splitting the Illusion", // In one world you walk left, in another you walk right. The Maya splits in twain, but you can see still. Increase xp for jobs and skills.
-    "Higher Dimensions": "World-Dreams", // When you sleep, your dreams spin worlds into being. When you wake the illusion fades away once more. Increase lifespan
-    "Epiphany": "Meditations on the Heavenly", // What is Mortal, what is Heavenly? The more you learn, the less you know. Increase xp for immortal cultivation jobs.
-    //
-    // 
-    // 
+    "Rarified Mind": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
     "Magic Eye": "Spirit Eye Awakening",
     "Almighty Eye": "Heavenly Eye Awakening",
     "Deal with the Devil": "Pact of the Demon Path",
@@ -669,10 +654,10 @@ const jobCategories = {
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Martial Techniques": ["Strength", "Battle Tactics", "Muscle Memory"],
-    "Spiritual Arts": ["Qi Manipulation", "Vital Essence Reinforcement", "Time Warping", "Bodily Refinement", "Temporal Cultivation"],
-    "Conceptual Techniques": ["Dark Influence", "Domain of Authority", "Profound Recognition", "Great Destiny", "Karmic Significance", "Heavenly Talent", "Enlightened Tempo", "Time Loop"],
-    "Immortal Cultivation": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
-    "Manifestation": ["Yin Yang", "Parallel Universe", "Higher Dimensions", "Epiphany"]
+    "Spiritual Arts": ["Qi Manipulation", "Vital Essence Reinforcement", "A Cultivator's Perspective", "Bodily Refinement", "Temporal Cultivation"],
+    "Conceptual Techniques": ["Inspiration from the Dao", "Domain of Authority", "Profound Recognition", "Great Destiny", "Karmic Significance", "Heavenly Talent", "Enlightened Tempo", "Rarified Mind"],
+    "Immortal Cultivation": ["Epoch-Spanning Lifeline", "Wheel-Crossing Permanence", "Spiritual Nexus", "Cessation of Excess"],
+    "Manifestation": ["Taiji Equilibrium", "Splitting the Illusion", "World-Dreams", "Meditations on the Heavenly"]
 }
 
 const itemCategories = {

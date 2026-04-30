@@ -35,7 +35,7 @@ const milestoneBaseData = {
     "The new gold": { name: "The new gold", expense: 1e30, tier: 30, description: "Multiply Spirit Essence gain by 1000x" },
     "The Devil inside you": { name: "The Devil inside you", expense: 1e35, tier: 31, description: "Multiply Potential gain by 1e15x" },
     "Strange Magic": { name: "Strange Magic", expense: 1e38, tier: 32, description: "Multiply all XP gain by 1e25x" },
-    "Speed speed speed": { name: "Speed speed speed", expense: 1e40, tier: 33, description: "Multiply Time Warping and Lifespan by 1000x. Heavily boosts Faint Hope" },
+    "Speed speed speed": { name: "Speed speed speed", expense: 1e40, tier: 33, description: "Multiply A Cultivator's Perspective and Lifespan by 1000x. Heavily boosts Faint Hope" },
     "Life is valueable": { name: "Life is valueable", expense: 1e47, tier: 34, description: "Multiply your lifespan by 1e5x. New trial unlocked. Chaos Essence boosts spirit essence gain." },
     "Dark Matter Millionaire": { name: "Dark Matter Millionaire", expense: 1e55, tier: 35, description: "Multiply Chaos Essence gain by 500x" },
     "The new Dark Matter": { name: "The new Dark Matter", expense: 1e60, tier: 36, description: "Unlocks Upper Realm" },
@@ -44,7 +44,7 @@ const milestoneBaseData = {
 
     "Ruler of the Metaverse": { name: "Ruler of the Metaverse", expense: 1e90, tier: 38, description: "Unlocks Upper Realm Perks and Realm Gatekeepers job category" },
     "A New Hope": { name: "A New Hope", expense: 1e95, tier: 39, description: "Flicker of Dao always at maximum" },
-    "Time is a flat circle": { name: "Time is a flat circle", expense: 1e100, tier: 40, description: "Multiply Time Warping by 1000x, Multiply all xp gain by 1e50x" },
+    "Time is a flat circle": { name: "Time is a flat circle", expense: 1e100, tier: 40, description: "Multiply A Cultivator's Perspective by 1000x, Multiply all xp gain by 1e50x" },
     "The End is near": { name: "The End is near", expense: 1e200, tier: 50, description: "Unspent Upper Realm perk points buff Chaos Essence" },
     "The End": { name: "The End", expense: 1e300, tier: 99, description: "Congratulations! You have beaten the game!" },
 }

@@ -57,7 +57,7 @@ class Task {
            return (10 / (this.maxLevel + 1))
         }
         else {
-            let effect = gameData.taskData['Cosmic Recollection'].getEffect();
+            let effect = gameData.taskData['Wheel-Crossing Permanence'].getEffect();
             effect = effect == 0 ? 1 : effect
             return (this.baseData.heroxp < 1000) ? 1 + this.maxLevel / 10 : 1 + this.maxLevel / effect
         }

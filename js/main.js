@@ -129,9 +129,9 @@ function addMultipliers() {
         task.xpMultipliers.push(task.getMaxLevelMultiplier.bind(task))
         task.xpMultipliers.push(getHappiness)
         task.xpMultipliers.push(getDarkMatterXpGain)
-        task.xpMultipliers.push(getBindedTaskEffect("Dark Influence"))
+        task.xpMultipliers.push(getBindedTaskEffect("Inspiration from the Dao"))
         task.xpMultipliers.push(getBindedTaskEffect("Enlightened Tempo"))
-        task.xpMultipliers.push(getBindedTaskEffect("Parallel Universe"))
+        task.xpMultipliers.push(getBindedTaskEffect("Splitting the Illusion"))
         task.xpMultipliers.push(getStrangeMagicBoost)
         task.xpMultipliers.push(getDarkMatterSkillXP)
         task.xpMultipliers.push(getTimeIsAFlatCircleXP)
@@ -174,7 +174,7 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Void Sand"))
         } else if (jobCategories["Immortal Cultivation"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Immortal Robe"))
-            task.xpMultipliers.push(getBindedTaskEffect("Epiphany"))
+            task.xpMultipliers.push(getBindedTaskEffect("Meditations on the Heavenly"))
         } else if (skillCategories["Conceptual Techniques"].includes(task.name)) {
             task.xpMultipliers.push(getEvilXpGain)
         } else if (skillCategories["Manifestation"].includes(task.name)) {
@@ -189,7 +189,7 @@ function addMultipliers() {
         item.expenseMultipliers = []
         item.expenseMultipliers.push(getBindedTaskEffect("Bargaining"))
         item.expenseMultipliers.push(getBindedTaskEffect("Profound Recognition"))
-        item.expenseMultipliers.push(getBindedTaskEffect("Galactic Command"))
+        item.expenseMultipliers.push(getBindedTaskEffect("Cessation of Excess"))
     }
 }
 
@@ -258,14 +258,14 @@ function setCustomEffects() {
         return multiplier
     }
 
-    const galacticCommand = gameData.taskData["Galactic Command"]
+    const galacticCommand = gameData.taskData["Cessation of Excess"]
     galacticCommand.getEffect = function () {
         const multiplier = 1 - getBaseLog(galacticCommand.isHero ? 3 : 7, galacticCommand.level + 1) / 10
         if (multiplier < 0.05) return 0.05
         return multiplier
     }
 
-    const timeWarping = gameData.taskData["Time Warping"]
+    const timeWarping = gameData.taskData["A Cultivator's Perspective"]
     timeWarping.getEffect = function() {
         return 1 + getBaseLog(timeWarping.isHero ? 1.005 : 10, timeWarping.level + 1)
     }
@@ -275,7 +275,7 @@ function setCustomEffects() {
         return 1 + getBaseLog(immortality.isHero ? 1.01 : 33, immortality.level + 1)
     }
 
-    const unholyRecall = gameData.taskData["Cosmic Recollection"];
+    const unholyRecall = gameData.taskData["Wheel-Crossing Permanence"];
     unholyRecall.getEffect = function() {
         return unholyRecall.level * (unholyRecall.isHero ? 0.065 : 0.00065);
     }
@@ -414,7 +414,7 @@ function applySpeedOnBigInt(value) {
 function getEvilGain() {
     const evilControl = gameData.taskData["Domain of Authority"]
     const bloodMeditation = gameData.taskData["Great Destiny"]
-    const yingYang = gameData.taskData["Yin Yang"]
+    const yingYang = gameData.taskData["Taiji Equilibrium"]
     const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
     const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
     const theDevilInsideYou = gameData.requirements["The Devil inside you"].isCompleted() ? 1e15 : 1
@@ -429,8 +429,8 @@ function getEvilGain() {
 }
 
 function getEssenceGain() {
-    const essenceControl = gameData.taskData["Yin Yang"]
-    const essenceCollector = gameData.taskData["Essence Collector"]
+    const essenceControl = gameData.taskData["Taiji Equilibrium"]
+    const essenceCollector = gameData.taskData["Spiritual Nexus"]
     const transcendentMaster = milestoneData["Transcendent Master"]
     const faintHope = milestoneData["Faint Hope"]
     const rise = milestoneData["Rise of Great Heroes"]
@@ -485,9 +485,9 @@ function getGameSpeed() {
 
 function getUnpausedGameSpeed() {
     const boostWarping = gameData.boost_active ? gameData.metaverse.boost_warp_modifier : 1
-    const timeWarping = gameData.taskData["Time Warping"]
+    const timeWarping = gameData.taskData["A Cultivator's Perspective"]
     const temporalDimension = gameData.taskData["Temporal Cultivation"]
-    const timeLoop = gameData.taskData["Time Loop"]
+    const timeLoop = gameData.taskData["Rarified Mind"]
     const warpDrive = (gameData.requirements["Eternal Time"].isCompleted()) ? 2 : 1
     const speedSpeedSpeed = gameData.requirements["Speed speed speed"].isCompleted() ? 1000 : 1
     const timeIsAFlatCircle = gameData.requirements["Time is a flat circle"].isCompleted() ? 1000 : 1
@@ -849,7 +849,7 @@ function rebirthThree() {
     gameData.rebirthTwoTime = 0
     gameData.rebirthThreeTime = 0
 
-    const recallEffect = gameData.taskData["Cosmic Recollection"].getEffect();
+    const recallEffect = gameData.taskData["Wheel-Crossing Permanence"].getEffect();
 
     for (const taskName in gameData.taskData) {
         const task = gameData.taskData[taskName]
@@ -973,7 +973,7 @@ function applyMilestones() {
         (gameData.requirements["Almighty Eye"].isCompleted())){
         for (taskName in gameData.taskData) {
             const task = gameData.taskData[taskName]
-            const effect = gameData.taskData["Cosmic Recollection"].getEffect()
+            const effect = gameData.taskData["Wheel-Crossing Permanence"].getEffect()
             const maxlevel = Math.floor(task.level * (effect == 0 ? 1 : effect))
             if (maxlevel > task.maxLevel)
                 task.maxLevel = maxlevel
@@ -1072,8 +1072,8 @@ function rebirthReset(set_tab_to_jobs = true) {
 function getLifespan() {
     const immortality = gameData.taskData["Vital Essence Reinforcement"]
     const superImmortality = gameData.taskData["Bodily Refinement"]
-    const higherDimensions = gameData.taskData["Higher Dimensions"]
-    const cosmicLongevity = gameData.taskData["Cosmic Longevity"]
+    const higherDimensions = gameData.taskData["World-Dreams"]
+    const cosmicLongevity = gameData.taskData["Epoch-Spanning Lifeline"]
     const cosmicLongevityOverflow = Math.pow(cosmicLongevity.getEffect(), checkpointTuning.lifespanOverflowExponent)
     const speedSpeedSpeed = gameData.requirements["Speed speed speed"].isCompleted() ? 1000 : 1
     const lifeIsValueable = gameData.requirements["Life is valueable"].isCompleted() ? 1e5 : 1
