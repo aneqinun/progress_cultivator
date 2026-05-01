@@ -148,7 +148,7 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Journal"))
             task.xpMultipliers.push(getBindedItemEffect("Scripture Desk"))
             task.xpMultipliers.push(getBindedItemEffect("Scripture Pavilion"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Slaying Blade"))
+            task.xpMultipliers.push(getBindedItemEffect("Demon Slaying Blade"))
             task.xpMultipliers.push(getBindedItemEffect("Cosmos Fragment"))
             task.xpMultipliers.push(getBindedItemEffect("Personal Star Domain"))
         }
@@ -168,12 +168,12 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedTaskEffect("Qi Manipulation"))
             task.xpMultipliers.push(getTaaAndMagicXpGain)
         } else if (jobCategories["Dao Comprehension"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Void Jade Pendant"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Battle Armor"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Pearl"))
-            task.xpMultipliers.push(getBindedItemEffect("Void Sand"))
+            task.xpMultipliers.push(getBindedItemEffect("Fivefold Elements Ring"))
+            task.xpMultipliers.push(getBindedItemEffect("Golden Petal Robe"))
+            task.xpMultipliers.push(getBindedItemEffect("Abyssal Crushing Pearl"))
+            task.xpMultipliers.push(getBindedItemEffect("Dead Mountain's Sand"))
         } else if (jobCategories["Immortal Cultivation"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Immortal Robe"))
+            task.xpMultipliers.push(getBindedItemEffect("Essential Crown"))
             task.xpMultipliers.push(getBindedTaskEffect("Meditations on the Heavenly"))
         } else if (skillCategories["Conceptual Techniques"].includes(task.name)) {
             task.xpMultipliers.push(getEvilXpGain)
@@ -335,9 +335,9 @@ function getHappiness() {
 
     const meditationEffect = getBindedTaskEffect("Meditation")
     const butlerEffect = getBindedItemEffect("Housekeeper")
-    const multiverseFragment = getBindedItemEffect("Realm Fragment")
+    const multiverseFragment = getBindedItemEffect("Beneficient Nirvana Fruit")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
-    const stairWayToHeaven = getBindedItemEffect("Stairway to Immortality")
+    const stairWayToHeaven = getBindedItemEffect("The Cintamani Stone")
     const happiness = godsBlessings * meditationEffect() * butlerEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
 

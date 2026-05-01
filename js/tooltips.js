@@ -124,20 +124,20 @@ const tooltips = {
     "Scripture Pavilion": "Stores your collection of manuscripts, each containing vast amounts of information from basic martial arts to complex spiritual techniques.",
     "Star Gazing Platform": "Used for observing the skies for celestial events which may reveal a hint of profound happenings.",
     "Mortal-Scrying Orb": "Allows you to scry the world around you, displaying the trials and tribulations of everyday life.",
-    "Void Jade Pendant": "Helps you shape and manipulate void matter, refining your progress through the Void path.",
-    "Void Battle Armor": "Generates an innate armor as a part of your body, which is resistant to attacks, harm or pain.",
-    "Void Slaying Blade": "Forged from void dust and dark matter, this blade can slash through dimensional barriers. It's a weapon of choice for every Void Reaver.",
-    "Void Pearl": "When the orb touches non-void entities, it disintegrates them by harnessing power from the Void Realm.",
-    "Void Sand": "Purest version of void created material; a teaspoon of it is as heavy as a small planet.",
-    "Immortal Robe": "The most powerful and essential equipment of any Celestial. Acts as a source of infinite power.",
-    "Cosmos Fragment": "From the time the universe was born. Can create more small universes.",
-    "Realm Fragment": "Came into existence long before our universe was created, this strange looking object with no shape radiates unlimited energy.",
-    "Stairway to Immortality": "A staircase to the all mighty themselves.",
-    "Road to Demon Domain": "The devil invites you to his palace of terror.",
-    "Fourfold Primordial Spark": "This object is from a higher dimensional world.",
-    "Annihilation Art": "Why do you need it?",
-    "Personal Star Domain": "You know about the pocket dimension, right?",
-    "Grand Dao Sphere": "You gain the limitless pow... ah, you're already omnipotent...",
+    "Fivefold Elements Ring": "Helps attune your thoughts to the natural flows of the primary qi forms.",
+    "Golden Petal Robe": "Wearing this robe produces a sense calm in you, as though you are fading into the world, and it into you.",
+    "Demon Slaying Blade": "With each enemy defeated by your sword, your expertise grows. A master can kill with a simple reed, but what more with a supreme blade?",
+    "Abyssal Crushing Pearl": "For a mortal to touch this pearl would transform them instantly into a pillar of salt. Carefully handled, you glean details of esoteric dao.",
+    "Dead Mountain's Sand": "An ancient immortal personage once crushed a vast spiritual mountain to sand with a single step. From it you can sense an echo of their profound cultivation.",
+    "Essential Crown": "Some seniors wear their enlightenment on their brow. A single look at it may turn a mortal into a great power, or into dust.",
+    "Primordial Memory Crystal": "A stray thought from a primordial entity has crystalised from the ether. Sensing the memory within can grant you knowledge of unbelievable things, but do so with extreme caution.", // Skill XP
+    "Beneficient Nirvana Fruit": "The conceptual fruit from ten million lifetimes of saintly care and right-living. This treasure bears the faint mark of the Awakened One.", // happiness
+    "The Cintamani Stone": "The wishes and hopes of humanity crystalised. The potential to do infinite good is within your palm.", // happiness
+    "Road to Demon Domain": "The devil invites you to his palace of terror.", // Potential Gain
+    "Fourfold Primordial Spark": "This object is from a higher dimensional world.", // Primordial Spark Gain
+    "Annihilation Art": "Why do you need it?", // Dark Matter Gain
+    "Personal Star Domain": "You know about the pocket dimension, right?", // SKill XP
+    "Grand Dao Sphere": "You gain the limitless pow... ah, you're already omnipotent...", // Primordial Spark Gain
 
     // Essence Milestones
     "Magic Eye": "The Eye in your Amulet starts to glow.",
