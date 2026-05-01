@@ -109,7 +109,7 @@ const tooltips = {
     "Grand Star Region": "A cluster of galactic groups spanning hundreds of millions of light years across and containing thousands of galaxies is under your control.",
     "Celestial Vein": "One of the largest known structures of the universe, containing dozens of superclusters and millions of galaxies.",
     "All-Seeing Cosmos": "You did it! You finally rule the entire universe...or do you?",
-    "Ten Thousand Realms": "Universe is too small for you?!",
+    "Myriad Realms": "Universe is too small for you?!",
     "Microcosm World": "You try to find at least some place that is still beyond your control, but all in vain.",
     "Void of Desolation": "The Great Nothing",
 

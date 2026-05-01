@@ -258,7 +258,7 @@ const itemBaseData = {
     "Grand Star Region": { name: "Grand Star Region", expense: 1e33, effect: 100000000, heromult: 20, heroeffect: 1e50 },
     "Celestial Vein": { name: "Celestial Vein", expense: 1e36, effect: 1000000000, heromult: 25, heroeffect: 1e52 },
     "All-Seeing Cosmos": { name: "All-Seeing Cosmos", expense: 1e39, effect: 10000000000, heromult: 30, heroeffect: 1e54 },
-    "Ten Thousand Realms": { name: "Ten Thousand Realms", expense: 1e42, effect: 100000000000, heromult: 35, heroeffect: 1e60 },
+    "Myriad Realms": { name: "Myriad Realms", expense: 1e42, effect: 100000000000, heromult: 35, heroeffect: 1e60 },
     "Microcosm World": { name: "Microcosm World", expense: 1e49, effect: 1000000000000, heromult: 40, heroeffect: 1e64 },
     "Void of Desolation": { name: "Void of Desolation", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
 
@@ -443,7 +443,7 @@ const requirementsBaseData = {
     "Grand Star Region": new CoinRequirement([getQuerySelector("Grand Star Region")], [{ requirement: 1e80 }]),
     "Celestial Vein": new CoinRequirement([getQuerySelector("Celestial Vein")], [{ requirement: 1e90 }]),
     "All-Seeing Cosmos": new CoinRequirement([getQuerySelector("All-Seeing Cosmos")], [{ requirement: 1e102 }]),
-    "Ten Thousand Realms": new CoinRequirement([getQuerySelector("Ten Thousand Realms")], [{ requirement: 1e116 }]),
+    "Myriad Realms": new CoinRequirement([getQuerySelector("Myriad Realms")], [{ requirement: 1e116 }]),
     "Microcosm World": new CoinRequirement([getQuerySelector("Microcosm World")], [{ requirement: 1e124 }]),
     "Void of Desolation": new CoinRequirement([getQuerySelector("Void of Desolation")], [{ requirement: 1e152 }]),
 
@@ -651,7 +651,7 @@ const skillCategories = {
 }
 
 const itemCategories = {
-    "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Ten Thousand Realms", "Microcosm World", "Void of Desolation"],
+    "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
     "Treasures": ["Cultivation Manual", "Body Refinement Weights", "Personal Servant Disciple", "Spirit Steel Sword", "Steward Elder", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
 }
 
