@@ -263,11 +263,11 @@ const itemBaseData = {
     "Void of Desolation": { name: "Void of Desolation", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
 
     // Treasures
-    "Cultivation Manual": { name: "Cultivation Manual", expense: 10, effect: 1.5, description: "Skill XP", heromult: 2, heroeffect: 10 },
+    "Journal": { name: "Journal", expense: 10, effect: 1.5, description: "Skill XP", heromult: 2, heroeffect: 10 },
     "Body Refinement Weights": { name: "Body Refinement Weights", expense: 50, effect: 1.5, description: "Strength XP", heromult: 2, heroeffect: 10 },
-    "Personal Servant Disciple": { name: "Personal Servant Disciple", expense: 200, effect: 2, description: "Hero XP", heromult: 3, heroeffect: 10 },
+    "Personal Servant": { name: "Personal Servant", expense: 200, effect: 2, description: "Hero XP", heromult: 3, heroeffect: 10 },
     "Spirit Steel Sword": { name: "Spirit Steel Sword", expense: 1000, effect: 2, description: "Mortal Military XP", heromult: 3, heroeffect: 10 },
-    "Steward Elder": { name: "Steward Elder", expense: 7500, effect: 1.5, description: "Happiness", heromult: 4, heroeffect: 10 },
+    "Housekeeper": { name: "Housekeeper", expense: 7500, effect: 1.5, description: "Happiness", heromult: 4, heroeffect: 10 },
     "Azure Jade Charm": { name: "Azure Jade Charm", expense: 50000, effect: 3, description: "Spiritual Arts XP", heromult: 4, heroeffect: 10 },
     "Scripture Desk": { name: "Scripture Desk", expense: 1000000, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Scripture Pavilion": { name: "Scripture Pavilion", expense: 1e7, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
@@ -448,11 +448,11 @@ const requirementsBaseData = {
     "Void of Desolation": new CoinRequirement([getQuerySelector("Void of Desolation")], [{ requirement: 1e152 }]),
 
     // Treasures
-    "Cultivation Manual": new CoinRequirement([getQuerySelector("Cultivation Manual")], [{ requirement: 0 }]),
+    "Journal": new CoinRequirement([getQuerySelector("Journal")], [{ requirement: 0 }]),
     "Body Refinement Weights": new CoinRequirement([getQuerySelector("Body Refinement Weights")], [{ requirement: itemBaseData["Body Refinement Weights"].expense * 100 }]),
-    "Personal Servant Disciple": new CoinRequirement([getQuerySelector("Personal Servant Disciple")], [{ requirement: itemBaseData["Personal Servant Disciple"].expense * 100 }]),
+    "Personal Servant": new CoinRequirement([getQuerySelector("Personal Servant")], [{ requirement: itemBaseData["Personal Servant"].expense * 100 }]),
     "Spirit Steel Sword": new CoinRequirement([getQuerySelector("Spirit Steel Sword")], [{ requirement: itemBaseData["Spirit Steel Sword"].expense * 100 }]),
-    "Steward Elder": new CoinRequirement([getQuerySelector("Steward Elder")], [{ requirement: itemBaseData["Steward Elder"].expense * 100 }]),
+    "Housekeeper": new CoinRequirement([getQuerySelector("Housekeeper")], [{ requirement: itemBaseData["Housekeeper"].expense * 100 }]),
     "Azure Jade Charm": new CoinRequirement([getQuerySelector("Azure Jade Charm")], [{ requirement: itemBaseData["Azure Jade Charm"].expense * 100 }]),
     "Scripture Desk": new CoinRequirement([getQuerySelector("Scripture Desk")], [{ requirement: itemBaseData["Scripture Desk"].expense * 100 }]),
     "Scripture Pavilion": new CoinRequirement([getQuerySelector("Scripture Pavilion")], [{ requirement: itemBaseData["Scripture Pavilion"].expense * 100 }]),
@@ -652,7 +652,7 @@ const skillCategories = {
 
 const itemCategories = {
     "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
-    "Treasures": ["Cultivation Manual", "Body Refinement Weights", "Personal Servant Disciple", "Spirit Steel Sword", "Steward Elder", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
+    "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
 }
 
 const headerRowColors = {

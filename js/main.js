@@ -142,10 +142,10 @@ function addMultipliers() {
             task.incomeMultipliers.push(getLifeCoachIncomeGain)
             task.xpMultipliers.push(getBindedTaskEffect("Productivity"))
             task.xpMultipliers.push(getBindedTaskEffect("Heavenly Talent"))
-            task.xpMultipliers.push(getBindedItemEffect("Personal Servant Disciple"))
+            task.xpMultipliers.push(getBindedItemEffect("Personal Servant"))
         } else if (task instanceof Skill) {
             task.xpMultipliers.push(getBindedTaskEffect("Concentration"))
-            task.xpMultipliers.push(getBindedItemEffect("Cultivation Manual"))
+            task.xpMultipliers.push(getBindedItemEffect("Journal"))
             task.xpMultipliers.push(getBindedItemEffect("Scripture Desk"))
             task.xpMultipliers.push(getBindedItemEffect("Scripture Pavilion"))
             task.xpMultipliers.push(getBindedItemEffect("Void Slaying Blade"))
@@ -334,7 +334,7 @@ function getHappiness() {
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return 1
 
     const meditationEffect = getBindedTaskEffect("Meditation")
-    const butlerEffect = getBindedItemEffect("Steward Elder")
+    const butlerEffect = getBindedItemEffect("Housekeeper")
     const multiverseFragment = getBindedItemEffect("Realm Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
     const stairWayToHeaven = getBindedItemEffect("Stairway to Immortality")

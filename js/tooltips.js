@@ -114,11 +114,11 @@ const tooltips = {
     "Void of Desolation": "The Great Nothing",
 
     // Treasures
-    "Cultivation Manual": "A place to write down all your thoughts and discoveries, allowing you to learn a lot more quickly.",
+    "Journal": "A place to write down all your thoughts and discoveries, allowing you to learn a lot more quickly.",
     "Body Refinement Weights": "Heavy tools used in strenuous exercise to toughen up and accumulate strength even faster than before.",
-    "Personal Servant Disciple": "Assists you in completing day to day activities, giving you more time to be productive at work.",
+    "Personal Servant": "Assists you in completing day to day activities, giving you more time to be productive at work.",
     "Spirit Steel Sword": "A fine blade used to slay enemies even quicker in combat and therefore gain more experience.",
-    "Steward Elder": "Keeps your household clean at all times and also prepares three delicious meals per day, leaving you in a happier, stress-free mood.",
+    "Housekeeper": "Keeps your household clean at all times and also prepares three delicious meals per day, leaving you in a happier, stress-free mood.",
     "Azure Jade Charm": "Embedded with a rare sapphire, this charm activates more mana channels within your body, providing a much easier time learning magic.",
     "Scripture Desk": "A dedicated area which provides many fine stationary and equipment designed for furthering your progress in research.",
     "Scripture Pavilion": "Stores a collection of books, each containing vast amounts of information from basic life skills to complex magic spells.",
