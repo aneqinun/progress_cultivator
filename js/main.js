@@ -149,8 +149,8 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedItemEffect("Scripture Desk"))
             task.xpMultipliers.push(getBindedItemEffect("Scripture Pavilion"))
             task.xpMultipliers.push(getBindedItemEffect("Demon Slaying Blade"))
-            task.xpMultipliers.push(getBindedItemEffect("Cosmos Fragment"))
-            task.xpMultipliers.push(getBindedItemEffect("Personal Star Domain"))
+            task.xpMultipliers.push(getBindedItemEffect("Primordial Memory Crystal"))
+            task.xpMultipliers.push(getBindedItemEffect("The Ordinance Stele"))
         }
 
         if (jobCategories["Mortal Military"].includes(task.name)) {
@@ -418,7 +418,7 @@ function getEvilGain() {
     const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
     const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
     const theDevilInsideYou = gameData.requirements["The Devil inside you"].isCompleted() ? 1e15 : 1
-    const stairWayToHell = getBindedItemEffect("Road to Demon Domain")
+    const stairWayToHell = getBindedItemEffect("Yellow Springs Compass")
     const evilBooster = (gameData.perks.evil_booster == 1) ? 1e50 : 1
 
     const evilGain = evilControl.getEffect() * bloodMeditation.getEffect() * potentialRecovery * yingYang.getEffect()
@@ -453,7 +453,7 @@ function getDarkMatterGain() {
     const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 10 : 1
     const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 3 : 1
     const darkMatterMillionaire = gameData.requirements["Dark Matter Millionaire"].isCompleted() ? 500 : 1
-    const Desintegration = gameData.itemData['Annihilation Art'].getEffect()
+    const Desintegration = gameData.itemData['The Universe Painting'].getEffect()
     const TheEndIsNear = getUnspentPerksDarkmatterGainBuff() 
 
 

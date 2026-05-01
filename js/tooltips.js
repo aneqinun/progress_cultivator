@@ -131,13 +131,13 @@ const tooltips = {
     "Dead Mountain's Sand": "An ancient immortal personage once crushed a vast spiritual mountain to sand with a single step. From it you can sense an echo of their profound cultivation.",
     "Essential Crown": "Some seniors wear their enlightenment on their brow. A single look at it may turn a mortal into a great power, or into dust.",
     "Primordial Memory Crystal": "A stray thought from a primordial entity has crystalised from the ether. Sensing the memory within can grant you knowledge of unbelievable things, but do so with extreme caution.", // Skill XP
-    "Beneficient Nirvana Fruit": "The conceptual fruit from ten million lifetimes of saintly care and right-living. This treasure bears the faint mark of the Awakened One.", // happiness
-    "The Cintamani Stone": "The wishes and hopes of humanity crystalised. The potential to do infinite good is within your palm.", // happiness
-    "Road to Demon Domain": "The devil invites you to his palace of terror.", // Potential Gain
-    "Fourfold Primordial Spark": "This object is from a higher dimensional world.", // Primordial Spark Gain
-    "Annihilation Art": "Why do you need it?", // Dark Matter Gain
-    "Personal Star Domain": "You know about the pocket dimension, right?", // SKill XP
-    "Grand Dao Sphere": "You gain the limitless pow... ah, you're already omnipotent...", // Primordial Spark Gain
+    "Beneficient Nirvana Fruit": "The conceptual fruit from ten million lifetimes of saintly care and right-living. This treasure bears the faint mark of the Awakened One.",
+    "The Cintamani Stone": "The wishes and hopes of humanity crystalised. The potential to do infinite good is within your palm.",
+    "Yellow Springs Compass": "The Compass contains the way to the underworld courts. The bearer determines who finds their way, and who needn't make the journey.",
+    "The Drifting Bottle": "Drifting on the winds of time and space, The Bottle seeds the beginning of universes, and returns in its time to collect the ashes at their ends.",
+    "The Universe Painting": "The Myriad Realms were always just a painting on canvas, crafted lovingly by a creator unknown. Now, it falls to your careful stewardship.",
+    "The Ordinance Stele": "The Law is transcribed here. What is written here, is; what is not written, is not.",
+    "The Cosmic Egg": "It was there at the beginning. Holding it now, you realise that you were there, too. It has just taken you some time to return once more. What was then, now is again.",
 
     // Essence Milestones
     "Magic Eye": "The Eye in your Amulet starts to glow.",

@@ -279,14 +279,14 @@ const itemBaseData = {
     "Abyssal Crushing Pearl": { name: "Abyssal Crushing Pearl", expense: 1.2e12, effect: 3, description: "Dao Comprehension XP", heromult: 11, heroeffect: 10 },
     "Dead Mountain's Sand": { name: "Dead Mountain's Sand", expense: 2.5e13, effect: 3, description: "Dao Comprehension XP", heromult: 12, heroeffect: 10 },
     "Essential Crown": { name: "Essential Crown", expense: 3e14, effect: 5, description: "Immortal Cultivation XP", heromult: 12, heroeffect: 10 },
-    "Cosmos Fragment": { name: "Cosmos Fragment", expense: 1.85e16, effect: 3, description: "Skill XP", heromult: 13, heroeffect: 1000000 },
+    "Primordial Memory Crystal": { name: "Primordial Memory Crystal", expense: 1.85e16, effect: 3, description: "Skill XP", heromult: 13, heroeffect: 1000000 },
     "Beneficient Nirvana Fruit": { name: "Beneficient Nirvana Fruit", expense: 2e17, effect: 5, description: "Happiness", heromult: 15, heroeffect: 1000000 },
     "The Cintamani Stone": { name: "The Cintamani Stone", expense: 1e38, effect: 10, description: "Happiness", heromult: 30, heroeffect: 1000000 },
-    "Road to Demon Domain": { name: "Road to Demon Domain", expense: 1e42, effect: 10, description: "Potential Gain", heromult: 30, heroeffect: 1000000 },
-    "Fourfold Primordial Spark": { name: "Fourfold Primordial Spark", expense: 1e48, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 10 },
-    "Annihilation Art": { name: "Annihilation Art", expense: 1e55, effect: 1, description: "Dark Matter Gain", heromult: 30, heroeffect: 100 },
-    "Personal Star Domain": { name: "Personal Star Domain", expense: 1e64, effect: 1, description: "Skill XP", heromult: 30, heroeffect: 1e100 },
-    "Grand Dao Sphere": { name: "Grand Dao Sphere", expense: 1e91, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 1e50 },
+    "Yellow Springs Compass": { name: "Yellow Springs Compass", expense: 1e42, effect: 10, description: "Potential Gain", heromult: 30, heroeffect: 1000000 },
+    "The Drifting Bottle": { name: "The Drifting Bottle", expense: 1e48, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 10 },
+    "The Universe Painting": { name: "The Universe Painting", expense: 1e55, effect: 1, description: "Dark Matter Gain", heromult: 30, heroeffect: 100 },
+    "The Ordinance Stele": { name: "The Ordinance Stele", expense: 1e64, effect: 1, description: "Skill XP", heromult: 30, heroeffect: 1e100 },
+    "The Cosmic Egg": { name: "The Cosmic Egg", expense: 1e91, effect: 1, description: "Primordial Spark Gain", heromult: 30, heroeffect: 1e50 },
 }
 
 const requirementsBaseData = {
@@ -464,14 +464,14 @@ const requirementsBaseData = {
     "Abyssal Crushing Pearl": new CoinRequirement([getQuerySelector("Abyssal Crushing Pearl")], [{ requirement: itemBaseData["Abyssal Crushing Pearl"].expense * 100 }]),
     "Dead Mountain's Sand": new CoinRequirement([getQuerySelector("Dead Mountain's Sand")], [{ requirement: itemBaseData["Dead Mountain's Sand"].expense * 100 }]),
     "Essential Crown": new CoinRequirement([getQuerySelector("Essential Crown")], [{ requirement: itemBaseData["Essential Crown"].expense * 100 }]),
-    "Cosmos Fragment": new CoinRequirement([getQuerySelector("Cosmos Fragment")], [{ requirement: itemBaseData["Cosmos Fragment"].expense * 100 }]),
+    "Primordial Memory Crystal": new CoinRequirement([getQuerySelector("Primordial Memory Crystal")], [{ requirement: itemBaseData["Primordial Memory Crystal"].expense * 100 }]),
     "Beneficient Nirvana Fruit": new CoinRequirement([getQuerySelector("Beneficient Nirvana Fruit")], [{ requirement: itemBaseData["Beneficient Nirvana Fruit"].expense * 100 }]),
     "The Cintamani Stone": new CoinRequirement([getQuerySelector("The Cintamani Stone")], [{ requirement: itemBaseData["The Cintamani Stone"].expense * 100 }]),
-    "Road to Demon Domain": new CoinRequirement([getQuerySelector("Road to Demon Domain")], [{ requirement: itemBaseData["Road to Demon Domain"].expense * 100 }]),
-    "Fourfold Primordial Spark": new CoinRequirement([getQuerySelector("Fourfold Primordial Spark")], [{ requirement: 1e112 }]),    
-    "Annihilation Art": new CoinRequirement([getQuerySelector("Annihilation Art")], [{ requirement: 1e122 }]),
-    "Personal Star Domain": new CoinRequirement([getQuerySelector("Personal Star Domain")], [{ requirement: 1e134 }]),
-    "Grand Dao Sphere": new CoinRequirement([getQuerySelector("Grand Dao Sphere")], [{ requirement: 1e160 }]),
+    "Yellow Springs Compass": new CoinRequirement([getQuerySelector("Yellow Springs Compass")], [{ requirement: itemBaseData["Yellow Springs Compass"].expense * 100 }]),
+    "The Drifting Bottle": new CoinRequirement([getQuerySelector("The Drifting Bottle")], [{ requirement: 1e112 }]),    
+    "The Universe Painting": new CoinRequirement([getQuerySelector("The Universe Painting")], [{ requirement: 1e122 }]),
+    "The Ordinance Stele": new CoinRequirement([getQuerySelector("The Ordinance Stele")], [{ requirement: 1e134 }]),
+    "The Cosmic Egg": new CoinRequirement([getQuerySelector("The Cosmic Egg")], [{ requirement: 1e160 }]),
     
 
     // Milestones
@@ -652,7 +652,7 @@ const skillCategories = {
 
 const itemCategories = {
     "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
-    "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Fivefold Elements Ring", "Golden Petal Robe", "Demon Slaying Blade", "Abyssal Crushing Pearl", "Dead Mountain's Sand", "Essential Crown", "Cosmos Fragment", "Beneficient Nirvana Fruit", "The Cintamani Stone", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
+    "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Fivefold Elements Ring", "Golden Petal Robe", "Demon Slaying Blade", "Abyssal Crushing Pearl", "Dead Mountain's Sand", "Essential Crown", "Primordial Memory Crystal", "Beneficient Nirvana Fruit", "The Cintamani Stone", "Yellow Springs Compass", "The Drifting Bottle", "The Universe Painting", "The Ordinance Stele", "The Cosmic Egg"]
 }
 
 const headerRowColors = {

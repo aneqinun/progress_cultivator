@@ -1,8 +1,8 @@
 function getHypercubeGeneration() {
     if (gameData.rebirthFiveCount == 0) return 0   
 
-    let tesseractEffect = gameData.itemData["Fourfold Primordial Spark"].getEffect()
-    let hypersphereEffect = gameData.itemData["Grand Dao Sphere"].getEffect()
+    let tesseractEffect = gameData.itemData["The Drifting Bottle"].getEffect()
+    let hypersphereEffect = gameData.itemData["The Cosmic Egg"].getEffect()
 
     return 0.03 * hypersphereEffect * tesseractEffect * gameData.metaverse.hypercube_gain_modifier * (gameData.perks.hypercube_boost == 1 ? 10 : 1)
         * (gameData.perks.hyper_speed == 1 ? 1000 : 1)
