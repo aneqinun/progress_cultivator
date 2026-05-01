@@ -180,7 +180,7 @@ function addMultipliers() {
         } else if (skillCategories["Manifestation"].includes(task.name)) {
             task.xpMultipliers.push(getEssenceXpGain)
         } else if (skillCategories["Fundamentals"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedItemEffect("Heavenly Mind's Eye"))
+            task.xpMultipliers.push(getBindedItemEffect("Mortal-Scrying Orb"))
         }
     }
 

@@ -272,7 +272,7 @@ const itemBaseData = {
     "Scripture Desk": { name: "Scripture Desk", expense: 1000000, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Scripture Pavilion": { name: "Scripture Pavilion", expense: 1e7, effect: 2, description: "Skill XP", heromult: 5, heroeffect: 10 },
     "Star Gazing Platform": { name: "Star Gazing Platform", expense: 1.4e8, effect: 5, description: "Spiritual Arts XP", heromult: 6, heroeffect: 10 },
-    "Heavenly Mind's Eye": { name: "Heavenly Mind's Eye", expense: 3.25e9, effect: 10, description: "Fundamentals XP", heromult: 8, heroeffect: 10 },
+    "Mortal-Scrying Orb": { name: "Mortal-Scrying Orb", expense: 3.25e9, effect: 10, description: "Fundamentals XP", heromult: 8, heroeffect: 10 },
     "Void Jade Pendant": { name: "Void Jade Pendant", expense: 2.8e10, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
     "Void Battle Armor": { name: "Void Battle Armor", expense: 1.97e11, effect: 3, description: "Dao Comprehension XP", heromult: 10, heroeffect: 10 },
     "Void Slaying Blade": { name: "Void Slaying Blade", expense: 5e11, effect: 3, description: "Skill XP", heromult: 11, heroeffect: 10 },
@@ -457,7 +457,7 @@ const requirementsBaseData = {
     "Scripture Desk": new CoinRequirement([getQuerySelector("Scripture Desk")], [{ requirement: itemBaseData["Scripture Desk"].expense * 100 }]),
     "Scripture Pavilion": new CoinRequirement([getQuerySelector("Scripture Pavilion")], [{ requirement: itemBaseData["Scripture Pavilion"].expense * 100 }]),
     "Star Gazing Platform": new CoinRequirement([getQuerySelector("Star Gazing Platform")], [{ requirement: itemBaseData["Star Gazing Platform"].expense * 100 }]),
-    "Heavenly Mind's Eye": new CoinRequirement([getQuerySelector("Heavenly Mind's Eye")], [{ requirement: itemBaseData["Heavenly Mind's Eye"].expense * 100 }]),
+    "Mortal-Scrying Orb": new CoinRequirement([getQuerySelector("Mortal-Scrying Orb")], [{ requirement: itemBaseData["Mortal-Scrying Orb"].expense * 100 }]),
     "Void Jade Pendant": new CoinRequirement([getQuerySelector("Void Jade Pendant")], [{ requirement: itemBaseData["Void Jade Pendant"].expense * 100 }]),
     "Void Battle Armor": new CoinRequirement([getQuerySelector("Void Battle Armor")], [{ requirement: itemBaseData["Void Battle Armor"].expense * 100 }]),
     "Void Slaying Blade": new CoinRequirement([getQuerySelector("Void Slaying Blade")], [{ requirement: itemBaseData["Void Slaying Blade"].expense * 100 }]),
@@ -652,7 +652,7 @@ const skillCategories = {
 
 const itemCategories = {
     "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
-    "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Heavenly Mind's Eye", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
+    "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Void Jade Pendant", "Void Battle Armor", "Void Slaying Blade", "Void Pearl", "Void Sand", "Immortal Robe", "Cosmos Fragment", "Realm Fragment", "Stairway to Immortality", "Road to Demon Domain", "Fourfold Primordial Spark", "Annihilation Art", "Personal Star Domain", "Grand Dao Sphere"]
 }
 
 const headerRowColors = {
