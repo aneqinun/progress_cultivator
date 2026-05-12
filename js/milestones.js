@@ -3,7 +3,7 @@ var milestoneData = {}
 const milestoneBaseData = {
     "Magic Eye": { name: "Magic Eye", expense: 5000, tier: 1, description: "Automatically gain max levels at age 65" },
     "Almighty Eye": { name: "Almighty Eye", expense: 15000, tier: 2, description: "Automatically gain max levels" },
-    "Deal with the Devil": { name: "Deal with the Devil", expense: 30000, tier: 3, description: "Passively gain a small amount of Potential" },
+    "Pact with the Heavens": { name: "Pact with the Heavens", expense: 30000, tier: 3, description: "Passively gain a small amount of Potential" },
     "Transcendent Master": { name: "Transcendent Master", expense: 50000, tier: 4, description: "Spirit Essence gain" },
     "Eternal Time": { name: "Eternal Time", expense: 75000, tier: 5, description: "x2 Temporal Dilation" },
     "Hell Portal": { name: "Hell Portal", expense: 120000, tier: 6, description: "Passively gain a huge amount of Potential" },
@@ -50,7 +50,7 @@ const milestoneBaseData = {
 }
 
 const milestoneCategories = {
-    "Essence Milestones": ["Magic Eye", "Almighty Eye", "Deal with the Devil", "Transcendent Master", "Eternal Time", "Hell Portal", "Inferno", "God's Blessings", "Faint Hope"],
+    "Essence Milestones": ["Magic Eye", "Almighty Eye", "Pact with the Heavens", "Transcendent Master", "Eternal Time", "Hell Portal", "Inferno", "God's Blessings", "Faint Hope"],
     "Heroic Milestones": ["New Beginning", "Rise of Great Heroes", "Lazy Heroes", "Dirty Heroes", "Angry Heroes", "Tired Heroes", "Scared Heroes", "Good Heroes", "Funny Heroes", "Beautiful Heroes", "Awesome Heroes", "Furious Heroes", "Superb Heroes", "A new beginning"],
     "Dark Milestones": ["Mind Control", "Galactic Emperor", "Dark Matter Harvester", "A Dark Era", "Dark Orbiter", "Dark Matter Mining", "The new gold", "The Devil inside you", "Strange Magic", "Speed speed speed", "Life is valueable", "Dark Matter Millionaire", "The new Dark Matter"],
     "Metaverse Milestones": ["Strong Hope", "Ruler of the Metaverse", "A New Hope", "Time is a flat circle", "The End is near", "The End"],

@@ -525,9 +525,9 @@ const requirementsBaseData = {
 const xianxiaDisplayNames = {
     // Dark magic -> Dao Comprehension // todo
     "Rarified Mind": "Rarified Mind", // increase game speed - Your every thought starts to become tinged with the flavour of the natural Dao; smaller matters pass by all the easier. Increase game speed.
-    "Magic Eye": "Spirit Eye Awakening",
-    "Almighty Eye": "Heavenly Eye Awakening",
-    "Deal with the Devil": "Pact of the Demon Path",
+    "Magic Eye": "Spiritual Eye",
+    "Almighty Eye": "Heavenly Eye",
+    "Pact with the Heavens": "Pact of the Demon Path",
     "Transcendent Master": "Realm Ascension",
     "Eternal Time": "Eternal Cycle",
     "Hell Portal": "Nether Gate",
@@ -584,7 +584,7 @@ const xianxiaTooltips = {
 //    "Sovereign Empyrean": "You stand near the apex of all realms, shaping fate with a thought.",
 //    "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
 //    "Almighty Eye": "The Heavenly Eye awakens fully and perfect recollection follows.",
-//    "Deal with the Devil": "You forge a dangerous pact with your inner demon for forbidden gains.",
+//    "Pact with the Heavens": "You forge a dangerous pact with your inner demon for forbidden gains.",
 //    "Transcendent Master": "Your understanding of ascension refines spirit essence itself.",
 //    "Hell Portal": "A nether gate opens and demonic qi leaks endlessly into your path.",
 //    "God's Blessings": "Heavenly fortune shields your progress through rebirth.",

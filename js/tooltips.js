@@ -142,7 +142,7 @@ const tooltips = {
     // Essence Milestones
     "Magic Eye": "The Eye in your Amulet starts to glow.",
     "Almighty Eye": "The Eye in your Amulet shines like a star.",
-    "Deal with the Devil": "You made a deal with the Devil.",
+    "Pact with the Heavens": "You made a Pact with the Heavens.",
     "Transcendent Master": "You've mastered Transcendence.",
     "Eternal Time": "Does time matter now?",
     "Hell Portal": "You've opened a portal to Hell.",

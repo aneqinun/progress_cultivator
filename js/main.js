@@ -981,7 +981,7 @@ function applyMilestones() {
     }
 
     if (canSimulate()) {
-        if (gameData.requirements["Deal with the Devil"].isCompleted() && gameData.requirements["Rebirth note 3"].isCompleted()) {
+        if (gameData.requirements["Pact with the Heavens"].isCompleted() && gameData.requirements["Rebirth note 3"].isCompleted()) {
             if (gameData.evil == 0)
                 gameData.evil = 1
             if (gameData.evil < getEvilGain())
