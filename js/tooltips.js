@@ -18,31 +18,31 @@ const tooltips = {
     "Imperial Legate": "All hail the Right Hand of the Imperial throne. You speak with the Emperor's voice, and all your enemies are long dead by your will.",
 
     // Earthly Cultivation
-    "Qi Condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
-    "Foundation Establishment": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
-    "Core Formation": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
-    "Nascent Soul": "Blessed with unparalleled talent, perform unbelievable feats with magic at will. It is said that an archmage has enough destructive power to wipe an empire off the map.",
-    "Soul Severing": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
-    "Spirit Integration": "Spend your days guiding the Earthly Cultivation sect and investigating the path to true immortality. The Chairman receives ludicrous amounts of pay daily.",
-    "Tribulation Crossing": "You wield near-limitless power. By ruling with an iron fist, every cultivator in the Earthly Cultivation sect bows to your command.",
+    "Qi Condensation": "You pull the world’s breath into your veins, marking your first step beyond the mortal coil.",
+    "Foundation Establishment": "Liquid Qi builds a permanent pillar within you, granting flight and a doubled lifespan.",
+    "Core Formation": "You condense your essence into a Golden Core, becoming a Master whom commoners worship as a god.",
+    "Nascent Soul": "An immortal infant forms within your soul, allowing you to survive even if your body is destroyed.",
+    "Soul Severing": "You cut away mortal obsessions to define your own Dao, gaining power over the fabric of reality.",
+    "Spirit Integration": "Body and soul fuse into a perfect celestial vessel capable of walking through the void.",
+    "Tribulation Crossing": "You stand against the wrath of the Heavens, braving lightning to shed your worldly shell.",
 
     // Dao Comprehension
-    "Intent Scholar": "Corrupted by Void, you are slowly turning into a slave with no free will, just to serve the Void for the rest of eternity... Can you resist it, or will it consume you forever?",
-    "Seeker of Law": "You become an inquisitive yet putrid creature that siphons life from everything around you.",
-    "Dao Sage": "Damned soul... a shadow of your former self, lingering between realms and consumed by void... Can you ever find peace?",
-    "A Mortal Daoist": "You gazed into the dark heart of the Void long enough to become one of the most powerful and feared beings. All lesser void creatures are at your command.",
-    "Dustless One": "Creator of the Void, a vast canvas of blackness and nothingness, in which the concept of its existence defies all logic. Nothing will escape you.",
+    "Intent Scholar": "Your will is your weapon; a single thought can manifest as a lethal, conceptual strike.",
+    "Seeker of Law": "You decode the universe’s hidden scripts, manipulating gravity and time as basic tools.",
+    "Dao Sage": "You live in perfect harmony with the Great Dao, your words carrying the weight of natural law.",
+    "A Mortal Daoist": "You have returned to a state of profound simplicity, hiding cosmic power behind a mundane face.",
+    "Dustless One": "Purged of karma and filth, you are a being of pure spirit whom no worldly force can touch.",
 
     // Immortal Cultivation
-    "Human Immortal": "With the powers bestowed upon you by an unknown entity, you wander around, visiting places revered and feared in search of answers.",
-    "Earthly Immortal": "Extremely powerful being with tremedous telekinetic powers and the ability to rearrange the molecular structure of matter and energy, even up to cosmic scale.",
-    "Heavenly Immortal": "A nigh-omnipotent cosmological entity, with vast matter and energy manipulation abilities that help you push the boundaries of the Universe itself.",
-    "Sovereign Empyrean": "Creator of everything.",
+    "Human Immortal": "You have stepped into godhood, shedding all physical needs for an eternal existence.",
+    "Earthly Immortal": "You are bound to the world's vitality, drawing infinite strength from the planet itself.",
+    "Heavenly Immortal": "Your name is etched into the stars, making you a true peer to the celestial lords.",
+    "Sovereign Empyrean": "You rule across galaxies, where your personal decree becomes the absolute law of the cosmos.",
 
     // Dao Embodiment
-    "Steward of the Realms": "Snow Crash, 1992",
-    "Anchor of Causality": "They both knew they would only go forward when next to each other. They vowed that they would always be together, earn a lot of money and move to a better place where they would be very happy.",
-    "The Heavens Itself": "ω",
+    "Steward of the Realms": "You are the architect of existence, maintaining the balance between all planes of reality.",
+    "Anchor of Causality": "Standing outside of time, you hold the threads of fate and can rewrite history at will.",
+    "The Heavens Itself": "You have become the All—the infinite consciousness that dreams the universe into being.",
 
     // Fundamentals
     "Concentration": "Focus the mind through disciplined practice. Increase skill learning speed.",
