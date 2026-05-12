@@ -248,21 +248,21 @@ const itemBaseData = {
     "Century Refinement Holy Forest": { name: "Century Refinement Holy Forest", expense: 4.9e10, effect: 5000, heromult: 9, heroeffect: 2e22 },
     "Taiji Cycling Blessed Land": { name: "Taiji Cycling Blessed Land", expense: 1.21e11, effect: 15000, heromult: 10, heroeffect: 2e25 },
     "Earth Overturning Grotto Heaven": { name: "Earth Overturning Grotto Heaven", expense: 2e12, effect: 30000, heromult: 11, heroeffect: 2e28 },
-    "Astral Heaven": { name: "Astral Heaven", expense: 1.6e14, effect: 150000, heromult: 12, heroeffect: 2e31 },
-    "Star Throne": { name: "Star Throne", expense: 5e15, effect: 300000, heromult: 13, heroeffect: 2e35 },
+    "Star-Plucking Tower": { name: "Star-Plucking Tower", expense: 1.6e14, effect: 150000, heromult: 12, heroeffect: 2e31 },
+    "Star-Stepping Turtle Dwelling": { name: "Star-Stepping Turtle Dwelling", expense: 5e15, effect: 300000, heromult: 13, heroeffect: 2e35 },
     "Void Ark": { name: "Void Ark", expense: 1e18, effect: 1500000, heromult: 15, heroeffect: 5e42 },
-    "Spirit Planet": { name: "Spirit Planet", expense: 1e22, effect: 5000000, heromult: 16, heroeffect: 5e46 },
-    "Heavenly Ring Domain": { name: "Heavenly Ring Domain", expense: 1e24, effect: 50000000, heromult: 17, heroeffect: 5e49 },
+    "Spiritual Sun": { name: "Spiritual Sun", expense: 1e22, effect: 5000000, heromult: 16, heroeffect: 5e46 },
+    "Rice-Grain Realm": { name: "Rice-Grain Realm", expense: 1e24, effect: 50000000, heromult: 17, heroeffect: 5e49 },
 
     // Heroic only
-    "Stellar Prefecture": { name: "Stellar Prefecture", expense: 1e27, effect: 60000000, heromult: 17, heroeffect: 6e49,  },
-    "Star River Dominion": { name: "Star River Dominion", expense: 1e30, effect: 75000000, heromult: 18, heroeffect: 7.5e49 },
-    "Grand Star Region": { name: "Grand Star Region", expense: 1e33, effect: 100000000, heromult: 20, heroeffect: 1e50 },
-    "Celestial Vein": { name: "Celestial Vein", expense: 1e36, effect: 1000000000, heromult: 25, heroeffect: 1e52 },
+    "Realm Prefecture": { name: "Realm Prefecture", expense: 1e27, effect: 60000000, heromult: 17, heroeffect: 6e49,  },
+    "Yellow River Teahouse": { name: "Yellow River Teahouse", expense: 1e30, effect: 75000000, heromult: 18, heroeffect: 7.5e49 },
+    "The Akashic Library": { name: "The Akashic Library", expense: 1e33, effect: 100000000, heromult: 20, heroeffect: 1e50 },
+    "The Karmic Pool": { name: "The Karmic Pool", expense: 1e36, effect: 1000000000, heromult: 25, heroeffect: 1e52 },
     "All-Seeing Cosmos": { name: "All-Seeing Cosmos", expense: 1e39, effect: 10000000000, heromult: 30, heroeffect: 1e54 },
     "Myriad Realms": { name: "Myriad Realms", expense: 1e42, effect: 100000000000, heromult: 35, heroeffect: 1e60 },
     "Microcosm World": { name: "Microcosm World", expense: 1e49, effect: 1000000000000, heromult: 40, heroeffect: 1e64 },
-    "Void of Desolation": { name: "Void of Desolation", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
+    "Origin/Terminus": { name: "Origin/Terminus", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
 
     // Treasures
     "Journal": { name: "Journal", expense: 10, effect: 1.5, description: "Skill XP", heromult: 2, heroeffect: 10 },
@@ -433,21 +433,21 @@ const requirementsBaseData = {
     "Century Refinement Holy Forest": new CoinRequirement([getQuerySelector("Century Refinement Holy Forest")], [{ requirement: itemBaseData["Century Refinement Holy Forest"].expense * 100 }]),
     "Taiji Cycling Blessed Land": new CoinRequirement([getQuerySelector("Taiji Cycling Blessed Land")], [{ requirement: itemBaseData["Taiji Cycling Blessed Land"].expense * 100 }]),
     "Earth Overturning Grotto Heaven": new CoinRequirement([getQuerySelector("Earth Overturning Grotto Heaven")], [{ requirement: itemBaseData["Earth Overturning Grotto Heaven"].expense * 100 }]),
-    "Astral Heaven": new CoinRequirement([getQuerySelector("Astral Heaven")], [{ requirement: itemBaseData["Astral Heaven"].expense * 100 }]),
-    "Star Throne": new CoinRequirement([getQuerySelector("Star Throne")], [{ requirement: itemBaseData["Star Throne"].expense * 100 }]),
+    "Star-Plucking Tower": new CoinRequirement([getQuerySelector("Star-Plucking Tower")], [{ requirement: itemBaseData["Star-Plucking Tower"].expense * 100 }]),
+    "Star-Stepping Turtle Dwelling": new CoinRequirement([getQuerySelector("Star-Stepping Turtle Dwelling")], [{ requirement: itemBaseData["Star-Stepping Turtle Dwelling"].expense * 100 }]),
     "Void Ark": new CoinRequirement([getQuerySelector("Void Ark")], [{ requirement: itemBaseData["Void Ark"].expense * 100 }]),
-    "Spirit Planet": new CoinRequirement([getQuerySelector("Spirit Planet")], [{ requirement: itemBaseData["Spirit Planet"].expense * 100 }]),
-    "Heavenly Ring Domain": new CoinRequirement([getQuerySelector("Heavenly Ring Domain")], [{ requirement: itemBaseData["Heavenly Ring Domain"].expense * 100 }]),
+    "Spiritual Sun": new CoinRequirement([getQuerySelector("Spiritual Sun")], [{ requirement: itemBaseData["Spiritual Sun"].expense * 100 }]),
+    "Rice-Grain Realm": new CoinRequirement([getQuerySelector("Rice-Grain Realm")], [{ requirement: itemBaseData["Rice-Grain Realm"].expense * 100 }]),
 
     // heroic only Residences
-    "Stellar Prefecture": new CoinRequirement([getQuerySelector("Stellar Prefecture")], [{ requirement: 1e65 }]),
-    "Star River Dominion": new CoinRequirement([getQuerySelector("Star River Dominion")], [{ requirement: 1e72 }]),
-    "Grand Star Region": new CoinRequirement([getQuerySelector("Grand Star Region")], [{ requirement: 1e80 }]),
-    "Celestial Vein": new CoinRequirement([getQuerySelector("Celestial Vein")], [{ requirement: 1e90 }]),
+    "Realm Prefecture": new CoinRequirement([getQuerySelector("Realm Prefecture")], [{ requirement: 1e65 }]),
+    "Yellow River Teahouse": new CoinRequirement([getQuerySelector("Yellow River Teahouse")], [{ requirement: 1e72 }]),
+    "The Akashic Library": new CoinRequirement([getQuerySelector("The Akashic Library")], [{ requirement: 1e80 }]),
+    "The Karmic Pool": new CoinRequirement([getQuerySelector("The Karmic Pool")], [{ requirement: 1e90 }]),
     "All-Seeing Cosmos": new CoinRequirement([getQuerySelector("All-Seeing Cosmos")], [{ requirement: 1e102 }]),
     "Myriad Realms": new CoinRequirement([getQuerySelector("Myriad Realms")], [{ requirement: 1e116 }]),
     "Microcosm World": new CoinRequirement([getQuerySelector("Microcosm World")], [{ requirement: 1e124 }]),
-    "Void of Desolation": new CoinRequirement([getQuerySelector("Void of Desolation")], [{ requirement: 1e152 }]),
+    "Origin/Terminus": new CoinRequirement([getQuerySelector("Origin/Terminus")], [{ requirement: 1e152 }]),
 
     // Treasures
     "Journal": new CoinRequirement([getQuerySelector("Journal")], [{ requirement: 0 }]),
@@ -653,7 +653,7 @@ const skillCategories = {
 }
 
 const itemCategories = {
-    "Residences": ["Ragged Courtyard", "Bamboo Hut", "Mountain Cottage", "Respectable Home", "Stately Manor", "Noble Estate", "Grand Palace", "Blessed Imperial Dwelling", "Auspicious Cultivator Dwelling", "Dragon Vein Confluence Cavern", "Starlight Converging Peak", "Century Refinement Holy Forest", "Taiji Cycling Blessed Land", "Earth Overturning Grotto Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
+    "Residences": ["Ragged Courtyard", "Bamboo Hut", "Mountain Cottage", "Respectable Home", "Stately Manor", "Noble Estate", "Grand Palace", "Blessed Imperial Dwelling", "Auspicious Cultivator Dwelling", "Dragon Vein Confluence Cavern", "Starlight Converging Peak", "Century Refinement Holy Forest", "Taiji Cycling Blessed Land", "Earth Overturning Grotto Heaven", "Star-Plucking Tower", "Star-Stepping Turtle Dwelling", "Void Ark", "Spiritual Sun", "Rice-Grain Realm", "Realm Prefecture", "Yellow River Teahouse", "The Akashic Library", "The Karmic Pool", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Origin/Terminus"],
     "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Fivefold Elements Ring", "Golden Petal Robe", "Demon Slaying Blade", "Abyssal Crushing Pearl", "Dead Mountain's Sand", "Essential Crown", "Primordial Memory Crystal", "Beneficient Nirvana Fruit", "The Cintamani Stone", "Yellow Springs Compass", "The Drifting Bottle", "The Universe Painting", "The Ordinance Stele", "The Cosmic Egg"]
 }
 
