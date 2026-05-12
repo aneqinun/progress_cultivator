@@ -18,14 +18,14 @@ Grand General
 Imperial Legate
 
 // Earthly cultivation
-Qi condensation
-Foundation establishment
+Qi Condensation
+Foundation Establishment
 Core formation
 Nascent soul
 Soul severing
 Dao seeking
-Spirit integration
-Tribulation crossing - Your spirit is perfected; your body and spirit are ready to become immortal at last. Something holds you back, though. Something indistinct.
+Spirit Integration
+Tribulation Crossing - Your spirit is perfected; your body and spirit are ready to become immortal at last. Something holds you back, though. Something indistinct.
 
 // Dao cultivation
 Intent Scholar - You have glipsed the mountain beyond the mountain. You understand now that to leave this world behind, you must become one with it.  

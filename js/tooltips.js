@@ -18,13 +18,13 @@ const tooltips = {
     "Imperial Legate": "All hail the Right Hand of the Imperial throne. You speak with the Emperor's voice, and all your enemies are long dead by your will.",
 
     // Earthly Cultivation
-    "Qi condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
-    "Foundation establishment": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
+    "Qi Condensation": "Study the theory of mana and practice basic spells. There is minor pay to cover living costs; however, this is a necessary stage in becoming a mage.",
+    "Foundation Establishment": "Under the supervision of a skilled mage, perform basic spells against enemies in battle. Generous pay will be provided to cover living costs.",
     "Core Formation": "Utilise advanced spells to ravage and destroy entire legions of enemy soldiers. Only a small percentage of mages deserve to attain this role and are rewarded with an insanely high pay.",
     "Nascent Soul": "Blessed with unparalleled talent, perform unbelievable feats with magic at will. It is said that an archmage has enough destructive power to wipe an empire off the map.",
     "Soul Severing": "Specialize in harnessing temporal energies that alter the flow of time with supernatural divinations and otherwordly expertise.",
-    "Spirit integration": "Spend your days guiding the Earthly Cultivation sect and investigating the path to true immortality. The Chairman receives ludicrous amounts of pay daily.",
-    "Tribulation crossing": "You wield near-limitless power. By ruling with an iron fist, every cultivator in the Earthly Cultivation sect bows to your command.",
+    "Spirit Integration": "Spend your days guiding the Earthly Cultivation sect and investigating the path to true immortality. The Chairman receives ludicrous amounts of pay daily.",
+    "Tribulation Crossing": "You wield near-limitless power. By ruling with an iron fist, every cultivator in the Earthly Cultivation sect bows to your command.",
 
     // Dao Comprehension
     "Intent Scholar": "Corrupted by Void, you are slowly turning into a slave with no free will, just to serve the Void for the rest of eternity... Can you resist it, or will it consume you forever?",

@@ -162,13 +162,13 @@ const jobBaseData = {
     "Grand General": { name: "Grand General", maxXp: 4e7, income: 5000, heroxp: 64 },
     "Imperial Legate": { name: "Imperial Legate", maxXp: 1.5e8, income: 50000, heroxp: 77 },
 
-    "Qi condensation": { name: "Qi condensation", maxXp: 1e5, income: 100, heroxp: 79 },
-    "Foundation establishment": { name: "Foundation establishment", maxXp: 1e6, income: 1000, heroxp: 82 },
+    "Qi Condensation": { name: "Qi Condensation", maxXp: 1e5, income: 100, heroxp: 79 },
+    "Foundation Establishment": { name: "Foundation Establishment", maxXp: 1e6, income: 1000, heroxp: 82 },
     "Core Formation": { name: "Core Formation", maxXp: 1e8, income: 70000, heroxp: 95 },
     "Nascent Soul": { name: "Nascent Soul", maxXp: 1e10, income: 350000, heroxp: 95 },
     "Soul Severing": { name: "Soul Severing", maxXp: 2e12, income: 1000000, heroxp: 95 },
-    "Spirit integration": { name: "Spirit integration", maxXp: 2e13, income: 10000000, heroxp: 106 },
-    "Tribulation crossing": { name: "Tribulation crossing", maxXp: 9e15, income: 60000000, heroxp: 129 },
+    "Spirit Integration": { name: "Spirit Integration", maxXp: 2e13, income: 10000000, heroxp: 106 },
+    "Tribulation Crossing": { name: "Tribulation Crossing", maxXp: 9e15, income: 60000000, heroxp: 129 },
 
     "Intent Scholar": { name: "Intent Scholar", maxXp: 1e14, income: 2.5e7, heroxp: 131 },
     "Seeker of Law": { name: "Seeker of Law", maxXp: 1.8e16, income: 6e8, heroxp: 237 },
@@ -350,13 +350,13 @@ const requirementsBaseData = {
     "Imperial Legate": new TaskRequirement([getQuerySelector("Imperial Legate")], [{ task: "Qi Manipulation", requirement: 1000 }, { task: "Battle Tactics", requirement: 1000 }, { task: "Grand General", requirement: 10 }]),
 
     // Earthly Cultivation
-    "Qi condensation": new TaskRequirement([getQuerySelector("Qi condensation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
-    "Foundation establishment": new TaskRequirement([getQuerySelector("Foundation establishment")], [{ task: "Qi Manipulation", requirement: 400 }, { task: "Qi condensation", requirement: 10 }]),
-    "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Qi Manipulation", requirement: 1000 }, { task: "Foundation establishment", requirement: 20 }]),
+    "Qi Condensation": new TaskRequirement([getQuerySelector("Qi Condensation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
+    "Foundation Establishment": new TaskRequirement([getQuerySelector("Foundation Establishment")], [{ task: "Qi Manipulation", requirement: 400 }, { task: "Qi Condensation", requirement: 10 }]),
+    "Core Formation": new TaskRequirement([getQuerySelector("Core Formation")], [{ task: "Qi Manipulation", requirement: 1000 }, { task: "Foundation Establishment", requirement: 20 }]),
     "Nascent Soul": new TaskRequirement([getQuerySelector("Nascent Soul")], [{ task: "Qi Manipulation", requirement: 1200 }, { task: "Core Formation", requirement: 10 }]),
     "Soul Severing": new TaskRequirement([getQuerySelector("Soul Severing")], [{ task: "Qi Manipulation", requirement: 1500 }, { task: "Meditation", requirement: 1500 }, { task: "Nascent Soul", requirement: 25 }]),
-    "Spirit integration": new TaskRequirement([getQuerySelector("Spirit integration")], [{ task: "Qi Manipulation", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
-    "Tribulation crossing": new TaskRequirement([getQuerySelector("Tribulation crossing")], [{ task: "Qi Manipulation", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit integration", requirement: 666 }]),
+    "Spirit Integration": new TaskRequirement([getQuerySelector("Spirit Integration")], [{ task: "Qi Manipulation", requirement: 2000 }, { task: "Productivity", requirement: 2000 }, { task: "Soul Severing", requirement: 50 }]),
+    "Tribulation Crossing": new TaskRequirement([getQuerySelector("Tribulation Crossing")], [{ task: "Qi Manipulation", requirement: 3200, herequirement: 650 }, { task: "Concentration", requirement: 3000 }, { task: "Spirit Integration", requirement: 666 }]),
 
     // Dao Comprehension
     "Intent Scholar": new AgeRequirement([getQuerySelector("Intent Scholar")], [{ requirement: 1000 }]),
@@ -389,7 +389,7 @@ const requirementsBaseData = {
 
     // Spiritual Arts
     "Qi Manipulation": new TaskRequirement([getQuerySelector("Qi Manipulation")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
-    "Vital Essence Reinforcement": new TaskRequirement([getQuerySelector("Vital Essence Reinforcement")], [{ task: "Foundation establishment", requirement: 10 }]),
+    "Vital Essence Reinforcement": new TaskRequirement([getQuerySelector("Vital Essence Reinforcement")], [{ task: "Foundation Establishment", requirement: 10 }]),
     "A Cultivator's Perspective": new TaskRequirement([getQuerySelector("A Cultivator's Perspective")], [{ task: "Core Formation", requirement: 10 }]),
     "Bodily Refinement": new TaskRequirement([getQuerySelector("Bodily Refinement")], [{ task: "Nascent Soul", requirement: 10 }]),
     "Temporal Cultivation": new TaskRequirement([getQuerySelector("Temporal Cultivation")], [{ task: "Soul Severing", requirement: 25 }]),
@@ -635,7 +635,7 @@ function getDisplayChallengeTitle(challengeName) {
 const jobCategories = {
     "Mortal Commoner": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
     "Mortal Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
-    "Earthly Cultivation": ["Qi condensation", "Foundation establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit integration", "Tribulation crossing"],
+    "Earthly Cultivation": ["Qi Condensation", "Foundation Establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit Integration", "Tribulation Crossing"],
     "Dao Comprehension": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
     "Immortal Cultivation": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Epyrean"],
     "Dao Embodiment": ["Steward of the Realms", "Anchor of Causality", "The Heavens Itself"]

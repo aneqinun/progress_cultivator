@@ -465,7 +465,7 @@ function renderChallenges() {
     formatCoins(getChallengeGoal("rich_and_the_poor"), document.getElementById("challengeGoal2"))
     document.getElementById("challengeGoal3").textContent = format(getChallengeGoal("time_does_not_fly"))
     document.getElementById("challengeGoal4").textContent = format(getChallengeGoal("dance_with_the_devil"))
-    document.getElementById("challengeGoal5").textContent = getFormattedChallengeTaskGoal("Spirit integration", Math.floor(getChallengeGoal("legends_never_die")))
+    document.getElementById("challengeGoal5").textContent = getFormattedChallengeTaskGoal("Spirit Integration", Math.floor(getChallengeGoal("legends_never_die")))
     document.getElementById("challengeGoal6").textContent = getFormattedChallengeTaskGoal("Heavenly Immortal", Math.floor(100*(getChallengeGoal("the_darkest_time")-1)))
 
     document.getElementById("challengeReward1").hidden = gameData.challenges.an_unhappy_life == 0
