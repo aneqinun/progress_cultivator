@@ -1512,15 +1512,18 @@ function initializeAlchemyDOM() {
         row.id = "alchemyRow_" + pill.id
 
         const label = document.createElement("div")
-        label.className = "alchemyPillLabel tooltip"
+        label.className = "alchemyPillLabel"
+        const nameWrap = document.createElement("span")
+        nameWrap.className = "alchemyPillNameWrapper tooltip"
         const nameSpan = document.createElement("span")
         nameSpan.className = "alchemyPillName"
         nameSpan.textContent = pill.name + " (" + getDisplayName(pill.job) + ")"
         const tip = document.createElement("span")
         tip.className = "tooltipText"
         tip.innerHTML = getDisplayTooltip(pill.name)
-        label.appendChild(nameSpan)
-        label.appendChild(tip)
+        nameWrap.appendChild(nameSpan)
+        nameWrap.appendChild(tip)
+        label.appendChild(nameWrap)
 
         const owned = document.createElement("div")
         owned.className = "alchemyPillOwned"

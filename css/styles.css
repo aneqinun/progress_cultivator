@@ -551,11 +551,22 @@ button:focus {
     max-width: 800px;
 }
 
+/* Global .column uses overflow:hidden, which clips absolutely positioned tooltips in this tab */
+#alchemy.column {
+    overflow: visible;
+}
+
 .alchemyPillsList {
     display: flex;
     flex-direction: column;
     gap: 0.35em;
     margin-top: 0.75em;
+    position: relative;
+    z-index: 0;
+}
+
+.alchemyPillsList .tooltip .tooltipText {
+    z-index: 50;
 }
 
 .alchemyPillRow {
@@ -569,6 +580,13 @@ button:focus {
 .alchemyPillLabel {
     flex: 1 1 14em;
     min-width: 12em;
+}
+
+/* Tight anchor for tooltip (same pattern as job name on a progress bar, not full flex width) */
+.alchemyPillNameWrapper.tooltip {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .alchemyPillOwned {
