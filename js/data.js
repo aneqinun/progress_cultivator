@@ -235,13 +235,12 @@ const skillBaseData = {
 const itemBaseData = {
      
     "Ragged Courtyard": { name: "Ragged Courtyard", expense: 0, effect: 1, heromult: 2, heroeffect: 2e6 },
-    "Wanderer's Tent": { name: "Wanderer's Tent", expense: 15, effect: 1.4, heromult: 2, heroeffect: 2e7 },
-
-    "Bamboo Hut": { name: "Bamboo Hut", expense: 100, effect: 2, heromult: 3, heroeffect: 2e8 },
-    "Mountain Cottage": { name: "Mountain Cottage", expense: 750, effect: 3.5, heromult: 3, heroeffect: 2e9 },
-    "Cultivator Residence": { name: "Cultivator Residence", expense: 3000, effect: 6, heromult: 4, heroeffect: 2e10 },
-    "Manor Estate": { name: "Manor Estate", expense: 25000, effect: 12, heromult: 4, heroeffect: 2e11 },
-    "Minor Immortal Palace": { name: "Minor Immortal Palace", expense: 300000, effect: 25, heromult: 5, heroeffect: 2e12 },
+    "Bamboo Hut": { name: "Bamboo Hut", expense: 15, effect: 1.4, heromult: 2, heroeffect: 2e7 },
+    "Mountain Cottage": { name: "Mountain Cottage", expense: 100, effect: 2, heromult: 3, heroeffect: 2e8 },
+    "Respectable Home": { name: "Respectable Home", expense: 750, effect: 3.5, heromult: 3, heroeffect: 2e9 },
+    "Stately Manor": { name: "Stately Manor", expense: 3000, effect: 6, heromult: 4, heroeffect: 2e10 },
+    "Grand Estate": { name: "Grand Estate", expense: 25000, effect: 12, heromult: 4, heroeffect: 2e11 },
+    "Grand Palace": { name: "Minor Immortal Palace", expense: 300000, effect: 25, heromult: 5, heroeffect: 2e12 },
     "Grand Immortal Palace": { name: "Grand Immortal Palace", expense: 5000000, effect: 60, heromult: 5, heroeffect: 2e13 },
     "Town Lord": { name: "Town Lord", expense: 35000000, effect: 120, heromult: 6, heroeffect: 2e15 },
     "City Lord": { name: "City Lord", expense: 1.1e9, effect: 500, heromult: 7, heroeffect: 2e17 },
@@ -421,11 +420,11 @@ const requirementsBaseData = {
 
     // Residences
     "Ragged Courtyard": new CoinRequirement([getQuerySelector("Ragged Courtyard")], [{ requirement: 0 }]),
-    "Wanderer's Tent": new CoinRequirement([getQuerySelector("Wanderer's Tent")], [{ requirement: 0 }]),
-    "Bamboo Hut": new CoinRequirement([getQuerySelector("Bamboo Hut")], [{ requirement: itemBaseData["Bamboo Hut"].expense * 100 }]),
+    "Bamboo Hut": new CoinRequirement([getQuerySelector("Bamboo Hut")], [{ requirement: 0 }]),
     "Mountain Cottage": new CoinRequirement([getQuerySelector("Mountain Cottage")], [{ requirement: itemBaseData["Mountain Cottage"].expense * 100 }]),
-    "Cultivator Residence": new CoinRequirement([getQuerySelector("Cultivator Residence")], [{ requirement: itemBaseData["Cultivator Residence"].expense * 100 }]),
-    "Manor Estate": new CoinRequirement([getQuerySelector("Manor Estate")], [{ requirement: itemBaseData["Manor Estate"].expense * 100 }]),
+    "Respectable Home": new CoinRequirement([getQuerySelector("Respectable Home")], [{ requirement: itemBaseData["Respectable Home"].expense * 100 }]),
+    "Stately Manor": new CoinRequirement([getQuerySelector("Stately Manor")], [{ requirement: itemBaseData["Stately Manor"].expense * 100 }]),
+    "Grand Estate": new CoinRequirement([getQuerySelector("Grand Estate")], [{ requirement: itemBaseData["Grand Estate"].expense * 100 }]),
     "Minor Immortal Palace": new CoinRequirement([getQuerySelector("Minor Immortal Palace")], [{ requirement: itemBaseData["Minor Immortal Palace"].expense * 100 }]),
     "Grand Immortal Palace": new CoinRequirement([getQuerySelector("Grand Immortal Palace")], [{ requirement: itemBaseData["Grand Immortal Palace"].expense * 100 }]),
     "Town Lord": new CoinRequirement([getQuerySelector("Town Lord")], [{ requirement: itemBaseData["Town Lord"].expense * 100 }]),
@@ -654,7 +653,7 @@ const skillCategories = {
 }
 
 const itemCategories = {
-    "Residences": ["Ragged Courtyard", "Wanderer's Tent", "Bamboo Hut", "Mountain Cottage", "Cultivator Residence", "Manor Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
+    "Residences": ["Ragged Courtyard", "Bamboo Hut", "Mountain Cottage", "Respectable Home", "Stately Manor", "Grand Estate", "Minor Immortal Palace", "Grand Immortal Palace", "Town Lord", "City Lord", "Dynasty Regent", "Portable Blessed Land", "Void Blessed Land", "Void Heaven", "Astral Heaven", "Star Throne", "Void Ark", "Spirit Planet", "Heavenly Ring Domain", "Stellar Prefecture", "Star River Dominion", "Grand Star Region", "Celestial Vein", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Void of Desolation"],
     "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Fivefold Elements Ring", "Golden Petal Robe", "Demon Slaying Blade", "Abyssal Crushing Pearl", "Dead Mountain's Sand", "Essential Crown", "Primordial Memory Crystal", "Beneficient Nirvana Fruit", "The Cintamani Stone", "Yellow Springs Compass", "The Drifting Bottle", "The Universe Painting", "The Ordinance Stele", "The Cosmic Egg"]
 }
 

@@ -86,11 +86,11 @@ const tooltips = {
 
     // Residences
     "Ragged Courtyard": "Sleep on the uncomfortable, filthy streets while almost freezing to death every night. It cannot get any worse than this.",
-    "Wanderer's Tent": "A thin sheet of tattered cloth held up by a couple of feeble, wooden sticks. Horrible living conditions but at least you have a roof over your head.",
-    "Bamboo Hut": "Shabby logs and dirty hay glued together with horse manure. Much more sturdy than a tent, however, the stench isn't very pleasant.",
-    "Mountain Cottage": "Structured with a timber frame and a thatched roof. Provides decent living conditions for a fair price.",
-    "Cultivator Residence": "A building formed from stone bricks and sturdy timber, which contains a few rooms. Although quite expensive, it is a comfortable abode.",
-    "Manor Estate": "Much larger than a regular house, which boasts even more rooms and multiple floors. The building is quite spacious but comes with a hefty price tag.",
+    "Bamboo Hut": "A thin sheet of tattered cloth held up by a couple of feeble, wooden sticks. Horrible living conditions but at least you have a roof over your head.",
+    "Mountain Cottage": "Shabby logs and dirty hay glued together with horse manure. Much more sturdy than a tent, however, the stench isn't very pleasant.",
+    "Respectable Home": "Structured with a timber frame and a thatched roof. Provides decent living conditions for a fair price.",
+    "Stately Manor": "A building formed from stone bricks and sturdy timber, which contains a few rooms. Although quite expensive, it is a comfortable abode.",
+    "Grand Estate": "Much larger than a regular house, which boasts even more rooms and multiple floors. The building is quite spacious but comes with a hefty price tag.",
     "Minor Immortal Palace": "A very rich and meticulously built structure rimmed with fine metals such as silver. Extremely high expenses to maintain for a lavish lifestyle.",
     "Grand Immortal Palace": "A grand residence completely composed of gold and silver. Provides the utmost luxurious and comfortable living conditions possible for a ludicrous price.",
     "Town Lord": "You rule your very own community in your small town, owning multiple establishments.",
