@@ -259,9 +259,9 @@ const itemBaseData = {
     "Yellow River Teahouse": { name: "Yellow River Teahouse", expense: 1e30, effect: 75000000, heromult: 18, heroeffect: 7.5e49 },
     "The Akashic Library": { name: "The Akashic Library", expense: 1e33, effect: 100000000, heromult: 20, heroeffect: 1e50 },
     "The Karmic Pool": { name: "The Karmic Pool", expense: 1e36, effect: 1000000000, heromult: 25, heroeffect: 1e52 },
-    "All-Seeing Cosmos": { name: "All-Seeing Cosmos", expense: 1e39, effect: 10000000000, heromult: 30, heroeffect: 1e54 },
-    "Myriad Realms": { name: "Myriad Realms", expense: 1e42, effect: 100000000000, heromult: 35, heroeffect: 1e60 },
-    "Microcosm World": { name: "Microcosm World", expense: 1e49, effect: 1000000000000, heromult: 40, heroeffect: 1e64 },
+    "The Fateful Skein": { name: "The Fateful Skein", expense: 1e39, effect: 10000000000, heromult: 30, heroeffect: 1e54 },
+    "The Tumbling Coin": { name: "The Tumbling Coin", expense: 1e42, effect: 100000000000, heromult: 35, heroeffect: 1e60 },
+    "The Ever-Shifting Glass": { name: "The Ever-Shifting Glass", expense: 1e49, effect: 1000000000000, heromult: 40, heroeffect: 1e64 },
     "Origin/Terminus": { name: "Origin/Terminus", expense: 3e74, effect: 1000000000000, heromult: 40, heroeffect: 1e80 },
 
     // Treasures
@@ -444,9 +444,9 @@ const requirementsBaseData = {
     "Yellow River Teahouse": new CoinRequirement([getQuerySelector("Yellow River Teahouse")], [{ requirement: 1e72 }]),
     "The Akashic Library": new CoinRequirement([getQuerySelector("The Akashic Library")], [{ requirement: 1e80 }]),
     "The Karmic Pool": new CoinRequirement([getQuerySelector("The Karmic Pool")], [{ requirement: 1e90 }]),
-    "All-Seeing Cosmos": new CoinRequirement([getQuerySelector("All-Seeing Cosmos")], [{ requirement: 1e102 }]),
-    "Myriad Realms": new CoinRequirement([getQuerySelector("Myriad Realms")], [{ requirement: 1e116 }]),
-    "Microcosm World": new CoinRequirement([getQuerySelector("Microcosm World")], [{ requirement: 1e124 }]),
+    "The Fateful Skein": new CoinRequirement([getQuerySelector("The Fateful Skein")], [{ requirement: 1e102 }]),
+    "The Tumbling Coin": new CoinRequirement([getQuerySelector("The Tumbling Coin")], [{ requirement: 1e116 }]),
+    "The Ever-Shifting Glass": new CoinRequirement([getQuerySelector("The Ever-Shifting Glass")], [{ requirement: 1e124 }]),
     "Origin/Terminus": new CoinRequirement([getQuerySelector("Origin/Terminus")], [{ requirement: 1e152 }]),
 
     // Treasures
@@ -653,7 +653,7 @@ const skillCategories = {
 }
 
 const itemCategories = {
-    "Residences": ["Ragged Courtyard", "Bamboo Hut", "Mountain Cottage", "Respectable Home", "Stately Manor", "Noble Estate", "Grand Palace", "Blessed Imperial Dwelling", "Auspicious Cultivator Dwelling", "Dragon Vein Confluence Cavern", "Starlight Converging Peak", "Century Refinement Holy Forest", "Taiji Cycling Blessed Land", "Earth Overturning Grotto Heaven", "Star-Plucking Tower", "Star-Stepping Turtle Dwelling", "Void Ark", "Spiritual Sun", "Rice-Grain Realm", "Realm Prefecture", "Yellow River Teahouse", "The Akashic Library", "The Karmic Pool", "All-Seeing Cosmos", "Myriad Realms", "Microcosm World", "Origin/Terminus"],
+    "Residences": ["Ragged Courtyard", "Bamboo Hut", "Mountain Cottage", "Respectable Home", "Stately Manor", "Noble Estate", "Grand Palace", "Blessed Imperial Dwelling", "Auspicious Cultivator Dwelling", "Dragon Vein Confluence Cavern", "Starlight Converging Peak", "Century Refinement Holy Forest", "Taiji Cycling Blessed Land", "Earth Overturning Grotto Heaven", "Star-Plucking Tower", "Star-Stepping Turtle Dwelling", "Void Ark", "Spiritual Sun", "Rice-Grain Realm", "Realm Prefecture", "Yellow River Teahouse", "The Akashic Library", "The Karmic Pool", "The Fateful Skein", "The Tumbling Coin", "The Ever-Shifting Glass", "Origin/Terminus"],
     "Treasures": ["Journal", "Body Refinement Weights", "Personal Servant", "Spirit Steel Sword", "Housekeeper", "Azure Jade Charm", "Scripture Desk", "Scripture Pavilion", "Star Gazing Platform", "Mortal-Scrying Orb", "Fivefold Elements Ring", "Golden Petal Robe", "Demon Slaying Blade", "Abyssal Crushing Pearl", "Dead Mountain's Sand", "Essential Crown", "Primordial Memory Crystal", "Beneficient Nirvana Fruit", "The Cintamani Stone", "Yellow Springs Compass", "The Drifting Bottle", "The Universe Painting", "The Ordinance Stele", "The Cosmic Egg"]
 }
 
