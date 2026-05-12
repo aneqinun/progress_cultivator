@@ -140,16 +140,16 @@ const tooltips = {
     "The Cosmic Egg": "It was there at the beginning. Holding it now, you realise that you were there, too. It has just taken you some time to return once more. What was then, now is again.",
 
     // Essence Milestones
-    "Magic Eye": "The Eye in your Amulet starts to glow.",
-    "Almighty Eye": "The Eye in your Amulet shines like a star.",
+    "Magic Eye": "The Eye in your Talisman starts to glow.",
+    "Almighty Eye": "The Eye in your Talisman shines like a star.",
     "Pact with the Heavens": "You made a Pact with the Heavens.",
-    "Transcendent Master": "You've mastered Transcendence.",
+    "Ascendant Master": "You've mastered the mundane. Now to greater heights.",
     "Eternal Time": "Does time matter now?",
-    "Hell Portal": "You've opened a portal to Hell.",
-    "Inferno": "You are at the last level of Hell. What is next?",
-    "God's Blessings": "God bless you!",
-    "Faint Hope": "Maybe there is hope?",
-    "New Beginning": "Try to upgrade One Above All to level 2000",
+    "Celestial Conduit": "You've formed a direct link to the Celestial realms.",
+    "Divine Meridians": "Your celestial link has infiltrated your spirit. You are now yourself divine.",
+    "Heaven's Blessing": "The Heavens show you great favour.",
+    "Cumulative Fortune": "The Dao persists beyond time itself.",
+    "New Beginning": "Greater responsibilities wait for you under the auspices of supreme power.",
 
     // Heroic Milestones
     "Rise of Great Heroes": "Every active Great job or skill will increase Essence gain a bit.",
@@ -181,9 +181,9 @@ const tooltips = {
     "Dark Matter Millionaire": "This secret art drives your quest to become a true Chaos Essence magnate.",
     "The new Dark Matter": "Your talisman tears through space and time across countless realms. Welcome to the Upper Realm.",
 
-    "Strong Hope": "Another Faint Hope buff?!",
+    "Strong Hope": "Another Cumulative Fortune buff?!",
     "Ruler of the Metaverse": "Now you stand as a true ruler of the Upper Realm.",
-    "A New Hope": "No more of this Faint Hope nonsense!!!",
+    "A New Hope": "No more of this Cumulative Fortune nonsense!!!",
     "Time is a flat circle": "This is a world where nothing is solved. Someone once told me, time is a flat circle. Everything we’ve ever done or will do, we’re gonna do over and over and over again.",
     "The End is near": "We don't try to live forever",
     "The End": "There is always an end",

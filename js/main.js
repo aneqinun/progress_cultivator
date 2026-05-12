@@ -280,15 +280,15 @@ function setCustomEffects() {
         return unholyRecall.level * (unholyRecall.isHero ? 0.065 : 0.00065);
     }
 
-    const transcendentMaster = milestoneData["Transcendent Master"]
+    const transcendentMaster = milestoneData["Ascendant Master"]
     transcendentMaster.getEffect = function () {
-        if (gameData.requirements["Transcendent Master"].isCompleted())
+        if (gameData.requirements["Ascendant Master"].isCompleted())
             return 1.5
 
         return 1
     }
 
-    const faintHope = milestoneData["Faint Hope"]
+    const faintHope = milestoneData["Cumulative Fortune"]
     faintHope.getEffect = function () {
         var mult = 1
         if (gameData.requirements["A New Hope"].isCompleted()) { 
@@ -301,7 +301,7 @@ function setCustomEffects() {
                 mult = 1e308
             mult = softcap(mult, 10000000, 0.01)
         }
-        else if (gameData.requirements["Faint Hope"].isCompleted()) {
+        else if (gameData.requirements["Cumulative Fortune"].isCompleted()) {
             let kickin = 1.1754 - 0.082 * Math.log(gameData.rebirthThreeTime)
             if (kickin < 0.15)
                 kickin = 0.15
@@ -336,7 +336,7 @@ function getHappiness() {
     const meditationEffect = getBindedTaskEffect("Meditation")
     const butlerEffect = getBindedItemEffect("Housekeeper")
     const multiverseFragment = getBindedItemEffect("Beneficient Nirvana Fruit")
-    const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
+    const godsBlessings = gameData.requirements["Heaven's Blessing"].isCompleted() ? 10000000 : 1
     const stairWayToHeaven = getBindedItemEffect("The Cintamani Stone")
     const happiness = godsBlessings * meditationEffect() * butlerEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
@@ -416,7 +416,7 @@ function getEvilGain() {
     const bloodMeditation = gameData.taskData["Great Destiny"]
     const yingYang = gameData.taskData["Taiji Equilibrium"]
     const potentialRecovery = Math.pow(evilControl.getEffect() * bloodMeditation.getEffect(), checkpointTuning.potentialRecoveryExponent)
-    const inferno = gameData.requirements["Inferno"].isCompleted() ? 5 : 1    
+    const inferno = gameData.requirements["Divine Meridians"].isCompleted() ? 5 : 1    
     const theDevilInsideYou = gameData.requirements["The Devil inside you"].isCompleted() ? 1e15 : 1
     const stairWayToHell = getBindedItemEffect("Yellow Springs Compass")
     const evilBooster = (gameData.perks.evil_booster == 1) ? 1e50 : 1
@@ -431,8 +431,8 @@ function getEvilGain() {
 function getEssenceGain() {
     const essenceControl = gameData.taskData["Taiji Equilibrium"]
     const essenceCollector = gameData.taskData["Spiritual Nexus"]
-    const transcendentMaster = milestoneData["Transcendent Master"]
-    const faintHope = milestoneData["Faint Hope"]
+    const transcendentMaster = milestoneData["Ascendant Master"]
+    const faintHope = milestoneData["Cumulative Fortune"]
     const rise = milestoneData["Rise of Great Heroes"]
     const essenceCollectorOverflow = Math.pow(essenceCollector.getEffect(), checkpointTuning.essenceOverflowExponent)
 
@@ -782,7 +782,7 @@ function setEnableKeybinds(enableKeybinds) {
 }
 
 function resetEvilPerks(){
-    if (gameData.requirements["God's Blessings"].isCompleted())
+    if (gameData.requirements["Heaven's Blessing"].isCompleted())
         return;
     gameData.evil_perks_points = 0
     gameData.evil_perks.receive_essence = 0
@@ -988,7 +988,7 @@ function applyMilestones() {
                 gameData.evil *= Math.pow(1.001, 1)
         }
 
-        if (gameData.requirements["Hell Portal"].isCompleted()) {
+        if (gameData.requirements["Celestial Conduit"].isCompleted()) {
             if (gameData.evil == 0)
                 gameData.evil = 1
             if (gameData.evil < getEvilGain()) {

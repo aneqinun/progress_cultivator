@@ -4,12 +4,12 @@ const milestoneBaseData = {
     "Magic Eye": { name: "Magic Eye", expense: 5000, tier: 1, description: "Automatically gain max levels at age 65" },
     "Almighty Eye": { name: "Almighty Eye", expense: 15000, tier: 2, description: "Automatically gain max levels" },
     "Pact with the Heavens": { name: "Pact with the Heavens", expense: 30000, tier: 3, description: "Passively gain a small amount of Potential" },
-    "Transcendent Master": { name: "Transcendent Master", expense: 50000, tier: 4, description: "Spirit Essence gain" },
+    "Ascendant Master": { name: "Ascendant Master", expense: 50000, tier: 4, description: "Spirit Essence gain" },
     "Eternal Time": { name: "Eternal Time", expense: 75000, tier: 5, description: "x2 Temporal Dilation" },
-    "Hell Portal": { name: "Hell Portal", expense: 120000, tier: 6, description: "Passively gain a huge amount of Potential" },
-    "Inferno": { name: "Inferno", expense: 170000, tier: 7, description: "x5 Potential gain" },
-    "God's Blessings": { name: "God's Blessings", expense: 250000, tier: 8, description: "x10M Happiness, keep Potential perks on reset" },
-    "Faint Hope": { name: "Faint Hope", expense: 400000, tier: 9, description: "Spirit Essence gain (increases over time, influenced by temporal dilation)" },
+    "Celestial Conduit": { name: "Celestial Conduit", expense: 120000, tier: 6, description: "Passively gain a huge amount of Potential" },
+    "Divine Meridians": { name: "Divine Meridians", expense: 170000, tier: 7, description: "x5 Potential gain" },
+    "Heaven's Blessing": { name: "Heaven's Blessing", expense: 250000, tier: 8, description: "x10M Happiness, keep Potential perks on reset" },
+    "Cumulative Fortune": { name: "Cumulative Fortune", expense: 400000, tier: 9, description: "Spirit Essence gain (increases over time, influenced by temporal dilation)" },
     "New Beginning": { name: "New Beginning", expense: 5000000, tier: 10, description: "Ascendant jobs, skills and treasures are unlocked" },
 
     "Rise of Great Heroes": { name: "Rise of Great Heroes", expense: 10000000, tier: 11, description: "Spirit Essence gain + x10000 Ascendant Cultivator & Skill XP" },
@@ -26,7 +26,7 @@ const milestoneBaseData = {
     "Superb Heroes": { name: "Superb Heroes", expense: 10000000000, tier: 22, description: "Ascendant Cultivator & Skill XP", effect: 1e3 },
     "A new beginning": { name: "A new beginning", expense: 5e10, tier: 23, description: "Unlocks Chaos Essence" },
 
-    "Mind Control": { name: "Mind Control", expense: 1e13, tier: 24, description: "Makes Nether Gate even stronger" },
+    "Mind Control": { name: "Mind Control", expense: 1e13, tier: 24, description: "Makes Celestial Conduit even stronger" },
     "Galactic Emperor": { name: "Galactic Emperor", expense: 1e15, tier: 25, description: "Passively gain a small amount of Spirit Essence" },
     "Dark Matter Harvester": { name: "Dark Matter Harvester", expense: 1e17, tier: 26, description: "Multiply Chaos Essence gain by 10x" },
     "A Dark Era": { name: "A Dark Era", expense: 1e20, tier: 27, description: "Unlocks Chaos Essence Arts" },
@@ -35,7 +35,7 @@ const milestoneBaseData = {
     "The new gold": { name: "The new gold", expense: 1e30, tier: 30, description: "Multiply Spirit Essence gain by 1000x" },
     "The Devil inside you": { name: "The Devil inside you", expense: 1e35, tier: 31, description: "Multiply Potential gain by 1e15x" },
     "Strange Magic": { name: "Strange Magic", expense: 1e38, tier: 32, description: "Multiply all XP gain by 1e25x" },
-    "Speed speed speed": { name: "Speed speed speed", expense: 1e40, tier: 33, description: "Multiply A Cultivator's Perspective and Lifespan by 1000x. Heavily boosts Faint Hope" },
+    "Speed speed speed": { name: "Speed speed speed", expense: 1e40, tier: 33, description: "Multiply A Cultivator's Perspective and Lifespan by 1000x. Heavily boosts Cumulative Fortune" },
     "Life is valueable": { name: "Life is valueable", expense: 1e47, tier: 34, description: "Multiply your lifespan by 1e5x. New trial unlocked. Chaos Essence boosts spirit essence gain." },
     "Dark Matter Millionaire": { name: "Dark Matter Millionaire", expense: 1e55, tier: 35, description: "Multiply Chaos Essence gain by 500x" },
     "The new Dark Matter": { name: "The new Dark Matter", expense: 1e60, tier: 36, description: "Unlocks Upper Realm" },
@@ -50,7 +50,7 @@ const milestoneBaseData = {
 }
 
 const milestoneCategories = {
-    "Essence Milestones": ["Magic Eye", "Almighty Eye", "Pact with the Heavens", "Transcendent Master", "Eternal Time", "Hell Portal", "Inferno", "God's Blessings", "Faint Hope"],
+    "Essence Milestones": ["Magic Eye", "Almighty Eye", "Pact with the Heavens", "Ascendant Master", "Eternal Time", "Celestial Conduit", "Divine Meridians", "Heaven's Blessing", "Cumulative Fortune"],
     "Heroic Milestones": ["New Beginning", "Rise of Great Heroes", "Lazy Heroes", "Dirty Heroes", "Angry Heroes", "Tired Heroes", "Scared Heroes", "Good Heroes", "Funny Heroes", "Beautiful Heroes", "Awesome Heroes", "Furious Heroes", "Superb Heroes", "A new beginning"],
     "Dark Milestones": ["Mind Control", "Galactic Emperor", "Dark Matter Harvester", "A Dark Era", "Dark Orbiter", "Dark Matter Mining", "The new gold", "The Devil inside you", "Strange Magic", "Speed speed speed", "Life is valueable", "Dark Matter Millionaire", "The new Dark Matter"],
     "Metaverse Milestones": ["Strong Hope", "Ruler of the Metaverse", "A New Hope", "Time is a flat circle", "The End is near", "The End"],
