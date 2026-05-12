@@ -111,7 +111,7 @@ const tooltips = {
     "The Fateful Skein": "A workshop of glowing embroidery where you weave the threads of destiny into the tapestry of the multiverse.",
     "The Tumbling Coin": "A chaotic palace at the edge of probability where you watch the flip of a coin decide the birth and death of worlds.",
     "The Ever-Shifting Glass": "A hall of infinite mirrors and ticking gears where you move through the centuries as if walking between rooms.",
-    "Origin/Terminus": "The beginning, and the end. Where it all began, and where it will end. Where it has ended.",
+    "Origin and Terminus": "The beginning, and the end. Where it all began, and where it will end. Where it has ended.",
 
     // Treasures
     "Journal": "A place to write down all your thoughts and discoveries, allowing you to learn a lot more quickly.",
