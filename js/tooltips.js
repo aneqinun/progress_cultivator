@@ -35,7 +35,7 @@ const tooltips = {
 
     // Immortal Cultivation
     "Human Immortal": "You have stepped into godhood, shedding all physical needs for an eternal existence.",
-    "Earthly Immortal": "You are bound to the world's vitality, drawing infinite strength from the planet itself.",
+    "Earthly Immortal": "Neither mortal nor yet heavenly, you tap at the door to grand celestial power. It will not hold you for long.",
     "Heavenly Immortal": "Your name is etched into the stars, making you a true peer to the celestial lords.",
     "Sovereign Empyrean": "You rule across galaxies, where your personal decree becomes the absolute law of the cosmos.",
 
