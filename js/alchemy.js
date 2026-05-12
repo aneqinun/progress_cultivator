@@ -27,6 +27,18 @@ const alchemyPills = [
 
 const alchemyJobOrder = alchemyPills.map(function (p) { return p.job })
 
+/**
+ * Pill row is shown only once the job’s requirements are met and that job is at least level 1.
+ * @param {{ job: string }} pill
+ */
+function isAlchemyPillUnlocked(pill) {
+    const req = gameData.requirements[pill.job]
+    const task = gameData.taskData[pill.job]
+    if (!req || !task)
+        return false
+    return req.isCompleted() && task.level >= 1
+}
+
 const ALCHEMY_BOOST_PER_STACK = 1.25
 const ALCHEMY_HIGHER_JOB_PENALTY_PER_STACK = 0.75
 
@@ -76,7 +88,7 @@ function buyAlchemyPill(id) {
     if (gameData.paused)
         return
     const pill = alchemyPills.find(function (x) { return x.id === id })
-    if (!pill)
+    if (!pill || !isAlchemyPillUnlocked(pill))
         return
     ensureAlchemyState()
     if (gameData.coins < pill.cost)

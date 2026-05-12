@@ -1508,7 +1508,7 @@ function initializeAlchemyDOM() {
     for (let p = 0; p < alchemyPills.length; p++) {
         const pill = alchemyPills[p]
         const row = document.createElement("div")
-        row.className = "alchemyPillRow w3-padding-small"
+        row.className = "alchemyPillRow w3-padding-small hidden"
         row.id = "alchemyRow_" + pill.id
 
         const label = document.createElement("div")
@@ -1560,10 +1560,18 @@ function renderAlchemy() {
     initializeAlchemyDOM()
     for (let p = 0; p < alchemyPills.length; p++) {
         const pill = alchemyPills[p]
+        const row = document.getElementById("alchemyRow_" + pill.id)
         const countEl = document.getElementById("alchemyCount_" + pill.id)
         const btn = document.getElementById("alchemyBuy_" + pill.id)
         const costEl = document.getElementById("alchemyCost_" + pill.id)
-        if (!countEl || !btn || !costEl)
+        if (!row || !countEl || !btn || !costEl)
+            continue
+        const unlocked = isAlchemyPillUnlocked(pill)
+        if (unlocked)
+            row.classList.remove("hidden")
+        else
+            row.classList.add("hidden")
+        if (!unlocked)
             continue
         countEl.textContent = "Owned: " + format(gameData.alchemy[pill.id], 0)
         formatCoins(pill.cost, costEl)
