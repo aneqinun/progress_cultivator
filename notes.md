@@ -80,3 +80,34 @@ dark_matter -> Chaos Essence
 dark_orbs -> Dao Fragment
 hypercubes -> Primordial Spark
 perks_points -> Upper Realm perk points
+
+
+
+---
+
+
+# ALCHEMY 
+In the alchemy tab there should be these purchasable items. Each item should increase the job exp for the corresponding job, and decrease XP for higher jobs. 
+
+Qi gathering pill
+Foundation building pill
+Core nourishing pill 
+Soul condensation pill 
+Mortal Splitting Pill - Soul severing 
+Harmonious Fusion Pill - Spirit Integration 
+Lightning Quenching Pill - Tribulation Crossing 
+
+Intent Condensing Pill - Intent Scholar
+Clear Mind Pill - Seeker of Law
+Law Tracing Pill - Dao Sage
+Ordinary Heart Pill - A Mortal Daoist
+Karmic Severance Pill - Dustless One
+
+Immortal Ascension Pill - Human Immortal
+Earthly Immortal
+Heavenly Immortal
+Sovereign Empyrean
+
+Steward of the Realms
+Anchor of Causality
+The Heavens Itself
