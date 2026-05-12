@@ -37,7 +37,7 @@ const tooltips = {
     "Human Immortal": "With the powers bestowed upon you by an unknown entity, you wander around, visiting places revered and feared in search of answers.",
     "Earthly Immortal": "Extremely powerful being with tremedous telekinetic powers and the ability to rearrange the molecular structure of matter and energy, even up to cosmic scale.",
     "Heavenly Immortal": "A nigh-omnipotent cosmological entity, with vast matter and energy manipulation abilities that help you push the boundaries of the Universe itself.",
-    "Sovereign Epyrean": "Creator of everything.",
+    "Sovereign Empyrean": "Creator of everything.",
 
     // Dao Embodiment
     "Steward of the Realms": "Snow Crash, 1992",

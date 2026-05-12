@@ -179,7 +179,7 @@ const jobBaseData = {
     "Human Immortal": { name: "Human Immortal", maxXp: 5.5e19, income: 1e12, heroxp: 250 },
     "Earthly Immortal": { name: "Earthly Immortal", maxXp: 5.1e19, income: 3e12, heroxp: 250 },
     "Heavenly Immortal": { name: "Heavenly Immortal", maxXp: 5e20, income: 2.15e13, heroxp: 260 },
-    "Sovereign Epyrean": { name: "Sovereign Epyrean", maxXp: 5e27, income: 2.5e16, heroxp: 265 },
+    "Sovereign Empyrean": { name: "Sovereign Empyrean", maxXp: 5e27, income: 2.5e16, heroxp: 265 },
 
     "Steward of the Realms": { name: "Steward of the Realms", maxXp: Infinity, income: 2.5e52, heroxp: 1015 },
     "Anchor of Causality": { name: "Anchor of Causality", maxXp: Infinity, income: 2.5e58, heroxp: 1358 },
@@ -369,7 +369,7 @@ const requirementsBaseData = {
     "Human Immortal": new AgeRequirement([getQuerySelector("Human Immortal")], [{ requirement: 10000 }]),
     "Earthly Immortal": new TaskRequirement([getQuerySelector("Earthly Immortal")], [{ task: "Human Immortal", requirement: 15 }, { task: "Epoch-Spanning Lifeline", requirement: 4000, herequirement: 180 }]),
     "Heavenly Immortal": new TaskRequirement([getQuerySelector("Heavenly Immortal")], [{ task: "Earthly Immortal", requirement: 200 }, { task: "Wheel-Crossing Permanence", requirement: 4500, herequirement: 350 }]),
-    "Sovereign Epyrean": new TaskRequirement([getQuerySelector("Sovereign Epyrean")], [{ task: "Meditation", requirement: 6300 }, { task: "Heavenly Immortal", requirement: 1800, herequirement: 500 }]),
+    "Sovereign Empyrean": new TaskRequirement([getQuerySelector("Sovereign Empyrean")], [{ task: "Meditation", requirement: 6300 }, { task: "Heavenly Immortal", requirement: 1800, herequirement: 500 }]),
 
     // Dao Embodiment
     "Steward of the Realms": new EssenceRequirement([getQuerySelector("Steward of the Realms")], [{ requirement: 1e90, herequirement: 1e120 }]),
@@ -581,7 +581,7 @@ const xianxiaCategoryNames = {
 
 const xianxiaTooltips = {
 //    "Intent Scholar": "Qi deviation has begun. The abyss whispers constantly, and each step tests your will.",
-//    "Sovereign Epyrean": "You stand near the apex of all realms, shaping fate with a thought.",
+//    "Sovereign Empyrean": "You stand near the apex of all realms, shaping fate with a thought.",
 //    "Magic Eye": "The talisman's first seal opens and your perception of qi deepens.",
 //    "Almighty Eye": "The Heavenly Eye awakens fully and perfect recollection follows.",
 //    "Deal with the Devil": "You forge a dangerous pact with your inner demon for forbidden gains.",
@@ -637,7 +637,7 @@ const jobCategories = {
     "Mortal Military": ["Recruit", "Militiaman", "Soldier", "Squad Leader", "Vanguard Commander", "General of the West", "Grand General", "Imperial Legate"],
     "Earthly Cultivation": ["Qi Condensation", "Foundation Establishment", "Core Formation", "Nascent Soul", "Soul Severing", "Spirit Integration", "Tribulation Crossing"],
     "Dao Comprehension": ["Intent Scholar", "Seeker of Law", "Dao Sage", "A Mortal Daoist", "Dustless One"],
-    "Immortal Cultivation": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Epyrean"],
+    "Immortal Cultivation": ["Human Immortal", "Earthly Immortal", "Heavenly Immortal", "Sovereign Empyrean"],
     "Dao Embodiment": ["Steward of the Realms", "Anchor of Causality", "The Heavens Itself"]
 }
 

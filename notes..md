@@ -43,7 +43,7 @@ Human Immortal
 Earthly Immortal
 Heavenly Immortal
 Saintly Empyrean
-Sovereign Epyrean
+Sovereign Empyrean
 
 // Dao embodiment
 Steward of the Realms

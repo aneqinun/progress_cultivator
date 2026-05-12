@@ -1109,7 +1109,7 @@ function canSimulate() {
 }
 
 function isHeroesUnlocked() {
-    return gameData.requirements["New Beginning"].isCompleted() && (gameData.taskData["Sovereign Epyrean"].level >= 2000 || gameData.taskData["Sovereign Epyrean"].isHero)
+    return gameData.requirements["New Beginning"].isCompleted() && (gameData.taskData["Sovereign Empyrean"].level >= 2000 || gameData.taskData["Sovereign Empyrean"].isHero)
 }
 
 function makeHero(task) {
