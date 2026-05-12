@@ -129,7 +129,10 @@ var gameData = {
     boost_timer: 0.0,
     boost_active: false,
 
-    save_date_time: 0
+    save_date_time: 0,
+
+    /** Counts per pill id; reset each life (rebirth). See alchemy.js */
+    alchemy: {}
 }
 
 var tempData = {}

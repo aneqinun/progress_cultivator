@@ -40,6 +40,7 @@
 						<div class="w3-button w3-bar-item tabButton baritem" id="evilperksTabButton" onClick="setTab('evilperks')">Traits</div>					
 						<div class="w3-button w3-bar-item tabButton baritem" id="challengesTabButton" onClick="setTab('challenges')">Trials</div>
 						<div class="w3-button w3-bar-item tabButton baritem" id="milestonesTabButton" onClick="setTab('milestones')">Milestones</div>
+						<div class="w3-button w3-bar-item tabButton baritem" id="alchemyTabButton" onClick="setTab('alchemy')">Alchemy</div>
 						<div class="w3-button w3-bar-item tabButton baritem" id="rebirthTabButton" onClick="setTab('rebirth')">Artifact</div>
 						<div class="w3-button w3-bar-item tabButton baritem" id="darkMatterTabButton" onClick="setTab('darkMatter')">Chaos Essence</div>
 						<div class="w3-button w3-bar-item tabButton baritem" id="metaverseTabButton" onClick="setTab('metaverse')">Upper Realm</div>
@@ -434,6 +435,13 @@
 										</table>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="tab column" style="display:none" id="alchemy">
+							<div id="maincolumnAlchemy" class="panel w3-margin-left w3-margin-top w3-padding">
+								<div class="text-caption" style="padding-bottom:0.5em">Alchemy</div>
+								<p style="color:gray;margin-top:0">Each pill increases job experience for its cultivation stage and slightly reduces experience gain for later stages in the path. Purchases reset when you restart a life (Heavenly Eye, Potential, and deeper awakenings). Costs scale with the stage.</p>
+								<div id="alchemyPillsList" class="alchemyPillsList"></div>
 							</div>
 						</div>
 						<div class="tab column" style="display:none" id="rebirth">
@@ -1015,6 +1023,7 @@
 	<script type="text/javascript" src="js/tooltips.js"></script>
 	<script type="text/javascript" src="js/milestones.js"></script>
 	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/alchemy.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

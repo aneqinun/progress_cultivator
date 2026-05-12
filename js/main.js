@@ -1018,6 +1018,7 @@ function rebirthReset(set_tab_to_jobs = true) {
             || gameData.settings.selectedTab == Tab.DARK_MATTER && gameData.dark_matter > 0
             || gameData.settings.selectedTab == Tab.REBIRTH
             || gameData.settings.selectedTab == Tab.EVILPERKS 
+            || gameData.settings.selectedTab == Tab.ALCHEMY
             || gameData.settings.selectedTab == Tab.INFO 
         ) {
             // do not switch tab
@@ -1039,6 +1040,8 @@ function rebirthReset(set_tab_to_jobs = true) {
     gameData.stats.maxEvilPerSecond = 0
     gameData.stats.maxEvilPerSecondRt = 0
     autoBuyEnabled = true
+
+    resetAlchemyPurchases()
 
     for (const taskName in gameData.taskData) {
         const task = gameData.taskData[taskName]
@@ -1626,6 +1629,8 @@ for (const key in gameData.requirements) {
 }
 
 loadGameData()
+
+ensureAlchemyState()
 
 initializeUI()
 

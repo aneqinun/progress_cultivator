@@ -23,6 +23,8 @@ function initializeUI() {
         const requirement = gameData.requirements[key]
         requirement.queryElements()
     }
+
+    initializeAlchemyDOM()
 }
 
 function updateUI() {
@@ -70,6 +72,9 @@ function updateUI() {
         updateRequiredRows(milestoneData, milestoneCategories)
         renderMilestones()
     }
+
+    if (currentTab == Tab.ALCHEMY)
+        renderAlchemy()
 
     if (currentTab == Tab.DARK_MATTER)
         renderDarkMatter()
@@ -1286,6 +1291,7 @@ const Tab = Object.freeze({
     EVILPERKS: "evilperks",
     CHALLENGES: "challenges",
     MILESTONES: "milestones",
+    ALCHEMY: "alchemy",
     REBIRTH: "rebirth",
     DARK_MATTER: "darkMatter",
     METAVERSE: "metaverse",
@@ -1492,3 +1498,75 @@ window.addEventListener('keydown', function (e) {
         }
     }
 });
+
+function initializeAlchemyDOM() {
+    const list = document.getElementById("alchemyPillsList")
+    if (!list || list.dataset.initialized === "1")
+        return
+    list.dataset.initialized = "1"
+
+    for (let p = 0; p < alchemyPills.length; p++) {
+        const pill = alchemyPills[p]
+        const row = document.createElement("div")
+        row.className = "alchemyPillRow w3-padding-small"
+        row.id = "alchemyRow_" + pill.id
+
+        const label = document.createElement("div")
+        label.className = "alchemyPillLabel tooltip"
+        const nameSpan = document.createElement("span")
+        nameSpan.className = "alchemyPillName"
+        nameSpan.textContent = pill.name + " (" + getDisplayName(pill.job) + ")"
+        const tip = document.createElement("span")
+        tip.className = "tooltipText"
+        tip.innerHTML = getDisplayTooltip(pill.name)
+        label.appendChild(nameSpan)
+        label.appendChild(tip)
+
+        const owned = document.createElement("div")
+        owned.className = "alchemyPillOwned"
+        owned.id = "alchemyCount_" + pill.id
+
+        const buyWrap = document.createElement("div")
+        buyWrap.className = "alchemyPillBuy"
+        const btn = document.createElement("button")
+        btn.className = "w3-button button"
+        btn.id = "alchemyBuy_" + pill.id
+        const pillId = pill.id
+        btn.addEventListener("click", function () {
+            buyAlchemyPill(pillId)
+        })
+
+        const costHost = document.createElement("div")
+        costHost.className = "coins"
+        costHost.style.display = "inline-block"
+        costHost.id = "alchemyCost_" + pill.id
+        for (let s = 0; s < 4; s++)
+            costHost.appendChild(document.createElement("span"))
+
+        btn.appendChild(document.createTextNode("Buy ("))
+        btn.appendChild(costHost)
+        btn.appendChild(document.createTextNode(")"))
+        buyWrap.appendChild(btn)
+
+        row.appendChild(label)
+        row.appendChild(owned)
+        row.appendChild(buyWrap)
+        list.appendChild(row)
+    }
+}
+
+function renderAlchemy() {
+    ensureAlchemyState()
+    initializeAlchemyDOM()
+    for (let p = 0; p < alchemyPills.length; p++) {
+        const pill = alchemyPills[p]
+        const countEl = document.getElementById("alchemyCount_" + pill.id)
+        const btn = document.getElementById("alchemyBuy_" + pill.id)
+        const costEl = document.getElementById("alchemyCost_" + pill.id)
+        if (!countEl || !btn || !costEl)
+            continue
+        countEl.textContent = "Owned: " + format(gameData.alchemy[pill.id], 0)
+        formatCoins(pill.cost, costEl)
+        btn.disabled = gameData.coins < pill.cost || gameData.paused
+    }
+}

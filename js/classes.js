@@ -64,7 +64,10 @@ class Task {
     }
 
     getXpGain() {
-        return (this.isHero ? getHeroXpGainMultipliers(this) : 1) * applyMultipliers(10, this.xpMultipliers)
+        const base = (this.isHero ? getHeroXpGainMultipliers(this) : 1) * applyMultipliers(10, this.xpMultipliers)
+        if (typeof getAlchemyXpMultiplierForJob === "function" && "income" in this.baseData)
+            return base * getAlchemyXpMultiplierForJob(this.name)
+        return base
     }
 
     getXpGainBigInt() {
@@ -73,6 +76,14 @@ class Task {
         this.xpMultipliers.forEach(multiplier => {
             xpGain *= BigInt(Math.ceil(multiplier()))
         })
+
+        if (typeof getAlchemyXpMultiplierForJob === "function" && "income" in this.baseData) {
+            const alchemyMult = getAlchemyXpMultiplierForJob(this.name)
+            if (alchemyMult != 1 && isFinite(alchemyMult) && alchemyMult > 0) {
+                const scaled = BigInt(Math.max(1, Math.floor(alchemyMult * 1_000_000)))
+                xpGain = (xpGain * scaled) / 1000000n
+            }
+        }
 
         return xpGain
     }
